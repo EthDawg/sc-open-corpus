@@ -55,8 +55,12 @@ def main():
     out = os.path.expanduser(f'~/Developer/releases/{name}')
     ts = DENY.terms()
     if not ts: sys.exit('No deny list on this machine: refusing.')
+    keep = None
+    if '--update' in a and os.path.isdir(os.path.join(out, '.git')):      # a published repo: add a commit, never rewrite history
+        keep = out + '.git-keep'; shutil.rmtree(keep, ignore_errors=True); shutil.move(os.path.join(out, '.git'), keep)
     if os.path.exists(out): shutil.rmtree(out)
     os.makedirs(out)
+    if keep: shutil.move(keep, os.path.join(out, '.git'))
     src = os.path.expanduser(R['source'])
     if commit:
         tar = subprocess.run(['git', '-C', src, 'archive', commit], capture_output=True, check=True).stdout
@@ -79,15 +83,15 @@ def main():
         print(f'REFUSED: {len(hits)} files need work before this can be public:')
         for rel, why in hits: print(f'  {rel}  [{", ".join(why)}]')
         sys.exit(1)
-    subprocess.run(['git', 'init', '-q', '-b', 'main'], cwd=out, check=True)
+    if not keep: subprocess.run(['git', 'init', '-q', '-b', 'main'], cwd=out, check=True)
     subprocess.run(['git', 'add', '-A'], cwd=out, check=True)
-    msg = f"{R.get('description', name)}\n\nFirst public release, cut from a private working repository{(' at ' + commit[:7]) if commit else ''}."
+    msg = (a[a.index('-m') + 1] if '-m' in a else 'Update') if keep else f"{R.get('description', name)}\n\nFirst public release, cut from a private working repository{(' at ' + commit[:7]) if commit else ''}."
     msg += '\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>'
     who = R.get('author', ['EthDawg', '74338122+EthDawg@users.noreply.github.com'])     # GitHub's no-reply address, never a local one
     subprocess.run(['git', '-c', f'user.name={who[0]}', '-c', f'user.email={who[1]}', 'commit', '-q', '-m', msg], cwd=out, check=True)
     n = sum(len(fs) for d, ds, fs in os.walk(out) if '.git' not in d)
     mb = sum(os.path.getsize(os.path.join(d, f)) for d, ds, fs in os.walk(out) if '.git' not in d for f in fs) / 1e6
-    print(f'CLEAN: {n} files, {mb:.0f} MB, one commit. Push when approved: gh repo create {R["remote"]} --public --source {out} --push')
+    print(f'CLEAN: {n} files, {mb:.0f} MB. ' + (f'New commit on the published repo; push with: git -C {out} push' if keep else f'One commit. Push when approved: gh repo create {R["remote"]} --public --source {out} --push'))
 
 
 if __name__ == '__main__':

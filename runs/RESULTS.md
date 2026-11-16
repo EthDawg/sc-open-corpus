@@ -49,3 +49,22 @@ image-only shareholder letter, plus the planted mess), the Answerbank export (10
 
 Same pattern as Anthropic, on a different company: primary documents are read well; the answer library is imported
 as fact and not reconciled.
+
+## 2026-11-16 · Anthropic again · Green Room Learn after the answer-library fix
+
+Same inbox, same keys, same judge. Green Room now reads an answer-library export as a secondary source and reconciles
+each line with the documents in the same learn.
+
+| Measure | Before the fix | After the fix |
+|---|---|---|
+| Time, cost | 25 min, $17.52 | 43 min, $28.48 |
+| Filing, kept out | perfect | perfect |
+| Planted library faults caught (18) | 3 | 9 |
+| High-severity faults carried | 8 | 4 |
+| Fact questions (33) | 29 right, 4 partly right, 0 wrong | 31 right, 1 partly right, 1 unknown, 0 wrong |
+| Library lines confirmed by a document | none | 60 |
+| Disagreements held for a person | none | 6, plus 7 past review with no document |
+
+**What still gets through:** overstated or over-scoped library answers ("HIPAA certified", "no processing outside the
+US", "ZDR covers Enterprise chat") that the reconciler never paired with the narrower document fact, because the
+words differ. Reported to Green Room: an unpaired library line should not default to current.
