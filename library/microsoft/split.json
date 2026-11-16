@@ -1,0 +1,23 @@
+{
+ "d1": [
+  "microsoft-001",
+  "microsoft-002",
+  "microsoft-003",
+  "microsoft-004",
+  "microsoft-005",
+  "microsoft-006",
+  "microsoft-007",
+  "microsoft-008",
+  "microsoft-009",
+  "microsoft-010",
+  "microsoft-014",
+  "microsoft-015",
+  "microsoft-016"
+ ],
+ "d2": [
+  "microsoft-011",
+  "microsoft-012",
+  "microsoft-013"
+ ],
+ "why": "d2 is the September 2026 refresh of the deployment story: the Copilot IT checklist replaces the four-phase implementation framework with a five-phase path (plan, implement, adopt, manage, improve) and moves agent governance to day one; the Agent 365 observability playbook introduces Agent 365 as the control plane for every agent with new AI Administrator / AI Reader roles; and the June 2026 AI evaluation framework gives buyers the SATC rubric. d1 stands on its own: the success-kit decks, Customer Hub sessions, scenario library, adoption workbooks, the ESS readiness guide and the Microsoft Learn privacy, EDP, architecture and EU Data Boundary articles."
+}

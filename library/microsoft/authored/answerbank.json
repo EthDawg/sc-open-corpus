@@ -1,0 +1,1284 @@
+{
+ "name": "Microsoft 365 Copilot Answer Library",
+ "review_cycle_days": 180,
+ "collections": [
+  "Security questionnaire core",
+  "AI and data use",
+  "RFP product",
+  "Deployment readiness",
+  "RFP company",
+  "Procurement"
+ ],
+ "entries": [
+  {
+   "id": "AB-0001",
+   "library": "AI and Data",
+   "question": "Are our prompts, responses or Microsoft Graph data used to train foundation models?",
+   "alternates": [
+    "Do you train on tenant data?"
+   ],
+   "answer": "No. Prompts, responses and data accessed through Microsoft Graph aren't used to train foundation LLMs, including those used by Microsoft 365 Copilot. Stored interaction data is encrypted and also isn't used for training.",
+   "owner": "Legal",
+   "sme": "Privacy counsel",
+   "created": "2024-03-04",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "training",
+    "privacy"
+   ],
+   "uses": 112,
+   "source": "microsoft-016",
+   "quote": "Prompts, responses, and data accessed through Microsoft Graph aren't used to train foundation LLMs, including those used by Microsoft 365 Copilot.",
+   "collections": [
+    "AI and data use"
+   ]
+  },
+  {
+   "id": "AB-0002",
+   "library": "AI and Data",
+   "question": "Is user feedback on Copilot responses used to train the models?",
+   "alternates": [
+    "What happens to thumbs-up/down feedback?"
+   ],
+   "answer": "Yes. Optional feedback that users submit is used to improve Microsoft 365 Copilot, including training the foundation LLMs behind it. Admins can manage feedback settings in the Microsoft 365 admin center.",
+   "owner": "Solutions Engineering",
+   "sme": "Copilot solutions architect",
+   "created": "2024-06-10",
+   "last_reviewed": "2026-06-08",
+   "status": "Current",
+   "tags": [
+    "feedback",
+    "training"
+   ],
+   "uses": 31,
+   "source": "microsoft-016",
+   "quote": "We may use customer feedback, which is optional, to improve Microsoft 365 Copilot",
+   "collections": [
+    "AI and data use"
+   ]
+  },
+  {
+   "id": "AB-0003",
+   "library": "AI and Data",
+   "question": "Which large language models process our data in Microsoft 365 Copilot?",
+   "alternates": [
+    "Who is the model provider?",
+    "Do you use OpenAI?"
+   ],
+   "answer": "Microsoft 365 Copilot uses OpenAI models hosted in Azure OpenAI only. Processing runs on Azure OpenAI services, not OpenAI's publicly available services, and no other model provider processes customer data.",
+   "owner": "Solutions Engineering",
+   "sme": "Copilot solutions architect",
+   "created": "2024-03-04",
+   "last_reviewed": "2025-09-15",
+   "status": "Review due",
+   "tags": [
+    "models",
+    "subprocessors"
+   ],
+   "uses": 58,
+   "source": "microsoft-016",
+   "quote": "Microsoft 365 Copilot uses Azure OpenAI services for processing, not OpenAI’s publicly available services.",
+   "collections": [
+    "AI and data use"
+   ]
+  },
+  {
+   "id": "AB-0004",
+   "library": "AI and Data",
+   "question": "Is Anthropic a subprocessor for Microsoft 365 Copilot?",
+   "alternates": [
+    "Are third-party models used in Copilot?"
+   ],
+   "answer": "Yes. Starting January 7, 2026, Anthropic is a subprocessor for Microsoft 365 Copilot and operates under Microsoft Enterprise data protection, the Product Terms and the DPA. Anthropic models are out of scope for the EU Data Boundary and in-country LLM processing commitments.",
+   "owner": "Legal",
+   "sme": "Privacy counsel",
+   "created": "2026-01-12",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "Anthropic",
+    "subprocessors",
+    "EU Data Boundary"
+   ],
+   "uses": 44,
+   "source": "microsoft-016",
+   "quote": "Starting January 7, 2026, Anthropic is a subprocessor for Microsoft 365 Copilot.",
+   "collections": [
+    "AI and data use"
+   ]
+  },
+  {
+   "id": "AB-0005",
+   "library": "Privacy",
+   "question": "Are Copilot prompts subject to abuse monitoring with human review?",
+   "alternates": [
+    "Do Microsoft staff review our prompts?"
+   ],
+   "answer": "Yes. As with Azure OpenAI, Microsoft 365 Copilot prompts and responses are subject to abuse monitoring, which can include human review of flagged content.",
+   "owner": "Solutions Engineering",
+   "sme": "Copilot solutions architect",
+   "created": "2023-11-06",
+   "last_reviewed": "2024-02-19",
+   "status": "Current",
+   "tags": [
+    "abuse monitoring",
+    "human review"
+   ],
+   "uses": 27,
+   "source": "microsoft-016",
+   "quote": "While abuse monitoring, which includes human review of content, is available in Azure OpenAI",
+   "collections": [
+    "Security questionnaire core",
+    "AI and data use"
+   ]
+  },
+  {
+   "id": "AB-0006",
+   "library": "Privacy",
+   "question": "Does Azure OpenAI cache our content for Copilot?",
+   "alternates": [
+    "Is prompt content cached by the model service?"
+   ],
+   "answer": "No. Azure OpenAI doesn't cache customer content and Copilot-modified prompts for Microsoft 365 Copilot. Prompts, retrieved data and responses stay within the Microsoft 365 service boundary.",
+   "owner": "Security & Compliance",
+   "sme": "Privacy engineer",
+   "created": "2024-03-04",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "caching",
+    "service boundary"
+   ],
+   "uses": 19,
+   "source": "microsoft-016",
+   "quote": "Azure OpenAI doesn't cache customer content and Copilot modified prompts for Microsoft 365 Copilot.",
+   "collections": [
+    "Security questionnaire core",
+    "AI and data use"
+   ]
+  },
+  {
+   "id": "AB-0007",
+   "library": "Privacy",
+   "question": "What interaction data is stored and can users delete it?",
+   "alternates": [
+    "Is Copilot chat history retained?"
+   ],
+   "answer": "Copilot stores the user's prompt and Copilot's response, with citations, as the user's Copilot activity history, processed under the same contractual commitments as other Microsoft 365 content. Users can delete their activity history from the My Account portal.",
+   "owner": "Legal",
+   "sme": "Privacy counsel",
+   "created": "2024-03-04",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "retention",
+    "activity history"
+   ],
+   "uses": 36,
+   "source": "microsoft-016",
+   "quote": "Your users can delete their Copilot activity history, which includes their prompts and the responses Copilot returns",
+   "collections": [
+    "Security questionnaire core",
+    "AI and data use"
+   ]
+  },
+  {
+   "id": "AB-0008",
+   "library": "Privacy",
+   "question": "Can we apply retention policies and eDiscovery to Copilot interactions?",
+   "alternates": [
+    "Can Copilot prompts be placed on legal hold?"
+   ],
+   "answer": "Yes. Admins can use Content search or Microsoft Purview to view and manage stored Copilot data, set retention policies for chat interactions, and use Purview eDiscovery to search, preserve and produce Copilot-related content.",
+   "owner": "Security & Compliance",
+   "sme": "Compliance architect",
+   "created": "2024-03-04",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "retention",
+    "eDiscovery"
+   ],
+   "uses": 29,
+   "source": "microsoft-016",
+   "quote": "Admins can also use Microsoft Purview to set retention policies for the data related to chat interactions with Copilot.",
+   "collections": [
+    "Security questionnaire core",
+    "AI and data use"
+   ]
+  },
+  {
+   "id": "AB-0009",
+   "library": "Privacy",
+   "question": "Does all Copilot processing for EU users stay within the EU Data Boundary?",
+   "alternates": [
+    "Is Copilot an EU Data Boundary service?"
+   ],
+   "answer": "Yes. For EU users, all Copilot processing, including web search queries and every model used, stays within the EU Data Boundary.",
+   "owner": "Solutions Engineering",
+   "sme": "Copilot solutions architect",
+   "created": "2024-05-13",
+   "last_reviewed": "2026-06-08",
+   "status": "Current",
+   "tags": [
+    "EU Data Boundary"
+   ],
+   "uses": 63,
+   "source": "microsoft-016",
+   "quote": "For EU customers, Microsoft 365 Copilot is an EU Data Boundary service.",
+   "collections": [
+    "Security questionnaire core",
+    "AI and data use"
+   ]
+  },
+  {
+   "id": "AB-0010",
+   "library": "Privacy",
+   "question": "Where are LLM calls processed for users outside the EU?",
+   "alternates": [
+    "Can prompts leave our region?"
+   ],
+   "answer": "Copilot routes LLM calls to the closest data centers in the region but can call into other regions where capacity is available during high utilization. EU traffic stays within the EU Data Boundary; customers outside the EU may have queries processed in the US, EU or other regions.",
+   "owner": "Legal",
+   "sme": "Privacy counsel",
+   "created": "2024-05-13",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "data location"
+   ],
+   "uses": 41,
+   "source": "microsoft-016",
+   "quote": "Customers outside the EU may have their queries processed in the US, EU, or other regions.",
+   "collections": [
+    "Security questionnaire core",
+    "AI and data use"
+   ]
+  },
+  {
+   "id": "AB-0011",
+   "library": "Privacy",
+   "question": "Is Microsoft 365 Copilot covered by your data residency commitments?",
+   "alternates": [
+    "Does ADR or Multi-Geo cover Copilot?"
+   ],
+   "answer": "No. Microsoft 365 Copilot is not yet a covered workload under the data residency commitments in the Product Terms, Advanced Data Residency or Multi-Geo.",
+   "owner": "Legal",
+   "sme": "Privacy counsel",
+   "created": "2023-11-06",
+   "last_reviewed": "2023-12-04",
+   "status": "Current",
+   "tags": [
+    "data residency"
+   ],
+   "uses": 22,
+   "source": "microsoft-016",
+   "quote": "Microsoft 365 Copilot is upholding data residency commitments as outlined in the Microsoft Product Terms and Data Protection Addendum.",
+   "collections": [
+    "Security questionnaire core",
+    "AI and data use"
+   ]
+  },
+  {
+   "id": "AB-0012",
+   "library": "Privacy",
+   "question": "Which data residency offerings include Microsoft 365 Copilot?",
+   "alternates": [
+    "When did Copilot become a covered workload?"
+   ],
+   "answer": "Microsoft 365 Copilot was added as a covered workload in the Product Terms data residency commitments on March 1, 2024, and Advanced Data Residency and Multi-Geo include Copilot data residency commitments as of that date.",
+   "owner": "Legal",
+   "sme": "Privacy counsel",
+   "created": "2024-03-11",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "data residency",
+    "ADR"
+   ],
+   "uses": 30,
+   "source": "microsoft-016",
+   "quote": "Microsoft 365 Copilot was added as a covered workload in the data residency commitments in Microsoft Product Terms on March 1, 2024.",
+   "collections": [
+    "Security questionnaire core",
+    "AI and data use"
+   ]
+  },
+  {
+   "id": "AB-0013",
+   "library": "Privacy",
+   "question": "How are web search queries handled and who is the data controller?",
+   "alternates": [
+    "Does web grounding send our data to Bing?"
+   ],
+   "answer": "Copilot generates a short search query from the prompt and sends it to Bing over a secure connection with user and tenant identifiers removed. Queries aren't shared with advertisers or used to train foundation LLMs. Bing operates separately from Microsoft 365, with Microsoft acting as an independent data controller.",
+   "owner": "Legal",
+   "sme": "Privacy counsel",
+   "created": "2024-09-09",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "web search",
+    "Bing"
+   ],
+   "uses": 35,
+   "source": "microsoft-016",
+   "quote": "This means that Microsoft acts as an independent data controller responsible for complying with all applicable laws and controller obligations.",
+   "collections": [
+    "Security questionnaire core",
+    "AI and data use"
+   ]
+  },
+  {
+   "id": "AB-0014",
+   "library": "Privacy",
+   "question": "Does the EU Data Boundary apply to web search queries?",
+   "alternates": [
+    "Are Bing queries kept in the EU?"
+   ],
+   "answer": "No. The EU Data Boundary doesn't apply to web search queries, and Anthropic models are currently excluded from the EU Data Boundary and in-country processing commitments.",
+   "owner": "Legal",
+   "sme": "Privacy counsel",
+   "created": "2026-01-12",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "EU Data Boundary",
+    "web search"
+   ],
+   "uses": 18,
+   "source": "microsoft-016",
+   "quote": "The EU Data Boundary doesn’t apply to web search queries.",
+   "collections": [
+    "Security questionnaire core",
+    "AI and data use"
+   ]
+  },
+  {
+   "id": "AB-0015",
+   "library": "Compliance",
+   "question": "Are all Copilot interactions, including web search, covered by your BAA for HIPAA?",
+   "alternates": [
+    "Can we use Copilot with PHI?"
+   ],
+   "answer": "Yes. Microsoft 365 Copilot and Copilot Chat interactions, including web-grounded queries, are covered by the DPA and Business Associate Agreement for HIPAA.",
+   "owner": "Solutions Engineering",
+   "sme": "Healthcare solutions architect",
+   "created": "2024-09-09",
+   "last_reviewed": "2026-06-08",
+   "status": "Current",
+   "tags": [
+    "HIPAA",
+    "BAA"
+   ],
+   "uses": 24,
+   "source": "microsoft-016",
+   "quote": "Microsoft 365 Copilot and Microsoft 365 Copilot Chat support HIPAA compliance for properly configured implementations.",
+   "collections": [
+    "Security questionnaire core"
+   ]
+  },
+  {
+   "id": "AB-0016",
+   "library": "Compliance",
+   "question": "Which compliance certifications apply to Microsoft 365 Copilot?",
+   "alternates": [
+    "Is Copilot ISO 42001 certified?"
+   ],
+   "answer": "Microsoft 365 Copilot provides broad compliance offerings and certifications, including GDPR, ISO 27001, HIPAA and ISO 42001 for AI management systems, and it adheres to existing Microsoft 365 privacy, security and compliance commitments.",
+   "owner": "Security & Compliance",
+   "sme": "Compliance architect",
+   "created": "2024-03-04",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "certifications",
+    "ISO 42001"
+   ],
+   "uses": 52,
+   "source": "microsoft-016",
+   "quote": "Microsoft 365 Copilot provides broad compliance offerings and certifications, including",
+   "collections": [
+    "Security questionnaire core"
+   ]
+  },
+  {
+   "id": "AB-0017",
+   "library": "Legal and Commercial",
+   "question": "Under what terms is Copilot data processed, and in what role does Microsoft act?",
+   "alternates": [
+    "Is Microsoft a processor for Copilot?"
+   ],
+   "answer": "Use of Microsoft 365 Copilot and Copilot Chat by organizations is covered by the Microsoft Products and Services Data Protection Addendum and the Product Terms, with Microsoft acting as a data processor. Enterprise data protection applies the same terms used for Exchange email and SharePoint files.",
+   "owner": "Legal",
+   "sme": "Commercial counsel",
+   "created": "2024-09-09",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "DPA",
+    "EDP"
+   ],
+   "uses": 47,
+   "source": "microsoft-016",
+   "quote": "with Microsoft acting as a data processor.",
+   "collections": [
+    "Procurement"
+   ]
+  },
+  {
+   "id": "AB-0018",
+   "library": "Legal and Commercial",
+   "question": "Do you indemnify customers against copyright claims for Copilot output?",
+   "alternates": [
+    "What is the Customer Copyright Commitment?"
+   ],
+   "answer": "Yes, with conditions. If a third party sues a commercial customer for copyright infringement over use of Microsoft's Copilots or their output, Microsoft will defend the customer and pay adverse judgments or settlements, provided the customer used the built-in guardrails and content filters.",
+   "owner": "Legal",
+   "sme": "Commercial counsel",
+   "created": "2023-11-06",
+   "last_reviewed": "2026-03-09",
+   "status": "Review due",
+   "tags": [
+    "copyright",
+    "indemnity"
+   ],
+   "uses": 33,
+   "source": "microsoft-016",
+   "quote": "as long as the customer used the guardrails and content filters we have built into our products.",
+   "collections": [
+    "Procurement"
+   ]
+  },
+  {
+   "id": "AB-0019",
+   "library": "Legal and Commercial",
+   "question": "Who owns the content Copilot generates?",
+   "alternates": [
+    "Do you claim rights in output?"
+   ],
+   "answer": "Microsoft doesn't claim ownership of the output of the service. It doesn't determine whether a customer's output is copyright protected, because similar prompts can produce similar responses for multiple customers.",
+   "owner": "Legal",
+   "sme": "Commercial counsel",
+   "created": "2023-11-06",
+   "last_reviewed": "2026-03-09",
+   "status": "Review due",
+   "tags": [
+    "IP",
+    "output ownership"
+   ],
+   "uses": 14,
+   "source": "microsoft-016",
+   "quote": "Microsoft doesn't claim ownership of the output of the service.",
+   "collections": [
+    "Procurement"
+   ]
+  },
+  {
+   "id": "AB-0020",
+   "library": "Security",
+   "question": "Can Copilot access data a user is not permitted to see?",
+   "alternates": [
+    "Does Copilot bypass permissions?"
+   ],
+   "answer": "No. Copilot only accesses data an individual user is authorized to access, based on existing Microsoft 365 role-based access controls, and Semantic Index honors the user identity-based access boundary during grounding.",
+   "owner": "Security & Compliance",
+   "sme": "Security architect",
+   "created": "2024-03-04",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "permissions",
+    "oversharing"
+   ],
+   "uses": 140,
+   "source": "microsoft-016",
+   "quote": "Copilot doesn't access data that the user doesn't have permission to access.",
+   "collections": [
+    "Security questionnaire core"
+   ]
+  },
+  {
+   "id": "AB-0021",
+   "library": "Security",
+   "question": "Does Copilot honor Conditional Access and MFA?",
+   "alternates": [
+    "Can we restrict Copilot by device compliance?"
+   ],
+   "answer": "Yes. Copilot honors Conditional Access policies and multifactor authentication and uses the same MFA features configured for the tenant; device compliance can be enforced through Conditional Access with Intune.",
+   "owner": "Security & Compliance",
+   "sme": "Security architect",
+   "created": "2024-03-04",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "Conditional Access",
+    "MFA"
+   ],
+   "uses": 61,
+   "source": "microsoft-016",
+   "quote": "Copilot honors Conditional Access policies and multifactor authentication (MFA).",
+   "collections": [
+    "Security questionnaire core"
+   ]
+  },
+  {
+   "id": "AB-0022",
+   "library": "Security",
+   "question": "How is customer content encrypted and isolated between tenants?",
+   "alternates": [
+    "Describe tenant isolation."
+   ],
+   "answer": "Logical isolation of customer content within each tenant uses Microsoft Entra authorization and role-based access control. Microsoft 365 encrypts customer content at rest and in transit with BitLocker, per-file encryption, TLS and IPsec.",
+   "owner": "Security & Compliance",
+   "sme": "Security architect",
+   "created": "2024-03-04",
+   "last_reviewed": "2026-04-13",
+   "status": "Review due",
+   "tags": [
+    "encryption",
+    "isolation"
+   ],
+   "uses": 39,
+   "source": "microsoft-016",
+   "quote": "Microsoft 365 uses service-side technologies that encrypt customer content at rest and in transit, including BitLocker, per-file encryption, Transport Layer Security (TLS), and Internet Protocol Security (IPsec).",
+   "collections": [
+    "Security questionnaire core"
+   ]
+  },
+  {
+   "id": "AB-0023",
+   "library": "Security",
+   "question": "Does Copilot respect sensitivity labels and encryption?",
+   "alternates": [
+    "How does Copilot treat labeled files?"
+   ],
+   "answer": "Yes. Copilot honors usage rights from Microsoft Purview Information Protection. When encryption is applied the user needs EXTRACT and VIEW usage rights for Copilot to interact with the content, and new content generated from labeled sources inherits the highest-priority label where supported.",
+   "owner": "Security & Compliance",
+   "sme": "Compliance architect",
+   "created": "2024-03-04",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "sensitivity labels",
+    "encryption"
+   ],
+   "uses": 54,
+   "source": "microsoft-016",
+   "quote": "When encryption is applied, the user must have EXTRACT and VIEW usage rights for Copilot to interact with the content.",
+   "collections": [
+    "Security questionnaire core"
+   ]
+  },
+  {
+   "id": "AB-0024",
+   "library": "Security",
+   "question": "Are documents protected with legacy IRM used for grounding?",
+   "alternates": [
+    "Does Copilot read IRM-protected files?"
+   ],
+   "answer": "No. Documents using legacy Information Rights Management are not used in Copilot grounding; use sensitivity labels in Microsoft Purview to protect documents instead.",
+   "owner": "Security & Compliance",
+   "sme": "Compliance architect",
+   "created": "2026-02-16",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "IRM",
+    "grounding"
+   ],
+   "uses": 9,
+   "source": "microsoft-016",
+   "quote": "Documents using legacy Information Rights Management (IRM) are not used in Copilot grounding.",
+   "collections": [
+    "Security questionnaire core"
+   ]
+  },
+  {
+   "id": "AB-0025",
+   "library": "Security",
+   "question": "Can agents read files with user-defined sensitivity label permissions?",
+   "alternates": [
+    "Do agents honor user-defined permissions?"
+   ],
+   "answer": "No. User-defined sensitivity label permissions can block Copilot from extracting file content; for example, Copilot agents can't read files that have user-defined sensitivity label permissions.",
+   "owner": "Security & Compliance",
+   "sme": "Compliance architect",
+   "created": "2026-04-20",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "agents",
+    "sensitivity labels"
+   ],
+   "uses": 7,
+   "source": "microsoft-016",
+   "quote": "Copilot agents can't read files that have user-defined sensitivity label permissions.",
+   "collections": [
+    "Security questionnaire core"
+   ]
+  },
+  {
+   "id": "AB-0026",
+   "library": "Security",
+   "question": "How do you protect against prompt injection and jailbreaks?",
+   "alternates": [
+    "Do you block XPIA?"
+   ],
+   "answer": "Copilot uses proprietary jailbreak and cross-prompt injection attack (XPIA) classifiers that analyze inputs and help block high-risk prompts before model execution, alongside content harm filters. These classifiers may not be available in all scenarios.",
+   "owner": "Security & Compliance",
+   "sme": "Security architect",
+   "created": "2024-03-04",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "prompt injection",
+    "jailbreak"
+   ],
+   "uses": 34,
+   "source": "microsoft-016",
+   "quote": "These classifiers analyze inputs to the Copilot service and help block high-risk prompts prior to model execution.",
+   "collections": [
+    "Security questionnaire core"
+   ]
+  },
+  {
+   "id": "AB-0027",
+   "library": "Security",
+   "question": "Can administrators turn off harmful content filtering?",
+   "alternates": [
+    "Can we disable content filters for investigators?"
+   ],
+   "answer": "Partly. Admins can apply a policy to a security group that lets users toggle harmful content protection in Copilot Chat for a conversation (text responses only). Core protections such as prompt injection defense, copyright safeguards, biosecurity and image protections are always enforced and can't be disabled.",
+   "owner": "Security & Compliance",
+   "sme": "Security architect",
+   "created": "2026-03-09",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "content filtering",
+    "responsible AI"
+   ],
+   "uses": 11,
+   "source": "microsoft-016",
+   "quote": "Core responsible AI protections, such as prompt injection defense, copyright safeguards, biosecurity, and image protections are always enforced and can't be disabled.",
+   "collections": [
+    "Security questionnaire core"
+   ]
+  },
+  {
+   "id": "AB-0028",
+   "library": "Security",
+   "question": "Do you detect protected material such as copyrighted text or licensed code?",
+   "alternates": [
+    "Is there protected material detection?"
+   ],
+   "answer": "Yes. Microsoft 365 Copilot provides detection for protected materials, including text subject to copyright and code subject to licensing restrictions, though it may not be available in all scenarios.",
+   "owner": "Security & Compliance",
+   "sme": "Security architect",
+   "created": "2024-03-04",
+   "last_reviewed": "2026-03-23",
+   "status": "Review due",
+   "tags": [
+    "protected material",
+    "copyright"
+   ],
+   "uses": 12,
+   "source": "microsoft-016",
+   "quote": "Yes, Microsoft 365 Copilot provides detection for protected materials, which includes text subject to copyright and code subject to licensing restrictions.",
+   "collections": [
+    "Security questionnaire core"
+   ]
+  },
+  {
+   "id": "AB-0029",
+   "library": "Security",
+   "question": "Do foundation model updates change our security or compliance settings?",
+   "alternates": [
+    "What happens when the model changes?"
+   ],
+   "answer": "No. Model updates bring performance improvements, more advanced reasoning and expanded capabilities, but they don't change your security, privacy or compliance settings.",
+   "owner": "Security & Compliance",
+   "sme": "Security architect",
+   "created": "2025-09-08",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "model updates"
+   ],
+   "uses": 10,
+   "source": "microsoft-016",
+   "quote": "Model updates bring performance improvements, more advanced reasoning, and expanded capabilities, but they don't change your security, privacy, or compliance settings.",
+   "collections": [
+    "Security questionnaire core"
+   ]
+  },
+  {
+   "id": "AB-0030",
+   "library": "Security",
+   "question": "Can we audit Copilot prompts and responses?",
+   "alternates": [
+    "Are Copilot interactions in the audit log?"
+   ],
+   "answer": "Yes. Microsoft 365 can capture audit records for Copilot prompts, responses and referenced content, interaction data for eDiscovery, retained versions of referenced files, and Copilot Pages content, all governed by Purview retention policies.",
+   "owner": "Security & Compliance",
+   "sme": "Compliance architect",
+   "created": "2024-03-04",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "audit",
+    "Purview"
+   ],
+   "uses": 42,
+   "source": "microsoft-016",
+   "quote": "Audit records for Copilot prompts, responses, and referenced content.",
+   "collections": [
+    "Security questionnaire core"
+   ]
+  },
+  {
+   "id": "AB-0031",
+   "library": "Product",
+   "question": "How do we reduce oversharing risk before enabling Copilot?",
+   "alternates": [
+    "What is the oversharing remediation approach?"
+   ],
+   "answer": "Identify overshared, ownerless or inactive sites with Purview DSPM and the SharePoint Advanced Management content assessment; apply interim protections such as Restricted Content Discovery and DLP for Copilot; then fix access, inheritance and ownership before removing the interim controls.",
+   "owner": "Solutions Engineering",
+   "sme": "Copilot solutions architect",
+   "created": "2026-04-20",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "oversharing",
+    "SAM",
+    "Purview"
+   ],
+   "uses": 95,
+   "source": "microsoft-016",
+   "quote": "In this step, you identify and prioritize high-risk sites and sensitive content, apply interim protections to reduce Copilot exposure, and then remediate access and permissions.",
+   "collections": [
+    "RFP product",
+    "Deployment readiness"
+   ]
+  },
+  {
+   "id": "AB-0032",
+   "library": "Product",
+   "question": "Is SharePoint Advanced Management included, or do we need to buy SharePoint Premium?",
+   "alternates": [
+    "Do we need a SAM add-on?"
+   ],
+   "answer": "SharePoint Advanced Management is part of SharePoint Premium and must be purchased as a separate add-on alongside Microsoft 365 Copilot licenses.",
+   "owner": "Sales Enablement",
+   "sme": "Licensing specialist",
+   "created": "2024-04-15",
+   "last_reviewed": "2025-01-20",
+   "status": "Review due",
+   "tags": [
+    "SAM",
+    "licensing"
+   ],
+   "uses": 38,
+   "source": "microsoft-016",
+   "quote": "Microsoft SharePoint Premium – SharePoint Advanced Management (SAM) helps you reduce oversharing and cleanup inactive sites.",
+   "collections": [
+    "RFP product",
+    "Deployment readiness"
+   ]
+  },
+  {
+   "id": "AB-0033",
+   "library": "Product",
+   "question": "Can we restrict Copilot to a reviewed set of SharePoint sites while we remediate permissions?",
+   "alternates": [
+    "What is Restricted SharePoint Search?"
+   ],
+   "answer": "Yes. Restricted SharePoint Search gives you time to review and configure permissions; you add reviewed sites to an allowed list that Copilot can access. Restricted Content Discovery can also exclude sensitive sites from Copilot discovery.",
+   "owner": "Solutions Engineering",
+   "sme": "Copilot solutions architect",
+   "created": "2024-04-15",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "Restricted SharePoint Search",
+    "oversharing"
+   ],
+   "uses": 49,
+   "source": "microsoft-016",
+   "quote": "Restricted SharePoint Search (RSS) gives you time to review and configure the correct permissions on your SharePoint sites.",
+   "collections": [
+    "RFP product",
+    "Deployment readiness"
+   ]
+  },
+  {
+   "id": "AB-0034",
+   "library": "Product",
+   "question": "Can we block Copilot from processing prompts that contain sensitive information?",
+   "alternates": [
+    "Does DLP apply to Copilot prompts?"
+   ],
+   "answer": "Yes. A Purview DLP for Copilot prompts policy can restrict Copilot from responding to prompts containing specified sensitive information, and DLP for Copilot can restrict processing of files and emails with specific sensitivity labels.",
+   "owner": "Security & Compliance",
+   "sme": "Compliance architect",
+   "created": "2026-04-20",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "DLP",
+    "prompts"
+   ],
+   "uses": 26,
+   "source": "microsoft-016",
+   "quote": "policy to restrict Copilot from responding to prompts containing specified sensitive information",
+   "collections": [
+    "RFP product",
+    "Deployment readiness"
+   ]
+  },
+  {
+   "id": "AB-0035",
+   "library": "Product",
+   "question": "Can inactive content be kept for records but excluded from Copilot?",
+   "alternates": [
+    "How do we stop Copilot using old content?"
+   ],
+   "answer": "Yes. Microsoft 365 Archive stores inactive but high-value content at lower cost while preventing Copilot from processing or reasoning over it, and retention labels can exclude files from Copilot use while preserving them for recordkeeping.",
+   "owner": "Security & Compliance",
+   "sme": "Compliance architect",
+   "created": "2026-04-20",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "archive",
+    "data hygiene"
+   ],
+   "uses": 8,
+   "source": "microsoft-016",
+   "quote": "to store inactive but high-value content at a lower cost while preventing Copilot from processing or reasoning over it.",
+   "collections": [
+    "RFP product",
+    "Deployment readiness"
+   ]
+  },
+  {
+   "id": "AB-0036",
+   "library": "Product",
+   "question": "Does Copilot work with shared, group and archive mailboxes?",
+   "alternates": [
+    "Which mailboxes does Copilot support?"
+   ],
+   "answer": "Yes. Copilot works across every mailbox a user can access in Exchange Online, including shared, delegate, group and archive mailboxes.",
+   "owner": "Solutions Engineering",
+   "sme": "Copilot solutions architect",
+   "created": "2024-05-13",
+   "last_reviewed": "2026-06-08",
+   "status": "Current",
+   "tags": [
+    "Exchange",
+    "mailboxes"
+   ],
+   "uses": 21,
+   "source": "microsoft-016",
+   "quote": "Microsoft 365 Copilot is only supported on primary mailboxes that are hosted on Exchange Online.",
+   "collections": [
+    "RFP product",
+    "Deployment readiness"
+   ]
+  },
+  {
+   "id": "AB-0037",
+   "library": "Product",
+   "question": "What are the prerequisites to deploy Microsoft 365 Copilot?",
+   "alternates": [
+    "Minimum requirements for Copilot?"
+   ],
+   "answer": "Users need an eligible Microsoft 365 base license and a Microsoft Entra ID account, Microsoft 365 Apps must be deployed, and Copilot is supported only on primary mailboxes hosted in Exchange Online. Some features need OneDrive, and the Office Feature Updates task must run.",
+   "owner": "Solutions Engineering",
+   "sme": "Copilot solutions architect",
+   "created": "2024-03-04",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "prerequisites"
+   ],
+   "uses": 77,
+   "source": "microsoft-016",
+   "quote": "Microsoft 365 Copilot is only supported on primary mailboxes that are hosted on Exchange Online.",
+   "collections": [
+    "RFP product",
+    "Deployment readiness"
+   ]
+  },
+  {
+   "id": "AB-0038",
+   "library": "Product",
+   "question": "Is Copilot available with device-based licensing of Microsoft 365 Apps?",
+   "alternates": [
+    "Shared device licensing?"
+   ],
+   "answer": "No. Copilot isn't available when using device-based licensing for Microsoft 365 Apps for enterprise.",
+   "owner": "Solutions Engineering",
+   "sme": "Copilot solutions architect",
+   "created": "2025-03-10",
+   "last_reviewed": "2026-02-02",
+   "status": "Review due",
+   "tags": [
+    "licensing",
+    "devices"
+   ],
+   "uses": 13,
+   "source": "microsoft-016",
+   "quote": "Copilot isn't available when using device-based licensing for Microsoft 365 Apps for enterprise.",
+   "collections": [
+    "RFP product",
+    "Deployment readiness"
+   ]
+  },
+  {
+   "id": "AB-0040",
+   "library": "Product",
+   "question": "What network configuration does Copilot require?",
+   "alternates": [
+    "Which endpoints must we allow?"
+   ],
+   "answer": "Allow the worldwide Microsoft 365 URLs and IP ranges and make sure the network supports full WebSocket (WSS) connectivity to *.cloud.microsoft and *.office.com. Microsoft can't provide per-feature FQDN lists, so allow the wildcard domains.",
+   "owner": "Solutions Engineering",
+   "sme": "Network architect",
+   "created": "2024-03-04",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "network",
+    "WebSockets"
+   ],
+   "uses": 37,
+   "source": "microsoft-016",
+   "quote": "Due to hyperscale and the dynamic nature of its services, Microsoft 365 can't provide specific FQDNs used by individual features and scenarios.",
+   "collections": [
+    "RFP product",
+    "Deployment readiness"
+   ]
+  },
+  {
+   "id": "AB-0041",
+   "library": "Product",
+   "question": "Can we allowlist a single domain for all Copilot traffic?",
+   "alternates": [
+    "Is *.cloud.microsoft enough?"
+   ],
+   "answer": "Yes. Microsoft has consolidated Copilot experiences for Microsoft 365 under the *.cloud.microsoft domain, so allowing that one wildcard covers Copilot network traffic.",
+   "owner": "Solutions Engineering",
+   "sme": "Network architect",
+   "created": "2025-02-10",
+   "last_reviewed": "2026-06-08",
+   "status": "Current",
+   "tags": [
+    "network",
+    "cloud.microsoft"
+   ],
+   "uses": 16,
+   "source": "microsoft-016",
+   "quote": "Microsoft plans to consolidate Copilot experiences for Microsoft 365 under the `*.cloud.microsoft` domain.",
+   "collections": [
+    "RFP product",
+    "Deployment readiness"
+   ]
+  },
+  {
+   "id": "AB-0042",
+   "library": "Product",
+   "question": "Does Copilot in Word, Excel and PowerPoint for the web need third-party cookies?",
+   "alternates": [
+    "Browser requirements for Copilot Online?"
+   ],
+   "answer": "Yes. For Copilot to work in Word Online, Excel Online and PowerPoint Online, third-party cookies must be enabled.",
+   "owner": "Solutions Engineering",
+   "sme": "Copilot solutions architect",
+   "created": "2025-03-10",
+   "last_reviewed": "2026-02-02",
+   "status": "Review due",
+   "tags": [
+    "browser"
+   ],
+   "uses": 6,
+   "source": "microsoft-016",
+   "quote": "For Copilot to work in Word Online, Excel Online, and PowerPoint Online, you must enable third-party cookies.",
+   "collections": [
+    "RFP product",
+    "Deployment readiness"
+   ]
+  },
+  {
+   "id": "AB-0043",
+   "library": "Product",
+   "question": "Does Copilot Chat require an additional license?",
+   "alternates": [
+    "Is Copilot Chat free for licensed users?"
+   ],
+   "answer": "No. Microsoft 365 Copilot Chat uses the web and lets users provide organizational data, and it doesn't require an additional license. Microsoft 365 Copilot, which also uses organizational data through Microsoft Graph, requires an add-on license.",
+   "owner": "Sales Enablement",
+   "sme": "Licensing specialist",
+   "created": "2025-01-20",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "Copilot Chat",
+    "licensing"
+   ],
+   "uses": 84,
+   "source": "microsoft-016",
+   "quote": "Microsoft 365 Copilot Chat uses the web and users can provide organizational data. It doesn't require an additional license.",
+   "collections": [
+    "RFP product",
+    "Deployment readiness"
+   ]
+  },
+  {
+   "id": "AB-0044",
+   "library": "Product",
+   "question": "Do users need a Microsoft 365 Copilot license to use Copilot Chat?",
+   "alternates": [
+    "Copilot Chat licensing requirement?"
+   ],
+   "answer": "Yes. Copilot Chat requires the Microsoft 365 Copilot add-on license for each user who will use it.",
+   "owner": "Sales Enablement",
+   "sme": "Licensing specialist",
+   "created": "2024-03-04",
+   "last_reviewed": "2026-06-08",
+   "status": "Current",
+   "tags": [
+    "Copilot Chat",
+    "licensing"
+   ],
+   "uses": 40,
+   "source": "microsoft-016",
+   "quote": "Microsoft 365 Copilot uses your organizational data and the web. It requires an",
+   "collections": [
+    "RFP product",
+    "Deployment readiness"
+   ]
+  },
+  {
+   "id": "AB-0045",
+   "library": "Product",
+   "question": "What licenses are needed for Copilot in Teams meetings and calls?",
+   "alternates": [
+    "Teams Phone requirements?"
+   ],
+   "answer": "Copilot in Teams needs the Microsoft 365 Copilot add-on license. For PSTN calls, users also need a Teams Phone license and a calling plan, and transcription or recording must be turned on.",
+   "owner": "Sales Enablement",
+   "sme": "Licensing specialist",
+   "created": "2025-03-10",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "Teams",
+    "licensing"
+   ],
+   "uses": 23,
+   "source": "microsoft-016",
+   "quote": "To use Copilot for PSTN calls, you need a Teams Phone license, a calling plan, and a Microsoft 365 Copilot license.",
+   "collections": [
+    "RFP product",
+    "Deployment readiness"
+   ]
+  },
+  {
+   "id": "AB-0046",
+   "library": "Product",
+   "question": "How much Teams chat history can Copilot summarize?",
+   "alternates": [
+    "Copilot in Teams chat limits?"
+   ],
+   "answer": "Copilot in a Teams chat can summarize up to 30 days of chat content before the last message, using only that single chat thread as its source.",
+   "owner": "Solutions Engineering",
+   "sme": "Copilot solutions architect",
+   "created": "2025-03-10",
+   "last_reviewed": "2026-04-20",
+   "status": "Review due",
+   "tags": [
+    "Teams"
+   ],
+   "uses": 9,
+   "source": "microsoft-016",
+   "quote": "Copilot can summarize up to 30 days of the chat content before the last message in a chat.",
+   "collections": [
+    "RFP product",
+    "Deployment readiness"
+   ]
+  },
+  {
+   "id": "AB-0047",
+   "library": "Product",
+   "question": "Is Security Copilot included with Microsoft 365 E5?",
+   "alternates": [
+    "Do E5 customers get Security Copilot?"
+   ],
+   "answer": "Yes. Security Copilot is included with Microsoft 365 E5 licenses, covering secure agentic AI workflows, security posture management, threat investigation and stakeholder reporting.",
+   "owner": "Sales Enablement",
+   "sme": "Licensing specialist",
+   "created": "2025-11-17",
+   "last_reviewed": "2026-06-08",
+   "status": "Current",
+   "tags": [
+    "Security Copilot",
+    "E5"
+   ],
+   "uses": 28,
+   "source": "microsoft-016",
+   "quote": "Enable your security team to implement agentic AI workflows securely",
+   "collections": [
+    "RFP product",
+    "Deployment readiness"
+   ]
+  },
+  {
+   "id": "AB-0048",
+   "library": "Product",
+   "question": "Is Microsoft 365 Copilot available in US government clouds?",
+   "alternates": [
+    "GCC High support?"
+   ],
+   "answer": "Yes. Microsoft 365 Copilot is available in GCC, GCC High and DoD and operates entirely within the customer's U.S. government cloud tenant, though features can arrive later than in commercial environments.",
+   "owner": "Solutions Engineering",
+   "sme": "Public sector architect",
+   "created": "2025-06-16",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "GCC",
+    "public sector"
+   ],
+   "uses": 20,
+   "source": "microsoft-016",
+   "quote": "Microsoft 365 Copilot is available in **GCC, GCC High, and DoD**, and operates entirely within the customer's U.S. government cloud tenant.",
+   "collections": [
+    "RFP product",
+    "Deployment readiness"
+   ]
+  },
+  {
+   "id": "AB-0049",
+   "library": "Integration",
+   "question": "Can Copilot use data from third-party systems?",
+   "alternates": [
+    "Do Graph connectors feed Copilot?"
+   ],
+   "answer": "Yes. Copilot can reference third-party tools and services through Microsoft Graph connectors or agents. Data from Graph connectors is returned in responses only if the user has permission to access it.",
+   "owner": "Solutions Engineering",
+   "sme": "Integration architect",
+   "created": "2024-03-04",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "Graph connectors",
+    "extensibility"
+   ],
+   "uses": 46,
+   "source": "microsoft-016",
+   "quote": "Data from Graph connectors can be returned in Microsoft 365 Copilot responses if the user has permission to access that information.",
+   "collections": [
+    "RFP product"
+   ]
+  },
+  {
+   "id": "AB-0050",
+   "library": "Integration",
+   "question": "Who controls which agents users can access?",
+   "alternates": [
+    "Can admins approve agents?"
+   ],
+   "answer": "Admins have full control over which agents are allowed. In Integrated apps they can review an agent's permissions, data access, terms and privacy statement, and users can only access agents the admin allows and that they installed or were assigned.",
+   "owner": "Security & Compliance",
+   "sme": "Security architect",
+   "created": "2024-09-09",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "agents",
+    "governance"
+   ],
+   "uses": 51,
+   "source": "microsoft-016",
+   "quote": "Admins have full control to select which agents are allowed in their organization.",
+   "collections": [
+    "RFP product"
+   ]
+  },
+  {
+   "id": "AB-0064",
+   "library": "Company",
+   "question": "Does Microsoft follow responsible AI principles for Copilot?",
+   "alternates": [
+    "Responsible AI governance?"
+   ],
+   "answer": "Microsoft has followed its Responsible AI principles since 2017, guided by its AI principles, the Responsible AI Standard and research on grounding and privacy-preserving machine learning, with a multidisciplinary team reviewing AI systems for potential harms.",
+   "owner": "Security & Compliance",
+   "sme": "Responsible AI lead",
+   "created": "2024-03-04",
+   "last_reviewed": "2026-01-19",
+   "status": "Review due",
+   "tags": [
+    "responsible AI"
+   ],
+   "uses": 18,
+   "source": "microsoft-016",
+   "quote": "Microsoft has been on a Responsible AI journey since 2017, when we defined our principles and approach",
+   "collections": [
+    "RFP company",
+    "Deployment readiness"
+   ]
+  },
+  {
+   "id": "AB-0065",
+   "library": "AI and Data",
+   "question": "Are Copilot responses guaranteed to be accurate?",
+   "alternates": [
+    "Can Copilot hallucinate?"
+   ],
+   "answer": "No. Responses that generative AI produces aren't guaranteed to be 100% factual, so users should review output before sending it to others.",
+   "owner": "Security & Compliance",
+   "sme": "Responsible AI lead",
+   "created": "2024-03-04",
+   "last_reviewed": "2026-01-19",
+   "status": "Review due",
+   "tags": [
+    "accuracy",
+    "responsible AI"
+   ],
+   "uses": 21,
+   "source": "microsoft-016",
+   "quote": "The responses that generative AI produces aren't guaranteed to be 100% factual.",
+   "collections": [
+    "AI and data use"
+   ]
+  },
+  {
+   "id": "AB-0066",
+   "library": "AI and Data",
+   "question": "Does Copilot make inferences about employee performance?",
+   "alternates": [
+    "Workplace harms protections?"
+   ],
+   "answer": "No. Certain Copilot scenarios filter to prevent workplace harms, meaning inferences, judgments or evaluations about an employee's performance, attitude, internal or emotional state or personal characteristics; Microsoft restricts generative AI from being used for those purposes.",
+   "owner": "Security & Compliance",
+   "sme": "Responsible AI lead",
+   "created": "2024-03-04",
+   "last_reviewed": "2026-01-19",
+   "status": "Review due",
+   "tags": [
+    "workplace harms"
+   ],
+   "uses": 8,
+   "source": "microsoft-016",
+   "quote": "We restrict the use of generative AI or models from being used for these purposes.",
+   "collections": [
+    "AI and data use"
+   ]
+  }
+ ]
+}

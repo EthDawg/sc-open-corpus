@@ -1,0 +1,326 @@
+[
+ {
+  "id": "Q-microsoft-001",
+  "question": "Are prompts, responses and Microsoft Graph data used to train foundation LLMs?",
+  "answer": "No",
+  "type": "yes-no",
+  "source": "microsoft-016",
+  "quote": "Prompts, responses, and data accessed through Microsoft Graph aren't used to train foundation LLMs",
+  "holdout": false
+ },
+ {
+  "id": "Q-microsoft-002",
+  "question": "Since what date has Anthropic been a subprocessor for Microsoft 365 Copilot?",
+  "answer": "January 7, 2026",
+  "type": "date",
+  "source": "microsoft-016",
+  "quote": "Starting January 7, 2026, Anthropic is a subprocessor for Microsoft 365 Copilot.",
+  "holdout": true
+ },
+ {
+  "id": "Q-microsoft-003",
+  "question": "Are Anthropic models in scope for the EU Data Boundary?",
+  "answer": "No",
+  "type": "yes-no",
+  "source": "microsoft-016",
+  "quote": "Anthropic models are out of scope for the EU Data Boundary",
+  "holdout": false
+ },
+ {
+  "id": "Q-microsoft-004",
+  "question": "Does the EU Data Boundary apply to Copilot web search queries?",
+  "answer": "No",
+  "type": "yes-no",
+  "source": "microsoft-016",
+  "quote": "The EU Data Boundary doesn’t apply to web search queries.",
+  "holdout": true
+ },
+ {
+  "id": "Q-microsoft-005",
+  "question": "Are Copilot web search queries covered by the BAA for HIPAA?",
+  "answer": "No",
+  "type": "yes-no",
+  "source": "microsoft-016",
+  "quote": "HIPAA compliance doesn't apply to web search queries as they aren't covered by the DPA and Business Associate Agreement (BAA).",
+  "holdout": false
+ },
+ {
+  "id": "Q-microsoft-006",
+  "question": "On what date was Microsoft 365 Copilot added as a covered data residency workload in the Product Terms?",
+  "answer": "March 1, 2024",
+  "type": "date",
+  "source": "microsoft-016",
+  "quote": "Microsoft 365 Copilot was added as a covered workload in the data residency commitments in Microsoft Product Terms on March 1, 2024.",
+  "holdout": false
+ },
+ {
+  "id": "Q-microsoft-007",
+  "question": "Does Microsoft 365 Copilot use OpenAI's publicly available services?",
+  "answer": "No; it uses Azure OpenAI services.",
+  "type": "yes-no",
+  "source": "microsoft-016",
+  "quote": "Microsoft 365 Copilot uses Azure OpenAI services for processing, not OpenAI’s publicly available services.",
+  "holdout": true
+ },
+ {
+  "id": "Q-microsoft-008",
+  "question": "Has Microsoft 365 Copilot opted out of Azure OpenAI abuse monitoring with human review?",
+  "answer": "Yes",
+  "type": "yes-no",
+  "source": "microsoft-016",
+  "quote": "Microsoft 365 Copilot services have opted out of it.",
+  "holdout": true
+ },
+ {
+  "id": "Q-microsoft-009",
+  "question": "Is Microsoft 365 Copilot supported on shared and archive mailboxes?",
+  "answer": "No; only primary mailboxes hosted on Exchange Online.",
+  "type": "yes-no",
+  "source": "microsoft-016",
+  "quote": "It isn't available on a user's archive mailbox, group mailboxes, or shared and delegate mailboxes that they have access to.",
+  "holdout": false
+ },
+ {
+  "id": "Q-microsoft-010",
+  "question": "Is Copilot available with device-based licensing for Microsoft 365 Apps for enterprise?",
+  "answer": "No",
+  "type": "yes-no",
+  "source": "microsoft-016",
+  "quote": "Copilot isn't available when using device-based licensing for Microsoft 365 Apps for enterprise.",
+  "holdout": false
+ },
+ {
+  "id": "Q-microsoft-011",
+  "question": "What must be enabled for Copilot to work in Word, Excel and PowerPoint Online?",
+  "answer": "Third-party cookies",
+  "type": "fact",
+  "source": "microsoft-016",
+  "quote": "For Copilot to work in Word Online, Excel Online, and PowerPoint Online, you must enable third-party cookies.",
+  "holdout": false
+ },
+ {
+  "id": "Q-microsoft-012",
+  "question": "Which domains need full WebSocket (WSS) connectivity for Copilot enterprise experiences?",
+  "answer": "*.cloud.microsoft and *.office.com",
+  "type": "list",
+  "source": "microsoft-016",
+  "quote": "Microsoft 365 Copilot enterprise experiences: `*.cloud.microsoft`, `*.office.com`",
+  "holdout": false
+ },
+ {
+  "id": "Q-microsoft-013",
+  "question": "Will Microsoft provide specific FQDNs for individual Copilot features?",
+  "answer": "No",
+  "type": "yes-no",
+  "source": "microsoft-016",
+  "quote": "Microsoft 365 can't provide specific FQDNs used by individual features and scenarios.",
+  "holdout": false
+ },
+ {
+  "id": "Q-microsoft-014",
+  "question": "Does Copilot honor Conditional Access policies and MFA?",
+  "answer": "Yes",
+  "type": "yes-no",
+  "source": "microsoft-016",
+  "quote": "Copilot honors Conditional Access policies and multifactor authentication (MFA).",
+  "holdout": true
+ },
+ {
+  "id": "Q-microsoft-015",
+  "question": "How many days of Teams chat content can Copilot summarize?",
+  "answer": "Up to 30 days before the last message",
+  "type": "number",
+  "source": "microsoft-016",
+  "quote": "Copilot can summarize up to 30 days of the chat content before the last message in a chat.",
+  "holdout": true
+ },
+ {
+  "id": "Q-microsoft-016",
+  "question": "Does Microsoft 365 Copilot Chat require an additional license?",
+  "answer": "No",
+  "type": "yes-no",
+  "source": "microsoft-016",
+  "quote": "It doesn't require an additional license.",
+  "holdout": false
+ },
+ {
+  "id": "Q-microsoft-017",
+  "question": "Are documents protected with legacy IRM used for Copilot grounding?",
+  "answer": "No",
+  "type": "yes-no",
+  "source": "microsoft-016",
+  "quote": "Documents using legacy Information Rights Management (IRM) are not used in Copilot grounding.",
+  "holdout": false
+ },
+ {
+  "id": "Q-microsoft-018",
+  "question": "Which usage rights must a user have for Copilot to interact with encrypted content?",
+  "answer": "EXTRACT and VIEW",
+  "type": "list",
+  "source": "microsoft-016",
+  "quote": "When encryption is applied, the user must have EXTRACT and VIEW usage rights for Copilot to interact with the content.",
+  "holdout": false
+ },
+ {
+  "id": "Q-microsoft-019",
+  "question": "Can prompt injection defense be disabled through the harmful content protection policy?",
+  "answer": "No; core protections are always enforced.",
+  "type": "yes-no",
+  "source": "microsoft-016",
+  "quote": "Core responsible AI protections, such as prompt injection defense, copyright safeguards, biosecurity, and image protections are always enforced and can't be disabled.",
+  "holdout": false
+ },
+ {
+  "id": "Q-microsoft-020",
+  "question": "Once a user disables harmful content protection in a Copilot Chat conversation, can it be re-enabled in that conversation?",
+  "answer": "No; only by starting a new conversation.",
+  "type": "yes-no",
+  "source": "microsoft-016",
+  "quote": "it can't be re-enabled until a new conversation is started.",
+  "holdout": false
+ },
+ {
+  "id": "Q-microsoft-021",
+  "question": "What condition applies to Microsoft's copyright defense for Copilot customers?",
+  "answer": "The customer must have used the built-in guardrails and content filters.",
+  "type": "policy",
+  "source": "microsoft-016",
+  "quote": "as long as the customer used the guardrails and content filters we have built into our products.",
+  "holdout": false
+ },
+ {
+  "id": "Q-microsoft-022",
+  "question": "Does Microsoft claim ownership of Copilot output?",
+  "answer": "No",
+  "type": "yes-no",
+  "source": "microsoft-016",
+  "quote": "Microsoft doesn't claim ownership of the output of the service.",
+  "holdout": false
+ },
+ {
+  "id": "Q-microsoft-023",
+  "question": "Since when has SharePoint Advanced Management been included with Microsoft 365 Copilot licenses?",
+  "answer": "Early 2025",
+  "type": "date",
+  "source": "microsoft-016",
+  "quote": "As of early 2025, SharePoint Advanced Management is included with your Microsoft 365 Copilot license.",
+  "holdout": false
+ },
+ {
+  "id": "Q-microsoft-024",
+  "question": "Is Security Copilot included with Microsoft 365 E5 today?",
+  "answer": "No; it is planned for the coming months.",
+  "type": "yes-no",
+  "source": "microsoft-016",
+  "quote": "In the coming months, Security Copilot will be included with your Microsoft 365 E5 licenses.",
+  "holdout": false
+ },
+ {
+  "id": "Q-microsoft-025",
+  "question": "In which U.S. government clouds is Microsoft 365 Copilot available?",
+  "answer": "GCC, GCC High and DoD",
+  "type": "list",
+  "source": "microsoft-016",
+  "quote": "Microsoft 365 Copilot is available in **GCC, GCC High, and DoD**",
+  "holdout": false
+ },
+ {
+  "id": "Q-microsoft-026",
+  "question": "Which impact level must workloads meet in the DoD environment?",
+  "answer": "DoD SRG Impact Level 5",
+  "type": "fact",
+  "source": "microsoft-016",
+  "quote": "Your workloads must meet DoD SRG Impact Level 5 requirements",
+  "holdout": false
+ },
+ {
+  "id": "Q-microsoft-027",
+  "question": "Can users delete their Copilot activity history themselves?",
+  "answer": "Yes, from the My Account portal.",
+  "type": "yes-no",
+  "source": "microsoft-016",
+  "quote": "Your users can delete their Copilot activity history, which includes their prompts and the responses Copilot returns",
+  "holdout": true
+ },
+ {
+  "id": "Q-microsoft-028",
+  "question": "In what role does Microsoft act for web search queries sent to Bing?",
+  "answer": "An independent data controller",
+  "type": "fact",
+  "source": "microsoft-016",
+  "quote": "Microsoft acts as an independent data controller responsible for complying with all applicable laws and controller obligations.",
+  "holdout": false
+ },
+ {
+  "id": "Q-microsoft-029",
+  "question": "When can Graph connector data appear in Copilot responses?",
+  "answer": "Only if the user has permission to access that information.",
+  "type": "policy",
+  "source": "microsoft-016",
+  "quote": "Data from Graph connectors can be returned in Microsoft 365 Copilot responses if the user has permission to access that information.",
+  "holdout": false
+ },
+ {
+  "id": "Q-microsoft-030",
+  "question": "What is needed to use Copilot on PSTN calls in Teams?",
+  "answer": "A Teams Phone license, a calling plan and a Microsoft 365 Copilot license.",
+  "type": "list",
+  "source": "microsoft-016",
+  "quote": "To use Copilot for PSTN calls, you need a Teams Phone license, a calling plan, and a Microsoft 365 Copilot license.",
+  "holdout": true
+ },
+ {
+  "id": "Q-microsoft-031",
+  "question": "Is the Office Feature Updates task required for core Copilot experiences in the apps?",
+  "answer": "Yes",
+  "type": "yes-no",
+  "source": "microsoft-016",
+  "quote": "The Office Feature Updates task is required for core Copilot experiences in apps such as Word, PowerPoint, Excel, and OneNote, to work properly.",
+  "holdout": true
+ },
+ {
+  "id": "Q-microsoft-032",
+  "question": "Which technologies encrypt Microsoft 365 customer content at rest and in transit?",
+  "answer": "BitLocker, per-file encryption, TLS and IPsec",
+  "type": "list",
+  "source": "microsoft-016",
+  "quote": "including BitLocker, per-file encryption, Transport Layer Security (TLS), and Internet Protocol Security (IPsec).",
+  "holdout": false
+ },
+ {
+  "id": "Q-microsoft-033",
+  "question": "Is optional customer feedback used to train the foundation LLMs?",
+  "answer": "No",
+  "type": "yes-no",
+  "source": "microsoft-016",
+  "quote": "We don't use this feedback to train the foundation LLMs used by Microsoft 365 Copilot.",
+  "holdout": false
+ },
+ {
+  "id": "Q-microsoft-034",
+  "question": "Do foundation model updates change tenant security or compliance settings?",
+  "answer": "No",
+  "type": "yes-no",
+  "source": "microsoft-016",
+  "quote": "but they don't change your security, privacy, or compliance settings.",
+  "holdout": true
+ },
+ {
+  "id": "Q-microsoft-035",
+  "question": "In what role does Microsoft act for Copilot customer data under the DPA and Product Terms?",
+  "answer": "Data processor",
+  "type": "fact",
+  "source": "microsoft-016",
+  "quote": "with Microsoft acting as a data processor.",
+  "holdout": true
+ },
+ {
+  "id": "Q-microsoft-046",
+  "question": "Can Copilot LLM calls be routed to other regions during high utilization?",
+  "answer": "Yes, where capacity is available.",
+  "type": "yes-no",
+  "source": "microsoft-016",
+  "quote": "but also can call into other regions where capacity is available during high utilization periods.",
+  "holdout": false
+ }
+]

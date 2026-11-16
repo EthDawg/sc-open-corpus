@@ -1,0 +1,11 @@
+[
+ {
+  "id": "C-posthog-07",
+  "source": "posthog-019",
+  "quote": "Amplitude has also been operating [Statsig](/compare/posthog-vs-statsig) since May 2026, which is its deeper experimentation product if you're willing to run a second tool.",
+  "stop_saying": "Amplitude's experimentation is limited to the experiments built into Amplitude.",
+  "say_instead": "Amplitude has operated Statsig since May 2026 as its deeper experimentation product, which means a second tool; PostHog runs unlimited concurrent experiments in the same platform.",
+  "old_source": null,
+  "old_quote": null
+ }
+]

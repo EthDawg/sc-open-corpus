@@ -1,0 +1,184 @@
+[
+ {
+  "id": "F-posthog-04",
+  "kind": "overstated",
+  "where": {
+   "answerbank": "AB-0040"
+  },
+  "statement": "PostHog offers below-margin pricing and extra credit beyond the standard levers to strategic, competitive-takeout and churn-prevention customers.",
+  "evidence": [
+   {
+    "source": "posthog-008",
+    "quote": "In exceptional circumstances, we may explore providing additional discounts which eat into our operating margin for the following cases:",
+    "role": "truth"
+   },
+   {
+    "source": "posthog-008",
+    "quote": "For the avoidance of doubt, these types of deals are **very rare** (~1 per year), and not offered to customers with standard usage volumes.",
+    "role": "truth"
+   },
+   {
+    "source": "posthog-008",
+    "quote": "You shouldn't offer discounts above the levels outlined here.",
+    "role": "truth"
+   }
+  ],
+  "expected": "Recognised as an internal deal-desk lever written as a customer answer: kept out of customer-facing answers (or marked needs-person), never sent. The source says it is very rare, needs manager and leadership clearance, and is not offered to standard customers.",
+  "severity": "high"
+ },
+ {
+  "id": "F-posthog-05",
+  "kind": "overstated",
+  "where": {
+   "answerbank": "AB-0069"
+  },
+  "statement": "A countersigned BAA covers every PostHog Cloud feature, including PostHog AI and the managed reverse proxy.",
+  "evidence": [
+   {
+    "source": "posthog-017",
+    "quote": "covered by BAAs and should not be used to process Protected Health Information (PHI).",
+    "role": "truth"
+   },
+   {
+    "source": "posthog-017",
+    "quote": "These features send your data to [third-party LLM providers](/docs/posthog-ai/faq) that are not currently set up in a HIPAA-compliant way.",
+    "role": "truth"
+   },
+   {
+    "source": "posthog-015",
+    "quote": "It does not cover every feature, and compliance also depends on how you configure the features you use.",
+    "role": "truth"
+   }
+  ],
+  "expected": "Flagged as contradicted by the HIPAA guide: the managed reverse proxy and PostHog AI are not covered and must not process PHI. The answer is No.",
+  "severity": "high"
+ },
+ {
+  "id": "F-posthog-06",
+  "kind": "overstated",
+  "where": {
+   "answerbank": "AB-0038"
+  },
+  "statement": "Every annual-contract customer receives an uptime SLA.",
+  "evidence": [
+   {
+    "source": "posthog-008",
+    "quote": "You agree it with them as a special term as part of their contract if they are spending $100k+ ARR _post_ discount",
+    "role": "truth"
+   },
+   {
+    "source": "posthog-008",
+    "quote": "An uptime SLA are not available to customers outside of these cases.",
+    "role": "truth"
+   }
+  ],
+  "expected": "Corrected or marked needs-person: an uptime SLA comes only with the Enterprise package or as a negotiated special term at $100k+ ARR after discount; even then it is not a given.",
+  "severity": "high"
+ },
+ {
+  "id": "F-posthog-07",
+  "kind": "roadmap-as-fact",
+  "where": {
+   "answerbank": "AB-0026"
+  },
+  "statement": "PostHog includes a fully managed data warehouse that can replace Snowflake or BigQuery.",
+  "evidence": [
+   {
+    "source": "posthog-009",
+    "quote": "| Storage | Snowflake, BigQuery, Databricks | Managed warehouse (beta) | Product data is already there. Nothing to move. |",
+    "role": "truth"
+   }
+  ],
+  "expected": "Said as beta: the managed warehouse is labelled beta in the data stack positioning, so it is not offered as a generally available replacement for Snowflake or BigQuery.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-posthog-08",
+  "kind": "roadmap-as-fact",
+  "where": {
+   "answerbank": "AB-0027"
+  },
+  "statement": "PostHog data models support a Git workflow and tests today.",
+  "evidence": [
+   {
+    "source": "posthog-009",
+    "quote": "| Tests and Git workflow | Not yet - Git is on the roadmap |",
+    "role": "truth"
+   }
+  ],
+  "expected": "Said as roadmap: tests and a Git workflow for data models are not available yet; Git is on the roadmap.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-posthog-09",
+  "kind": "past-review",
+  "where": {
+   "answerbank": "AB-0004"
+  },
+  "statement": "Every employee must use two YubiKeys (marked Current, last reviewed 2025-02-11).",
+  "evidence": [
+   {
+    "source": "posthog-014",
+    "quote": "We previously required all employees to purchase and configure two Yubikeys.",
+    "role": "old"
+   },
+   {
+    "source": "posthog-014",
+    "quote": "These have been replaced with passkeys, and Yubikeys are no longer required nor recommended.",
+    "role": "new"
+   }
+  ],
+  "expected": "Caught as past its review date and wrong now: MFA is required and passkeys are the preferred method; YubiKeys are no longer required or recommended.",
+  "severity": "low"
+ },
+ {
+  "id": "F-posthog-11",
+  "kind": "duplicate-conflict",
+  "where": {
+   "answerbank": [
+    "AB-0050",
+    "AB-0051"
+   ]
+  },
+  "statement": "One entry says PostHog will not sign customer confidentiality agreements; the other says it can sign a mutual, US-law NDA after counsel review.",
+  "evidence": [
+   {
+    "source": "posthog-015",
+    "quote": "We're unable to sign customer-specific secrecy agreements. That's a consistent policy on our end",
+    "role": "truth"
+   },
+   {
+    "source": "posthog-003",
+    "quote": "If a customer asks you to sign their NDA, you can sign, but have our counsel review it first.",
+    "role": "truth"
+   },
+   {
+    "source": "posthog-008",
+    "quote": "we require customer NDAs to be governed by U.S. law",
+    "role": "truth"
+   }
+  ],
+  "expected": "Flagged as a conflict between the customer-facing privacy FAQ and the sales handbook; an NDA request is routed to Legal rather than answered either way.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-posthog-13",
+  "kind": "expired",
+  "where": {
+   "stacks": [
+    "ST-0026"
+   ],
+   "raw": "posthog-026"
+  },
+  "statement": "The Shai-Hulud post-mortem (Nov 2025) is past its library expiry (2026-05-26); its customer guidance was written for the week of the attack.",
+  "evidence": [
+   {
+    "source": "posthog-026",
+    "quote": "in our case, all the **latest published versions**, which have been published after we identified the attack, are known-good",
+    "role": "old"
+   }
+  ],
+  "expected": "Used as incident history only. Its remediation steps (pin to the then-latest versions, clear caches) are not given as current advice, and the item is reported as expired.",
+  "severity": "low"
+ }
+]

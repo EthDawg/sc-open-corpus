@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Answerbank · RFP answer library</title>
+<link rel="stylesheet" href="../shared.css">
+<style>
+:root{--bg:#f4f8f8;--card:#fff;--side:#f7fbfb;--ink:#13302f;--mute:#5d7472;--line:#dbe7e6;--hl:#e3f3f1;--accent:#0f8a7e;
+  --link:#0b6f66;--bar:#0b3b38;--barink:#fff;--chip:#e3f3f1;--chipink:#0b5e57}
+td.q{font-weight:600;max-width:460px}
+td.a{color:#2f4a48;max-width:520px}
+td.a div{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.ans{white-space:pre-wrap;background:var(--side);border:1px solid var(--line);border-radius:8px;padding:12px;font-size:13.5px}
+.stars{color:#c99a06}
+</style></head>
+<body>
+<div class="fixture">Test dataset for the SC Open Corpus. Libraries are built from public material and contain deliberate faults for testing. Nothing here is an official statement by the companies named. <a href="../">About</a></div>
+<div class="top"><span class="logo"><i></i>Answerbank</span>
+  <input id="q" placeholder="Search questions and answers">
+  <span class="sp"></span>
+  <select id="org" title="Library"></select>
+  <a class="btn" id="export" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.35)">Export to Excel</a>
+</div>
+<div class="layout">
+  <nav class="side" id="side"></nav>
+  <main class="main"><h1 id="h"></h1><div class="muted" id="sub"></div>
+    <div class="bar2" id="filters"></div>
+    <table><thead><tr><th>Question</th><th>Answer</th><th>Owner</th><th>Last reviewed</th><th>Status</th></tr></thead><tbody id="rows"></tbody></table>
+  </main>
+</div>
+<div class="drawer" id="drawer" hidden></div>
+<script src="../app.js"></script>
+<script>
+let D = null, lib = '', status = '';
+const $ = s => document.querySelector(s);
+async function load(org) {
+  D = await getJSON(`../data/${org}/answerbank.json`);
+  $('#export').hidden = !D.export; if (D.export) { $('#export').href = `../data/${org}/${D.export}`; $('#export').setAttribute('download', '') }
+  lib = ''; render();
+}
+const badge = e => e.status === 'Current' ? '<span class="pill ok">Current</span>' : e.status === 'Review due' ? '<span class="pill warn">Review due</span>' : `<span class="pill mute">${esc(e.status)}</span>`;
+function render() {
+  const q = $('#q').value.toLowerCase(), counts = {};
+  D.entries.forEach(e => counts[e.library] = (counts[e.library] || 0) + 1);
+  $('#side').innerHTML = `<h4>${esc(D.name)}</h4><a href="#" data-l="" class="${lib ? '' : 'on'}">All libraries <small>${D.entries.length}</small></a>` +
+    Object.keys(counts).sort().map(l => `<a href="#" data-l="${esc(l)}" class="${l === lib ? 'on' : ''}">${esc(l)} <small>${counts[l]}</small></a>`).join('') +
+    `<h4>Collections</h4>` + D.collections.map(c => `<a href="#" data-c="${esc(c)}">${esc(c)}</a>`).join('');
+  document.querySelectorAll('#side a[data-l]').forEach(a => a.onclick = e => { e.preventDefault(); lib = a.dataset.l; render() });
+  document.querySelectorAll('#side a[data-c]').forEach(a => a.onclick = e => { e.preventDefault(); $('#q').value = a.dataset.c; render() });
+  const list = D.entries.filter(e => (!lib || e.library === lib) && (!status || e.status === status) &&
+     (!q || (e.question + ' ' + e.answer + ' ' + e.tags.join(' ') + ' ' + (e.alternates || []).join(' ')).toLowerCase().includes(q)));
+  $('#h').textContent = lib || 'All libraries';
+  $('#sub').textContent = `${list.length} entries · review cycle ${D.review_cycle_days} days`;
+  $('#filters').innerHTML = `<select id="fs"><option value="">Any status</option>${['Current', 'Review due', 'Archived'].map(s => `<option ${s === status ? 'selected' : ''}>${s}</option>`).join('')}</select>`;
+  $('#fs').onchange = e => { status = e.target.value; render() };
+  $('#rows').innerHTML = list.slice(0, 600).map(e => `<tr class="click" data-id="${e.id}"><td class="q">${esc(e.question)}</td><td class="a"><div>${esc(e.answer)}</div></td>
+     <td>${esc(e.owner)}</td><td>${e.last_reviewed}</td><td>${badge(e)}</td></tr>`).join('');
+  document.querySelectorAll('tr.click').forEach(r => r.onclick = () => open_(r.dataset.id));
+}
+function open_(id) {
+  const e = D.entries.find(x => x.id === id), d = $('#drawer'); d.hidden = false;
+  d.innerHTML = `<button class="btn x" onclick="this.parentNode.hidden=true">Close</button><div class="muted">${esc(e.library)} · ${e.id}</div>
+   <h2 style="margin:4px 0 10px;font-size:17px">${esc(e.question)}</h2>
+   ${(e.alternates || []).length ? `<div class="muted" style="font-size:12.5px">Also asked as: ${e.alternates.map(esc).join(' · ')}</div>` : ''}
+   <div class="ans" style="margin-top:10px">${esc(e.answer)}</div>
+   <div class="kv"><b>Status</b><span>${badge(e)}</span><b>Owner</b><span>${esc(e.owner)}</span><b>Expert</b><span>${esc(e.sme || '')}</span>
+   <b>Last reviewed</b><span>${e.last_reviewed}</span><b>Created</b><span>${e.created}</span><b>Used in</b><span>${e.uses} projects</span>
+   <b>Tags</b><span>${e.tags.map(t => `<span class="pill">${esc(t)}</span>`).join('')}</span>${e.source ? `<b>Came from</b><span>${esc(e.source)}</span>` : ''}</div>`;
+}
+$('#q').oninput = () => render();
+initOrgs('answerbank', load);
+</script></body></html>

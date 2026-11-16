@@ -1,0 +1,111 @@
+[
+ {
+  "id": "F-microsoft-D1",
+  "kind": "duplicate-file",
+  "where": {
+   "stacks": [
+    "ST-0014",
+    "ST-0017"
+   ]
+  },
+  "statement": "'Employee-Self-Service-agent_Readiness-guide_v2_clean.pdf' is a byte-identical copy of 'Employee-Self-Service-agent_Readiness-guide.pdf'",
+  "evidence": [],
+  "expected": "Filed once (same sha256); the copy is skipped or recorded as the same source.",
+  "severity": "low"
+ },
+ {
+  "id": "F-microsoft-D2",
+  "kind": "duplicate-file",
+  "where": {
+   "stacks": [
+    "ST-0001",
+    "ST-0018"
+   ]
+  },
+  "statement": "'AdoptionPlanningChecklist_v2_clean.xlsx' is a byte-identical copy of 'AdoptionPlanningChecklist.xlsx'",
+  "evidence": [],
+  "expected": "Filed once (same sha256); the copy is skipped or recorded as the same source.",
+  "severity": "low"
+ },
+ {
+  "id": "F-microsoft-D3",
+  "kind": "duplicate-file",
+  "where": {
+   "stacks": [
+    "ST-0006",
+    "ST-0019"
+   ]
+  },
+  "statement": "'Copy of License_allocation_guidance.pptx' is a byte-identical copy of 'License_allocation_guidance.pptx'",
+  "evidence": [],
+  "expected": "Filed once (same sha256); the copy is skipped or recorded as the same source.",
+  "severity": "low"
+ },
+ {
+  "id": "F-microsoft-I1",
+  "kind": "internal",
+  "where": {
+   "stacks": [
+    "ST-0020"
+   ]
+  },
+  "statement": "An internal-only file sits in the library export.",
+  "evidence": [],
+  "expected": "Kept out of sources, docs and claims (the workspace contract: Internal stays out); recorded as skipped.",
+  "severity": "high"
+ },
+ {
+  "id": "F-microsoft-W1",
+  "kind": "wrong-company",
+  "where": {
+   "stacks": [
+    "ST-0021"
+   ],
+   "loose_in_inbox": true
+  },
+  "statement": "'Security whitepaper (customer copy).pdf' in the Microsoft 365 Copilot library is a Anthropic document (anthropic-031).",
+  "evidence": [],
+  "expected": "Recognised as another company's document: not learned as Microsoft 365 Copilot facts, reported as filed in error.",
+  "severity": "high"
+ },
+ {
+  "id": "F-microsoft-S1",
+  "kind": "scanned",
+  "where": {
+   "stacks": [
+    "ST-0022",
+    "ST-0021"
+   ]
+  },
+  "statement": "A scanned copy (no text layer) of ST-0021.",
+  "evidence": [],
+  "expected": "Recognised as the same document as its text original (one source, or linked); never two sets of claims.",
+  "severity": "low"
+ },
+ {
+  "id": "F-microsoft-N0002",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0002"
+   ]
+  },
+  "statement": "'GetReady_StakeholderEngagementWorksheet.xlsx' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-microsoft-N0007",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0007"
+   ]
+  },
+  "statement": "'Customer-Hub_Defining-business-value-for-your-organization.pptx' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ }
+]

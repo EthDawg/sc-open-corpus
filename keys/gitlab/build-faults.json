@@ -1,0 +1,200 @@
+[
+ {
+  "id": "F-gitlab-D1",
+  "kind": "duplicate-file",
+  "where": {
+   "stacks": [
+    "ST-0052",
+    "ST-0062"
+   ]
+  },
+  "statement": "'Compare GitLab features across plans_v2_clean.html' is a byte-identical copy of 'Compare GitLab features across plans.html'",
+  "evidence": [],
+  "expected": "Filed once (same sha256); the copy is skipped or recorded as the same source.",
+  "severity": "low"
+ },
+ {
+  "id": "F-gitlab-D2",
+  "kind": "duplicate-file",
+  "where": {
+   "stacks": [
+    "ST-0057",
+    "ST-0063"
+   ]
+  },
+  "statement": "'Copy of GitLab Dedicated - product documentation.html' is a byte-identical copy of 'GitLab Dedicated - product documentation.html'",
+  "evidence": [],
+  "expected": "Filed once (same sha256); the copy is skipped or recorded as the same source.",
+  "severity": "low"
+ },
+ {
+  "id": "F-gitlab-D3",
+  "kind": "duplicate-file",
+  "where": {
+   "stacks": [
+    "ST-0002",
+    "ST-0064"
+   ]
+  },
+  "statement": "'GitLab SA Handbook export 2026-11.tar_FINAL.gz' is a byte-identical copy of 'GitLab SA Handbook export 2026-11.tar.gz'",
+  "evidence": [],
+  "expected": "Filed once (same sha256); the copy is skipped or recorded as the same source.",
+  "severity": "low"
+ },
+ {
+  "id": "F-gitlab-I1",
+  "kind": "internal",
+  "where": {
+   "stacks": [
+    "ST-0065"
+   ]
+  },
+  "statement": "An internal-only file sits in the library export.",
+  "evidence": [],
+  "expected": "Kept out of sources, docs and claims (the workspace contract: Internal stays out); recorded as skipped.",
+  "severity": "high"
+ },
+ {
+  "id": "F-gitlab-W1",
+  "kind": "wrong-company",
+  "where": {
+   "stacks": [
+    "ST-0066"
+   ]
+  },
+  "statement": "'Security whitepaper (customer copy).pdf' in the GitLab library is a Atlassian document (atlassian-008).",
+  "evidence": [],
+  "expected": "Recognised as another company's document: not learned as GitLab facts, reported as filed in error.",
+  "severity": "high"
+ },
+ {
+  "id": "F-gitlab-N0006",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0006"
+   ]
+  },
+  "statement": "'MEDDPPICC - GitLab qualification guide.md' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-gitlab-N0007",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0007"
+   ]
+  },
+  "statement": "'Command of the Message - overview.md' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-gitlab-N0008",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0008"
+   ]
+  },
+  "statement": "'GitLab proof points (customer, analyst, awards).md' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-gitlab-N0022",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0022"
+   ]
+  },
+  "statement": "'Competitive intelligence - charter and assets.md' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-gitlab-N0023",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0023"
+   ]
+  },
+  "statement": "'AppSec market analysis - lexicon and competitors.md' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-gitlab-N0024",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0024"
+   ]
+  },
+  "statement": "'CI-CD tools primer - competitive landscape.md' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-gitlab-N0027",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0027"
+   ]
+  },
+  "statement": "'Message house - Premium to Ultimate.md' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-gitlab-N0035",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0035"
+   ]
+  },
+  "statement": "'Paths to Ultimate - SCM and CI to Security.pptx' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-gitlab-N0058",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0058"
+   ]
+  },
+  "statement": "'GitLab FY26 ESG data tables and indexes.pdf' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-gitlab-N0061",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0061"
+   ]
+  },
+  "statement": "'GTLB investor update July 2026.pdf' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ }
+]

@@ -1,0 +1,915 @@
+{
+ "name": "GitLab Answer Library",
+ "review_cycle_days": 180,
+ "collections": [
+  "Security questionnaire core",
+  "CAIQ (GitLab.com)",
+  "AI and data use",
+  "GitLab Dedicated",
+  "Pricing and packaging",
+  "Product and platform",
+  "Company and ESG",
+  "Public sector"
+ ],
+ "entries": [
+  {
+   "id": "AB-0041",
+   "library": "Security",
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "question": "Where is GitLab.com hosted, and can we choose the region our data is stored in?",
+   "alternates": [
+    "Which cloud provider hosts GitLab.com?",
+    "Do you offer data residency on GitLab.com?"
+   ],
+   "answer": "GitLab.com is hosted on Amazon Web Services (AWS). Customers choose the AWS region where their data is stored at onboarding, so EU or APAC data residency is available on request.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions Architect, public sector",
+   "created": "2025-02-03",
+   "last_reviewed": "2026-06-24",
+   "status": "Current",
+   "tags": [
+    "hosting",
+    "data residency",
+    "region"
+   ],
+   "uses": 96,
+   "source": "gitlab-061",
+   "quote": "Deployed in your preferred AWS cloud region."
+  },
+  {
+   "id": "AB-0047",
+   "library": "Compliance",
+   "collections": [
+    "Security questionnaire core",
+    "AI and data use"
+   ],
+   "question": "Are you certified to ISO/IEC 42001 for AI management?",
+   "alternates": [],
+   "answer": "Yes. ISO/IEC 42001:2023 is listed among GitLab's compliance credentials, and the ISO certificates (27001, 27017, 27018 and 42001) are public in the Trust Center without an NDA.",
+   "owner": "Security Compliance",
+   "sme": "Security Compliance manager",
+   "created": "2025-10-06",
+   "last_reviewed": "2026-02-16",
+   "status": "Review due",
+   "tags": [
+    "ISO 42001",
+    "AI governance"
+   ],
+   "uses": 39,
+   "source": "gitlab-032",
+   "quote": "Some documentation is public and does not require this process (ISO certificate (27001, 27017, 27018; 42001))."
+  },
+  {
+   "id": "AB-0049",
+   "library": "Compliance",
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "question": "How do we obtain your SOC 2 report and other NDA documents?",
+   "alternates": [
+    "Do you require an NDA to share the SOC 2?"
+   ],
+   "answer": "Through the GitLab Trust Center (trust.gitlab.com): select Get Access and enter your company email. Documents such as the SOC 2 Type 2 report are released after a click-wrap NDA signed in the Trust Center.",
+   "owner": "Field Security",
+   "sme": "Field Security lead",
+   "created": "2024-07-15",
+   "last_reviewed": "2026-04-27",
+   "status": "Review due",
+   "tags": [
+    "trust center",
+    "NDA",
+    "SOC 2"
+   ],
+   "uses": 233,
+   "source": "gitlab-034",
+   "quote": "an NDA is required to be in place prior to viewing specific documents (such as SOC 2 Type 2). The NDA signing process will happened directly through the Trust Center."
+  },
+  {
+   "id": "AB-0053",
+   "library": "Security",
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "question": "May our security team run its own penetration test or vulnerability scan against GitLab.com?",
+   "alternates": [
+    "Can we pen test your SaaS?"
+   ],
+   "answer": "No. Customers are not authorized to conduct vulnerability scans or penetration tests on GitLab's SaaS application, because such testing could appear to GitLab as a real incident. GitLab's own third-party penetration test summaries are available in the Trust Center.",
+   "owner": "Field Security",
+   "sme": "Field Security lead",
+   "created": "2024-02-26",
+   "last_reviewed": "2026-07-01",
+   "status": "Current",
+   "tags": [
+    "pentest",
+    "customer testing"
+   ],
+   "uses": 64,
+   "source": "gitlab-005",
+   "quote": "If our Customers or Prospects were to attempt their own penetration testing of our SaaS environment, it could appear as a real incident to GitLab."
+  },
+  {
+   "id": "AB-0054",
+   "library": "Security",
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "question": "Do you run a bug bounty program?",
+   "alternates": [],
+   "answer": "Yes. GitLab runs a bug bounty program through HackerOne (hackerone.com/gitlab). Bounties are paid for eligible vulnerabilities only through the HackerOne platform.",
+   "owner": "Field Security",
+   "sme": "Product Security engineer",
+   "created": "2024-02-26",
+   "last_reviewed": "2026-05-11",
+   "status": "Review due",
+   "tags": [
+    "bug bounty",
+    "HackerOne"
+   ],
+   "uses": 52,
+   "source": "gitlab-005",
+   "quote": "Please note that we are only able to pay out bounties for eligible vulnerabilities through the HackerOne platform."
+  },
+  {
+   "id": "AB-0055",
+   "library": "Security",
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "question": "What are your remediation timelines for vulnerabilities by severity?",
+   "alternates": [
+    "What is your vulnerability SLA?"
+   ],
+   "answer": "Critical (CVSS 9.0-10.0): mitigated within 24 hours and remediated within 30 days. High (7.0-8.9): 30 days. Medium (4.0-6.9): 90 days. Low (0.1-3.9): 180 days. A vulnerability counts as remediated when a fix is available to affected deployment methods.",
+   "owner": "Field Security",
+   "sme": "Product Security manager",
+   "created": "2024-02-26",
+   "last_reviewed": "2025-09-22",
+   "status": "Review due",
+   "tags": [
+    "vulnerability management",
+    "SLA"
+   ],
+   "uses": 149,
+   "source": "gitlab-005",
+   "quote": "| 9.0-10.0 (Critical) | `~severity::1` | `~priority::1` | Within 24 hours | 30 day SLA |"
+  },
+  {
+   "id": "AB-0056",
+   "library": "Security",
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "question": "What security training do employees receive?",
+   "alternates": [],
+   "answer": "GitLab has a formal security awareness training program that includes new hire security awareness training, global annual security awareness training, secure coding training and quarterly targeted phishing exercises.",
+   "owner": "Field Security",
+   "sme": "Security Assurance analyst",
+   "created": "2024-02-26",
+   "last_reviewed": "2026-07-01",
+   "status": "Current",
+   "tags": [
+    "training",
+    "phishing"
+   ],
+   "uses": 61,
+   "source": "gitlab-005",
+   "quote": "GitLab has implemented a formal security awareness training program that includes: new hire security awareness training, global annual security awareness training, secure coding training and quarterly targeted phishing exercises."
+  },
+  {
+   "id": "AB-0057",
+   "library": "Company",
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "question": "How long does GitLab take to return a completed security questionnaire?",
+   "alternates": [
+    "What is your turnaround on vendor assessments?"
+   ],
+   "answer": "Field Security's service level is 10 business days for security questionnaires, and 5 business days for contract reviews. Many questions can be answered self-service from the Trust Center knowledge base first.",
+   "owner": "Field Security",
+   "sme": "Field Security lead",
+   "created": "2024-05-06",
+   "last_reviewed": "2026-03-30",
+   "status": "Review due",
+   "tags": [
+    "questionnaire",
+    "SLA"
+   ],
+   "uses": 58,
+   "source": "gitlab-032",
+   "quote": "5 Business Days. Field Security must be engaged in all relevant Contract Reviews."
+  },
+  {
+   "id": "AB-0070",
+   "library": "AI and Data",
+   "collections": [
+    "AI and data use"
+   ],
+   "question": "Can administrators require human approval before an agent runs a sensitive tool?",
+   "alternates": [
+    "Are agent tool calls audited?"
+   ],
+   "answer": "Yes, in beta. Since GitLab 19.1, administrators can configure tool-level approval policies for GitLab Duo agents (allow, ask or deny per tool). The beta covers Agentic Chat, the IDE and flows, and emits audit events for every approval decision.",
+   "owner": "Product Marketing",
+   "sme": "AI product marketing manager",
+   "created": "2026-06-22",
+   "last_reviewed": "2026-06-22",
+   "status": "Current",
+   "tags": [
+    "AI",
+    "agents",
+    "governance",
+    "beta"
+   ],
+   "uses": 23,
+   "source": "gitlab-041",
+   "quote": "This beta release includes Agentic Chat, IDE, and flows, and emits audit events for every approval decision."
+  },
+  {
+   "id": "AB-0071",
+   "library": "AI and Data",
+   "collections": [
+    "AI and data use",
+    "GitLab Dedicated"
+   ],
+   "question": "On GitLab Dedicated, can we switch GitLab Duo off for some subgroups only?",
+   "alternates": [],
+   "answer": "Yes. Administrators of GitLab Dedicated instances (Ultimate) can make GitLab Duo and Duo Agent Platform unavailable for selected subgroups while other subgroups keep the option to turn them on (GitLab 19.2).",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions Architect, Dedicated",
+   "created": "2026-07-20",
+   "last_reviewed": "2026-07-20",
+   "status": "Current",
+   "tags": [
+    "AI",
+    "Dedicated",
+    "controls"
+   ],
+   "uses": 9,
+   "source": "gitlab-042",
+   "quote": "Administrators of GitLab Dedicated instances can make GitLab Duo and GitLab Duo Agent Platform unavailable for selected subgroups while other subgroups still have the option to turn them on."
+  },
+  {
+   "id": "AB-0073",
+   "library": "Product",
+   "collections": [
+    "GitLab Dedicated"
+   ],
+   "question": "Do you offer a single-tenant SaaS option?",
+   "alternates": [
+    "Can we have an isolated instance hosted by you?"
+   ],
+   "answer": "Yes. GitLab Dedicated is a single-tenant SaaS solution: fully isolated, deployed in your preferred AWS cloud region, and hosted and maintained by GitLab, with high availability and disaster recovery. It is offered at the Ultimate tier.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions Architect, Dedicated",
+   "created": "2024-05-28",
+   "last_reviewed": "2025-12-08",
+   "status": "Review due",
+   "tags": [
+    "Dedicated",
+    "single-tenant",
+    "data residency"
+   ],
+   "uses": 221,
+   "source": "gitlab-061",
+   "quote": "GitLab Dedicated is a single-tenant SaaS solution that is: - Fully isolated. - Deployed in your preferred AWS cloud region. - Hosted and maintained by GitLab."
+  },
+  {
+   "id": "AB-0074",
+   "library": "Security",
+   "collections": [
+    "GitLab Dedicated"
+   ],
+   "question": "Which single sign-on protocols does GitLab Dedicated support?",
+   "alternates": [],
+   "answer": "GitLab Dedicated supports SAML and OpenID Connect (OIDC) providers for single sign-on. Your instance acts as the service provider and you supply the configuration for your identity providers.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions Architect, Dedicated",
+   "created": "2024-05-28",
+   "last_reviewed": "2026-05-11",
+   "status": "Review due",
+   "tags": [
+    "Dedicated",
+    "SSO",
+    "SAML",
+    "OIDC"
+   ],
+   "uses": 98,
+   "source": "gitlab-061",
+   "quote": "GitLab Dedicated supports SAML and OpenID Connect (OIDC) providers for single sign-on (SSO)."
+  },
+  {
+   "id": "AB-0075",
+   "library": "Security",
+   "collections": [
+    "GitLab Dedicated"
+   ],
+   "question": "Can GitLab Dedicated authenticate users against our on-premises directory (LDAP/Active Directory, Kerberos or smart cards)?",
+   "alternates": [
+    "Does Dedicated support LDAP?"
+   ],
+   "answer": "Yes. GitLab Dedicated includes the GitLab Self-Managed Ultimate feature set, so it supports LDAP/Active Directory, Kerberos and smart card authentication in the same way as a Self-Managed instance. Users can be auto-provisioned through the LDAP integration.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions Architect, Dedicated",
+   "created": "2025-04-07",
+   "last_reviewed": "2026-08-26",
+   "status": "Current",
+   "tags": [
+    "Dedicated",
+    "LDAP",
+    "authentication"
+   ],
+   "uses": 58,
+   "source": "gitlab-061",
+   "quote": "GitLab Dedicated comes with the GitLab Self-Managed Ultimate feature set with a small number of exceptions."
+  },
+  {
+   "id": "AB-0076",
+   "library": "Security",
+   "collections": [
+    "GitLab Dedicated"
+   ],
+   "question": "Can GitLab Dedicated connect privately to our network?",
+   "alternates": [
+    "Do you support AWS PrivateLink?"
+   ],
+   "answer": "Yes. By default the instance is publicly accessible and can be restricted with an IP allowlist. You can also configure AWS PrivateLink for inbound and outbound private connections; plan for the 10-endpoint limit on outbound PrivateLink connections (a reverse-proxy Terraform module helps beyond that).",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions Architect, Dedicated",
+   "created": "2024-05-28",
+   "last_reviewed": "2026-10-12",
+   "status": "Current",
+   "tags": [
+    "Dedicated",
+    "networking",
+    "PrivateLink"
+   ],
+   "uses": 77,
+   "source": "gitlab-061",
+   "quote": "Private connectivity with AWS PrivateLink: You can configure AWS PrivateLink for inbound and outbound PrivateLink connections."
+  },
+  {
+   "id": "AB-0077",
+   "library": "Security",
+   "collections": [
+    "GitLab Dedicated"
+   ],
+   "question": "Can we use our own encryption key with GitLab Dedicated?",
+   "alternates": [],
+   "answer": "Yes. Data on GitLab Dedicated is encrypted at rest and in transit, and you can optionally use your own AWS Key Management Service (KMS) key for data at rest, giving you full control over the data you store in GitLab.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions Architect, Dedicated",
+   "created": "2024-05-28",
+   "last_reviewed": "2026-01-19",
+   "status": "Review due",
+   "tags": [
+    "Dedicated",
+    "BYOK",
+    "KMS"
+   ],
+   "uses": 81,
+   "source": "gitlab-061",
+   "quote": "Optionally, you can use your own AWS Key Management Service (KMS) encryption key for data at rest. This option gives you full control over the data you store in GitLab."
+  },
+  {
+   "id": "AB-0078",
+   "library": "Product",
+   "collections": [
+    "GitLab Dedicated"
+   ],
+   "question": "What availability does GitLab Dedicated commit to?",
+   "alternates": [
+    "What is the Dedicated SLA?"
+   ],
+   "answer": "GitLab Dedicated maintains a monthly service level objective of 99.9% availability, measured across the web interface and API, the container registry and Git operations. Scheduled maintenance, emergency maintenance, customer misconfiguration and events outside GitLab control are excluded.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions Architect, Dedicated",
+   "created": "2024-05-28",
+   "last_reviewed": "2026-03-30",
+   "status": "Review due",
+   "tags": [
+    "Dedicated",
+    "SLO",
+    "availability"
+   ],
+   "uses": 133,
+   "source": "gitlab-061",
+   "quote": "GitLab Dedicated maintains a monthly service level objective of 99.9% availability."
+  },
+  {
+   "id": "AB-0079",
+   "library": "Security",
+   "collections": [
+    "GitLab Dedicated"
+   ],
+   "question": "Can GitLab engineers access our GitLab Dedicated environment?",
+   "alternates": [
+    "How is privileged access controlled on Dedicated?"
+   ],
+   "answer": "GitLab Dedicated engineers do not have direct access to customer environments. In an emergency they must use the Hub account, request access through an approval process and assume a temporary IAM role; all actions in the Hub and tenant accounts are logged to CloudTrail.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions Architect, Dedicated",
+   "created": "2024-05-28",
+   "last_reviewed": "2026-10-12",
+   "status": "Current",
+   "tags": [
+    "Dedicated",
+    "privileged access"
+   ],
+   "uses": 64,
+   "source": "gitlab-061",
+   "quote": "GitLab Dedicated engineers do not have direct access to customer environments."
+  },
+  {
+   "id": "AB-0081",
+   "library": "Product",
+   "collections": [
+    "GitLab Dedicated"
+   ],
+   "question": "Can we have a pre-production (staging) GitLab Dedicated environment?",
+   "alternates": [],
+   "answer": "Yes, as an add-on. Pre-production environments must be purchased as an add-on to the Dedicated subscription (no additional licences required). They run the same GitLab version as production, can be smaller, and are single-region only with no SLA commitment.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions Architect, Dedicated",
+   "created": "2025-03-03",
+   "last_reviewed": "2026-10-12",
+   "status": "Current",
+   "tags": [
+    "Dedicated",
+    "pre-production"
+   ],
+   "uses": 36,
+   "source": "gitlab-061",
+   "quote": "Pre-production environments must be purchased as an add-on to your GitLab Dedicated subscription, with no additional licenses required."
+  },
+  {
+   "id": "AB-0082",
+   "library": "Product",
+   "collections": [
+    "GitLab Dedicated"
+   ],
+   "question": "Does GitLab Dedicated include a staging instance for testing upgrades?",
+   "alternates": [
+    "Is a test environment included with Dedicated?"
+   ],
+   "answer": "Yes. Every GitLab Dedicated subscription includes a pre-production environment that matches the configuration of production, so you can test new features and configuration changes first. It is covered by the same 99.9% availability objective as production.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions Architect, Dedicated",
+   "created": "2025-01-13",
+   "last_reviewed": "2026-06-08",
+   "status": "Current",
+   "tags": [
+    "Dedicated",
+    "pre-production",
+    "staging"
+   ],
+   "uses": 29,
+   "source": "gitlab-061",
+   "quote": "GitLab Dedicated supports pre-production environments that match the configuration of production environments."
+  },
+  {
+   "id": "AB-0083",
+   "library": "Legal and Commercial",
+   "collections": [
+    "GitLab Dedicated"
+   ],
+   "question": "What happens to our data when a GitLab Dedicated subscription expires?",
+   "alternates": [],
+   "answer": "You can access the instance for 30 days after expiry. To preserve data, contact your account team or Support within 15 days of expiration. After 30 days, if data is not archived or migrated, the instance is terminated and all Customer Content is deleted; confirmation of account removal can be requested 90 days after termination.",
+   "owner": "Legal",
+   "sme": "Commercial counsel",
+   "created": "2025-03-03",
+   "last_reviewed": "2026-10-12",
+   "status": "Current",
+   "tags": [
+    "Dedicated",
+    "termination",
+    "deletion"
+   ],
+   "uses": 31,
+   "source": "gitlab-061",
+   "quote": "When your subscription expires, you can access your instance for 30 days."
+  },
+  {
+   "id": "AB-0084",
+   "library": "Legal and Commercial",
+   "collections": [
+    "GitLab Dedicated"
+   ],
+   "question": "How long is our data retained after a GitLab Dedicated contract ends?",
+   "alternates": [
+    "Data retention after termination (Dedicated)"
+   ],
+   "answer": "Customer data is retained for 90 days after the subscription ends so you can retrieve it at any time in that window. After 90 days the instance is terminated and AWS confirms that the account is closed.",
+   "owner": "Legal",
+   "sme": "Commercial counsel",
+   "created": "2025-06-30",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "Dedicated",
+    "termination",
+    "retention"
+   ],
+   "uses": 22,
+   "source": "gitlab-061",
+   "quote": "You can request confirmation of account removal 90 days after instance termination."
+  },
+  {
+   "id": "AB-0085",
+   "library": "Product",
+   "collections": [
+    "GitLab Dedicated"
+   ],
+   "question": "Can GitLab Dedicated be hosted on Azure or Google Cloud?",
+   "alternates": [],
+   "answer": "No. GitLab Dedicated runs on AWS only; deploying to non-AWS cloud providers such as GCP or Azure is listed as unavailable.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions Architect, Dedicated",
+   "created": "2024-05-28",
+   "last_reviewed": "2026-02-16",
+   "status": "Review due",
+   "tags": [
+    "Dedicated",
+    "cloud"
+   ],
+   "uses": 44,
+   "source": "gitlab-061",
+   "quote": "Support for deploying to non-AWS cloud providers, such as GCP or Azure"
+  },
+  {
+   "id": "AB-0087",
+   "library": "Security",
+   "collections": [
+    "GitLab Dedicated"
+   ],
+   "question": "How is GitLab Dedicated monitored for intrusions?",
+   "alternates": [],
+   "answer": "In tenant accounts GitLab Dedicated uses AWS GuardDuty for intrusion detection and malware scanning, and the GitLab Security Incident Response Team monitors infrastructure logs to detect anomalous events.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions Architect, Dedicated",
+   "created": "2024-05-28",
+   "last_reviewed": "2026-04-27",
+   "status": "Review due",
+   "tags": [
+    "Dedicated",
+    "monitoring"
+   ],
+   "uses": 27,
+   "source": "gitlab-061",
+   "quote": "AWS GuardDuty for intrusion detection and malware scanning."
+  },
+  {
+   "id": "AB-0089",
+   "library": "Legal and Commercial",
+   "collections": [
+    "Pricing and packaging"
+   ],
+   "question": "How are GitLab Credits priced?",
+   "alternates": [
+    "What is the on-demand rate for AI usage?"
+   ],
+   "answer": "GitLab Credits are $1 per credit at list. On-demand credits are billed monthly at $1 per credit used, after included credits and any monthly commitment pool are used. Committed pools carry tiered volume discounts.",
+   "owner": "Deal Desk",
+   "sme": "Deal Desk manager",
+   "created": "2026-01-12",
+   "last_reviewed": "2026-10-27",
+   "status": "Current",
+   "tags": [
+    "credits",
+    "AI",
+    "pricing"
+   ],
+   "uses": 188,
+   "source": "gitlab-060",
+   "quote": "On-demand credits are billed monthly, at the list price of $1 per credit used."
+  },
+  {
+   "id": "AB-0097",
+   "library": "Legal and Commercial",
+   "collections": [
+    "Pricing and packaging"
+   ],
+   "question": "Do unused GitLab Credits roll over to the next month?",
+   "alternates": [],
+   "answer": "No. Included credits reset at the start of each month and monthly commitment pool credits reset on the first of every month; unused credits do not roll over.",
+   "owner": "Deal Desk",
+   "sme": "Deal Desk manager",
+   "created": "2026-01-12",
+   "last_reviewed": "2026-10-27",
+   "status": "Current",
+   "tags": [
+    "credits"
+   ],
+   "uses": 49,
+   "source": "gitlab-060",
+   "quote": "Credits become available immediately after purchase, and reset on the first of every month."
+  },
+  {
+   "id": "AB-0098",
+   "library": "Legal and Commercial",
+   "collections": [
+    "Pricing and packaging"
+   ],
+   "question": "Can we cap AI spend?",
+   "alternates": [
+    "How do we stop surprise overage?"
+   ],
+   "answer": "Yes. Usage caps for GitLab Credits are generally available: set a subscription-level cap on on-demand credits in Customers Portal, and per-user caps. Under Flex you can set caps per capability and get usage notifications.",
+   "owner": "Deal Desk",
+   "sme": "Deal Desk manager",
+   "created": "2026-08-24",
+   "last_reviewed": "2026-10-27",
+   "status": "Current",
+   "tags": [
+    "credits",
+    "spend caps"
+   ],
+   "uses": 63,
+   "source": "gitlab-043",
+   "quote": "Usage caps for GitLab Credits are now generally available: set a subscription-level cap on on-demand credits in Customers Portal"
+  },
+  {
+   "id": "AB-0099",
+   "library": "Product",
+   "collections": [
+    "Pricing and packaging"
+   ],
+   "question": "Can we trial GitLab Duo Agent Platform before buying?",
+   "alternates": [],
+   "answer": "Yes. Prospects can start a free self-serve SaaS trial capped at 100 users for 30 days, or a free self-managed trial (GitLab 18.9 and later) with no user cap; both include evaluation credits. Existing customers can request a temporary pool of evaluation credits valid for 30 days.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions Architect, AI",
+   "created": "2026-03-09",
+   "last_reviewed": "2026-09-16",
+   "status": "Current",
+   "tags": [
+    "trial",
+    "AI",
+    "POV"
+   ],
+   "uses": 58,
+   "source": "gitlab-016",
+   "quote": "a free SaaS trial capped at 100 users for 30 days, or a free self-managed trial (GitLab 18.9+) with no user cap"
+  },
+  {
+   "id": "AB-0100",
+   "library": "Product",
+   "collections": [
+    "Pricing and packaging",
+    "AI and data use"
+   ],
+   "question": "Are Code Suggestions included at no extra cost with Premium and Ultimate?",
+   "alternates": [
+    "Is Duo Core free?"
+   ],
+   "answer": "Yes. GitLab Duo Core is included with Premium and Ultimate at no additional cost, giving every user Code Suggestions and Chat in the IDE. Usage-based GitLab Credits only apply to the agentic Duo Agent Platform features.",
+   "owner": "Product Marketing",
+   "sme": "AI product marketing manager",
+   "created": "2025-07-14",
+   "last_reviewed": "2025-11-20",
+   "status": "Review due",
+   "tags": [
+    "AI",
+    "Code Suggestions",
+    "Duo Core"
+   ],
+   "uses": 142,
+   "source": "gitlab-002",
+   "quote": "Customers currently relying on \"free\" Code Suggestions through Duo Core should plan for this transition."
+  },
+  {
+   "id": "AB-0104",
+   "library": "Security",
+   "collections": [
+    "Product and platform"
+   ],
+   "question": "Can personal access tokens be scoped to specific projects?",
+   "alternates": [],
+   "answer": "Yes. Fine-grained personal access tokens are generally available (GitLab 19.2). Unlike legacy PATs, which grant access to every project and group you belong to, fine-grained PATs limit each token to the resources and permissions you choose.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions Architect",
+   "created": "2026-07-20",
+   "last_reviewed": "2026-07-20",
+   "status": "Current",
+   "tags": [
+    "tokens",
+    "access control"
+   ],
+   "uses": 37,
+   "source": "gitlab-042",
+   "quote": "Fine-grained personal access tokens (PATs) are now generally available."
+  },
+  {
+   "id": "AB-0105",
+   "library": "Security",
+   "collections": [
+    "Product and platform"
+   ],
+   "question": "Is there a role for security staff that does not grant developer or maintainer rights?",
+   "alternates": [],
+   "answer": "Yes. The Security Manager role is generally available (GitLab 19.1): it gives access to vulnerability management, security dashboards, policy configuration and compliance tools without the Developer or Maintainer role.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions Architect",
+   "created": "2026-06-22",
+   "last_reviewed": "2026-06-22",
+   "status": "Current",
+   "tags": [
+    "roles",
+    "separation of duties"
+   ],
+   "uses": 28,
+   "source": "gitlab-041",
+   "quote": "The Security Manager role is now generally available, providing comprehensive access to security features including vulnerability management, security dashboards, policy configuration, and compliance tools."
+  },
+  {
+   "id": "AB-0106",
+   "library": "Compliance",
+   "collections": [
+    "Product and platform"
+   ],
+   "question": "How can we enforce that required compliance jobs run in every project pipeline?",
+   "alternates": [
+    "Can security jobs be mandated across projects?"
+   ],
+   "answer": "Use compliance pipeline configurations: define a single pipeline for a compliance framework (for example PCI or HIPAA), and every project labeled with that framework includes the predefined pipeline automatically. This gives separation of duties because developers cannot remove the required jobs.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions Architect, compliance",
+   "created": "2024-10-14",
+   "last_reviewed": "2026-06-10",
+   "status": "Current",
+   "tags": [
+    "compliance",
+    "pipelines",
+    "separation of duties"
+   ],
+   "uses": 91,
+   "source": "gitlab-026",
+   "quote": "setting up a single pipeline definition for a specific compliance framework (PCI, HIPAA, or even a custom one). All projects using that framework will include the predefined pipeline automatically."
+  },
+  {
+   "id": "AB-0107",
+   "library": "Product",
+   "collections": [
+    "Product and platform"
+   ],
+   "question": "Does GitLab include a native secrets manager for CI/CD?",
+   "alternates": [
+    "Can we stop using Vault for pipeline secrets?"
+   ],
+   "answer": "GitLab Secrets Manager is available in open beta for Premium and Ultimate customers on GitLab.com and GitLab Self-Managed. Project and group Owners can store, retrieve and reference CI/CD secrets, scoped to the jobs that request them. During open beta it follows the beta support policy and might not be ready for production use.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions Architect",
+   "created": "2026-05-26",
+   "last_reviewed": "2026-06-02",
+   "status": "Current",
+   "tags": [
+    "secrets",
+    "CI/CD",
+    "beta"
+   ],
+   "uses": 83,
+   "source": "gitlab-047",
+   "quote": "The GitLab Secrets Manager is now available in open beta for Premium and Ultimate customers on"
+  },
+  {
+   "id": "AB-0108",
+   "library": "Security",
+   "collections": [
+    "Product and platform"
+   ],
+   "question": "Does GitLab dependency scanning use an SBOM-based scanner?",
+   "alternates": [],
+   "answer": "Yes. The SBOM-based dependency scanner is generally available in Ultimate (GitLab 19.0), giving Maven, Gradle and Python projects visibility into vulnerabilities across the full dependency tree.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions Architect, security",
+   "created": "2026-05-26",
+   "last_reviewed": "2026-05-26",
+   "status": "Current",
+   "tags": [
+    "SCA",
+    "SBOM",
+    "dependency scanning"
+   ],
+   "uses": 41,
+   "source": "gitlab-047",
+   "quote": "The GitLab SBOM-based dependency scanner is now generally available."
+  },
+  {
+   "id": "AB-0109",
+   "library": "Product",
+   "collections": [
+    "Product and platform",
+    "GitLab Dedicated"
+   ],
+   "question": "Are hosted CI/CD runners available for GitLab Dedicated?",
+   "alternates": [],
+   "answer": "Yes. Hosted runners for GitLab Dedicated are generally available (GitLab 19.2): GitLab provisions, patches and scales them within the same security and compliance boundary as your Dedicated instance. You can also bring self-managed runners. Hosted runner usage consumes GitLab Credits.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions Architect, Dedicated",
+   "created": "2026-07-20",
+   "last_reviewed": "2026-07-20",
+   "status": "Current",
+   "tags": [
+    "Dedicated",
+    "runners"
+   ],
+   "uses": 33,
+   "source": "gitlab-042",
+   "quote": "Hosted runners for GitLab Dedicated are now generally available."
+  },
+  {
+   "id": "AB-0110",
+   "library": "Product",
+   "collections": [
+    "Product and platform"
+   ],
+   "question": "What PostgreSQL version does GitLab 19 require for Self-Managed?",
+   "alternates": [],
+   "answer": "GitLab 19.0 makes PostgreSQL 17 the minimum supported version; support for PostgreSQL 16 was removed in 19.0. Packaged PostgreSQL 16 installations must upgrade first.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions Architect",
+   "created": "2026-05-26",
+   "last_reviewed": "2026-05-26",
+   "status": "Current",
+   "tags": [
+    "Self-Managed",
+    "PostgreSQL",
+    "upgrade"
+   ],
+   "uses": 27,
+   "source": "gitlab-048",
+   "quote": "In GitLab 19.0, PostgreSQL 17 becomes the minimum required PostgreSQL version."
+  },
+  {
+   "id": "AB-0111",
+   "library": "Product",
+   "collections": [
+    "Product and platform"
+   ],
+   "question": "Is bundled Mattermost still shipped with the GitLab Linux package?",
+   "alternates": [],
+   "answer": "No. Bundled Mattermost was removed from the Linux package in GitLab 19.0. Existing users should migrate to a standalone Mattermost deployment.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions Architect",
+   "created": "2026-05-26",
+   "last_reviewed": "2026-05-26",
+   "status": "Current",
+   "tags": [
+    "Self-Managed",
+    "removal"
+   ],
+   "uses": 8,
+   "source": "gitlab-048",
+   "quote": "In GitLab 19.0, we plan to remove bundled Mattermost from the Linux package."
+  },
+  {
+   "id": "AB-0112",
+   "library": "Product",
+   "collections": [
+    "Product and platform",
+    "GitLab Dedicated"
+   ],
+   "question": "Which GitLab features are not available on GitLab Dedicated?",
+   "alternates": [],
+   "answer": "Notable exceptions include LDAP, Kerberos and smart card authentication, SSH certificate authentication, Git over HTTPS with username and password, reply by email, Service Desk, server-side Git hooks, custom domains for GitLab Pages and features behind disabled feature flags. Dedicated cannot be deployed to non-AWS clouds.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions Architect, Dedicated",
+   "created": "2025-04-07",
+   "last_reviewed": "2026-05-11",
+   "status": "Review due",
+   "tags": [
+    "Dedicated",
+    "limitations"
+   ],
+   "uses": 71,
+   "source": "gitlab-061",
+   "quote": "Server-side Git hooks are not supported for security and performance reasons."
+  },
+  {
+   "id": "AB-0116",
+   "library": "Company",
+   "collections": [
+    "Company and ESG"
+   ],
+   "question": "Who should we contact for security questions during procurement?",
+   "alternates": [],
+   "answer": "Prospective customers can submit a request through about.gitlab.com/sales and a representative will reach out; current customers should contact their GitLab Account Owner. Security documents and questionnaire uploads go through the Trust Center.",
+   "owner": "Field Security",
+   "sme": "Field Security analyst",
+   "created": "2024-07-15",
+   "last_reviewed": "2025-09-22",
+   "status": "Review due",
+   "tags": [
+    "contacts",
+    "procurement"
+   ],
+   "uses": 52,
+   "source": "gitlab-034",
+   "quote": "Prospective Customers: Please [fill out a request](https://about.gitlab.com/sales/) and a representative will reach out to you."
+  }
+ ]
+}

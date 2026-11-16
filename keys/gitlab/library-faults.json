@@ -1,0 +1,177 @@
+[
+ {
+  "id": "F-gitlab-07",
+  "kind": "overstated",
+  "where": {
+   "answerbank": "AB-0075"
+  },
+  "statement": "Dedicated supports LDAP, Kerberos and smart card authentication like Self-Managed.",
+  "evidence": [
+   {
+    "source": "gitlab-061",
+    "quote": "LDAP authentication Authentication using corporate LDAP/Active Directory credentials. Must use GitLab-specific passwords or access tokens instead.",
+    "role": "truth"
+   },
+   {
+    "source": "gitlab-061",
+    "quote": "Kerberos authentication Single sign-on authentication using Kerberos protocol. Must authenticate separately to GitLab.",
+    "role": "truth"
+   },
+   {
+    "source": "gitlab-012",
+    "quote": "How can users be auto-provisioned? - **Short answer**: Use LDAP integration",
+    "role": "old"
+   }
+  ],
+  "expected": "Corrected: LDAP, Kerberos and smart card authentication are listed as unavailable on Dedicated (use SAML or OIDC SSO, SCIM). \"A small number of exceptions\" is not \"everything\".",
+  "severity": "high"
+ },
+ {
+  "id": "F-gitlab-08",
+  "kind": "duplicate-conflict",
+  "where": {
+   "answerbank": [
+    "AB-0081",
+    "AB-0082"
+   ]
+  },
+  "statement": "AB-0082 says a pre-production environment is included and covered by the 99.9% objective; AB-0081 says it is a paid add-on with no SLA.",
+  "evidence": [
+   {
+    "source": "gitlab-061",
+    "quote": "Pre-production environments must be purchased as an add-on to your GitLab Dedicated subscription, with no additional licenses required.",
+    "role": "truth"
+   },
+   {
+    "source": "gitlab-061",
+    "quote": "Single-region deployment only. - No SLA commitment. - Cannot run newer versions than production.",
+    "role": "truth"
+   }
+  ],
+  "expected": "The two entries are recognised as the same question and the conflict flagged; AB-0081 wins; AB-0082 is superseded or needs-person.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-gitlab-09",
+  "kind": "duplicate-conflict",
+  "where": {
+   "answerbank": [
+    "AB-0083",
+    "AB-0084"
+   ]
+  },
+  "statement": "AB-0084 gives a 90-day retention window after expiry; AB-0083 (and the docs) say 30 days of access, then termination and deletion.",
+  "evidence": [
+   {
+    "source": "gitlab-061",
+    "quote": "After 30 days, if your data is not archived or migrated to another instance, your instance is terminated and all Customer Content is deleted.",
+    "role": "truth"
+   },
+   {
+    "source": "gitlab-061",
+    "quote": "You can request confirmation of account removal 90 days after instance termination.",
+    "role": "old"
+   }
+  ],
+  "expected": "Conflict flagged; 30 days (15 days to request preservation) is the answer; the 90 days is the confirmation-of-removal window, not retention. AB-0084 superseded.",
+  "severity": "high"
+ },
+ {
+  "id": "F-gitlab-12",
+  "kind": "stale",
+  "where": {
+   "answerbank": "AB-0100"
+  },
+  "statement": "Duo Core Code Suggestions and Chat are free with Premium and Ultimate.",
+  "evidence": [
+   {
+    "source": "gitlab-002",
+    "quote": "Customers currently relying on \"free\" Code Suggestions through Duo Core should plan for this transition.",
+    "role": "old"
+   },
+   {
+    "source": "gitlab-047",
+    "quote": "Starting in GitLab 19.0, GitLab Duo Core moves to usage-based billing. Code Suggestions in the Web IDE and desktop IDEs now consume GitLab Credits .",
+    "role": "new"
+   },
+   {
+    "source": "gitlab-060",
+    "quote": "Feature Executions with one credit (GitLab-managed model) Executions with one credit (self-hosted model) GitLab Duo Code Suggestions 50 62.5",
+    "role": "new"
+   }
+  ],
+  "expected": "Superseded: Code Suggestions consume GitLab Credits (50 per credit); the free Duo Core answer is retired.",
+  "severity": "high"
+ },
+ {
+  "id": "F-gitlab-13",
+  "kind": "stale",
+  "where": {
+   "answerbank": "AB-0106"
+  },
+  "statement": "Compliance pipelines are the recommended way to enforce required jobs.",
+  "evidence": [
+   {
+    "source": "gitlab-026",
+    "quote": "setting up a single pipeline definition for a specific compliance framework (PCI, HIPAA, or even a custom one). All projects using that framework will include the predefined pipeline automatically.",
+    "role": "old"
+   },
+   {
+    "source": "gitlab-048",
+    "quote": "we have deprecated compliance pipelines in GitLab 17.3 and will remove the feature in GitLab 20.0.",
+    "role": "new"
+   },
+   {
+    "source": "gitlab-048",
+    "quote": "Customers should migrate from compliance pipelines to the new",
+    "role": "new"
+   }
+  ],
+  "expected": "Superseded: compliance pipelines are deprecated (removal in 20.0); answer recommends pipeline execution policies (security policies).",
+  "severity": "medium"
+ },
+ {
+  "id": "F-gitlab-14",
+  "kind": "stale",
+  "where": {
+   "answerbank": "AB-0107"
+  },
+  "statement": "Secrets Manager is an open beta on GitLab.com and Self-Managed (as of 19.0).",
+  "evidence": [
+   {
+    "source": "gitlab-047",
+    "quote": "The GitLab Secrets Manager is now available in open beta for Premium and Ultimate customers on",
+    "role": "old"
+   },
+   {
+    "source": "gitlab-043",
+    "quote": "GitLab Secrets Manager, now in Limited Availability on GitLab.com, makes credentials more secure and keeps them in the same platform that runs your pipelines.",
+    "role": "new"
+   },
+   {
+    "source": "gitlab-043",
+    "quote": "GitLab Secrets Manager is an add-on billed through GitLab Credits.",
+    "role": "new"
+   }
+  ],
+  "expected": "Updated to the 19.3 state: Limited Availability on GitLab.com as an add-on billed in GitLab Credits (and, after d2, generally available). Never left as the 19.0 open-beta answer.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-gitlab-R1",
+  "kind": "real-conflict",
+  "where": {
+   "answerbank": "AB-0011",
+   "sources": [
+    "gitlab-049",
+    "gitlab-041",
+    "gitlab-042",
+    "gitlab-043"
+   ]
+  },
+  "statement": "GitLab's own CAIQ (CCC-05.1) says releases ship on the 22nd of every month; the 19.x release notes show third-Thursday dates (May 21, June 18, July 16, August 20, September 17, October 15, 2026).",
+  "evidence": [],
+  "expected": "Not planted: a real inconsistency between two GitLab sources. A good load keeps both or flags the conflict; it never states the 22nd as current without noting the release notes.",
+  "severity": "low"
+ }
+]

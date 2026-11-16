@@ -1,0 +1,1141 @@
+{
+ "name": "PostHog Sales Library",
+ "items": [
+  {
+   "raw": "posthog-002",
+   "title": "How We Sell: Sales, CS & Onboarding Overview",
+   "filename": "How we sell - Sales CS Onboarding overview.md",
+   "folder": "Enablement/Sales Process",
+   "owner": "Sales Enablement",
+   "description": "Who owns which part of the customer journey (TAE, TAM, CSM, onboarding) and the four principles for enterprise deals.",
+   "version": "4.2",
+   "created": "2024-03-05",
+   "updated": "2026-11-04",
+   "expires": "2027-11-04",
+   "views": 188,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "PostHog Platform"
+    ],
+    "Solution": [
+     "Sales Process"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Sales Motion",
+     "Enterprise"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "$20k threshold",
+     "TAE",
+     "TAM",
+     "CSM"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": {
+    "Legacy Library ID": "HS-30418",
+    "Legacy Added Date": "2023-02-14",
+    "Legacy Content Type": "Sales Playbook"
+   }
+  },
+  {
+   "raw": "posthog-003",
+   "title": "New Business Sales Process (stage by stage)",
+   "filename": "New Business Sales Playbook FINAL.md",
+   "folder": "Enablement/Sales Process",
+   "owner": "Sales Enablement",
+   "description": "Qualify, first call, technical deep dive, evaluation, security and legal review, commercial close. Includes RFP and NDA guidance.",
+   "version": "5.1",
+   "created": "2023-08-14",
+   "updated": "2026-10-29",
+   "expires": "2027-10-29",
+   "views": 412,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "PostHog Platform"
+    ],
+    "Solution": [
+     "New Business"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Sales Motion",
+     "Qualification"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "MEDDPICC",
+     "BANT",
+     "RFP",
+     "NDA",
+     "security questionnaire"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "posthog-004",
+   "title": "Discovery Guide",
+   "filename": "Discovery guide v3.md",
+   "folder": "Enablement/Sales Process",
+   "owner": "Solutions Engineering",
+   "description": "How to run discovery: question principles, qualifiers and disqualifiers, champion signals, first-call structure.",
+   "version": "3.0",
+   "created": "2024-05-02",
+   "updated": "2026-07-27",
+   "expires": "2027-07-27",
+   "views": 156,
+   "props": {
+    "Content Type": [
+     "Training"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "PostHog Platform"
+    ],
+    "Solution": [
+     "New Business"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Discovery"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "champion",
+     "qualify",
+     "ICP"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "posthog-005",
+   "title": "Why Buy PostHog - Value Proposition by Persona",
+   "filename": "Why Buy PostHog value prop.md",
+   "folder": "Sales Plays",
+   "owner": "Product Marketing",
+   "description": "One-liners, summaries and use cases for product engineers, PMs, marketing and data engineers, plus general talking points.",
+   "version": "2.4",
+   "created": "2024-01-22",
+   "updated": "2026-10-30",
+   "expires": "2027-10-30",
+   "views": 233,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "Product Analytics",
+     "Session Replay",
+     "Feature Flags",
+     "Error Tracking"
+    ],
+    "Solution": [
+     "Value Messaging"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Messaging",
+     "Personas"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "value proposition",
+     "persona",
+     "one-liner"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "posthog-006",
+   "title": "Reverse Demo Calls",
+   "filename": "Reverse demo calls - how to run.md",
+   "folder": "Enablement/Sales Process",
+   "owner": "Solutions Engineering",
+   "description": "Customer-led calls: the customer drives their own account and you follow up in writing. Includes a checklist.",
+   "version": "1.0",
+   "created": "2026-10-05",
+   "updated": "2026-10-05",
+   "expires": "2027-10-05",
+   "views": 64,
+   "props": {
+    "Content Type": [
+     "Demo"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "PostHog Platform"
+    ],
+    "Solution": [
+     "Customer Success"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Demo Technique"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "reverse demo",
+     "customer-led call"
+    ],
+    "Do Not Allow in AI": [
+     "True"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "posthog-007",
+   "title": "Running Sales-Led Trials",
+   "filename": "Running trials playbook.md",
+   "folder": "Enablement/Sales Process",
+   "owner": "Sales Enablement",
+   "description": "When to offer a trial, 2 vs 4 weeks, must-haves, AI product spend caps during trials and a suggested timeline.",
+   "version": "2.0",
+   "created": "2025-02-18",
+   "updated": "2026-10-29",
+   "expires": "2027-10-29",
+   "views": 97,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "PostHog Platform",
+     "PostHog AI"
+    ],
+    "Solution": [
+     "New Business"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Trials"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "trial length",
+     "success criteria",
+     "spend cap"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "posthog-008",
+   "title": "Contract Rules & Discount Levers (Deal Desk)",
+   "filename": "Contract rules - discounts and terms.md",
+   "folder": "Pricing & Packaging",
+   "owner": "Sales Enablement",
+   "description": "Deal desk policy: discount levers, term length, payment terms, SLA eligibility, buyouts, varying legal terms. Seller use only.",
+   "version": "6.3",
+   "created": "2023-06-01",
+   "updated": "2026-11-12",
+   "expires": "2027-05-12",
+   "views": 371,
+   "props": {
+    "Content Type": [
+     "Pricing"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "PostHog Platform"
+    ],
+    "Solution": [
+     "Commercial"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Discounting",
+     "Contracts"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "volume discount",
+     "buyout",
+     "uptime SLA",
+     "redlines",
+     "payment terms"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "posthog-009",
+   "title": "Data Stack Positioning (regular vs advanced package)",
+   "filename": "Data stack positioning.md",
+   "folder": "Competitive",
+   "owner": "Product Marketing",
+   "description": "What to sell from the data stack, to whom and when; competition at each layer (Fivetran, Snowflake, dbt, Looker, Hightouch).",
+   "version": "1.2",
+   "created": "2026-03-10",
+   "updated": "2026-10-29",
+   "expires": "2027-04-29",
+   "views": 58,
+   "props": {
+    "Content Type": [
+     "Competitive Brief"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "Data Warehouse",
+     "Data Pipelines"
+    ],
+    "Solution": [
+     "Data Stack"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Competitive",
+     "Data"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "dbt",
+     "Snowflake",
+     "semantic layer"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "posthog-010",
+   "title": "Customer Deployment Health Check",
+   "filename": "Health check guide.md",
+   "folder": "Enablement/Customer Success",
+   "owner": "Solutions Engineering",
+   "description": "What to look for when auditing a customer: paid-but-unused add-ons, legacy packages, SDK versions, identify misuse.",
+   "version": "2.1",
+   "created": "2025-04-07",
+   "updated": "2026-11-10",
+   "expires": "2027-11-10",
+   "views": 77,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "Product Analytics",
+     "Session Replay"
+    ],
+    "Solution": [
+     "Customer Success"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Cost Optimization"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "health check",
+     "Teams package",
+     "SDK version"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "posthog-011",
+   "title": "30-Day Onboarding Success Plan (template)",
+   "filename": "Onboarding success plan TEMPLATE.md",
+   "folder": "Enablement/Customer Success",
+   "owner": "Sales Enablement",
+   "description": "Template success plan to customize and share with a new customer as a Slack canvas.",
+   "version": "1.0",
+   "created": "2025-07-15",
+   "updated": "2026-10-27",
+   "expires": "2027-10-27",
+   "views": 49,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "PostHog Platform"
+    ],
+    "Solution": [
+     "Onboarding"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Onboarding"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "success plan",
+     "template"
+    ],
+    "Do Not Allow in AI": [
+     "True"
+    ]
+   },
+   "legacy": {
+    "Legacy Library ID": "HS-51177",
+    "Legacy Added Date": "2023-09-29",
+    "Legacy Content Type": "Template"
+   }
+  },
+  {
+   "raw": "posthog-012",
+   "title": "Common Churn Reasons",
+   "filename": "Common churn reasons.md",
+   "folder": "Enablement/Customer Success",
+   "owner": "Sales Enablement",
+   "description": "Recurring churn causes and what CS can do about each one.",
+   "version": "1.1",
+   "created": "2025-10-02",
+   "updated": "2026-10-27",
+   "expires": "2027-10-27",
+   "views": 35,
+   "props": {
+    "Content Type": [
+     "Training"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "PostHog Platform"
+    ],
+    "Solution": [
+     "Customer Success"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Retention"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "churn",
+     "champion leaves"
+    ],
+    "Do Not Allow in AI": [
+     "True"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "posthog-013",
+   "title": "Shipping a Pricing Change (internal process)",
+   "filename": "Shipping a pricing change.md",
+   "folder": "Pricing & Packaging",
+   "owner": "Product Marketing",
+   "description": "How a pricing RFC is written, reviewed and launched, including grandfathering periods and who to tell.",
+   "version": "1.0",
+   "created": "2026-09-23",
+   "updated": "2026-09-23",
+   "expires": "2027-09-23",
+   "views": 12,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "PostHog Platform"
+    ],
+    "Solution": [
+     "Commercial"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Pricing"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "RFC",
+     "grandfathering"
+    ],
+    "Do Not Allow in AI": [
+     "True"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "posthog-014",
+   "title": "Security & Privacy Overview (SOC 2, GDPR, CCPA)",
+   "filename": "PostHog Security and Privacy overview.md",
+   "folder": "Security & Trust/Compliance",
+   "owner": "Security & Compliance",
+   "description": "Employee security controls (MFA, signed commits, MDM), GDPR and CCPA roles, pen tests, disclosure, staff access rules.",
+   "version": "4.0",
+   "created": "2022-09-12",
+   "updated": "2026-10-27",
+   "expires": "2027-10-27",
+   "views": 296,
+   "props": {
+    "Content Type": [
+     "Overview"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "True"
+    ],
+    "Item Visibility": [
+     "Partner + Employee"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "PostHog Cloud"
+    ],
+    "Solution": [
+     "Security Review"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Security",
+     "Privacy"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "SOC 2",
+     "GDPR",
+     "CCPA",
+     "pen test",
+     "DPO"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "posthog-015",
+   "title": "Privacy Compliance FAQ (DPA, HIPAA, subprocessors)",
+   "filename": "Privacy compliance FAQ.md",
+   "folder": "Security & Trust/Compliance",
+   "owner": "Security & Compliance",
+   "description": "Customer-facing FAQ: personal data, GDPR, getting a signed DPA, redlines, subprocessors of subprocessors, HIPAA.",
+   "version": "2.3",
+   "created": "2024-06-11",
+   "updated": "2026-10-29",
+   "expires": "2027-10-29",
+   "views": 203,
+   "props": {
+    "Content Type": [
+     "Overview"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Partner + Employee"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "PostHog Cloud"
+    ],
+    "Solution": [
+     "Privacy Review"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Privacy"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "DPA",
+     "BAA",
+     "self-serve legal"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "posthog-016",
+   "title": "GDPR Compliance Guide",
+   "filename": "PostHog GDPR compliance guide.md",
+   "folder": "Security & Trust/Compliance",
+   "owner": "Security & Compliance",
+   "description": "How to deploy PostHog for GDPR: EU Cloud, consent, collection controls, IP capture, right to be forgotten.",
+   "version": "3.1",
+   "created": "2022-11-08",
+   "updated": "2026-10-22",
+   "expires": "2027-10-22",
+   "views": 141,
+   "props": {
+    "Content Type": [
+     "Whitepaper"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Partner + Employee"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "EMEA"
+    ],
+    "Product": [
+     "PostHog Cloud"
+    ],
+    "Solution": [
+     "Privacy Review"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Privacy",
+     "Data Residency"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "GDPR",
+     "EU Cloud",
+     "consent",
+     "IP anonymization"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": {
+    "Legacy Library ID": "HS-27750",
+    "Legacy Added Date": "2022-11-08",
+    "Legacy Content Type": "Compliance Doc"
+   }
+  },
+  {
+   "raw": "posthog-017",
+   "title": "HIPAA Compliance Guide",
+   "filename": "PostHog HIPAA guide.md",
+   "folder": "Security & Trust/Compliance",
+   "owner": "Security & Compliance",
+   "description": "BAA eligibility (Boost, Scale, Enterprise), what a BAA does not cover (managed proxy, PostHog AI) and self-hosting caveats.",
+   "version": "2.2",
+   "created": "2023-05-16",
+   "updated": "2026-10-22",
+   "expires": "2027-10-22",
+   "views": 118,
+   "props": {
+    "Content Type": [
+     "Whitepaper"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Partner + Employee"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "AMER"
+    ],
+    "Product": [
+     "PostHog Cloud"
+    ],
+    "Solution": [
+     "Healthcare"
+    ],
+    "Industry": [
+     "Healthcare"
+    ],
+    "Content Theme": [
+     "Compliance"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "HIPAA",
+     "BAA",
+     "PHI"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "posthog-018",
+   "title": "Data Storage, Retention & Deletion Controls",
+   "filename": "Controlling data storage - retention and deletion.md",
+   "folder": "Security & Trust/Compliance",
+   "owner": "Developer Relations",
+   "description": "Transformations before storage, IP discarding, retention by product, deletion and right-to-be-forgotten APIs.",
+   "version": "1.4",
+   "created": "2025-03-03",
+   "updated": "2026-11-05",
+   "expires": "2027-11-05",
+   "views": 66,
+   "props": {
+    "Content Type": [
+     "Solution Brief"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Partner + Employee"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "PostHog Cloud",
+     "Data Pipelines"
+    ],
+    "Solution": [
+     "Privacy Review"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Privacy",
+     "Data Retention"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "data deletion",
+     "crypto-shredding",
+     "retention"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "posthog-019",
+   "title": "PostHog vs Amplitude (in-depth comparison)",
+   "filename": "PostHog vs Amplitude comparison Nov 2026.md",
+   "folder": "Competitive",
+   "owner": "Product Marketing",
+   "description": "Feature-by-feature and pricing comparison with Amplitude, refreshed November 2026.",
+   "version": "1.0",
+   "created": "2026-11-10",
+   "updated": "2026-11-10",
+   "expires": "2027-05-10",
+   "views": 84,
+   "props": {
+    "Content Type": [
+     "Competitive Brief"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Partner + Employee"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "Product Analytics",
+     "Experiments",
+     "Session Replay"
+    ],
+    "Solution": [
+     "Competitive"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Competitive"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "Amplitude",
+     "Statsig"
+    ],
+    "Do Not Allow in AI": [
+     "True"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "posthog-026",
+   "title": "Shai-Hulud npm Supply-Chain Incident Post-Mortem",
+   "filename": "Shai-Hulud post-mortem Nov 2025.md",
+   "folder": "Security & Trust/Incidents",
+   "owner": "Security & Compliance",
+   "description": "What happened on 24 Nov 2025, affected packages, what customers should do, and what PostHog changed.",
+   "version": "1.0",
+   "created": "2025-11-26",
+   "updated": "2025-11-26",
+   "expires": "2026-05-26",
+   "views": 214,
+   "props": {
+    "Content Type": [
+     "Overview"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Partner + Employee"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "SDKs"
+    ],
+    "Solution": [
+     "Security Review"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Security",
+     "Incident"
+    ],
+    "Release": [
+     "November 2025"
+    ],
+    "Additional Keywords": [
+     "supply chain",
+     "npm",
+     "Shai-Hulud"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "posthog-027",
+   "title": "US Logs Data Loss Post-Mortem (Feb 2026)",
+   "filename": "Logs data loss post-mortem 2026-02-20.md",
+   "folder": "Security & Trust/Incidents",
+   "owner": "Security & Compliance",
+   "description": "Logs-only data loss in the US region on 19 Feb 2026: timeline, root cause, lessons.",
+   "version": "1.0",
+   "created": "2026-02-20",
+   "updated": "2026-02-20",
+   "expires": "2027-02-20",
+   "views": 39,
+   "props": {
+    "Content Type": [
+     "Overview"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Partner + Employee"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "Logs"
+    ],
+    "Solution": [
+     "Security Review"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Incident",
+     "Resilience"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "post-mortem",
+     "ClickHouse",
+     "backup"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  }
+ ]
+}

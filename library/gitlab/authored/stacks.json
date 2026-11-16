@@ -1,0 +1,2292 @@
+{
+ "name": "GitLab Sales Library",
+ "items": [
+  {
+   "raw": "gitlab-002",
+   "title": "Solutions Architects Handbook (full export)",
+   "filename": "GitLab SA Handbook export 2026-11.tar.gz",
+   "folder": "Enablement/Solutions Architecture",
+   "owner": "Solutions Engineering",
+   "description": "Everything the SA org publishes: POV playbooks, demo architecture, RFP process, objection handling and value selling.",
+   "version": "5.2",
+   "created": "2023-02-14",
+   "updated": "2026-11-16",
+   "expires": "2027-11-16",
+   "views": 655,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab Platform"
+    ],
+    "Solution": [
+     "Solution Selling",
+     "Proof of Value"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Technical Sales",
+     "Enablement"
+    ],
+    "Additional Keywords": [
+     "handbook",
+     "POV",
+     "demo",
+     "RFP"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-003",
+   "title": "Customer Success Handbook (full export)",
+   "filename": "GitLab CS Handbook export 2026-11.tar.gz",
+   "folder": "Enablement/Customer Success",
+   "owner": "Customer Success",
+   "description": "CSM, CSE and TAM practice: onboarding, success plans, EBRs, health scoring, escalations and adoption workshops.",
+   "version": "4.0",
+   "created": "2023-02-14",
+   "updated": "2026-11-16",
+   "expires": "2027-11-16",
+   "views": 233,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab Platform"
+    ],
+    "Solution": [
+     "Customer Success"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Adoption",
+     "Retention"
+    ],
+    "Additional Keywords": [
+     "handbook",
+     "CSM",
+     "EBR"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-005",
+   "title": "Security Division Handbook (full export)",
+   "filename": "GitLab Security Handbook export 2026-11.tar.gz",
+   "folder": "Security & Trust/Trust Center",
+   "owner": "Security & Compliance",
+   "description": "The security division as published: ISMS, controls, policies, vulnerability SLAs, field security and customer assurance.",
+   "version": "5.0",
+   "created": "2023-02-14",
+   "updated": "2026-11-16",
+   "expires": "2027-11-16",
+   "views": 377,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab.com",
+     "GitLab Dedicated"
+    ],
+    "Solution": [
+     "Security & Compliance"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Security",
+     "Policies"
+    ],
+    "Additional Keywords": [
+     "ISMS",
+     "vulnerability SLA",
+     "field security"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-006",
+   "title": "MEDDPPICC qualification guide",
+   "filename": "MEDDPPICC - GitLab qualification guide.md",
+   "folder": "Sales Plays",
+   "owner": "Sales Enablement",
+   "description": "The MEDDPPICC elements with the questions GitLab sellers ask and what good looks like.",
+   "version": "3.0",
+   "created": "2024-01-09",
+   "updated": "2026-04-28",
+   "expires": "2027-04-28",
+   "views": 1022,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab Platform"
+    ],
+    "Solution": [
+     "Qualification"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Enablement"
+    ],
+    "Additional Keywords": [
+     "MEDDPPICC",
+     "qualification"
+    ],
+    "Do Not Allow in AI": [
+     "True"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-007",
+   "title": "Command of the Message overview",
+   "filename": "Command of the Message - overview.md",
+   "folder": "Sales Plays",
+   "owner": "Sales Enablement",
+   "description": "Value drivers, differentiators and required capabilities: the frame for every customer conversation.",
+   "version": "2.0",
+   "created": "2023-05-02",
+   "updated": "2024-06-27",
+   "expires": "2025-06-27",
+   "views": 640,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab Platform"
+    ],
+    "Solution": [
+     "Value Selling"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Enablement"
+    ],
+    "Additional Keywords": [
+     "CoM",
+     "value drivers"
+    ],
+    "Do Not Allow in AI": [
+     "True"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-008",
+   "title": "Proof points catalogue",
+   "filename": "GitLab proof points (customer, analyst, awards).md",
+   "folder": "Sales Plays",
+   "owner": "Product Marketing",
+   "description": "Customer references, analyst reports, awards and studies mapped to value drivers. Check each date before citing.",
+   "version": "7.3",
+   "created": "2023-05-02",
+   "updated": "2026-08-27",
+   "expires": "2027-08-27",
+   "views": 1310,
+   "props": {
+    "Content Type": [
+     "Customer Story"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab Platform"
+    ],
+    "Solution": [
+     "Value Selling"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Enablement"
+    ],
+    "Additional Keywords": [
+     "proof points",
+     "references",
+     "analyst"
+    ],
+    "Do Not Allow in AI": [
+     "True"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-009",
+   "title": "Metrics conversation guide",
+   "filename": "Demystifying the metrics conversation.md",
+   "folder": "Sales Plays",
+   "owner": "Sales Enablement",
+   "description": "Which before-and-after business metrics to ask for in discovery, by value driver.",
+   "version": "2.1",
+   "created": "2024-03-18",
+   "updated": "2026-08-27",
+   "expires": "2027-08-27",
+   "views": 154,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab Platform"
+    ],
+    "Solution": [
+     "Value Selling"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Enablement"
+    ],
+    "Additional Keywords": [
+     "metrics",
+     "discovery"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-010",
+   "title": "Building value with customers",
+   "filename": "Best practices - building value with customers.md",
+   "folder": "Sales Plays",
+   "owner": "Sales Enablement",
+   "description": "Field guidance on co-building the value case with the customer.",
+   "version": "1.0",
+   "created": "2024-06-27",
+   "updated": "2024-06-27",
+   "expires": "2025-06-27",
+   "views": 61,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab Platform"
+    ],
+    "Solution": [
+     "Value Selling"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Enablement"
+    ],
+    "Additional Keywords": [
+     "business case",
+     "ROI"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-011",
+   "title": "Effective discovery playbook",
+   "filename": "Effective discovery - question bank.md",
+   "folder": "Sales Plays",
+   "owner": "Sales Enablement",
+   "description": "Discovery call structure and question banks.",
+   "version": "3.4",
+   "created": "2023-09-12",
+   "updated": "2026-09-24",
+   "expires": "2027-09-24",
+   "views": 488,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab Platform"
+    ],
+    "Solution": [
+     "Discovery"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Enablement"
+    ],
+    "Additional Keywords": [
+     "discovery",
+     "questions"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-012",
+   "title": "Technical questions for sales",
+   "filename": "Technical questions for sales (by stage).md",
+   "folder": "Enablement/Solutions Architecture",
+   "owner": "Solutions Engineering",
+   "description": "Short answers to the technical questions sellers get most, by DevOps stage. Several answers date from 2020; check before reuse.",
+   "version": "2.0",
+   "created": "2020-06-01",
+   "updated": "2026-08-27",
+   "expires": "2027-08-27",
+   "views": 296,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab Platform"
+    ],
+    "Solution": [
+     "DevSecOps Platform"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Enablement"
+    ],
+    "Additional Keywords": [
+     "technical FAQ",
+     "quiz"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-013",
+   "title": "SA team handbook",
+   "filename": "Solutions Architects - team handbook.md",
+   "folder": "Enablement/Solutions Architecture",
+   "owner": "Solutions Engineering",
+   "description": "What SAs own, how they engage and how they support the sales cycle.",
+   "version": "2.2",
+   "created": "2023-02-14",
+   "updated": "2026-10-15",
+   "expires": "2027-10-15",
+   "views": 120,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab Platform"
+    ],
+    "Solution": [
+     "Solution Selling"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Enablement"
+    ],
+    "Additional Keywords": [
+     "SA role",
+     "engagement model"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-014",
+   "title": "Demonstration standards",
+   "filename": "SA demonstrations - standards.md",
+   "folder": "Enablement/Solutions Architecture",
+   "owner": "Solutions Engineering",
+   "description": "Demo types, preparation and delivery standards.",
+   "version": "1.3",
+   "created": "2024-02-20",
+   "updated": "2026-09-24",
+   "expires": "2027-09-24",
+   "views": 207,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab Platform"
+    ],
+    "Solution": [
+     "Demo"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Enablement"
+    ],
+    "Additional Keywords": [
+     "demo",
+     "preparation"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-015",
+   "title": "Demo Architect offerings",
+   "filename": "Demo Architect offerings and catalogue.md",
+   "folder": "Enablement/Solutions Architecture",
+   "owner": "Solutions Engineering",
+   "description": "Shared demo environments, workshops, labs and the demo catalogue by area, including GitHub competitive demos.",
+   "version": "2.0",
+   "created": "2024-11-04",
+   "updated": "2026-05-08",
+   "expires": "2027-05-08",
+   "views": 344,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab Platform"
+    ],
+    "Solution": [
+     "Demo"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Enablement"
+    ],
+    "Additional Keywords": [
+     "demo catalogue",
+     "labs",
+     "workshops"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-016",
+   "title": "Proof of Value (POV) playbook",
+   "filename": "POV playbook - simple and extended.md",
+   "folder": "Enablement/Solutions Architecture",
+   "owner": "Solutions Engineering",
+   "description": "One operating model for customer evaluations: lifecycle, Simple and Extended modes, success criteria, DAP trials.",
+   "version": "4.0",
+   "created": "2023-03-01",
+   "updated": "2026-09-16",
+   "expires": "2027-09-16",
+   "views": 902,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab Platform"
+    ],
+    "Solution": [
+     "Proof of Value"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Enablement"
+    ],
+    "Additional Keywords": [
+     "POV",
+     "trial",
+     "3-in-30"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-017",
+   "title": "Objection handling practice",
+   "filename": "Objection handling practice.md",
+   "folder": "Enablement/Solutions Architecture",
+   "owner": "Solutions Engineering",
+   "description": "A practice method for objections with example objections and a response structure.",
+   "version": "1.1",
+   "created": "2024-05-14",
+   "updated": "2026-08-27",
+   "expires": "2027-08-27",
+   "views": 133,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab Platform"
+    ],
+    "Solution": [
+     "Solution Selling"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Enablement"
+    ],
+    "Additional Keywords": [
+     "objections"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-018",
+   "title": "Value Stream Discovery workshop",
+   "filename": "Value Stream Discovery workshop guide.md",
+   "folder": "Enablement/Solutions Architecture",
+   "owner": "Solutions Engineering",
+   "description": "Mapping a customer SDLC, finding waste and quantifying improvement.",
+   "version": "2.0",
+   "created": "2024-01-22",
+   "updated": "2026-07-24",
+   "expires": "2027-07-24",
+   "views": 175,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab Platform"
+    ],
+    "Solution": [
+     "Value Stream Management"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Enablement"
+    ],
+    "Additional Keywords": [
+     "VSD",
+     "workshop"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-019",
+   "title": "Business Value Services",
+   "filename": "Business Value Services - ROI and TCO.md",
+   "folder": "Enablement/Solutions Architecture",
+   "owner": "Solutions Engineering",
+   "description": "When and how GitLab builds ROI, TCO and business cases for deals.",
+   "version": "1.0",
+   "created": "2025-03-19",
+   "updated": "2025-03-19",
+   "expires": "2026-03-19",
+   "views": 58,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab Platform"
+    ],
+    "Solution": [
+     "Value Selling"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Enablement"
+    ],
+    "Additional Keywords": [
+     "ROI",
+     "TCO"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-020",
+   "title": "RFI/RFP process (SA)",
+   "filename": "RFI RFP process - Solutions Architecture.md",
+   "folder": "Enablement/Solutions Architecture",
+   "owner": "Solutions Engineering",
+   "description": "How SAs run RFx responses: intake, tooling, answer reuse and SME routing.",
+   "version": "2.0",
+   "created": "2023-10-10",
+   "updated": "2026-09-24",
+   "expires": "2027-09-24",
+   "views": 219,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab Platform"
+    ],
+    "Solution": [
+     "RFP"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Enablement"
+    ],
+    "Additional Keywords": [
+     "RFP",
+     "RFI"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-021",
+   "title": "Strategic solution selling",
+   "filename": "Strategic solution selling.md",
+   "folder": "Enablement/Solutions Architecture",
+   "owner": "Solutions Engineering",
+   "description": "Aligning the technical solution to business outcomes in large deals.",
+   "version": "1.2",
+   "created": "2024-08-01",
+   "updated": "2026-05-08",
+   "expires": "2027-05-08",
+   "views": 77,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab Platform"
+    ],
+    "Solution": [
+     "Solution Selling"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Enablement"
+    ],
+    "Additional Keywords": [
+     "large deals"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-022",
+   "title": "Competitive intelligence charter",
+   "filename": "Competitive intelligence - charter and assets.md",
+   "folder": "Competitive",
+   "owner": "Product Marketing",
+   "description": "Who GitLab competes with, how comparisons are made and where the competitor cards live.",
+   "version": "2.0",
+   "created": "2023-06-06",
+   "updated": "2026-10-30",
+   "expires": "2027-10-30",
+   "views": 563,
+   "props": {
+    "Content Type": [
+     "Competitive Brief"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab Platform"
+    ],
+    "Solution": [
+     "Competitive"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Competitive"
+    ],
+    "Additional Keywords": [
+     "Crayon",
+     "Clozd",
+     "competitors"
+    ],
+    "Do Not Allow in AI": [
+     "True"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-023",
+   "title": "Application security market analysis",
+   "filename": "AppSec market analysis - lexicon and competitors.md",
+   "folder": "Competitive",
+   "owner": "Product Marketing",
+   "description": "AppSec lexicon, competitor scope and buyer segments for Secure-stage deals.",
+   "version": "1.4",
+   "created": "2023-06-06",
+   "updated": "2026-08-27",
+   "expires": "2027-08-27",
+   "views": 241,
+   "props": {
+    "Content Type": [
+     "Competitive Brief"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab Ultimate"
+    ],
+    "Solution": [
+     "Application Security"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Competitive",
+     "Security"
+    ],
+    "Additional Keywords": [
+     "SAST",
+     "SCA",
+     "competitors"
+    ],
+    "Do Not Allow in AI": [
+     "True"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-024",
+   "title": "CI/CD tools primer",
+   "filename": "CI-CD tools primer - competitive landscape.md",
+   "folder": "Competitive",
+   "owner": "Product Marketing",
+   "description": "The CI/CD landscape (Jenkins, GitHub Actions, CircleCI and others) and how GitLab positions against it.",
+   "version": "1.1",
+   "created": "2023-06-06",
+   "updated": "2026-08-27",
+   "expires": "2027-08-27",
+   "views": 298,
+   "props": {
+    "Content Type": [
+     "Battle Card"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab CI/CD"
+    ],
+    "Solution": [
+     "CI/CD"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Competitive"
+    ],
+    "Additional Keywords": [
+     "Jenkins",
+     "GitHub Actions"
+    ],
+    "Do Not Allow in AI": [
+     "True"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-025",
+   "title": "Product marketing messaging",
+   "filename": "Product marketing messaging framework.md",
+   "folder": "Sales Plays",
+   "owner": "Product Marketing",
+   "description": "Where approved positioning and message language lives.",
+   "version": "2.0",
+   "created": "2023-06-06",
+   "updated": "2026-08-27",
+   "expires": "2027-08-27",
+   "views": 167,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab Platform"
+    ],
+    "Solution": [
+     "Messaging"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Messaging"
+    ],
+    "Additional Keywords": [
+     "positioning"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-026",
+   "title": "Sales play: Premium to Ultimate",
+   "filename": "Sales play - upsell Premium to Ultimate.md",
+   "folder": "Sales Plays",
+   "owner": "Product Marketing",
+   "description": "Target accounts, discovery questions, value propositions, objection handling and assets for the Ultimate upsell.",
+   "version": "3.1",
+   "created": "2022-09-12",
+   "updated": "2026-09-24",
+   "expires": "2027-09-24",
+   "views": 704,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab Ultimate"
+    ],
+    "Solution": [
+     "Upsell"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Sales Play",
+     "Security"
+    ],
+    "Additional Keywords": [
+     "Ultimate",
+     "upsell"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": {
+    "Legacy Library ID": "HS-51907",
+    "Legacy Added Date": "2022-09-12",
+    "Legacy Content Type": "Sales Play"
+   }
+  },
+  {
+   "raw": "gitlab-027",
+   "title": "Premium to Ultimate message house",
+   "filename": "Message house - Premium to Ultimate.md",
+   "folder": "Sales Plays",
+   "owner": "Product Marketing",
+   "description": "Positioning, key messages and proof points for the upsell on one page.",
+   "version": "1.0",
+   "created": "2024-11-14",
+   "updated": "2024-11-14",
+   "expires": "2025-11-14",
+   "views": 196,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab Ultimate"
+    ],
+    "Solution": [
+     "Upsell"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Messaging"
+    ],
+    "Additional Keywords": [
+     "message house"
+    ],
+    "Do Not Allow in AI": [
+     "True"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-028",
+   "title": "Quick start for new GitLab.com customers",
+   "filename": "GitLab.com quick start - first week.md",
+   "folder": "Enablement/Customer Success",
+   "owner": "Customer Success",
+   "description": "Onboarding steps and first-week setup for new GitLab.com customers.",
+   "version": "2.3",
+   "created": "2024-02-02",
+   "updated": "2026-11-04",
+   "expires": "2027-11-04",
+   "views": 311,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "True"
+    ],
+    "Item Visibility": [
+     "Partner + Employee"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab.com"
+    ],
+    "Solution": [
+     "Onboarding"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Adoption"
+    ],
+    "Additional Keywords": [
+     "onboarding",
+     "quick start"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-029",
+   "title": "Success plan discovery questions",
+   "filename": "Success plan discovery - questions and techniques.md",
+   "folder": "Enablement/Customer Success",
+   "owner": "Customer Success",
+   "description": "Outcome-discovery questions for renewals and expansion.",
+   "version": "1.2",
+   "created": "2024-04-15",
+   "updated": "2026-09-24",
+   "expires": "2027-09-24",
+   "views": 142,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab Platform"
+    ],
+    "Solution": [
+     "Customer Success"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Retention"
+    ],
+    "Additional Keywords": [
+     "CSM"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-030",
+   "title": "Executive Business Reviews",
+   "filename": "EBR guide - agenda and preparation.md",
+   "folder": "Enablement/Customer Success",
+   "owner": "Customer Success",
+   "description": "Agenda, preparation and content for an EBR.",
+   "version": "1.2",
+   "created": "2024-04-15",
+   "updated": "2026-09-24",
+   "expires": "2027-09-24",
+   "views": 228,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab Platform"
+    ],
+    "Solution": [
+     "Customer Success"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Retention"
+    ],
+    "Additional Keywords": [
+     "CSM"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-031",
+   "title": "Customer health assessment",
+   "filename": "Customer health assessment and triage.md",
+   "folder": "Enablement/Customer Success",
+   "owner": "Customer Success",
+   "description": "How customer risk is scored and acted on.",
+   "version": "1.2",
+   "created": "2024-04-15",
+   "updated": "2026-09-24",
+   "expires": "2027-09-24",
+   "views": 97,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab Platform"
+    ],
+    "Solution": [
+     "Customer Success"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Retention"
+    ],
+    "Additional Keywords": [
+     "CSM"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-032",
+   "title": "Customer assurance activities",
+   "filename": "Customer assurance activities - how to request.md",
+   "folder": "Security & Trust/Trust Center",
+   "owner": "Security & Compliance",
+   "description": "How to get questionnaires answered, security calls and contract reviews; what is public and what needs an NDA; the SLAs.",
+   "version": "3.0",
+   "created": "2023-01-20",
+   "updated": "2026-11-04",
+   "expires": "2027-11-04",
+   "views": 846,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab.com",
+     "GitLab Dedicated"
+    ],
+    "Solution": [
+     "Security & Compliance"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Security",
+     "Customer Assurance"
+    ],
+    "Additional Keywords": [
+     "trust center",
+     "questionnaire SLA"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-033",
+   "title": "Security RFI/RFP process",
+   "filename": "Field Security - RFP security sections.md",
+   "folder": "Security & Trust/Trust Center",
+   "owner": "Security & Compliance",
+   "description": "How RFP security, privacy, legal and ESG questions are routed and who owns each area.",
+   "version": "1.5",
+   "created": "2023-01-20",
+   "updated": "2026-06-01",
+   "expires": "2027-06-01",
+   "views": 302,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab.com"
+    ],
+    "Solution": [
+     "Security & Compliance"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "RFP"
+    ],
+    "Additional Keywords": [
+     "RFP intake"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-034",
+   "title": "Trust Center guide",
+   "filename": "Trust Center guide (SafeBase).md",
+   "folder": "Security & Trust/Trust Center",
+   "owner": "Security & Compliance",
+   "description": "What the Trust Center holds, which documents need an NDA and how access works.",
+   "version": "1.0",
+   "created": "2024-07-09",
+   "updated": "2024-07-09",
+   "expires": "2025-07-09",
+   "views": 419,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab.com",
+     "GitLab Dedicated"
+    ],
+    "Solution": [
+     "Security & Compliance"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Customer Assurance"
+    ],
+    "Additional Keywords": [
+     "SafeBase",
+     "NDA"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-047",
+   "title": "GitLab 19.0 release notes",
+   "filename": "GitLab 19.0 release notes.html",
+   "folder": "Product/Release Updates",
+   "owner": "Product Marketing",
+   "description": "Major release: new features plus the breaking changes and removals of 19.0.",
+   "version": "1.0",
+   "created": "2026-05-21",
+   "updated": "2026-05-21",
+   "expires": "2027-05-21",
+   "views": 204,
+   "props": {
+    "Content Type": [
+     "Release Notes"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "True"
+    ],
+    "Item Visibility": [
+     "Partner + Employee"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab.com",
+     "GitLab Self-Managed",
+     "GitLab Dedicated"
+    ],
+    "Solution": [
+     "DevSecOps Platform"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Release Updates"
+    ],
+    "Additional Keywords": [
+     "release",
+     "19.0"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ],
+    "Release": [
+     "19.0"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-041",
+   "title": "GitLab 19.1 release notes",
+   "filename": "GitLab 19.1 release notes.html",
+   "folder": "Product/Release Updates",
+   "owner": "Product Marketing",
+   "description": "Monthly release notes: new features by stage and tier.",
+   "version": "1.0",
+   "created": "2026-06-18",
+   "updated": "2026-06-18",
+   "expires": "2027-06-18",
+   "views": 117,
+   "props": {
+    "Content Type": [
+     "Release Notes"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "True"
+    ],
+    "Item Visibility": [
+     "Partner + Employee"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab.com",
+     "GitLab Self-Managed",
+     "GitLab Dedicated"
+    ],
+    "Solution": [
+     "DevSecOps Platform"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Release Updates"
+    ],
+    "Additional Keywords": [
+     "release",
+     "19.1"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ],
+    "Release": [
+     "19.1"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-042",
+   "title": "GitLab 19.2 release notes",
+   "filename": "GitLab 19.2 release notes.html",
+   "folder": "Product/Release Updates",
+   "owner": "Product Marketing",
+   "description": "Monthly release notes: new features by stage and tier.",
+   "version": "1.0",
+   "created": "2026-07-16",
+   "updated": "2026-07-16",
+   "expires": "2027-07-16",
+   "views": 98,
+   "props": {
+    "Content Type": [
+     "Release Notes"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "True"
+    ],
+    "Item Visibility": [
+     "Partner + Employee"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab.com",
+     "GitLab Self-Managed",
+     "GitLab Dedicated"
+    ],
+    "Solution": [
+     "DevSecOps Platform"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Release Updates"
+    ],
+    "Additional Keywords": [
+     "release",
+     "19.2"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ],
+    "Release": [
+     "19.2"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-043",
+   "title": "GitLab 19.3 release notes",
+   "filename": "GitLab 19.3 release notes.html",
+   "folder": "Product/Release Updates",
+   "owner": "Product Marketing",
+   "description": "Monthly release notes: new features by stage and tier.",
+   "version": "1.0",
+   "created": "2026-08-20",
+   "updated": "2026-08-20",
+   "expires": "2027-08-20",
+   "views": 131,
+   "props": {
+    "Content Type": [
+     "Release Notes"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "True"
+    ],
+    "Item Visibility": [
+     "Partner + Employee"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab.com",
+     "GitLab Self-Managed",
+     "GitLab Dedicated"
+    ],
+    "Solution": [
+     "DevSecOps Platform"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Release Updates"
+    ],
+    "Additional Keywords": [
+     "release",
+     "19.3"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ],
+    "Release": [
+     "19.3"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-044",
+   "title": "GitLab 19.4 release notes",
+   "filename": "GitLab 19.4 release notes.html",
+   "folder": "Product/Release Updates",
+   "owner": "Product Marketing",
+   "description": "Monthly release notes: new features by stage and tier.",
+   "version": "1.0",
+   "created": "2026-09-17",
+   "updated": "2026-09-17",
+   "expires": "2027-09-17",
+   "views": 156,
+   "props": {
+    "Content Type": [
+     "Release Notes"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "True"
+    ],
+    "Item Visibility": [
+     "Partner + Employee"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab.com",
+     "GitLab Self-Managed",
+     "GitLab Dedicated"
+    ],
+    "Solution": [
+     "DevSecOps Platform"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Release Updates"
+    ],
+    "Additional Keywords": [
+     "release",
+     "19.4"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ],
+    "Release": [
+     "19.4"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-045",
+   "title": "GitLab 19.5 release notes",
+   "filename": "GitLab 19.5 release notes.html",
+   "folder": "Product/Release Updates",
+   "owner": "Product Marketing",
+   "description": "Monthly release notes: new features by stage and tier.",
+   "version": "1.0",
+   "created": "2026-10-15",
+   "updated": "2026-10-15",
+   "expires": "2027-10-15",
+   "views": 64,
+   "props": {
+    "Content Type": [
+     "Release Notes"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "True"
+    ],
+    "Item Visibility": [
+     "Partner + Employee"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab.com",
+     "GitLab Self-Managed",
+     "GitLab Dedicated"
+    ],
+    "Solution": [
+     "DevSecOps Platform"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Release Updates"
+    ],
+    "Additional Keywords": [
+     "release",
+     "19.5"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ],
+    "Release": [
+     "19.5"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-046",
+   "title": "GitLab 19.6 (upcoming release)",
+   "filename": "GitLab 19.6 upcoming release.html",
+   "folder": "Product/Release Updates",
+   "owner": "Product Marketing",
+   "description": "Pre-release page for 19.6: features already live on GitLab.com ahead of the November release. Changes until release day.",
+   "version": "1.0",
+   "created": "2026-11-16",
+   "updated": "2026-11-16",
+   "expires": "2026-12-31",
+   "views": 22,
+   "props": {
+    "Content Type": [
+     "Release Notes"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "True"
+    ],
+    "Item Visibility": [
+     "Partner + Employee"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab.com"
+    ],
+    "Solution": [
+     "DevSecOps Platform"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Release Updates"
+    ],
+    "Additional Keywords": [
+     "release",
+     "19.6",
+     "upcoming"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ],
+    "Release": [
+     "19.6"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-048",
+   "title": "Deprecations and removals by version",
+   "filename": "Deprecations and removals by version.md",
+   "folder": "Product/Release Updates",
+   "owner": "Product Marketing",
+   "description": "Every announced deprecation and removal from 14.5 through planned 21.0, with breaking-change flags and migration notes.",
+   "version": "9.0",
+   "created": "2022-01-10",
+   "updated": "2026-11-16",
+   "expires": "2027-05-16",
+   "views": 279,
+   "props": {
+    "Content Type": [
+     "Release Notes"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "True"
+    ],
+    "Item Visibility": [
+     "Partner + Employee"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab.com",
+     "GitLab Self-Managed",
+     "GitLab Dedicated"
+    ],
+    "Solution": [
+     "DevSecOps Platform"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Release Updates",
+     "Lifecycle"
+    ],
+    "Additional Keywords": [
+     "deprecation",
+     "removal",
+     "breaking change"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-060",
+   "title": "GitLab Credits and usage billing",
+   "filename": "GitLab Credits and usage billing (docs).html",
+   "folder": "Pricing & Packaging",
+   "owner": "Product Marketing",
+   "description": "How credits are included, pooled, bought on demand and consumed, with the credit multiplier tables.",
+   "version": "4.0",
+   "created": "2025-12-04",
+   "updated": "2026-11-16",
+   "expires": "2027-05-16",
+   "views": 621,
+   "props": {
+    "Content Type": [
+     "Pricing"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "True"
+    ],
+    "Item Visibility": [
+     "Partner + Employee"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab Duo Agent Platform"
+    ],
+    "Solution": [
+     "Packaging",
+     "AI"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Pricing",
+     "AI"
+    ],
+    "Additional Keywords": [
+     "credits",
+     "usage billing",
+     "multipliers"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "gitlab-061",
+   "title": "GitLab Dedicated (docs)",
+   "filename": "GitLab Dedicated - product documentation.html",
+   "folder": "Product/Platform",
+   "owner": "Solutions Engineering",
+   "description": "Single-tenant SaaS: isolation, AWS regions, connectivity, encryption, availability, unavailable features and expiry.",
+   "version": "3.0",
+   "created": "2024-05-28",
+   "updated": "2026-11-16",
+   "expires": "2027-11-16",
+   "views": 701,
+   "props": {
+    "Content Type": [
+     "Datasheet"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "True"
+    ],
+    "Item Visibility": [
+     "Partner + Employee"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "GitLab Dedicated"
+    ],
+    "Solution": [
+     "Single-Tenant SaaS"
+    ],
+    "Industry": [
+     "Public Sector",
+     "Financial Services",
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Deployment",
+     "Data Residency"
+    ],
+    "Additional Keywords": [
+     "Dedicated",
+     "PrivateLink",
+     "BYOK",
+     "SLO"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  }
+ ]
+}

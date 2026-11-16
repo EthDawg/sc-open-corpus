@@ -1,0 +1,193 @@
+[
+ {
+  "id": "F-microsoft-02",
+  "kind": "stale",
+  "where": {
+   "answerbank": "AB-0032"
+  },
+  "statement": "SharePoint Advanced Management is a separate SharePoint Premium add-on to buy alongside Copilot.",
+  "evidence": [
+   {
+    "source": "microsoft-016",
+    "quote": "Microsoft SharePoint Premium – SharePoint Advanced Management (SAM) helps you reduce oversharing and cleanup inactive sites.",
+    "role": "old"
+   },
+   {
+    "source": "microsoft-016",
+    "quote": "As of early 2025, SharePoint Advanced Management is included with your Microsoft 365 Copilot license.",
+    "role": "new"
+   }
+  ],
+  "expected": "Superseded: SAM is included with Microsoft 365 Copilot licenses (as of early 2025); no separate purchase needed for Copilot customers.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-microsoft-03",
+  "kind": "overstated",
+  "where": {
+   "answerbank": "AB-0036"
+  },
+  "statement": "Copilot works across shared, delegate, group and archive mailboxes.",
+  "evidence": [
+   {
+    "source": "microsoft-016",
+    "quote": "It isn't available on a user's archive mailbox, group mailboxes, or shared and delegate mailboxes that they have access to.",
+    "role": "truth"
+   }
+  ],
+  "expected": "Answer No: Copilot is supported only on primary mailboxes hosted in Exchange Online. A Yes is a risky commitment.",
+  "severity": "high"
+ },
+ {
+  "id": "F-microsoft-04",
+  "kind": "overstated",
+  "where": {
+   "answerbank": "AB-0015"
+  },
+  "statement": "All Copilot interactions, including web-grounded queries, are covered by the DPA and BAA.",
+  "evidence": [
+   {
+    "source": "microsoft-016",
+    "quote": "HIPAA compliance doesn't apply to web search queries as they aren't covered by the DPA and Business Associate Agreement (BAA).",
+    "role": "truth"
+   }
+  ],
+  "expected": "Narrow it: HIPAA support applies to properly configured implementations; web search queries are not covered by the DPA or BAA.",
+  "severity": "high"
+ },
+ {
+  "id": "F-microsoft-05",
+  "kind": "overstated",
+  "where": {
+   "answerbank": "AB-0009"
+  },
+  "statement": "All Copilot processing for EU users, including web search and every model, stays in the EU Data Boundary.",
+  "evidence": [
+   {
+    "source": "microsoft-016",
+    "quote": "The EU Data Boundary doesn’t apply to web search queries.",
+    "role": "truth"
+   },
+   {
+    "source": "microsoft-016",
+    "quote": "Anthropic models are out of scope for the EU Data Boundary and when available, in-country LLM processing commitments.",
+    "role": "truth"
+   }
+  ],
+  "expected": "Narrow it: Copilot is an EU Data Boundary service for EU customers, but web search queries and Anthropic models are excluded.",
+  "severity": "high"
+ },
+ {
+  "id": "F-microsoft-06",
+  "kind": "roadmap-as-fact",
+  "where": {
+   "answerbank": "AB-0047"
+  },
+  "statement": "Security Copilot is included with Microsoft 365 E5 licenses today.",
+  "evidence": [
+   {
+    "source": "microsoft-016",
+    "quote": "In the coming months, Security Copilot will be included with your Microsoft 365 E5 licenses.",
+    "role": "truth"
+   }
+  ],
+  "expected": "Say roadmap: inclusion with E5 is announced for the coming months, not current; answer No today.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-microsoft-08",
+  "kind": "roadmap-as-fact",
+  "where": {
+   "answerbank": "AB-0041"
+  },
+  "statement": "Copilot experiences are consolidated under *.cloud.microsoft, so one wildcard is enough.",
+  "evidence": [
+   {
+    "source": "microsoft-016",
+    "quote": "Microsoft plans to consolidate Copilot experiences for Microsoft 365 under the `*.cloud.microsoft` domain.",
+    "role": "truth"
+   },
+   {
+    "source": "microsoft-016",
+    "quote": "Microsoft 365 Copilot enterprise experiences: `*.cloud.microsoft`, `*.office.com`",
+    "role": "truth"
+   }
+  ],
+  "expected": "Say planned: consolidation is a plan; today WSS must reach both *.cloud.microsoft and *.office.com and the worldwide Microsoft 365 endpoints must be allowed.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-microsoft-09",
+  "kind": "duplicate-conflict",
+  "where": {
+   "answerbank": [
+    "AB-0001",
+    "AB-0002"
+   ]
+  },
+  "statement": "One entry says nothing trains foundation LLMs; the other says optional user feedback trains the foundation LLMs.",
+  "evidence": [
+   {
+    "source": "microsoft-016",
+    "quote": "We don't use this feedback to train the foundation LLMs used by Microsoft 365 Copilot.",
+    "role": "truth"
+   }
+  ],
+  "expected": "Flag the conflict; feedback may improve Copilot but is not used to train the foundation LLMs. Correct the feedback entry.",
+  "severity": "high"
+ },
+ {
+  "id": "F-microsoft-10",
+  "kind": "duplicate-conflict",
+  "where": {
+   "answerbank": [
+    "AB-0043",
+    "AB-0044"
+   ]
+  },
+  "statement": "One entry says Copilot Chat needs no additional license; the other says it needs the Microsoft 365 Copilot add-on.",
+  "evidence": [
+   {
+    "source": "microsoft-016",
+    "quote": "Microsoft 365 Copilot Chat uses the web and users can provide organizational data. It doesn't require an additional license.",
+    "role": "truth"
+   }
+  ],
+  "expected": "Flag the conflict; Copilot Chat does not require an additional license (the add-on is for Microsoft 365 Copilot with Graph grounding).",
+  "severity": "medium"
+ },
+ {
+  "id": "F-microsoft-11",
+  "kind": "past-review",
+  "where": {
+   "answerbank": "AB-0005"
+  },
+  "statement": "Copilot prompts are subject to Azure OpenAI abuse monitoring with human review (marked Current, last reviewed February 2024).",
+  "evidence": [
+   {
+    "source": "microsoft-016",
+    "quote": "While abuse monitoring, which includes human review of content, is available in Azure OpenAI, Microsoft 365 Copilot services have opted out of it.",
+    "role": "truth"
+   }
+  ],
+  "expected": "Mark needs-person / re-review and correct to No: Microsoft 365 Copilot services have opted out of Azure OpenAI abuse monitoring.",
+  "severity": "high"
+ },
+ {
+  "id": "F-microsoft-12",
+  "kind": "past-review",
+  "where": {
+   "answerbank": "AB-0011"
+  },
+  "statement": "Copilot is not yet a covered data residency workload (marked Current, last reviewed December 2023).",
+  "evidence": [
+   {
+    "source": "microsoft-016",
+    "quote": "Microsoft 365 Copilot was added as a covered workload in the data residency commitments in Microsoft Product Terms on March 1, 2024.",
+    "role": "truth"
+   }
+  ],
+  "expected": "Re-review and supersede: Copilot has been a covered workload (Product Terms, ADR and Multi-Geo) since March 1, 2024; conflicts with the newer residency entry.",
+  "severity": "medium"
+ }
+]

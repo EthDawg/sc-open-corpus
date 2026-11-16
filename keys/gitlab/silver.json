@@ -1,0 +1,209 @@
+[
+ {
+  "id": "Q-gitlab-007",
+  "question": "Are customers allowed to run their own penetration tests or vulnerability scans against GitLab.com?",
+  "answer": "No",
+  "type": "yes-no",
+  "source": "gitlab-005",
+  "quote": "Customers are NOT authorized to conduct Vulnerability Scans or Penetration tests on GitLab's SaaS Application.",
+  "holdout": false
+ },
+ {
+  "id": "Q-gitlab-011",
+  "question": "What is GitLab Field Security's turnaround time for a security questionnaire?",
+  "answer": "10 business days",
+  "type": "number",
+  "source": "gitlab-032",
+  "quote": "10 Business Day. SA or CSM will utlize the Knowledge Base",
+  "holdout": true
+ },
+ {
+  "id": "Q-gitlab-012",
+  "question": "What is the turnaround time for a contract review by Field Security?",
+  "answer": "5 business days",
+  "type": "number",
+  "source": "gitlab-032",
+  "quote": "5 Business Days. Field Security must be engaged in all relevant Contract Reviews.",
+  "holdout": false
+ },
+ {
+  "id": "Q-gitlab-013",
+  "question": "Within what time does GitLab remediate a critical (CVSS 9.0-10.0) vulnerability, and how fast is it mitigated?",
+  "answer": "Mitigated within 24 hours; remediated within 30 days",
+  "type": "number",
+  "source": "gitlab-005",
+  "quote": "| 9.0-10.0 (Critical) | `~severity::1` | `~priority::1` | Within 24 hours | 30 day SLA |",
+  "holdout": true
+ },
+ {
+  "id": "Q-gitlab-014",
+  "question": "What is the remediation SLA for a low-severity (CVSS 0.1-3.9) vulnerability?",
+  "answer": "180 days",
+  "type": "number",
+  "source": "gitlab-005",
+  "quote": "| 0.1-3.9 (Low) | `~severity::4` | `~priority::4` | N/A | 180 day SLA |",
+  "holdout": true
+ },
+ {
+  "id": "Q-gitlab-015",
+  "question": "What does GitLab security awareness training include?",
+  "answer": "New hire security awareness training, global annual security awareness training, secure coding training and quarterly targeted phishing exercises",
+  "type": "list",
+  "source": "gitlab-005",
+  "quote": "new hire security awareness training, global annual security awareness training, secure coding training and quarterly targeted phishing exercises.",
+  "holdout": false
+ },
+ {
+  "id": "Q-gitlab-018",
+  "question": "Is an NDA required to see the GitLab SOC 2 Type 2 report?",
+  "answer": "Yes (click-wrap NDA in the Trust Center)",
+  "type": "yes-no",
+  "source": "gitlab-034",
+  "quote": "an NDA is required to be in place prior to viewing specific documents (such as SOC 2 Type 2).",
+  "holdout": false
+ },
+ {
+  "id": "Q-gitlab-028",
+  "question": "What is the status of tool approval guardrails for GitLab Duo agents in GitLab 19.1?",
+  "answer": "Beta (emits audit events for every approval decision)",
+  "type": "fact",
+  "source": "gitlab-041",
+  "quote": "This beta release includes Agentic Chat, IDE, and flows, and emits audit events for every approval decision.",
+  "holdout": false
+ },
+ {
+  "id": "Q-gitlab-029",
+  "question": "What availability objective does GitLab Dedicated maintain?",
+  "answer": "99.9% monthly",
+  "type": "number",
+  "source": "gitlab-061",
+  "quote": "GitLab Dedicated maintains a monthly service level objective of 99.9% availability.",
+  "holdout": false
+ },
+ {
+  "id": "Q-gitlab-030",
+  "question": "How many outbound AWS PrivateLink endpoints does GitLab Dedicated allow before a proxy is needed?",
+  "answer": "10",
+  "type": "number",
+  "source": "gitlab-061",
+  "quote": "Plan for the 10-endpoint limit on outbound PrivateLink connections.",
+  "holdout": false
+ },
+ {
+  "id": "Q-gitlab-031",
+  "question": "How long can a customer access a GitLab Dedicated instance after the subscription expires?",
+  "answer": "30 days",
+  "type": "number",
+  "source": "gitlab-061",
+  "quote": "When your subscription expires, you can access your instance for 30 days.",
+  "holdout": true
+ },
+ {
+  "id": "Q-gitlab-032",
+  "question": "Within how many days of expiration must a Dedicated customer ask for data preservation?",
+  "answer": "15 days",
+  "type": "number",
+  "source": "gitlab-061",
+  "quote": "To preserve your data, contact your account team or email Support within 15 days of expiration to request data preservation.",
+  "holdout": false
+ },
+ {
+  "id": "Q-gitlab-033",
+  "question": "Is LDAP authentication available on GitLab Dedicated?",
+  "answer": "No",
+  "type": "yes-no",
+  "source": "gitlab-061",
+  "quote": "LDAP authentication Authentication using corporate LDAP/Active Directory credentials. Must use GitLab-specific passwords or access tokens instead.",
+  "holdout": true
+ },
+ {
+  "id": "Q-gitlab-034",
+  "question": "Do GitLab Dedicated pre-production environments carry an SLA?",
+  "answer": "No (no SLA commitment; single-region; purchased as an add-on)",
+  "type": "yes-no",
+  "source": "gitlab-061",
+  "quote": "Single-region deployment only. - No SLA commitment. - Cannot run newer versions than production.",
+  "holdout": true
+ },
+ {
+  "id": "Q-gitlab-035",
+  "question": "Can GitLab Pages on GitLab Dedicated use a custom domain?",
+  "answer": "No",
+  "type": "yes-no",
+  "source": "gitlab-061",
+  "quote": "GitLab Pages does not support custom domains.",
+  "holdout": false
+ },
+ {
+  "id": "Q-gitlab-037",
+  "question": "Which SSO protocols does GitLab Dedicated support?",
+  "answer": "SAML and OpenID Connect (OIDC)",
+  "type": "list",
+  "source": "gitlab-061",
+  "quote": "GitLab Dedicated supports SAML and OpenID Connect (OIDC) providers for single sign-on (SSO).",
+  "holdout": true
+ },
+ {
+  "id": "Q-gitlab-040",
+  "question": "What is the on-demand list price of a GitLab Credit?",
+  "answer": "$1 per credit",
+  "type": "number",
+  "source": "gitlab-060",
+  "quote": "On-demand credits are billed monthly, at the list price of $1 per credit used.",
+  "holdout": false
+ },
+ {
+  "id": "Q-gitlab-041",
+  "question": "What is the monthly cap on on-demand credit usage for Free namespaces?",
+  "answer": "$25,000 per calendar month",
+  "type": "number",
+  "source": "gitlab-060",
+  "quote": "On-demand usage for Free namespaces is capped at $25,000 for each calendar month.",
+  "holdout": false
+ },
+ {
+  "id": "Q-gitlab-047",
+  "question": "How large is the self-serve Duo Agent Platform SaaS trial for prospects?",
+  "answer": "Up to 100 users for 30 days",
+  "type": "number",
+  "source": "gitlab-016",
+  "quote": "a free SaaS trial capped at 100 users for 30 days",
+  "holdout": false
+ },
+ {
+  "id": "Q-gitlab-048",
+  "question": "In which GitLab version will compliance pipelines be removed?",
+  "answer": "GitLab 20.0 (deprecated in 17.3)",
+  "type": "date",
+  "source": "gitlab-048",
+  "quote": "we have deprecated compliance pipelines in GitLab 17.3 and will remove the feature in GitLab 20.0.",
+  "holdout": false
+ },
+ {
+  "id": "Q-gitlab-049",
+  "question": "What is the minimum PostgreSQL version for GitLab 19.0?",
+  "answer": "PostgreSQL 17",
+  "type": "number",
+  "source": "gitlab-048",
+  "quote": "In GitLab 19.0, PostgreSQL 17 becomes the minimum required PostgreSQL version.",
+  "holdout": false
+ },
+ {
+  "id": "Q-gitlab-050",
+  "question": "What was the availability status of GitLab Secrets Manager on GitLab.com in GitLab 19.3?",
+  "answer": "Limited Availability, an add-on billed through GitLab Credits",
+  "type": "fact",
+  "source": "gitlab-043",
+  "quote": "GitLab Secrets Manager, now in Limited Availability on GitLab.com, makes credentials more secure and keeps them in the same platform that runs your pipelines.",
+  "holdout": false
+ },
+ {
+  "id": "Q-gitlab-051",
+  "question": "From which GitLab version do Code Suggestions in the Web IDE and desktop IDEs consume GitLab Credits?",
+  "answer": "GitLab 19.0",
+  "type": "date",
+  "source": "gitlab-047",
+  "quote": "Starting in GitLab 19.0, GitLab Duo Core moves to usage-based billing.",
+  "holdout": false
+ }
+]

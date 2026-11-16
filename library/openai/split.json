@@ -1,0 +1,31 @@
+{
+ "d1": [
+  "openai-001",
+  "openai-002",
+  "openai-003",
+  "openai-004",
+  "openai-005",
+  "openai-006",
+  "openai-007",
+  "openai-008",
+  "openai-009",
+  "openai-010",
+  "openai-013",
+  "openai-014",
+  "openai-015",
+  "openai-016",
+  "openai-017",
+  "openai-018",
+  "openai-019",
+  "openai-020",
+  "openai-023",
+  "openai-024"
+ ],
+ "d2": [
+  "openai-011",
+  "openai-012",
+  "openai-021",
+  "openai-022"
+ ],
+ "why": "d2 is the newest material that changes what a seller says: the deprecations page (GPT-4o family, o3, gpt-5, Assistants API, Agent Builder, Evals and self-serve fine-tuning retirements with dates), the API changelog (Decisions API GA, API credits for Pro and Business subscribers, Agents API beta updates), the GPT-6.1 Sol system card addendum (treated as Critical in cybersecurity) and the October 2026 GPT-6 Sol/Luna update (GPT-6 replaces GPT-5.6 in ChatGPT; new safety regressions). d1 stands on its own: data controls, trust portal, ChatGPT Work admin and security docs, pricing, models, rate limits, the GPT-6 Astra system card, the Preparedness Framework and the business guides."
+}

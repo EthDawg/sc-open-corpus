@@ -1,0 +1,997 @@
+{
+ "name": "PostHog Answer Library",
+ "review_cycle_days": 180,
+ "collections": [
+  "Security questionnaire core",
+  "Privacy and DPA",
+  "HIPAA and healthcare",
+  "Commercial and contracts",
+  "Product and pricing",
+  "AI and data use",
+  "Incidents"
+ ],
+ "entries": [
+  {
+   "id": "AB-0002",
+   "library": "Security",
+   "question": "How often do you perform penetration testing, and when was the most recent test?",
+   "alternates": [
+    "Do you have a recent third-party penetration test?"
+   ],
+   "answer": "PostHog runs penetration tests annually. The most recent was in May 2026, and the report is available in the PostHog Trust Center.",
+   "owner": "Security & Compliance",
+   "sme": "Security Engineering lead",
+   "created": "2023-06-05",
+   "last_reviewed": "2026-06-22",
+   "status": "Current",
+   "tags": [
+    "pen test"
+   ],
+   "uses": 118,
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "source": "posthog-014",
+   "quote": "We conduct these annually, most recently in May 2026 - you can find the report in"
+  },
+  {
+   "id": "AB-0003",
+   "library": "Security",
+   "question": "Is multi-factor authentication required for all employees?",
+   "alternates": [],
+   "answer": "Yes. All PostHog team members must enable multi-factor authentication on their accounts. Passkeys are the preferred method because they are phishing-resistant, and new starters set them up for Google Workspace and GitHub in their first week.",
+   "owner": "Security & Compliance",
+   "sme": "Security Engineering lead",
+   "created": "2023-06-05",
+   "last_reviewed": "2026-03-30",
+   "status": "Review due",
+   "tags": [
+    "MFA",
+    "access control"
+   ],
+   "uses": 97,
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "source": "posthog-014",
+   "quote": "All team members are required to enable multi-factor authentication (MFA) on their accounts."
+  },
+  {
+   "id": "AB-0004",
+   "library": "Security",
+   "question": "Do employees use hardware security keys for authentication?",
+   "alternates": [
+    "Do you use FIDO2 security keys?"
+   ],
+   "answer": "Yes. Every PostHog employee is required to purchase and configure two YubiKeys, which are used as the hardware second factor on company accounts.",
+   "owner": "Security & Compliance",
+   "sme": "IT and Security Operations",
+   "created": "2023-06-05",
+   "last_reviewed": "2025-02-11",
+   "status": "Current",
+   "tags": [
+    "MFA",
+    "hardware keys"
+   ],
+   "uses": 31,
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "source": "posthog-014",
+   "quote": "We previously required all employees to purchase and configure two Yubikeys."
+  },
+  {
+   "id": "AB-0005",
+   "library": "Security",
+   "question": "How are employee laptops managed and secured?",
+   "alternates": [
+    "Do you use mobile device management?"
+   ],
+   "answer": "All PostHog laptops are managed with Fleet, an open-source MDM. Fleet applies policies that raise every device's baseline, including minimum password length, screen lock, automatic software updates, provisioning of 1Password and no static SSH keys on the filesystem. Fleet is also used to check whether laptops were exposed to a malicious package or browser extension.",
+   "owner": "Security & Compliance",
+   "sme": "IT and Security Operations",
+   "created": "2025-01-14",
+   "last_reviewed": "2026-10-30",
+   "status": "Current",
+   "tags": [
+    "MDM",
+    "endpoint"
+   ],
+   "uses": 44,
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "source": "posthog-014",
+   "quote": "It applies targeted policies that raise the security baseline of every device, including:"
+  },
+  {
+   "id": "AB-0006",
+   "library": "Security",
+   "question": "Are source code commits signed and verified?",
+   "alternates": [],
+   "answer": "Yes. Every commit pushed to a PostHog repository must be cryptographically signed, and an org-wide GitHub ruleset enforces this on all branches, so authorship is verified rather than trusted.",
+   "owner": "Security & Compliance",
+   "sme": "Security Engineering lead",
+   "created": "2026-01-19",
+   "last_reviewed": "2026-10-30",
+   "status": "Current",
+   "tags": [
+    "SDLC",
+    "source control"
+   ],
+   "uses": 22,
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "source": "posthog-014",
+   "quote": "Every commit pushed to a PostHog repository must be cryptographically signed. An org-wide GitHub ruleset enforces this on all branches"
+  },
+  {
+   "id": "AB-0007",
+   "library": "Security",
+   "question": "Do you operate a vulnerability disclosure or bug bounty program?",
+   "alternates": [],
+   "answer": "Yes. Security findings can be reported through PostHog's vulnerability disclosure program on Bugcrowd or by emailing security-reports@posthog.com. Valid findings are rewarded with PostHog swag rather than cash bounties.",
+   "owner": "Security & Compliance",
+   "sme": "Security Engineering lead",
+   "created": "2023-06-05",
+   "last_reviewed": "2026-01-12",
+   "status": "Review due",
+   "tags": [
+    "vulnerability disclosure"
+   ],
+   "uses": 51,
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "source": "posthog-014",
+   "quote": "Security vulnerabilities and other security related findings can be reported via our"
+  },
+  {
+   "id": "AB-0008",
+   "library": "Security",
+   "question": "How do you find and remediate vulnerabilities in your own code?",
+   "alternates": [],
+   "answer": "PostHog imports findings from the AI pentesting services it uses (currently Veria Labs and Parameter). Findings are triaged automatically and true positives go to the product team that owns the code. Critical and high severity findings must be fixed as soon as possible.",
+   "owner": "Security & Compliance",
+   "sme": "Security Engineering lead",
+   "created": "2026-03-02",
+   "last_reviewed": "2026-10-30",
+   "status": "Current",
+   "tags": [
+    "vulnerability management",
+    "SDLC"
+   ],
+   "uses": 18,
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "source": "posthog-014",
+   "quote": "Critical and high severity findings must be fixed as soon as possible."
+  },
+  {
+   "id": "AB-0009",
+   "library": "Security",
+   "question": "Under what circumstances can PostHog staff access our account or data?",
+   "alternates": [
+    "Do support staff impersonate users?"
+   ],
+   "answer": "Only when there is a clear, demonstrable benefit to you, for example investigating an incident, resolving a support issue or reviewing your setup. Staff do not change your setup without explicit consent except when reacting to incidents that harm the service. Raising a support ticket is treated as consent for support engineers to access your account to investigate it; say so in the ticket if you do not want that.",
+   "owner": "Security & Compliance",
+   "sme": "Support Engineering lead",
+   "created": "2024-09-03",
+   "last_reviewed": "2026-08-04",
+   "status": "Current",
+   "tags": [
+    "access control",
+    "support access"
+   ],
+   "uses": 64,
+   "collections": [
+    "Security questionnaire core",
+    "Privacy and DPA"
+   ],
+   "source": "posthog-014",
+   "quote": "When a customer raises a support ticket, we take this as consent to be able to impersonate their account and investigate based on the contents of the ticket."
+  },
+  {
+   "id": "AB-0012",
+   "library": "Security",
+   "question": "Have you experienced a security incident in the past 12 months? If so, describe it.",
+   "alternates": [
+    "Describe any breaches in the last year."
+   ],
+   "answer": "Yes. On 24 November 2025 an attacker used a stolen npm publishing token to publish malicious versions of several PostHog JavaScript SDKs as part of the Shai-Hulud 2.0 worm. Only the JavaScript SDKs published to npm were affected. PostHog identified and deleted the malicious packages and revoked the tokens by 9:30 AM UTC the same day, and published a full post-mortem.",
+   "owner": "Security & Compliance",
+   "sme": "Security Engineering lead",
+   "created": "2025-11-27",
+   "last_reviewed": "2026-06-01",
+   "status": "Current",
+   "tags": [
+    "incident",
+    "supply chain"
+   ],
+   "uses": 88,
+   "collections": [
+    "Security questionnaire core",
+    "Incidents"
+   ],
+   "source": "posthog-026",
+   "quote": "The attack only affected our Javascript SDKs published in npm."
+  },
+  {
+   "id": "AB-0013",
+   "library": "Security",
+   "question": "What did you change after the November 2025 supply-chain incident?",
+   "alternates": [],
+   "answer": "PostHog moved package releases to the trusted publisher model, requires a review from the security team on any pull request that modifies a workflow file, switched to pnpm 10 to disable install scripts and use minimumReleaseAge, and reworked GitHub secrets management so incident response is faster.",
+   "owner": "Security & Compliance",
+   "sme": "Security Engineering lead",
+   "created": "2025-11-27",
+   "last_reviewed": "2026-06-01",
+   "status": "Current",
+   "tags": [
+    "incident",
+    "SDLC",
+    "supply chain"
+   ],
+   "uses": 41,
+   "collections": [
+    "Incidents"
+   ],
+   "source": "posthog-026",
+   "quote": "We've significantly tightened our package release workflows (moving to the trusted publisher model)."
+  },
+  {
+   "id": "AB-0014",
+   "library": "Security",
+   "question": "Have you had any data loss incidents?",
+   "alternates": [],
+   "answer": "Yes. On 19 February 2026 a ClickHouse bug in the dedicated Logs cluster deleted Logs data older than 3 days in the US region. Only the Logs product was affected; all other PostHog data was intact. Recent data was restored from Kafka, zero-copy replication was disabled and S3 versioning was enabled on the storage buckets.",
+   "owner": "Security & Compliance",
+   "sme": "Infrastructure Engineering lead",
+   "created": "2026-02-23",
+   "last_reviewed": "2026-08-11",
+   "status": "Current",
+   "tags": [
+    "incident",
+    "resilience",
+    "logs"
+   ],
+   "uses": 19,
+   "collections": [
+    "Incidents"
+   ],
+   "source": "posthog-027",
+   "quote": "This data loss only impacted the Logs product, all other PostHog data is intact."
+  },
+  {
+   "id": "AB-0015",
+   "library": "Product",
+   "question": "Do you support SAML single sign-on, and which plan includes it?",
+   "alternates": [
+    "Is SSO available?"
+   ],
+   "answer": "Yes. SAML SSO is part of the Teams package at $450/month, which also includes the other collaboration and security features larger teams need.",
+   "owner": "Product Marketing",
+   "sme": "Billing product manager",
+   "created": "2023-04-11",
+   "last_reviewed": "2025-06-03",
+   "status": "Review due",
+   "tags": [
+    "SSO",
+    "SAML",
+    "packages"
+   ],
+   "uses": 67,
+   "collections": [
+    "Security questionnaire core",
+    "Product and pricing"
+   ],
+   "source": "posthog-010",
+   "quote": "Customers on the legacy \"Teams\" package ($450/month) can save $200 by switching to the"
+  },
+  {
+   "id": "AB-0027",
+   "library": "Product",
+   "question": "Can data models be version-controlled in Git and tested, as in dbt?",
+   "alternates": [],
+   "answer": "Yes. PostHog data models are plain SQL views with a Git workflow and tests, so analytics engineers can version and test them the same way they would dbt models.",
+   "owner": "Solutions Engineering",
+   "sme": "Data Warehouse solutions engineer",
+   "created": "2026-03-16",
+   "last_reviewed": "2026-07-20",
+   "status": "Current",
+   "tags": [
+    "data modeling",
+    "dbt"
+   ],
+   "uses": 9,
+   "collections": [
+    "Product and pricing"
+   ],
+   "source": "posthog-009",
+   "quote": "PostHog replaces dbt with SQL views you write in the browser and materialize on a schedule"
+  },
+  {
+   "id": "AB-0029",
+   "library": "Product",
+   "question": "Do you support self-hosted deployments?",
+   "alternates": [
+    "Can we host PostHog on-premise?"
+   ],
+   "answer": "Only on a best-effort basis. You can deploy PostHog on your own infrastructure using the standard deployment guides, but PostHog does not provide support for self-hosted instances, and the hobby deployment suits smaller event volumes only. PostHog Cloud (US or EU) is the supported option.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions engineer",
+   "created": "2023-01-09",
+   "last_reviewed": "2026-10-22",
+   "status": "Current",
+   "tags": [
+    "self-hosted",
+    "deployment"
+   ],
+   "uses": 46,
+   "collections": [
+    "Product and pricing",
+    "Security questionnaire core"
+   ],
+   "source": "posthog-016",
+   "quote": "Deploying PostHog onto your own infrastructure is straightforward but we do not provide support for self-hosted instances."
+  },
+  {
+   "id": "AB-0032",
+   "library": "Legal and Commercial",
+   "question": "Is there a discount for signing a longer contract term?",
+   "alternates": [
+    "Do you reward longer terms?"
+   ],
+   "answer": "Not for term length alone. PostHog does not discount for length of commitment: a multi-year term invoiced annually prices the same as consecutive one-year terms. The reward is for paying more of the term upfront, at +2.5% per additional year paid upfront, capped at +5%. Terms of up to 36 months are available.",
+   "owner": "Sales Enablement",
+   "sme": "Deal desk lead",
+   "created": "2026-05-27",
+   "last_reviewed": "2026-11-12",
+   "status": "Current",
+   "tags": [
+    "discounts",
+    "multi-year",
+    "term"
+   ],
+   "uses": 14,
+   "collections": [
+    "Commercial and contracts"
+   ],
+   "source": "posthog-008",
+   "quote": "A multi-year term invoiced annually prices the same as consecutive 1-year terms, while extra years paid upfront earn the timing of cash discount above."
+  },
+  {
+   "id": "AB-0033",
+   "library": "Legal and Commercial",
+   "question": "Can we pay for an annual agreement quarterly or in instalments?",
+   "alternates": [],
+   "answer": "No. PostHog requires upfront payment for all discounted contracts; quarterly or split payment terms are not available. If the full projected amount exceeds budget, you can buy fewer credits upfront at the matching discount tier and add more later.",
+   "owner": "Sales Enablement",
+   "sme": "Deal desk lead",
+   "created": "2024-02-05",
+   "last_reviewed": "2026-09-29",
+   "status": "Current",
+   "tags": [
+    "payment terms"
+   ],
+   "uses": 52,
+   "collections": [
+    "Commercial and contracts"
+   ],
+   "source": "posthog-008",
+   "quote": "Quarterly or split payment terms are not available as they impact our cash flow and add administrative overhead."
+  },
+  {
+   "id": "AB-0034",
+   "library": "Legal and Commercial",
+   "question": "Can we pay an order form invoice by credit card?",
+   "alternates": [],
+   "answer": "No. Credits bought through an order form are paid by bank transfer only, Net 30 from the contract start date unless the order form says otherwise. Card payment is available on monthly self-serve plans, which do not carry the order-form discounts.",
+   "owner": "Sales Enablement",
+   "sme": "Revenue Operations lead",
+   "created": "2025-04-14",
+   "last_reviewed": "2026-04-27",
+   "status": "Review due",
+   "tags": [
+    "payment method"
+   ],
+   "uses": 33,
+   "collections": [
+    "Commercial and contracts"
+   ],
+   "source": "posthog-008",
+   "quote": "We do not accept credit card payments for credits bought via an order form."
+  },
+  {
+   "id": "AB-0035",
+   "library": "Legal and Commercial",
+   "question": "Do you accept payment by check?",
+   "alternates": [],
+   "answer": "No. PostHog does not accept payment by check under any circumstances, and this is stated on order forms.",
+   "owner": "Sales Enablement",
+   "sme": "Revenue Operations lead",
+   "created": "2024-02-05",
+   "last_reviewed": "2025-10-20",
+   "status": "Review due",
+   "tags": [
+    "payment method"
+   ],
+   "uses": 11,
+   "collections": [
+    "Commercial and contracts"
+   ],
+   "source": "posthog-008",
+   "quote": "We absolutely do not allow payment by check. This is made clear on order forms."
+  },
+  {
+   "id": "AB-0036",
+   "library": "Legal and Commercial",
+   "question": "What is your standard contract term?",
+   "alternates": [],
+   "answer": "The standard term is 12 months. Terms of up to 36 months are available on request, either invoiced annually or paid upfront.",
+   "owner": "Sales Enablement",
+   "sme": "Deal desk lead",
+   "created": "2024-02-05",
+   "last_reviewed": "2026-11-12",
+   "status": "Current",
+   "tags": [
+    "term"
+   ],
+   "uses": 61,
+   "collections": [
+    "Commercial and contracts"
+   ],
+   "source": "posthog-008",
+   "quote": "Our standard contract term is 12 months. Terms of up to 36 months are available on request, either invoiced annually or paid upfront."
+  },
+  {
+   "id": "AB-0037",
+   "library": "Legal and Commercial",
+   "question": "Will you guarantee or lock our prices for the contract term?",
+   "alternates": [
+    "Can you cap annual price increases?"
+   ],
+   "answer": "No. PostHog does not offer price guarantees: it sometimes lowers prices, which a lock would prevent you benefiting from; it occasionally restructures products; and you stay in control of your own usage. Prepaid credits give budget control instead.",
+   "owner": "Sales Enablement",
+   "sme": "Deal desk lead",
+   "created": "2024-02-05",
+   "last_reviewed": "2026-03-09",
+   "status": "Review due",
+   "tags": [
+    "price lock"
+   ],
+   "uses": 27,
+   "collections": [
+    "Commercial and contracts"
+   ],
+   "source": "posthog-008",
+   "quote": "We do not offer price guarantees for the following reasons:"
+  },
+  {
+   "id": "AB-0038",
+   "library": "Legal and Commercial",
+   "question": "Do you provide an uptime SLA?",
+   "alternates": [
+    "What is your availability commitment?"
+   ],
+   "answer": "Yes. Customers on an annual contract receive an uptime SLA as part of their order form, and the terms set out exactly how the SLA works.",
+   "owner": "Sales Enablement",
+   "sme": "Deal desk lead",
+   "created": "2024-02-05",
+   "last_reviewed": "2026-07-06",
+   "status": "Current",
+   "tags": [
+    "SLA",
+    "availability"
+   ],
+   "uses": 48,
+   "collections": [
+    "Commercial and contracts",
+    "Security questionnaire core"
+   ],
+   "source": "posthog-008",
+   "quote": "More details on how exactly the uptime SLA works can be found in our"
+  },
+  {
+   "id": "AB-0039",
+   "library": "Legal and Commercial",
+   "question": "What happens to unused prepaid credits at the end of the term?",
+   "alternates": [],
+   "answer": "If you renew at equal or higher spend, part of your remaining unused credit rolls into the new term, as set out in the prepaid plans documentation. If you do not renew, remaining credits are removed on the expiry date and the account moves to the standard monthly plan.",
+   "owner": "Sales Enablement",
+   "sme": "Revenue Operations lead",
+   "created": "2025-04-14",
+   "last_reviewed": "2026-10-13",
+   "status": "Current",
+   "tags": [
+    "credits",
+    "renewal"
+   ],
+   "uses": 25,
+   "collections": [
+    "Commercial and contracts"
+   ],
+   "source": "posthog-008",
+   "quote": "When a customer chooses not to renew a prepaid credit contract we automatically remove any remaining credits on the expiry date."
+  },
+  {
+   "id": "AB-0040",
+   "library": "Legal and Commercial",
+   "question": "Can you go below your published discount levels to win our business from a competitor?",
+   "alternates": [
+    "Can you beat our current vendor's price?"
+   ],
+   "answer": "Yes. For strategic customers, competitive takeouts and churn-prevention deals PostHog offers additional credit and discounts beyond the standard levers, including below-margin pricing, to win the business.",
+   "owner": "Sales Enablement",
+   "sme": "Deal desk lead",
+   "created": "2025-09-22",
+   "last_reviewed": "2026-08-24",
+   "status": "Current",
+   "tags": [
+    "discounts",
+    "competitive"
+   ],
+   "uses": 13,
+   "collections": [
+    "Commercial and contracts"
+   ],
+   "source": "posthog-008",
+   "quote": "In exceptional circumstances, we may explore providing additional discounts which eat into our operating margin for the following cases:"
+  },
+  {
+   "id": "AB-0041",
+   "library": "Legal and Commercial",
+   "question": "We are still under contract with another vendor. Can you help us switch before it ends?",
+   "alternates": [],
+   "answer": "Possibly, through a contract buyout. PostHog can give free credits for up to 6 months of the total PostHog contract value, provided you share proof of the current contract, sign an annual contract of $20k+ per year paid upfront, and the competitor is an established product. Buyouts need team lead approval and are at PostHog's discretion.",
+   "owner": "Sales Enablement",
+   "sme": "Deal desk lead",
+   "created": "2025-02-03",
+   "last_reviewed": "2026-11-12",
+   "status": "Current",
+   "tags": [
+    "buyout",
+    "competitive"
+   ],
+   "uses": 16,
+   "collections": [
+    "Commercial and contracts"
+   ],
+   "source": "posthog-008",
+   "quote": "we are willing to give them free PostHog credits for up to 6 months of their total PostHog contract value."
+  },
+  {
+   "id": "AB-0042",
+   "library": "Legal and Commercial",
+   "question": "Do you offer a discount in exchange for a case study?",
+   "alternates": [],
+   "answer": "No. PostHog does not offer extra discounts for case studies, because paying for them devalues them.",
+   "owner": "Sales Enablement",
+   "sme": "Deal desk lead",
+   "created": "2024-02-05",
+   "last_reviewed": "2025-11-17",
+   "status": "Review due",
+   "tags": [
+    "discounts"
+   ],
+   "uses": 8,
+   "collections": [
+    "Commercial and contracts"
+   ],
+   "source": "posthog-008",
+   "quote": "We don't offer additional discounts in exchange for a case study, as paying for case studies can devalue them."
+  },
+  {
+   "id": "AB-0045",
+   "library": "Legal and Commercial",
+   "question": "Will you vary your standard terms for a proof of concept or trial?",
+   "alternates": [],
+   "answer": "No. Trials and proofs of concept run under PostHog's standard terms, including the standard DPA and BAA where applicable. Once a trial concludes, custom terms can be evaluated for a qualified customer.",
+   "owner": "Legal",
+   "sme": "Commercial counsel",
+   "created": "2025-06-16",
+   "last_reviewed": "2026-10-27",
+   "status": "Current",
+   "tags": [
+    "trial",
+    "legal terms"
+   ],
+   "uses": 21,
+   "collections": [
+    "Commercial and contracts"
+   ],
+   "source": "posthog-008",
+   "quote": "We don't vary PostHog's standard terms for trials and proofs of concepts (POCs) for prospective customers."
+  },
+  {
+   "id": "AB-0046",
+   "library": "Legal and Commercial",
+   "question": "Will you sign our paper (our MSA, DPA or order form) instead of yours?",
+   "alternates": [],
+   "answer": "Generally no. PostHog declines non-PostHog drafted contracts except in special circumstances, because they add risk and do not scale; customer paper is typically only considered for deals over $200k a year.",
+   "owner": "Legal",
+   "sme": "Commercial counsel",
+   "created": "2024-07-08",
+   "last_reviewed": "2026-10-27",
+   "status": "Current",
+   "tags": [
+    "legal terms",
+    "MSA"
+   ],
+   "uses": 34,
+   "collections": [
+    "Commercial and contracts"
+   ],
+   "source": "posthog-008",
+   "quote": "If a customer requests to use a non-PostHog drafted contract for documents such as a DPA, MSA, Order Form, or BAA, we generally decline"
+  },
+  {
+   "id": "AB-0047",
+   "library": "Legal and Commercial",
+   "question": "How long is a typical sales-led evaluation?",
+   "alternates": [],
+   "answer": "Sales-led trials are usually two weeks, extended to four weeks for larger or more complex evaluations, for example with several stakeholders or a side-by-side comparison. Every trial starts with the SDK installed and events flowing, plus documented success criteria and a timeline.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions engineering lead",
+   "created": "2025-02-18",
+   "last_reviewed": "2026-10-29",
+   "status": "Current",
+   "tags": [
+    "trial",
+    "evaluation"
+   ],
+   "uses": 30,
+   "collections": [
+    "Commercial and contracts",
+    "Product and pricing"
+   ],
+   "source": "posthog-007",
+   "quote": "We default to 2 weeks ($20-$60K ARR) unless there's a compelling reason for 4 weeks."
+  },
+  {
+   "id": "AB-0048",
+   "library": "Privacy",
+   "question": "Do you offer a Data Processing Agreement, and on which plans?",
+   "alternates": [
+    "How do we get a signed DPA?"
+   ],
+   "answer": "Yes. Every PostHog Cloud customer can get a DPA on any plan, including the free plan. It is self-serve from app.posthog.com/legal, already countersigned by PostHog, and effective as soon as you sign it.",
+   "owner": "Legal",
+   "sme": "Privacy counsel",
+   "created": "2023-03-20",
+   "last_reviewed": "2026-10-29",
+   "status": "Current",
+   "tags": [
+    "DPA",
+    "GDPR"
+   ],
+   "uses": 166,
+   "collections": [
+    "Privacy and DPA"
+   ],
+   "source": "posthog-015",
+   "quote": "All PostHog Cloud customers can get a DPA, on any plan. This includes the free plan."
+  },
+  {
+   "id": "AB-0049",
+   "library": "Privacy",
+   "question": "Will you accept our redlines to your DPA?",
+   "alternates": [],
+   "answer": "Generally not. Because of the business and legal work involved, PostHog does not usually negotiate or accept comments to its DPA unless the customer has committed to a long-term contract, which goes through the sales team. Variations are evaluated in proportion to committed annual spend, with a $20k-a-year minimum.",
+   "owner": "Legal",
+   "sme": "Privacy counsel",
+   "created": "2024-06-11",
+   "last_reviewed": "2026-10-29",
+   "status": "Current",
+   "tags": [
+    "DPA",
+    "redlines"
+   ],
+   "uses": 58,
+   "collections": [
+    "Privacy and DPA",
+    "Commercial and contracts"
+   ],
+   "source": "posthog-015",
+   "quote": "we don't generally negotiate or accept comments to our DPA unless a customer has committed to a long term contract"
+  },
+  {
+   "id": "AB-0050",
+   "library": "Legal and Commercial",
+   "question": "Will you sign our confidentiality agreement or NDA?",
+   "alternates": [],
+   "answer": "No. PostHog does not sign customer-specific secrecy agreements; it is a consistent policy to keep contractual commitments standard across customers. The standard DPA already includes confidentiality obligations on PostHog and its personnel, with flow-down requirements to subprocessors.",
+   "owner": "Legal",
+   "sme": "Privacy counsel",
+   "created": "2025-11-03",
+   "last_reviewed": "2026-10-29",
+   "status": "Current",
+   "tags": [
+    "NDA",
+    "confidentiality"
+   ],
+   "uses": 23,
+   "collections": [
+    "Commercial and contracts",
+    "Privacy and DPA"
+   ],
+   "source": "posthog-015",
+   "quote": "We're unable to sign customer-specific secrecy agreements. That's a consistent policy on our end"
+  },
+  {
+   "id": "AB-0051",
+   "library": "Legal and Commercial",
+   "question": "Can you sign a mutual NDA before we share our security questionnaire?",
+   "alternates": [],
+   "answer": "Yes. You do not need an NDA to see PostHog's policies, since most are public in the handbook, but PostHog can sign a customer NDA after counsel review, provided it is mutual and governed by US law.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions engineering lead",
+   "created": "2024-10-21",
+   "last_reviewed": "2026-10-29",
+   "status": "Current",
+   "tags": [
+    "NDA",
+    "security review"
+   ],
+   "uses": 19,
+   "collections": [
+    "Commercial and contracts",
+    "Security questionnaire core"
+   ],
+   "source": "posthog-003",
+   "quote": "If a customer asks you to sign their NDA, you can sign, but have our counsel review it first."
+  },
+  {
+   "id": "AB-0052",
+   "library": "Privacy",
+   "question": "Where is our data hosted? Can we choose the region?",
+   "alternates": [
+    "Which cloud provider do you use?"
+   ],
+   "answer": "Yes. You choose PostHog Cloud US, hosted on AWS us-east-1 in Virginia, or PostHog Cloud EU, hosted on AWS eu-central-1 in Frankfurt, Germany.",
+   "owner": "Security & Compliance",
+   "sme": "Privacy program manager",
+   "created": "2023-03-20",
+   "last_reviewed": "2026-10-27",
+   "status": "Current",
+   "tags": [
+    "data residency",
+    "hosting"
+   ],
+   "uses": 174,
+   "collections": [
+    "Privacy and DPA",
+    "Security questionnaire core"
+   ],
+   "source": "posthog-014",
+   "quote": "Customers can choose whether to host data on our AWS servers in the EU (eu-central-1 in Germany) or the US (us-east-1 in Virginia)."
+  },
+  {
+   "id": "AB-0053",
+   "library": "Privacy",
+   "question": "If we use PostHog Cloud EU, is all processing of our data kept inside the EU?",
+   "alternates": [],
+   "answer": "Yes. With PostHog Cloud EU all of your data is stored and processed in Frankfurt and never leaves EU jurisdiction, including when handled by subprocessors.",
+   "owner": "Security & Compliance",
+   "sme": "Privacy program manager",
+   "created": "2024-03-04",
+   "last_reviewed": "2026-09-01",
+   "status": "Current",
+   "tags": [
+    "data residency",
+    "EU",
+    "GDPR"
+   ],
+   "uses": 61,
+   "collections": [
+    "Privacy and DPA"
+   ],
+   "source": "posthog-015",
+   "quote": "a managed version of PostHog with servers hosted in Frankfurt, ensuring user data never leaves EU jurisdiction."
+  },
+  {
+   "id": "AB-0060",
+   "library": "Privacy",
+   "question": "How do you handle right-to-be-forgotten requests?",
+   "alternates": [],
+   "answer": "Delete the person in the PostHog UI or with the persons API; add delete_events=true and delete_recordings=true to remove their events and session recordings. Recordings are destroyed by crypto-shredding. Event deletion runs asynchronously in non-peak hours, which on PostHog Cloud means weekends.",
+   "owner": "Solutions Engineering",
+   "sme": "Privacy solutions engineer",
+   "created": "2024-05-20",
+   "last_reviewed": "2026-11-05",
+   "status": "Current",
+   "tags": [
+    "GDPR",
+    "deletion",
+    "DSAR"
+   ],
+   "uses": 53,
+   "collections": [
+    "Privacy and DPA"
+   ],
+   "source": "posthog-018",
+   "quote": "event data is cleared asynchronously during non-peak usage times (weekends on PostHog Cloud)."
+  },
+  {
+   "id": "AB-0061",
+   "library": "Privacy",
+   "question": "Can we stop PostHog collecting end-user IP addresses?",
+   "alternates": [],
+   "answer": "Yes. Each project can discard client IP data from stored events, while GeoIP enrichment and bot detection can still use the IP before it is dropped. On PostHog Cloud EU, IP data capture is disabled by default for all new projects.",
+   "owner": "Solutions Engineering",
+   "sme": "Privacy solutions engineer",
+   "created": "2025-06-09",
+   "last_reviewed": "2026-10-22",
+   "status": "Current",
+   "tags": [
+    "IP address",
+    "GDPR"
+   ],
+   "uses": 28,
+   "collections": [
+    "Privacy and DPA"
+   ],
+   "source": "posthog-016",
+   "quote": "For organizations using PostHog Cloud EU, IP data capture is automatically disabled by default for all new projects."
+  },
+  {
+   "id": "AB-0062",
+   "library": "Privacy",
+   "question": "Who is your Data Protection Officer?",
+   "alternates": [],
+   "answer": "Charles Cook, VP Operations, is PostHog's assigned Data Protection Officer. Privacy questions go to privacy@posthog.com.",
+   "owner": "Legal",
+   "sme": "Privacy counsel",
+   "created": "2023-03-20",
+   "last_reviewed": "2026-02-02",
+   "status": "Review due",
+   "tags": [
+    "DPO"
+   ],
+   "uses": 40,
+   "collections": [
+    "Privacy and DPA"
+   ],
+   "source": "posthog-014",
+   "quote": "Charles Cook (VP Operations) is our assigned Data Protection Officer and is responsible for overseeing compliance."
+  },
+  {
+   "id": "AB-0063",
+   "library": "Privacy",
+   "question": "Under GDPR, is PostHog a processor or a controller?",
+   "alternates": [],
+   "answer": "For PostHog Cloud, PostHog acts as data processor and the customer is the data controller. If you self-host, you are both processor and controller and PostHog has no access to your user data.",
+   "owner": "Legal",
+   "sme": "Privacy counsel",
+   "created": "2023-03-20",
+   "last_reviewed": "2026-03-23",
+   "status": "Review due",
+   "tags": [
+    "GDPR",
+    "roles"
+   ],
+   "uses": 66,
+   "collections": [
+    "Privacy and DPA"
+   ],
+   "source": "posthog-014",
+   "quote": "If a customer is using PostHog Cloud, then PostHog is acting as **Data Processor** and the customer is the **Data Controller**."
+  },
+  {
+   "id": "AB-0064",
+   "library": "Privacy",
+   "question": "Do you sell or share our end users' data?",
+   "alternates": [],
+   "answer": "No. Under CCPA PostHog is a service provider to PostHog Cloud customers. It does not access customer end-user data unless the customer instructs it to, and customer data is never sold to third parties.",
+   "owner": "Legal",
+   "sme": "Privacy counsel",
+   "created": "2023-03-20",
+   "last_reviewed": "2026-10-27",
+   "status": "Current",
+   "tags": [
+    "CCPA",
+    "data sale"
+   ],
+   "uses": 59,
+   "collections": [
+    "Privacy and DPA"
+   ],
+   "source": "posthog-014",
+   "quote": "We don't access customer end-user data unless instructed by a customer, and customer data is never sold to third parties."
+  },
+  {
+   "id": "AB-0065",
+   "library": "Company",
+   "question": "Is PostHog registered with the UK Information Commissioner's Office?",
+   "alternates": [],
+   "answer": "Yes. PostHog is registered with the ICO as Hiberly Ltd., the legal name of its UK entity.",
+   "owner": "Legal",
+   "sme": "Privacy counsel",
+   "created": "2023-03-20",
+   "last_reviewed": "2025-09-15",
+   "status": "Review due",
+   "tags": [
+    "ICO",
+    "UK"
+   ],
+   "uses": 15,
+   "collections": [
+    "Privacy and DPA"
+   ],
+   "source": "posthog-014",
+   "quote": "We are registered with the Information Commissioner's Office in the United Kingdom as Hiberly Ltd., which is the legal name for our UK entity."
+  },
+  {
+   "id": "AB-0068",
+   "library": "Compliance",
+   "question": "Will you sign a Business Associate Agreement?",
+   "alternates": [
+    "Is PostHog HIPAA compliant?"
+   ],
+   "answer": "Yes, for PostHog Cloud customers subscribed to the Boost, Scale or Enterprise package. You generate a countersigned BAA on the legal page of your PostHog organization, in the same way as the DPA, and you can read the full text at posthog.com/baa first.",
+   "owner": "Legal",
+   "sme": "Privacy counsel",
+   "created": "2024-08-05",
+   "last_reviewed": "2026-10-22",
+   "status": "Current",
+   "tags": [
+    "HIPAA",
+    "BAA"
+   ],
+   "uses": 81,
+   "collections": [
+    "HIPAA and healthcare"
+   ],
+   "source": "posthog-017",
+   "quote": "PostHog only offers Business Associate Agreements (BAAs) for PostHog Cloud to users with the"
+  },
+  {
+   "id": "AB-0071",
+   "library": "Compliance",
+   "question": "Can we use the managed reverse proxy with PHI?",
+   "alternates": [],
+   "answer": "No. The managed reverse proxy is not covered by BAAs and should not be used to process PHI. For HIPAA deployments, run a self-hosted proxy on infrastructure you control.",
+   "owner": "Solutions Engineering",
+   "sme": "Healthcare solutions engineer",
+   "created": "2025-09-15",
+   "last_reviewed": "2026-10-22",
+   "status": "Current",
+   "tags": [
+    "HIPAA",
+    "reverse proxy"
+   ],
+   "uses": 14,
+   "collections": [
+    "HIPAA and healthcare"
+   ],
+   "source": "posthog-017",
+   "quote": "covered by BAAs and should not be used to process Protected Health Information (PHI)."
+  },
+  {
+   "id": "AB-0072",
+   "library": "Compliance",
+   "question": "Can PostHog AI be used in an organization that processes PHI?",
+   "alternates": [],
+   "answer": "No. PostHog AI and other AI features are not covered by BAAs and should not be enabled in any organization where a project processes PHI, because they send data to third-party LLM providers that are not set up in a HIPAA-compliant way. Org admins can disable them in organization settings.",
+   "owner": "Solutions Engineering",
+   "sme": "Healthcare solutions engineer",
+   "created": "2025-09-15",
+   "last_reviewed": "2026-10-22",
+   "status": "Current",
+   "tags": [
+    "HIPAA",
+    "AI"
+   ],
+   "uses": 12,
+   "collections": [
+    "HIPAA and healthcare",
+    "AI and data use"
+   ],
+   "source": "posthog-017",
+   "quote": "These features send your data to [third-party LLM providers](/docs/posthog-ai/faq) that are not currently set up in a HIPAA-compliant way."
+  }
+ ]
+}

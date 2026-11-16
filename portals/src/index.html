@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SC Open Corpus</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+:root{--bg:#fbfbf8;--card:#fff;--side:#f5f4ee;--ink:#1c1c18;--mute:#6a6a60;--line:#e6e4da;--hl:#efeee6;--accent:#2f5d50;--link:#2f5d50;--chip:#e9efe9;--chipink:#2f5d50}
+.w{max-width:980px;margin:0 auto;padding:40px 20px 80px}
+h1{font-size:34px;letter-spacing:-.5px;margin:0 0 8px}
+.lede{font-size:17px;color:#3b3b33;max-width:720px}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:28px 0}
+.flow div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}
+.flow b{display:block;margin-bottom:4px}
+.apps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0 30px}
+.app{border-radius:12px;padding:18px;color:#fff;display:block}
+.app:hover{text-decoration:none;filter:brightness(1.08)}
+.app h3{margin:0 0 6px;font-size:18px}.app p{margin:0;opacity:.9;font-size:13.5px}
+.a1{background:#211a4d}.a2{background:#0b3b38}.a3{background:#14213d}
+h2{font-size:20px;margin:34px 0 10px}
+td small{color:var(--mute)}
+@media (max-width:760px){.flow,.apps{grid-template-columns:1fr}}
+</style></head>
+<body><div class="w">
+<h1>SC Open Corpus</h1>
+<p class="lede">Real, public material from real companies, laid out the way a solution consultant actually inherits it: a content library with stale copies, an answer library that a release made partly untrue, and a buyer's tender with its clarification answers. Load it with your own harness, then score what it made against keys it never saw.</p>
+<p class="muted" id="asof"></p>
+<div class="flow">
+ <div><b>1 · Before AI</b>The originals exactly as fetched, sitting in the three portals below with their real mess.</div>
+ <div><b>2 · Collate</b>Export each library the way you would at work: a zip with its manifest, an Excel answer export, a tender pack.</div>
+ <div><b>3 · The AI step</b>Your harness (Green Room, Claude Code, Codex) reads the exports into claims, answers and slides.</div>
+ <div><b>4 · Score</b>Against each vendor's own completed questionnaire, the buyer's published answers and every planted fault.</div>
+</div>
+<div class="apps">
+ <a class="app a1" href="stacks/"><h3>Stacks</h3><p>Sales content library: decks, whitepapers, playbooks, versions, expiry, who may see it, and what may go to AI.</p></a>
+ <a class="app a2" href="answerbank/"><h3>Answerbank</h3><p>RFP answer library: questions as buyers ask them, owners, review dates, and answers that drifted.</p></a>
+ <a class="app a3" href="tenders/"><h3>Tenderline</h3><p>Buyer portal: real public opportunities with documents, addenda and clarification answers.</p></a>
+</div>
+<h2>Libraries</h2>
+<table id="orgs"><thead><tr><th>Company</th><th>Items</th><th>Answers</th><th>Files hosted here</th></tr></thead><tbody></tbody></table>
+<h2>Why this exists</h2>
+<p>Every sales-knowledge tool claims it can onboard a company. Almost none show it on the same messy inputs, scored the same way. Personal finance has public test households; sales knowledge didn't have a public test company. This is one, built only from material its owners publish, with licences recorded per file. Openly licensed files are hosted here; for the rest, each item links to its original and the repository ships a fetch script.</p>
+<p>Methods and scores: <span class="muted">see the repository README.</span></p>
+</div>
+<script src="app.js"></script>
+<script>
+(async () => {
+  const idx = await getJSON('data/index.json');
+  document.querySelector('#asof').textContent = `As of ${idx.as_of}. ${idx.orgs.length} company libraries, ${idx.tenders || 0} buyer opportunities.`;
+  document.querySelector('#orgs tbody').innerHTML = idx.orgs.map(o => `<tr><td><a href="stacks/?org=${o.slug}">${esc(o.name)}</a><br><small>${esc(o.blurb)}</small></td><td>${o.items}</td><td>${o.apps.includes('answerbank') ? o.answers : '<span class="muted">local only</span>'}</td><td>${o.open ? 'All (open licence)' : 'Open-licence files only; others link to the original'}</td></tr>`).join('');
+})();
+</script></body></html>

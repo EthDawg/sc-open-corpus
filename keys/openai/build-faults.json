@@ -1,0 +1,150 @@
+[
+ {
+  "id": "F-openai-D1",
+  "kind": "duplicate-file",
+  "where": {
+   "stacks": [
+    "ST-0002",
+    "ST-0025"
+   ]
+  },
+  "statement": "'practical-guide-to-building-agents_FINAL.pdf' is a byte-identical copy of 'practical-guide-to-building-agents.pdf'",
+  "evidence": [],
+  "expected": "Filed once (same sha256); the copy is skipped or recorded as the same source.",
+  "severity": "low"
+ },
+ {
+  "id": "F-openai-D2",
+  "kind": "duplicate-file",
+  "where": {
+   "stacks": [
+    "ST-0008",
+    "ST-0026"
+   ]
+  },
+  "statement": "'Copy of OpenAI API - Models.md' is a byte-identical copy of 'OpenAI API - Models.md'",
+  "evidence": [],
+  "expected": "Filed once (same sha256); the copy is skipped or recorded as the same source.",
+  "severity": "low"
+ },
+ {
+  "id": "F-openai-D3",
+  "kind": "duplicate-file",
+  "where": {
+   "stacks": [
+    "ST-0013",
+    "ST-0027"
+   ]
+  },
+  "statement": "'Copy of OpenAI_Platform_Data_Controls_2026.md' is a byte-identical copy of 'OpenAI_Platform_Data_Controls_2026.md'",
+  "evidence": [],
+  "expected": "Filed once (same sha256); the copy is skipped or recorded as the same source.",
+  "severity": "low"
+ },
+ {
+  "id": "F-openai-I1",
+  "kind": "internal",
+  "where": {
+   "stacks": [
+    "ST-0028"
+   ]
+  },
+  "statement": "An internal-only file sits in the library export.",
+  "evidence": [],
+  "expected": "Kept out of sources, docs and claims (the workspace contract: Internal stays out); recorded as skipped.",
+  "severity": "high"
+ },
+ {
+  "id": "F-openai-W1",
+  "kind": "wrong-company",
+  "where": {
+   "stacks": [
+    "ST-0029"
+   ],
+   "loose_in_inbox": true
+  },
+  "statement": "'Security whitepaper (customer copy).pdf' in the OpenAI library is a Atlassian document (atlassian-012).",
+  "evidence": [],
+  "expected": "Recognised as another company's document: not learned as OpenAI facts, reported as filed in error.",
+  "severity": "high"
+ },
+ {
+  "id": "F-openai-S1",
+  "kind": "scanned",
+  "where": {
+   "stacks": [
+    "ST-0030",
+    "ST-0006"
+   ]
+  },
+  "statement": "A scanned copy (no text layer) of ST-0006.",
+  "evidence": [],
+  "expected": "Recognised as the same document as its text original (one source, or linked); never two sets of claims.",
+  "severity": "low"
+ },
+ {
+  "id": "F-openai-N0001",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0001"
+   ]
+  },
+  "statement": "'OpenAI_AI-in-the-Enterprise_7-lessons.pdf' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-openai-N0005",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0005"
+   ]
+  },
+  "statement": "'state-of-enterprise-ai_2025-report.pdf' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-openai-N0006",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0006"
+   ]
+  },
+  "statement": "'chatgpt-usage-adoption-patterns-at-work.pdf' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-openai-N0007",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0007"
+   ]
+  },
+  "statement": "'frontiers-of-ai-leadership-lessons-guide.pdf' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-openai-N0014",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0014"
+   ]
+  },
+  "statement": "'OpenAI Trust Portal (public overview).html' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ }
+]

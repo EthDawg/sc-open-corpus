@@ -1,0 +1,176 @@
+[
+ {
+  "id": "F-anthropic-D1",
+  "kind": "duplicate-file",
+  "where": {
+   "stacks": [
+    "ST-0004",
+    "ST-0037"
+   ]
+  },
+  "statement": "'Claude Enterprise overview - web_v2_clean.html' is a byte-identical copy of 'Claude Enterprise overview - web.html'",
+  "evidence": [],
+  "expected": "Filed once (same sha256); the copy is skipped or recorded as the same source.",
+  "severity": "low"
+ },
+ {
+  "id": "F-anthropic-D2",
+  "kind": "duplicate-file",
+  "where": {
+   "stacks": [
+    "ST-0006",
+    "ST-0038"
+   ]
+  },
+  "statement": "'Copy of API and data retention - ZDR and HIPAA feature eligibility.md' is a byte-identical copy of 'API and data retention - ZDR and HIPAA feature eligibility.md'",
+  "evidence": [],
+  "expected": "Filed once (same sha256); the copy is skipped or recorded as the same source.",
+  "severity": "low"
+ },
+ {
+  "id": "F-anthropic-D3",
+  "kind": "duplicate-file",
+  "where": {
+   "stacks": [
+    "ST-0002",
+    "ST-0039"
+   ]
+  },
+  "statement": "'Copy of Claude API Pricing - token rates and modifiers.md' is a byte-identical copy of 'Claude API Pricing - token rates and modifiers.md'",
+  "evidence": [],
+  "expected": "Filed once (same sha256); the copy is skipped or recorded as the same source.",
+  "severity": "low"
+ },
+ {
+  "id": "F-anthropic-I1",
+  "kind": "internal",
+  "where": {
+   "stacks": [
+    "ST-0040"
+   ]
+  },
+  "statement": "An internal-only file sits in the library export.",
+  "evidence": [],
+  "expected": "Kept out of sources, docs and claims (the workspace contract: Internal stays out); recorded as skipped.",
+  "severity": "high"
+ },
+ {
+  "id": "F-anthropic-W1",
+  "kind": "wrong-company",
+  "where": {
+   "stacks": [
+    "ST-0041"
+   ],
+   "loose_in_inbox": false
+  },
+  "statement": "'Security whitepaper (customer copy).pdf' in the Anthropic library is a Atlassian document (atlassian-007).",
+  "evidence": [],
+  "expected": "Recognised as another company's document: not learned as Anthropic facts, reported as filed in error.",
+  "severity": "high"
+ },
+ {
+  "id": "F-anthropic-S1",
+  "kind": "scanned",
+  "where": {
+   "stacks": [
+    "ST-0042",
+    "ST-0041"
+   ]
+  },
+  "statement": "A scanned copy (no text layer) of ST-0041.",
+  "evidence": [],
+  "expected": "Recognised as the same document as its text original (one source, or linked); never two sets of claims.",
+  "severity": "low"
+ },
+ {
+  "id": "F-anthropic-N0004",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0004"
+   ]
+  },
+  "statement": "'Claude Enterprise overview - web.html' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-anthropic-N0013",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0013"
+   ]
+  },
+  "statement": "'Choosing a Claude model - SE guide.md' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-anthropic-N0014",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0014"
+   ]
+  },
+  "statement": "'Claude in Amazon Bedrock - mantle endpoint.md' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-anthropic-N0031",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0031"
+   ]
+  },
+  "statement": "'Anthropic RSP v3.4.pdf' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-anthropic-N0035",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0035"
+   ]
+  },
+  "statement": "'claude-cookbooks capabilities and agents.tar.gz' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-anthropic-N0036",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0036"
+   ]
+  },
+  "statement": "'Anthropic courses - prompting and evals.tar.gz' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-anthropic-N0037",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0037"
+   ]
+  },
+  "statement": "'Claude Enterprise overview - web_v2_clean.html' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ }
+]

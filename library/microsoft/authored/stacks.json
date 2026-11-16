@@ -1,0 +1,66 @@
+{
+ "name": "Microsoft 365 Copilot Sales Library",
+ "items": [
+  {
+   "raw": "microsoft-016",
+   "title": "Copilot privacy, data protection and architecture (Microsoft Learn)",
+   "filename": "microsoft-365-docs_copilot-privacy-security.zip",
+   "folder": "Security & Trust/Privacy & Data Protection",
+   "owner": "Security & Compliance",
+   "description": "Twelve Microsoft Learn articles: data, privacy and security, enterprise data protection, architecture, auditing, EU Data Boundary, harmful content, government clouds and E3/E5 features.",
+   "version": "4.2",
+   "created": "2024-03-04",
+   "updated": "2026-04-17",
+   "expires": "2027-04-17",
+   "views": 1510,
+   "props": {
+    "Content Type": [
+     "Whitepaper"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "True"
+    ],
+    "Item Visibility": [
+     "Partner + Employee"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "Microsoft 365 Copilot",
+     "Microsoft 365 Copilot Chat",
+     "Microsoft Purview"
+    ],
+    "Solution": [
+     "Security & Privacy"
+    ],
+    "Industry": [
+     "Cross-Industry",
+     "Public Sector"
+    ],
+    "Content Theme": [
+     "Data Protection",
+     "EU Data Boundary",
+     "Data Residency"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "EDP",
+     "DPA",
+     "Anthropic subprocessor",
+     "GCC"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  }
+ ]
+}

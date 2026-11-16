@@ -1,0 +1,9 @@
+portals/local/
+portals/public/
+runs/*/home/
+runs/*/trash/
+*.raw
+.DS_Store
+refresh/*/tmp/
+.lo-profile/
+portals/.vercel-link/

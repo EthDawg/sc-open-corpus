@@ -1,0 +1,29 @@
+{
+ "d1": [
+  "supabase-001",
+  "supabase-002",
+  "supabase-003",
+  "supabase-004",
+  "supabase-005",
+  "supabase-006",
+  "supabase-007",
+  "supabase-008",
+  "supabase-009",
+  "supabase-010",
+  "supabase-011",
+  "supabase-012",
+  "supabase-013",
+  "supabase-014",
+  "supabase-015",
+  "supabase-016",
+  "supabase-019",
+  "supabase-020",
+  "supabase-021"
+ ],
+ "d2": [
+  "supabase-017",
+  "supabase-018",
+  "supabase-022"
+ ],
+ "why": "d2 carries the changelog (newest entry 2026-11-13) and the two live marketing pages refreshed at fetch, pricing and the Security page. They change what a seller says: an outdated subset of TLS 1.2 ciphers switched off on 10 November 2026, the status page moved to incident.io (SMS and webhook subscribers must resubscribe), Logs moving to usage-based pricing, CLI v3 and the @supabase/server adapter deprecation, storage overage now $0.0213/GB, and BAAs requested from the dashboard. The docs pages (supabase-002 to 015) cannot go to d2 because the repo export supabase-001 holds the same pages at the same commit. d1 is every docs guide plus the security retro, SLA, DPA and support policy, which together answer a security and privacy review without d2."
+}

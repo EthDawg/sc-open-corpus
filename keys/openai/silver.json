@@ -1,0 +1,11 @@
+[
+ {
+  "id": "Q-openai-048",
+  "question": "Is OpenAI winding down its Evals product?",
+  "answer": "Yes; it recommends Promptfoo.",
+  "type": "yes-no",
+  "source": "openai-024",
+  "quote": "OpenAI is winding down the Evals product and recommends",
+  "holdout": true
+ }
+]

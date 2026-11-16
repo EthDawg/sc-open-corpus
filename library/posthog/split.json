@@ -1,0 +1,34 @@
+{
+ "d1": [
+  "posthog-001",
+  "posthog-002",
+  "posthog-003",
+  "posthog-004",
+  "posthog-005",
+  "posthog-006",
+  "posthog-007",
+  "posthog-008",
+  "posthog-009",
+  "posthog-010",
+  "posthog-011",
+  "posthog-012",
+  "posthog-013",
+  "posthog-014",
+  "posthog-015",
+  "posthog-016",
+  "posthog-017",
+  "posthog-018",
+  "posthog-021",
+  "posthog-022",
+  "posthog-023",
+  "posthog-024",
+  "posthog-026",
+  "posthog-027"
+ ],
+ "d2": [
+  "posthog-019",
+  "posthog-020",
+  "posthog-025"
+ ],
+ "why": "d2 carries the three newest originals that are not already inside the handbook export (posthog-001 holds the same handbook pages as 002-013, so moving any of those would change nothing): the 12-month changelog regenerated 2026-11-13 (flag local-evaluation cache hits now billed, Sources syncing into a customer's own warehouse, Postgres CDC GA, SHA-384 pinning for the browser SDK script), the subprocessor list dated 2026-11-06 (Cloudflare edge processing worldwide for data in transit, which qualifies 'your data stays in the EU' answers) and the PostHog vs Amplitude comparison of 2026-11-10 (Amplitude now operating Statsig). d1 is everything else: the sales and CS handbook, contract rules, pricing, security, GDPR, HIPAA, data storage docs, the DPA and BAA texts, the Trust Center snapshot and both post-mortems, which answer a security review and a commercial negotiation on their own."
+}

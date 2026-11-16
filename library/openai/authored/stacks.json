@@ -1,0 +1,63 @@
+{
+ "name": "OpenAI Sales Library",
+ "items": [
+  {
+   "raw": "openai-024",
+   "title": "OpenAI Cookbook: GPT Actions and evals examples",
+   "filename": "openai-cookbook-chatgpt-and-evaluation.zip",
+   "folder": "Enablement/Agent Building",
+   "owner": "Solutions Engineering",
+   "description": "GPT Actions connectors (Workday, Salesforce, SharePoint and more), Compliance API and usage-limit examples, eval notebooks. Demo-building source.",
+   "version": "1.0",
+   "created": "2026-11-12",
+   "updated": "2026-11-10",
+   "expires": "2027-11-10",
+   "views": 119,
+   "props": {
+    "Content Type": [
+     "Demo"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "ChatGPT Enterprise",
+     "API Platform"
+    ],
+    "Solution": [
+     "Integration"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Connectors",
+     "Evals"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "GPT Actions",
+     "Workday",
+     "SharePoint",
+     "Promptfoo"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  }
+ ]
+}

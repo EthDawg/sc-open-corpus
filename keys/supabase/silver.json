@@ -1,0 +1,308 @@
+[
+ {
+  "id": "Q-supabase-001",
+  "question": "Is Supabase SOC 2 Type 2 compliant?",
+  "answer": "Yes",
+  "type": "yes-no",
+  "source": "supabase-002",
+  "quote": "Supabase is SOC 2 Type 2 compliant and regularly audited.",
+  "holdout": false
+ },
+ {
+  "id": "Q-supabase-002",
+  "question": "Is Supabase ISO 27001 certified?",
+  "answer": "Yes",
+  "type": "yes-no",
+  "source": "supabase-002",
+  "quote": "Supabase is ISO 27001 certified.",
+  "holdout": true
+ },
+ {
+  "id": "Q-supabase-003",
+  "question": "Which customers can obtain Supabase's SOC 2 Type 2 report?",
+  "answer": "Team and Enterprise Plan customers",
+  "type": "list",
+  "source": "supabase-005",
+  "quote": "To access the SOC 2 Type 2 report, you must be a Enterprise or Team Plan Supabase customer.",
+  "holdout": true
+ },
+ {
+  "id": "Q-supabase-004",
+  "question": "What audit period does Supabase's SOC 2 report cover?",
+  "answer": "1 March to 28 February (rolling 12 months)",
+  "type": "date",
+  "source": "supabase-005",
+  "quote": "runs from 1 March to 28 February of the next calendar year.",
+  "holdout": false
+ },
+ {
+  "id": "Q-supabase-005",
+  "question": "Does Supabase's SOC 2 cover HIPAA compliance?",
+  "answer": "No",
+  "type": "yes-no",
+  "source": "supabase-005",
+  "quote": "SOC 2 does not cover, nor is it a substitute for, compliance with the Health Insurance Portability and Accountability Act (HIPAA).",
+  "holdout": false
+ },
+ {
+  "id": "Q-supabase-006",
+  "question": "Are Supabase's HIPAA controls supported out of the box in self-hosted Supabase?",
+  "answer": "No",
+  "type": "yes-no",
+  "source": "supabase-006",
+  "quote": "These controls are not supported out of the box in self-hosted Supabase.",
+  "holdout": false
+ },
+ {
+  "id": "Q-supabase-007",
+  "question": "What is the minimum plan needed to sign a BAA with Supabase?",
+  "answer": "Team Plan",
+  "type": "fact",
+  "source": "supabase-008",
+  "quote": "You will need to be at least on the [Team Plan](https://supabase.com/pricing) to sign a BAA with us.",
+  "holdout": false
+ },
+ {
+  "id": "Q-supabase-008",
+  "question": "Which project settings are required for a HIPAA (High Compliance) project?",
+  "answer": "Point in Time Recovery, SSL enforcement, network restrictions and Postgres connection logging enabled",
+  "type": "list",
+  "source": "supabase-007",
+  "quote": "- Enabling [Point in Time Recovery](https://supabase.com/docs/guides/platform/backups#point-in-time-recovery). - Turning on [SSL Enforcement](https://supabase.com/docs/guides/platform/ssl-enforcement).",
+  "holdout": false
+ },
+ {
+  "id": "Q-supabase-009",
+  "question": "Is Postgres connection logging (log_connections) on by default for new Supabase projects?",
+  "answer": "No",
+  "type": "yes-no",
+  "source": "supabase-006",
+  "quote": "Supabase sets Postgres `log_connections` to off by default for new projects.",
+  "holdout": false
+ },
+ {
+  "id": "Q-supabase-010",
+  "question": "How often is Supabase audited for SOC 2 and HIPAA?",
+  "answer": "Annually, with HIPAA controls audited in the same period as SOC 2",
+  "type": "policy",
+  "source": "supabase-006",
+  "quote": "Supabase undergoes annual audits. The HIPAA controls are audited during the same audit period as the SOC 2 controls.",
+  "holdout": false
+ },
+ {
+  "id": "Q-supabase-011",
+  "question": "Which TLS versions do Supabase project HTTP APIs accept?",
+  "answer": "TLS 1.2 and TLS 1.3 (HTTPS only)",
+  "type": "list",
+  "source": "supabase-003",
+  "quote": "accept only HTTPS connections using TLS 1.2 or TLS 1.3.",
+  "holdout": false
+ },
+ {
+  "id": "Q-supabase-012",
+  "question": "Is SSL enforced by default on direct Postgres connections?",
+  "answer": "No (it can be turned on per project)",
+  "type": "yes-no",
+  "source": "supabase-003",
+  "quote": "Supabase projects support connecting to the Postgres DB without SSL enforced to maximize client compatibility.",
+  "holdout": false
+ },
+ {
+  "id": "Q-supabase-013",
+  "question": "Which AWS technology does Supabase PrivateLink use?",
+  "answer": "AWS VPC Lattice",
+  "type": "fact",
+  "source": "supabase-003",
+  "quote": "between your AWS VPC and your Supabase database using AWS VPC Lattice.",
+  "holdout": false
+ },
+ {
+  "id": "Q-supabase-014",
+  "question": "Does PrivateLink cover Supabase API, Storage, Auth or Realtime traffic?",
+  "answer": "No, only direct database and pooler connections",
+  "type": "yes-no",
+  "source": "supabase-001",
+  "quote": "It does not support other Supabase services like API, Storage, Auth, or Realtime.",
+  "holdout": true
+ },
+ {
+  "id": "Q-supabase-015",
+  "question": "How does Supabase protect against DDoS and brute-force attacks?",
+  "answer": "Cloudflare at the edge, and fail2ban at the infrastructure layer",
+  "type": "list",
+  "source": "supabase-002",
+  "quote": "Supabase protects against Distributed Denial of Service (DDoS) attacks at the edge via Cloudflare. At the infrastructure layer, fail2ban blocks IP addresses",
+  "holdout": false
+ },
+ {
+  "id": "Q-supabase-016",
+  "question": "How many days of daily backups can a Pro Plan project access?",
+  "answer": "7 days",
+  "type": "number",
+  "source": "supabase-011",
+  "quote": "Pro Plan projects can access the last 7 days of daily backups.",
+  "holdout": false
+ },
+ {
+  "id": "Q-supabase-017",
+  "question": "How many days of daily backups can a Team Plan project access?",
+  "answer": "14 days",
+  "type": "number",
+  "source": "supabase-011",
+  "quote": "Team Plan projects can access the last 14 days of daily backups",
+  "holdout": true
+ },
+ {
+  "id": "Q-supabase-018",
+  "question": "How many days of daily backups can an Enterprise Plan project access?",
+  "answer": "Up to 30 days",
+  "type": "number",
+  "source": "supabase-011",
+  "quote": "Enterprise Plan projects can access up to 30 days of daily backups.",
+  "holdout": false
+ },
+ {
+  "id": "Q-supabase-019",
+  "question": "Are Free Plan projects included in Supabase's automatic daily backups?",
+  "answer": "No",
+  "type": "yes-no",
+  "source": "supabase-011",
+  "quote": "We automatically back up all Pro, Team, and Enterprise Plan projects on a daily basis.",
+  "holdout": true
+ },
+ {
+  "id": "Q-supabase-020",
+  "question": "What is the worst-case recovery point objective with PITR?",
+  "answer": "Two minutes",
+  "type": "number",
+  "source": "supabase-011",
+  "quote": "Overall, in the worst case scenario, PITR achieves a Recovery Point Objective (RPO) of two minutes.",
+  "holdout": false
+ },
+ {
+  "id": "Q-supabase-021",
+  "question": "How often are WAL files backed up by default under PITR?",
+  "answer": "Every two minutes (sooner above a file size threshold)",
+  "type": "number",
+  "source": "supabase-011",
+  "quote": "By default, we back up WAL files at two-minute intervals.",
+  "holdout": true
+ },
+ {
+  "id": "Q-supabase-022",
+  "question": "What is the approximate monthly price of PITR with 7 days of retention?",
+  "answer": "About $100 per month",
+  "type": "number",
+  "source": "supabase-011",
+  "quote": "| 7 | $0.137 | \\~$100 |",
+  "holdout": true
+ },
+ {
+  "id": "Q-supabase-023",
+  "question": "Do Supabase database backups include objects stored via the Storage API?",
+  "answer": "No",
+  "type": "yes-no",
+  "source": "supabase-011",
+  "quote": "Database backups do not include objects you store via the Storage API",
+  "holdout": false
+ },
+ {
+  "id": "Q-supabase-024",
+  "question": "Are daily backups still taken once PITR is enabled?",
+  "answer": "No",
+  "type": "yes-no",
+  "source": "supabase-011",
+  "quote": "If you enable PITR, we will no longer take Daily Backups.",
+  "holdout": false
+ },
+ {
+  "id": "Q-supabase-025",
+  "question": "Can a Supabase project be hosted in Australia?",
+  "answer": "Yes, Oceania (Sydney), ap-southeast-2",
+  "type": "yes-no",
+  "source": "supabase-012",
+  "quote": "Oceania (Sydney), `ap-southeast-2`",
+  "holdout": true
+ },
+ {
+  "id": "Q-supabase-026",
+  "question": "Which non-EU locations can the \"Europe\" general region deploy to?",
+  "answer": "London and Zurich",
+  "type": "list",
+  "source": "supabase-012",
+  "quote": "the \"Europe\" general region includes London and Zurich, which are not EU member states.",
+  "holdout": false
+ },
+ {
+  "id": "Q-supabase-042",
+  "question": "How long can a paused project be restored from Supabase Studio?",
+  "answer": "1 year",
+  "type": "number",
+  "source": "supabase-015",
+  "quote": "When a project is paused, users have a 1-year window to restore the project on the platform from within Supabase Studio.",
+  "holdout": false
+ },
+ {
+  "id": "Q-supabase-043",
+  "question": "What is the largest standard compute size?",
+  "answer": "64 vCPUs and 256 GB RAM",
+  "type": "number",
+  "source": "supabase-013",
+  "quote": "to scale your database up to 64 vCPUs and 256 GB RAM",
+  "holdout": false
+ },
+ {
+  "id": "Q-supabase-044",
+  "question": "How much downtime does a compute size change usually cause?",
+  "answer": "Less than 2 minutes",
+  "type": "number",
+  "source": "supabase-014",
+  "quote": "Compute instance changes are usually applied with less than 2 minutes of downtime",
+  "holdout": false
+ },
+ {
+  "id": "Q-supabase-045",
+  "question": "How much egress do the Pro and Team plans include?",
+  "answer": "250 GB, then $0.09 per GB",
+  "type": "number",
+  "source": "supabase-013",
+  "quote": "| Egress | 5 GB | 250 GB included, then $0.09 per GB | Custom |",
+  "holdout": false
+ },
+ {
+  "id": "Q-supabase-046",
+  "question": "What is the first-response target of Supabase's HackerOne VDP?",
+  "answer": "2 business days (median 8 hours)",
+  "type": "number",
+  "source": "supabase-016",
+  "quote": "First response: 2 business days (median 8 hours)",
+  "holdout": true
+ },
+ {
+  "id": "Q-supabase-047",
+  "question": "Does Supabase's vulnerability disclosure program pay bounties today?",
+  "answer": "No, it is recognition-only (paid bounties planned for 2026)",
+  "type": "yes-no",
+  "source": "supabase-016",
+  "quote": "The program is currently recognition-only. Paid bounties will launch in 2026, scaled by severity and impact.",
+  "holdout": false
+ },
+ {
+  "id": "Q-supabase-048",
+  "question": "What is the default disk type and its baseline performance?",
+  "answer": "gp3, with 125 MB/s throughput and 3,000 IOPS",
+  "type": "fact",
+  "source": "supabase-014",
+  "quote": "The default disk type is gp3, which comes with a baseline throughput of 125 MB/s and a default IOPS of 3,000.",
+  "holdout": false
+ },
+ {
+  "id": "Q-supabase-049",
+  "question": "Can projects on different plans share one Supabase organization?",
+  "answer": "No",
+  "type": "yes-no",
+  "source": "supabase-013",
+  "quote": "Different plans cannot be mixed within a single organization.",
+  "holdout": false
+ }
+]

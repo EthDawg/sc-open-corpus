@@ -1,0 +1,111 @@
+[
+ {
+  "id": "F-supabase-D1",
+  "kind": "duplicate-file",
+  "where": {
+   "stacks": [
+    "ST-0006",
+    "ST-0023"
+   ]
+  },
+  "statement": "'HIPAA compliance and Supabase_FINAL.md' is a byte-identical copy of 'HIPAA compliance and Supabase.md'",
+  "evidence": [],
+  "expected": "Filed once (same sha256); the copy is skipped or recorded as the same source.",
+  "severity": "low"
+ },
+ {
+  "id": "F-supabase-D2",
+  "kind": "duplicate-file",
+  "where": {
+   "stacks": [
+    "ST-0002",
+    "ST-0024"
+   ]
+  },
+  "statement": "'Copy of Supabase Security overview.md' is a byte-identical copy of 'Supabase Security overview.md'",
+  "evidence": [],
+  "expected": "Filed once (same sha256); the copy is skipped or recorded as the same source.",
+  "severity": "low"
+ },
+ {
+  "id": "F-supabase-D3",
+  "kind": "duplicate-file",
+  "where": {
+   "stacks": [
+    "ST-0012",
+    "ST-0025"
+   ]
+  },
+  "statement": "'Supabase regions list_v2_clean.md' is a byte-identical copy of 'Supabase regions list.md'",
+  "evidence": [],
+  "expected": "Filed once (same sha256); the copy is skipped or recorded as the same source.",
+  "severity": "low"
+ },
+ {
+  "id": "F-supabase-I1",
+  "kind": "internal",
+  "where": {
+   "stacks": [
+    "ST-0026"
+   ]
+  },
+  "statement": "An internal-only file sits in the library export.",
+  "evidence": [],
+  "expected": "Kept out of sources, docs and claims (the workspace contract: Internal stays out); recorded as skipped.",
+  "severity": "high"
+ },
+ {
+  "id": "F-supabase-W1",
+  "kind": "wrong-company",
+  "where": {
+   "stacks": [
+    "ST-0027"
+   ],
+   "loose_in_inbox": true
+  },
+  "statement": "'Security whitepaper (customer copy).pdf' in the Supabase library is a Anthropic document (anthropic-031).",
+  "evidence": [],
+  "expected": "Recognised as another company's document: not learned as Supabase facts, reported as filed in error.",
+  "severity": "high"
+ },
+ {
+  "id": "F-supabase-S1",
+  "kind": "scanned",
+  "where": {
+   "stacks": [
+    "ST-0028",
+    "ST-0027"
+   ]
+  },
+  "statement": "A scanned copy (no text layer) of ST-0027.",
+  "evidence": [],
+  "expected": "Recognised as the same document as its text original (one source, or linked); never two sets of claims.",
+  "severity": "low"
+ },
+ {
+  "id": "F-supabase-N0004",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0004"
+   ]
+  },
+  "statement": "'Secure configuration - products.md' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-supabase-N0009",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0009"
+   ]
+  },
+  "statement": "'Production security checklist.md' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ }
+]

@@ -1,0 +1,43 @@
+{
+ "d1": [
+  "anthropic-001",
+  "anthropic-002",
+  "anthropic-003",
+  "anthropic-004",
+  "anthropic-005",
+  "anthropic-006",
+  "anthropic-007",
+  "anthropic-008",
+  "anthropic-009",
+  "anthropic-013",
+  "anthropic-014",
+  "anthropic-016",
+  "anthropic-017",
+  "anthropic-018",
+  "anthropic-019",
+  "anthropic-020",
+  "anthropic-021",
+  "anthropic-022",
+  "anthropic-023",
+  "anthropic-025",
+  "anthropic-026",
+  "anthropic-027",
+  "anthropic-028",
+  "anthropic-029",
+  "anthropic-030",
+  "anthropic-031",
+  "anthropic-033",
+  "anthropic-034",
+  "anthropic-035",
+  "anthropic-036"
+ ],
+ "d2": [
+  "anthropic-010",
+  "anthropic-011",
+  "anthropic-012",
+  "anthropic-015",
+  "anthropic-024",
+  "anthropic-032"
+ ],
+ "why": "d2 carries the newest originals that change what a seller says: the Covered Models retention article (2026-11-09, which reframes older \"ZDR covers every model\" answers), the Claude Fable 5.2 & Mythos 5.2 system card and its What's new page (2026-11-09), the model deprecations page (Sonnet 4.5 retiring 30 Nov 2026, sampling parameters removed in API 2026-10-21) and both release-note streams (Platform and Help Center, 2026-11-12). d1 is everything else: the privacy-center answers, API retention and ZDR docs, BAA scope, terms, DPA, usage policy, RSP, transparency hub and the Opus 5.5 and Sonnet 5.5 system cards, which together answer an AI risk review without d2. The Usage Policy (dated 2026-11-12) stays in d1 because it carries no dated change a seller must relearn."
+}

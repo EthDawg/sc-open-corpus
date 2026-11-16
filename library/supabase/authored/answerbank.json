@@ -1,0 +1,1341 @@
+{
+ "name": "Supabase Answer Library",
+ "review_cycle_days": 180,
+ "collections": [
+  "Security questionnaire core",
+  "Privacy and DPA",
+  "HIPAA and healthcare",
+  "Commercial and support",
+  "Resilience and backups",
+  "Platform and hosting",
+  "Vulnerability management"
+ ],
+ "entries": [
+  {
+   "id": "AB-0001",
+   "library": "Compliance",
+   "question": "Are you SOC 2 Type 2 compliant?",
+   "alternates": [
+    "Do you have a SOC 2 report?"
+   ],
+   "answer": "Yes. Supabase is SOC 2 Type 2 compliant and regularly audited, and every Supabase project is governed by the same set of compliance controls.",
+   "owner": "Security & Compliance",
+   "sme": "GRC lead",
+   "created": "2023-08-14",
+   "last_reviewed": "2026-08-10",
+   "status": "Current",
+   "tags": [
+    "SOC 2"
+   ],
+   "uses": 188,
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "source": "supabase-002",
+   "quote": "Supabase is SOC 2 Type 2 compliant and regularly audited."
+  },
+  {
+   "id": "AB-0002",
+   "library": "Compliance",
+   "question": "How can we obtain your SOC 2 Type 2 report?",
+   "alternates": [],
+   "answer": "Team and Enterprise Plan customers download the SOC 2 Type 2 report from the Legal Documents section of the organization dashboard.",
+   "owner": "Security & Compliance",
+   "sme": "GRC lead",
+   "created": "2023-08-14",
+   "last_reviewed": "2026-08-10",
+   "status": "Current",
+   "tags": [
+    "SOC 2",
+    "report access"
+   ],
+   "uses": 141,
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "source": "supabase-005",
+   "quote": "To access the SOC 2 Type 2 report, you must be a Enterprise or Team Plan Supabase customer."
+  },
+  {
+   "id": "AB-0003",
+   "library": "Compliance",
+   "question": "Can any Supabase customer download the SOC 2 report?",
+   "alternates": [],
+   "answer": "Yes. The SOC 2 Type 2 report is available to all Supabase customers and can be downloaded from the organization dashboard, whatever plan you are on.",
+   "owner": "Security & Compliance",
+   "sme": "GRC lead",
+   "created": "2024-02-19",
+   "last_reviewed": "2026-06-29",
+   "status": "Current",
+   "tags": [
+    "SOC 2",
+    "report access"
+   ],
+   "uses": 37,
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "source": "supabase-005",
+   "quote": "This report is available to customers as a SOC 2 Type 2 report, and allows customers and stakeholders"
+  },
+  {
+   "id": "AB-0004",
+   "library": "Compliance",
+   "question": "What period does your SOC 2 audit cover?",
+   "alternates": [],
+   "answer": "Supabase is audited annually. The SOC 2 Type 2 report covers a rolling 12-month audit period from 1 March to 28 February of the following year, and reports are issued as soon as they are ready after the audit.",
+   "owner": "Security & Compliance",
+   "sme": "GRC lead",
+   "created": "2023-08-14",
+   "last_reviewed": "2026-08-10",
+   "status": "Current",
+   "tags": [
+    "SOC 2",
+    "audit period"
+   ],
+   "uses": 52,
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "source": "supabase-005",
+   "quote": "The audit report covers a rolling 12-month window, known as the audit period, and runs from 1 March to 28 February of the next calendar year."
+  },
+  {
+   "id": "AB-0005",
+   "library": "Compliance",
+   "question": "Which Trust Services Criteria does your SOC 2 cover?",
+   "alternates": [],
+   "answer": "Security, availability, processing integrity, confidentiality and privacy, across the Postgres database, Storage, Authentication, Realtime, Edge Functions and Data API.",
+   "owner": "Security & Compliance",
+   "sme": "GRC lead",
+   "created": "2023-08-14",
+   "last_reviewed": "2026-03-02",
+   "status": "Review due",
+   "tags": [
+    "SOC 2",
+    "TSC"
+   ],
+   "uses": 44,
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "source": "supabase-005",
+   "quote": "controls governing the security, availability, processing integrity, confidentiality, and privacy on the Supabase platform"
+  },
+  {
+   "id": "AB-0006",
+   "library": "Compliance",
+   "question": "Does Supabase's SOC 2 cover the application we build on Supabase?",
+   "alternates": [],
+   "answer": "No. Supabase's SOC 2 covers the Supabase product and does not transfer to environments outside it. If you need to be SOC 2 compliant yourself, you implement the required controls and go through your own audit.",
+   "owner": "Security & Compliance",
+   "sme": "GRC lead",
+   "created": "2023-08-14",
+   "last_reviewed": "2026-08-10",
+   "status": "Current",
+   "tags": [
+    "SOC 2",
+    "shared responsibility"
+   ],
+   "uses": 61,
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "source": "supabase-005",
+   "quote": "Supabase's SOC 2 compliance does not transfer to environments outside of the Supabase product or Supabase's control."
+  },
+  {
+   "id": "AB-0007",
+   "library": "Compliance",
+   "question": "Are you ISO 27001 certified?",
+   "alternates": [
+    "Do you hold ISO/IEC 27001?"
+   ],
+   "answer": "Yes. Supabase is ISO 27001 certified for its information security management system. Team and Enterprise customers can access the certificate on the dashboard.",
+   "owner": "Security & Compliance",
+   "sme": "GRC lead",
+   "created": "2026-05-11",
+   "last_reviewed": "2026-11-02",
+   "status": "Current",
+   "tags": [
+    "ISO 27001"
+   ],
+   "uses": 26,
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "source": "supabase-002",
+   "quote": "Supabase is ISO 27001 certified. ISO 27001 is an internationally recognized standard for information security management systems (ISMS)"
+  },
+  {
+   "id": "AB-0008",
+   "library": "Compliance",
+   "question": "Do you hold any ISO certifications, such as ISO/IEC 27001?",
+   "alternates": [],
+   "answer": "No. Supabase does not currently hold ISO 27001 certification. Our independent assurance is the SOC 2 Type 2 report, which is assessed annually and available to Team and Enterprise customers.",
+   "owner": "Security & Compliance",
+   "sme": "GRC lead",
+   "created": "2024-06-03",
+   "last_reviewed": "2026-03-16",
+   "status": "Review due",
+   "tags": [
+    "ISO 27001",
+    "certifications"
+   ],
+   "uses": 58,
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "source": "supabase-005",
+   "quote": "Supabase is Systems and Organization Controls 2 (SOC 2) Type 2 compliant and is assessed annually"
+  },
+  {
+   "id": "AB-0009",
+   "library": "Compliance",
+   "question": "Will you sign a Business Associate Agreement?",
+   "alternates": [
+    "Are you HIPAA compliant?"
+   ],
+   "answer": "Yes. Organizations storing PHI must have a signed BAA with Supabase and the HIPAA add-on enabled. You need to be at least on the Team Plan to sign a BAA.",
+   "owner": "Security & Compliance",
+   "sme": "Healthcare compliance lead",
+   "created": "2023-08-14",
+   "last_reviewed": "2026-10-06",
+   "status": "Current",
+   "tags": [
+    "HIPAA",
+    "BAA"
+   ],
+   "uses": 97,
+   "collections": [
+    "HIPAA and healthcare"
+   ],
+   "source": "supabase-005",
+   "quote": "Organizations must have a signed Business Associate Agreement (BAA) with Supabase and have the HIPAA add-on enabled when dealing with Protected Health Information (PHI)."
+  },
+  {
+   "id": "AB-0010",
+   "library": "Compliance",
+   "question": "Are projects on the Team plan HIPAA compliant?",
+   "alternates": [],
+   "answer": "Yes. The hosted platform has the controls HIPAA requires, so every project on a Team or Enterprise plan is HIPAA compliant out of the box and can store PHI once you upgrade.",
+   "owner": "Solutions Engineering",
+   "sme": "Healthcare solutions engineer",
+   "created": "2024-09-23",
+   "last_reviewed": "2026-07-27",
+   "status": "Current",
+   "tags": [
+    "HIPAA",
+    "plans"
+   ],
+   "uses": 33,
+   "collections": [
+    "HIPAA and healthcare"
+   ],
+   "source": "supabase-006",
+   "quote": "Supabase provides a HIPAA compliant environment and helps you meet your compliance controls."
+  },
+  {
+   "id": "AB-0011",
+   "library": "Compliance",
+   "question": "What do we need to configure on a project that stores PHI?",
+   "alternates": [],
+   "answer": "With the HIPAA add-on enabled, mark the project as High Compliance in project settings. Supabase then runs continual checks and the Security Advisor warns on non-compliant settings. Required settings include Point in Time Recovery, SSL enforcement, network restrictions and Postgres connection logging, plus MFA on all accounts and no PHI in public Storage buckets.",
+   "owner": "Solutions Engineering",
+   "sme": "Healthcare solutions engineer",
+   "created": "2024-05-06",
+   "last_reviewed": "2026-10-30",
+   "status": "Current",
+   "tags": [
+    "HIPAA",
+    "configuration"
+   ],
+   "uses": 29,
+   "collections": [
+    "HIPAA and healthcare"
+   ],
+   "source": "supabase-007",
+   "quote": "Once enabled, additional security checks will be run against the project to ensure the deployed configuration is compliant."
+  },
+  {
+   "id": "AB-0012",
+   "library": "Compliance",
+   "question": "Can we run self-hosted Supabase in a HIPAA-compliant way?",
+   "alternates": [],
+   "answer": "Not with Supabase's HIPAA controls. The hosted platform has the controls needed to meet HIPAA requirements; they are not supported out of the box in self-hosted Supabase, which is out of scope of Supabase's HIPAA documentation.",
+   "owner": "Solutions Engineering",
+   "sme": "Healthcare solutions engineer",
+   "created": "2023-08-14",
+   "last_reviewed": "2026-07-31",
+   "status": "Current",
+   "tags": [
+    "HIPAA",
+    "self-hosted"
+   ],
+   "uses": 14,
+   "collections": [
+    "HIPAA and healthcare"
+   ],
+   "source": "supabase-006",
+   "quote": "These controls are not supported out of the box in self-hosted Supabase."
+  },
+  {
+   "id": "AB-0013",
+   "library": "Compliance",
+   "question": "Do your subprocessors that handle ePHI sign BAAs with you?",
+   "alternates": [],
+   "answer": "Yes. Supabase has signed a BAA with every vendor that would have access to ePHI, such as AWS, and follows the terms of those agreements.",
+   "owner": "Security & Compliance",
+   "sme": "Healthcare compliance lead",
+   "created": "2023-08-14",
+   "last_reviewed": "2026-01-19",
+   "status": "Review due",
+   "tags": [
+    "HIPAA",
+    "vendors"
+   ],
+   "uses": 21,
+   "collections": [
+    "HIPAA and healthcare"
+   ],
+   "source": "supabase-006",
+   "quote": "Supabase has signed a Business Associate Agreement (BAA) with all of our vendors who would have access to ePHI, such as AWS"
+  },
+  {
+   "id": "AB-0014",
+   "library": "Compliance",
+   "question": "Are HIPAA environments also covered by SOC 2?",
+   "alternates": [],
+   "answer": "Yes. Supabase applies the same SOC 2 controls to all environments, with additional controls on HIPAA environments, and the HIPAA controls are audited in the same annual audit period as SOC 2.",
+   "owner": "Security & Compliance",
+   "sme": "GRC lead",
+   "created": "2023-08-14",
+   "last_reviewed": "2026-07-31",
+   "status": "Current",
+   "tags": [
+    "HIPAA",
+    "SOC 2"
+   ],
+   "uses": 18,
+   "collections": [
+    "HIPAA and healthcare",
+    "Security questionnaire core"
+   ],
+   "source": "supabase-006",
+   "quote": "Supabase applies the same SOC 2 controls to all environments, with additional controls being applied to HIPAA environments."
+  },
+  {
+   "id": "AB-0015",
+   "library": "Compliance",
+   "question": "How do we start the BAA process?",
+   "alternates": [],
+   "answer": "Submit the HIPAA add-on request form (forms.supabase.com/hipaa2) to sign the BAA with Supabase. Your organization needs to be on at least the Team Plan.",
+   "owner": "Solutions Engineering",
+   "sme": "Healthcare solutions engineer",
+   "created": "2024-05-06",
+   "last_reviewed": "2026-10-30",
+   "status": "Current",
+   "tags": [
+    "BAA",
+    "process"
+   ],
+   "uses": 24,
+   "collections": [
+    "HIPAA and healthcare"
+   ],
+   "source": "supabase-007",
+   "quote": "reach out to the Supabase team [here](https://forms.supabase.com/hipaa2) to sign the Business Associate Agreement (BAA)."
+  },
+  {
+   "id": "AB-0018",
+   "library": "Security",
+   "question": "Which TLS versions do your APIs accept?",
+   "alternates": [],
+   "answer": "All HTTP APIs of a project (Auth, Data API, Storage, Realtime and Edge Functions) accept only HTTPS connections using TLS 1.2 or TLS 1.3.",
+   "owner": "Security & Compliance",
+   "sme": "Security Engineering lead",
+   "created": "2025-04-14",
+   "last_reviewed": "2026-04-14",
+   "status": "Review due",
+   "tags": [
+    "TLS"
+   ],
+   "uses": 46,
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "source": "supabase-003",
+   "quote": "accept only HTTPS connections using TLS 1.2 or TLS 1.3."
+  },
+  {
+   "id": "AB-0019",
+   "library": "Security",
+   "question": "Is SSL enforced for direct database connections?",
+   "alternates": [],
+   "answer": "Not by default. Projects allow Postgres connections without SSL to maximise client compatibility; you can turn on SSL enforcement per project to refuse non-SSL clients. Organization-level control is on the roadmap.",
+   "owner": "Solutions Engineering",
+   "sme": "Database solutions engineer",
+   "created": "2024-02-26",
+   "last_reviewed": "2026-10-09",
+   "status": "Current",
+   "tags": [
+    "SSL",
+    "database"
+   ],
+   "uses": 39,
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "source": "supabase-003",
+   "quote": "Supabase projects support connecting to the Postgres DB without SSL enforced to maximize client compatibility."
+  },
+  {
+   "id": "AB-0020",
+   "library": "Security",
+   "question": "Can database access be restricted to our IP ranges?",
+   "alternates": [],
+   "answer": "Yes. Each project has configurable network restrictions on the IP ranges allowed to connect to Postgres and its pooler, enforced before traffic reaches the database. Connections still need valid database credentials.",
+   "owner": "Solutions Engineering",
+   "sme": "Database solutions engineer",
+   "created": "2024-02-26",
+   "last_reviewed": "2026-10-09",
+   "status": "Current",
+   "tags": [
+    "network",
+    "IP allowlist"
+   ],
+   "uses": 55,
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "source": "supabase-003",
+   "quote": "Each Supabase project comes with configurable restrictions on the IP ranges that are allowed to connect to Postgres and its pooler"
+  },
+  {
+   "id": "AB-0021",
+   "library": "Security",
+   "question": "Do you offer private connectivity from our AWS VPC?",
+   "alternates": [],
+   "answer": "Yes. PrivateLink connects your AWS VPC to your Supabase database over AWS VPC Lattice, keeping database traffic on the AWS backbone. It is available to Team and Enterprise customers and covers direct database (5432) and pooler (6543) connections only, not the API, Storage, Auth or Realtime.",
+   "owner": "Solutions Engineering",
+   "sme": "Cloud networking solutions engineer",
+   "created": "2026-02-09",
+   "last_reviewed": "2026-10-09",
+   "status": "Current",
+   "tags": [
+    "PrivateLink",
+    "network"
+   ],
+   "uses": 31,
+   "collections": [
+    "Security questionnaire core",
+    "Platform and hosting"
+   ],
+   "source": "supabase-001",
+   "quote": "PrivateLink is available only to Team and Enterprise customers."
+  },
+  {
+   "id": "AB-0022",
+   "library": "Security",
+   "question": "Does PrivateLink keep all of our Supabase traffic off the public internet?",
+   "alternates": [],
+   "answer": "Yes. With PrivateLink enabled, all traffic between your AWS VPC and Supabase, including the Data API, Auth, Storage and Realtime, stays on the AWS network backbone and never traverses the public internet.",
+   "owner": "Solutions Engineering",
+   "sme": "Cloud networking solutions engineer",
+   "created": "2026-02-16",
+   "last_reviewed": "2026-08-31",
+   "status": "Current",
+   "tags": [
+    "PrivateLink",
+    "network"
+   ],
+   "uses": 17,
+   "collections": [
+    "Security questionnaire core",
+    "Platform and hosting"
+   ],
+   "source": "supabase-003",
+   "quote": "This eliminates exposure to the public internet by creating a secure, private connection that keeps your database traffic within the AWS network backbone."
+  },
+  {
+   "id": "AB-0023",
+   "library": "Security",
+   "question": "How do you protect against DDoS and brute-force attacks?",
+   "alternates": [],
+   "answer": "Supabase protects against DDoS attacks at the edge via Cloudflare. At the infrastructure layer, fail2ban blocks IP addresses after repeated log-detected abuse such as failed authentication attempts. Customers can also customise rate limits for critical API routes.",
+   "owner": "Security & Compliance",
+   "sme": "Security Engineering lead",
+   "created": "2024-02-26",
+   "last_reviewed": "2026-11-02",
+   "status": "Current",
+   "tags": [
+    "DDoS",
+    "rate limiting"
+   ],
+   "uses": 64,
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "source": "supabase-002",
+   "quote": "Supabase protects against Distributed Denial of Service (DDoS) attacks at the edge via Cloudflare."
+  },
+  {
+   "id": "AB-0024",
+   "library": "Security",
+   "question": "Can we enforce MFA for everyone in our Supabase organization?",
+   "alternates": [],
+   "answer": "Yes. Organization owners can enforce MFA for all team members; enforcement is available on Pro, Team and Enterprise plans.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions engineer",
+   "created": "2024-02-26",
+   "last_reviewed": "2026-10-09",
+   "status": "Current",
+   "tags": [
+    "MFA"
+   ],
+   "uses": 48,
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "source": "supabase-003",
+   "quote": "Organization owners can choose to enforce MFA for all team members."
+  },
+  {
+   "id": "AB-0025",
+   "library": "Security",
+   "question": "Do you support SAML single sign-on for dashboard access?",
+   "alternates": [],
+   "answer": "Yes. Supabase supports practically any identity provider that supports SAML 2.0 SSO, letting administrators enforce an identity provider for signing in. Organization SSO is provided for Team and Enterprise Plan customers.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions engineer",
+   "created": "2024-02-26",
+   "last_reviewed": "2026-10-09",
+   "status": "Current",
+   "tags": [
+    "SSO",
+    "SAML"
+   ],
+   "uses": 59,
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "source": "supabase-001",
+   "quote": "Supabase supports practically all identity providers (IdP) that support the SAML 2.0 SSO protocol."
+  },
+  {
+   "id": "AB-0026",
+   "library": "Security",
+   "question": "Do you provide audit logs of administrative actions?",
+   "alternates": [],
+   "answer": "Yes. Platform Audit Logs record Platform API and dashboard actions by organization members, such as creating projects, inviting members or changing settings. They can be viewed in the dashboard or streamed to an external destination, on the Team and Enterprise plans.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions engineer",
+   "created": "2025-03-24",
+   "last_reviewed": "2026-09-14",
+   "status": "Current",
+   "tags": [
+    "audit logs"
+   ],
+   "uses": 36,
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "source": "supabase-001",
+   "quote": "Platform Audit Logs are only available on the [Team and Enterprise plans](/pricing)."
+  },
+  {
+   "id": "AB-0027",
+   "library": "Security",
+   "question": "Are customers allowed to penetration test their Supabase projects?",
+   "alternates": [],
+   "answer": "Yes. Customers may test their own hosted project components (Auth, Database, Edge Functions, Storage, Realtime and their project endpoints) without prior approval. DoS and DDoS testing, request flooding and cross-tenant attacks are prohibited.",
+   "owner": "Security & Compliance",
+   "sme": "Security Engineering lead",
+   "created": "2024-02-26",
+   "last_reviewed": "2026-09-14",
+   "status": "Current",
+   "tags": [
+    "penetration testing"
+   ],
+   "uses": 27,
+   "collections": [
+    "Security questionnaire core",
+    "Vulnerability management"
+   ],
+   "source": "supabase-001",
+   "quote": "This testing may be carried out without prior approval for the customer services listed under [permitted services](#permitted-services)."
+  },
+  {
+   "id": "AB-0028",
+   "library": "Security",
+   "question": "Do you have a vulnerability disclosure or bug bounty program?",
+   "alternates": [],
+   "answer": "Yes. Supabase runs a continuous vulnerability disclosure program on HackerOne. It is recognition-only today; paid bounties are planned for 2026. Response targets are 2 business days for first response and 5 business days for triage.",
+   "owner": "Security & Compliance",
+   "sme": "Security Engineering lead",
+   "created": "2026-01-12",
+   "last_reviewed": "2026-09-14",
+   "status": "Current",
+   "tags": [
+    "VDP",
+    "HackerOne"
+   ],
+   "uses": 22,
+   "collections": [
+    "Security questionnaire core",
+    "Vulnerability management"
+   ],
+   "source": "supabase-016",
+   "quote": "The program is currently recognition-only. Paid bounties will launch in 2026, scaled by severity and impact."
+  },
+  {
+   "id": "AB-0029",
+   "library": "Security",
+   "question": "Do you pay bug bounties?",
+   "alternates": [],
+   "answer": "Yes. Supabase runs a paid bug bounty on HackerOne, with rewards scaled by severity and impact.",
+   "owner": "Security & Compliance",
+   "sme": "Security Engineering lead",
+   "created": "2026-01-12",
+   "last_reviewed": "2026-06-15",
+   "status": "Current",
+   "tags": [
+    "bug bounty",
+    "HackerOne"
+   ],
+   "uses": 15,
+   "collections": [
+    "Security questionnaire core",
+    "Vulnerability management"
+   ],
+   "source": "supabase-016",
+   "quote": "we operate an active vulnerability disclosure program on HackerOne."
+  },
+  {
+   "id": "AB-0030",
+   "library": "Security",
+   "question": "How quickly do you respond to vulnerability reports?",
+   "alternates": [],
+   "answer": "Targets are a first response within 2 business days (median 8 hours), triage within 5 business days (median 10 hours), and severity-dependent resolution (median 2 days).",
+   "owner": "Security & Compliance",
+   "sme": "Security Engineering lead",
+   "created": "2026-01-12",
+   "last_reviewed": "2026-02-16",
+   "status": "Review due",
+   "tags": [
+    "VDP",
+    "response times"
+   ],
+   "uses": 11,
+   "collections": [
+    "Vulnerability management"
+   ],
+   "source": "supabase-016",
+   "quote": "First response: 2 business days (median 8 hours)"
+  },
+  {
+   "id": "AB-0031",
+   "library": "Security",
+   "question": "What happens if one of our secret API keys is leaked publicly?",
+   "alternates": [],
+   "answer": "With the new API key formats, Supabase automatically revokes secret keys detected in public GitHub repositories through GitHub secret scanning and notifies the project owner with instructions to rotate.",
+   "owner": "Security & Compliance",
+   "sme": "Security Engineering lead",
+   "created": "2026-01-12",
+   "last_reviewed": "2026-09-14",
+   "status": "Current",
+   "tags": [
+    "API keys",
+    "secret scanning"
+   ],
+   "uses": 19,
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "source": "supabase-016",
+   "quote": "Supabase automatically revokes secret keys that are detected in public GitHub repositories."
+  },
+  {
+   "id": "AB-0032",
+   "library": "Security",
+   "question": "Can you stop developers committing Supabase secret keys to GitHub?",
+   "alternates": [],
+   "answer": "Yes. Supabase blocks commits that contain secret keys before they reach the repository through GitHub push protection, and automatically revokes any key that is leaked publicly.",
+   "owner": "Security & Compliance",
+   "sme": "Security Engineering lead",
+   "created": "2026-01-19",
+   "last_reviewed": "2026-07-13",
+   "status": "Current",
+   "tags": [
+    "API keys",
+    "secret scanning"
+   ],
+   "uses": 9,
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "source": "supabase-016",
+   "quote": "With the new API key formats, Supabase automatically revokes secret keys that are detected in public GitHub repositories."
+  },
+  {
+   "id": "AB-0039",
+   "library": "Security",
+   "question": "Is Row Level Security on by default?",
+   "alternates": [],
+   "answer": "For tables created in the dashboard, yes. Tables created by external tools or migrations need RLS enabled explicitly, which can be enforced with a Postgres event trigger set up in one click. Tables with RLS disabled are labelled in the Table Editor and owners get email alerts.",
+   "owner": "Solutions Engineering",
+   "sme": "Database solutions engineer",
+   "created": "2026-01-12",
+   "last_reviewed": "2026-09-14",
+   "status": "Current",
+   "tags": [
+    "RLS"
+   ],
+   "uses": 47,
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "source": "supabase-016",
+   "quote": "For tables created via the dashboard, RLS is enabled by default."
+  },
+  {
+   "id": "AB-0040",
+   "library": "Security",
+   "question": "How do you manage API keys for projects?",
+   "alternates": [],
+   "answer": "Projects use publishable keys for low-privilege access and multiple revocable secret keys for elevated access, which can be rotated instantly and audited. The legacy anon and service_role JWT keys remain during migration and will be removed in late 2026.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions engineer",
+   "created": "2026-01-12",
+   "last_reviewed": "2026-09-14",
+   "status": "Current",
+   "tags": [
+    "API keys"
+   ],
+   "uses": 25,
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "source": "supabase-016",
+   "quote": "Legacy keys remain available during migration but will be removed in late 2026."
+  },
+  {
+   "id": "AB-0041",
+   "library": "Security",
+   "question": "Which security responsibilities stay with us as the customer?",
+   "alternates": [],
+   "answer": "You are always responsible for your Supabase account, access management, your data and applying security controls. That includes access levels on sensitive tables, managing database secrets and API keys in an encrypted store, applying Row Level Security and acting on Security Advisor recommendations.",
+   "owner": "Security & Compliance",
+   "sme": "Security Engineering lead",
+   "created": "2023-05-22",
+   "last_reviewed": "2026-10-06",
+   "status": "Current",
+   "tags": [
+    "shared responsibility"
+   ],
+   "uses": 84,
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "source": "supabase-008",
+   "quote": "You are also responsible for managing your database secrets and API keys, storing them safely in an encrypted store."
+  },
+  {
+   "id": "AB-0042",
+   "library": "Security",
+   "question": "Do you monitor the third-party services our application integrates with?",
+   "alternates": [],
+   "answer": "No. You can integrate any third-party service, such as SAML providers, SMTP and SMS APIs or external APIs called from functions, but Supabase does not monitor those integrations for outages or performance issues.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions engineer",
+   "created": "2023-05-22",
+   "last_reviewed": "2026-10-06",
+   "status": "Current",
+   "tags": [
+    "shared responsibility",
+    "integrations"
+   ],
+   "uses": 12,
+   "collections": [
+    "Security questionnaire core",
+    "Platform and hosting"
+   ],
+   "source": "supabase-008",
+   "quote": "We do not monitor for outages or performance issues within integrations with third-party services."
+  },
+  {
+   "id": "AB-0043",
+   "library": "Security",
+   "question": "Do you scan projects for security misconfigurations?",
+   "alternates": [],
+   "answer": "Yes. Security Advisors scan each project with Splinter, an open-source Postgres security linter, for issues such as tables without RLS or exposed sensitive columns. Organization owners get weekly security emails and findings appear in the dashboard with recommended fixes.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions engineer",
+   "created": "2026-01-12",
+   "last_reviewed": "2026-05-04",
+   "status": "Review due",
+   "tags": [
+    "Security Advisor"
+   ],
+   "uses": 20,
+   "collections": [
+    "Security questionnaire core"
+   ],
+   "source": "supabase-016",
+   "quote": "Organization owners receive weekly security emails summarizing any findings."
+  },
+  {
+   "id": "AB-0044",
+   "library": "Product",
+   "question": "How often are databases backed up, and how long are backups kept?",
+   "alternates": [
+    "What is your backup policy?"
+   ],
+   "answer": "All Pro, Team and Enterprise Plan projects are backed up daily. Pro projects can access the last 7 days of daily backups, Team projects 14 days and Enterprise projects up to 30 days. Point-in-Time Recovery is available for more frequent backups.",
+   "owner": "Solutions Engineering",
+   "sme": "Database solutions engineer",
+   "created": "2023-04-03",
+   "last_reviewed": "2026-11-12",
+   "status": "Current",
+   "tags": [
+    "backups",
+    "retention"
+   ],
+   "uses": 176,
+   "collections": [
+    "Resilience and backups"
+   ],
+   "source": "supabase-011",
+   "quote": "Pro Plan projects can access the last 7 days of daily backups. Team Plan projects can access the last 14 days of daily backups"
+  },
+  {
+   "id": "AB-0045",
+   "library": "Product",
+   "question": "Are Free Plan projects backed up?",
+   "alternates": [],
+   "answer": "Free Plan projects are not included in the automatic daily backups, which cover Pro, Team and Enterprise. Supabase recommends that free projects export their data regularly with the Supabase CLI db dump command and keep off-site backups.",
+   "owner": "Solutions Engineering",
+   "sme": "Database solutions engineer",
+   "created": "2023-04-03",
+   "last_reviewed": "2026-04-13",
+   "status": "Review due",
+   "tags": [
+    "backups",
+    "free plan"
+   ],
+   "uses": 23,
+   "collections": [
+    "Resilience and backups"
+   ],
+   "source": "supabase-011",
+   "quote": "We recommend that free tier plan projects regularly export their data using the"
+  },
+  {
+   "id": "AB-0046",
+   "library": "Product",
+   "question": "What recovery point objective can you achieve?",
+   "alternates": [
+    "What is your RPO?"
+   ],
+   "answer": "With Point-in-Time Recovery, WAL files are backed up at two-minute intervals (sooner under heavy write load), so the worst-case recovery point objective is two minutes. PITR is an add-on for Pro, Team and Enterprise projects, priced by retention: about $100 a month for 7 days, $200 for 14 days and $400 for 28 days.",
+   "owner": "Solutions Engineering",
+   "sme": "Database solutions engineer",
+   "created": "2023-04-03",
+   "last_reviewed": "2026-11-12",
+   "status": "Current",
+   "tags": [
+    "PITR",
+    "RPO"
+   ],
+   "uses": 98,
+   "collections": [
+    "Resilience and backups"
+   ],
+   "source": "supabase-011",
+   "quote": "Overall, in the worst case scenario, PITR achieves a Recovery Point Objective (RPO) of two minutes."
+  },
+  {
+   "id": "AB-0047",
+   "library": "Product",
+   "question": "How fine-grained is point-in-time restore?",
+   "alternates": [],
+   "answer": "Point-in-Time Recovery lets you roll back a project to any specific point in time, down to the minute.",
+   "owner": "Sales Enablement",
+   "sme": "Billing operations lead",
+   "created": "2024-01-15",
+   "last_reviewed": "2026-04-20",
+   "status": "Review due",
+   "tags": [
+    "PITR"
+   ],
+   "uses": 31,
+   "collections": [
+    "Resilience and backups"
+   ],
+   "source": "supabase-013",
+   "quote": "to roll back to any specific point in time, down to the minute"
+  },
+  {
+   "id": "AB-0048",
+   "library": "Product",
+   "question": "To what granularity can we restore a database with PITR?",
+   "alternates": [],
+   "answer": "PITR restores to any chosen point with up to seconds of granularity, within the earliest and latest recovery points shown in the dashboard.",
+   "owner": "Solutions Engineering",
+   "sme": "Database solutions engineer",
+   "created": "2025-05-12",
+   "last_reviewed": "2026-11-12",
+   "status": "Current",
+   "tags": [
+    "PITR"
+   ],
+   "uses": 19,
+   "collections": [
+    "Resilience and backups"
+   ],
+   "source": "supabase-011",
+   "quote": "giving you the option to restore to any chosen point with up to seconds of granularity."
+  },
+  {
+   "id": "AB-0049",
+   "library": "Product",
+   "question": "What happens to backups when a project is deleted?",
+   "alternates": [],
+   "answer": "Deleting a project permanently removes all associated data, including any backups stored in S3. It cannot be undone.",
+   "owner": "Solutions Engineering",
+   "sme": "Database solutions engineer",
+   "created": "2023-04-03",
+   "last_reviewed": "2026-11-12",
+   "status": "Current",
+   "tags": [
+    "backups",
+    "deletion"
+   ],
+   "uses": 27,
+   "collections": [
+    "Resilience and backups",
+    "Privacy and DPA"
+   ],
+   "source": "supabase-011",
+   "quote": "When you delete a project, we permanently remove all associated data, including any backups stored in S3."
+  },
+  {
+   "id": "AB-0050",
+   "library": "Product",
+   "question": "Do database backups include files stored in Supabase Storage?",
+   "alternates": [],
+   "answer": "No. Database backups contain only the metadata about Storage objects, not the objects themselves, so restoring an old backup does not bring back objects deleted after it.",
+   "owner": "Solutions Engineering",
+   "sme": "Database solutions engineer",
+   "created": "2024-07-01",
+   "last_reviewed": "2026-11-12",
+   "status": "Current",
+   "tags": [
+    "backups",
+    "storage"
+   ],
+   "uses": 15,
+   "collections": [
+    "Resilience and backups"
+   ],
+   "source": "supabase-011",
+   "quote": "Database backups do not include objects you store via the Storage API"
+  },
+  {
+   "id": "AB-0052",
+   "library": "Product",
+   "question": "Is there downtime during a restore?",
+   "alternates": [],
+   "answer": "Yes. The project is inaccessible while a backup or PITR restore runs, and downtime grows with database size, so plan a window beforehand.",
+   "owner": "Solutions Engineering",
+   "sme": "Database solutions engineer",
+   "created": "2023-04-03",
+   "last_reviewed": "2026-11-12",
+   "status": "Current",
+   "tags": [
+    "restore",
+    "downtime"
+   ],
+   "uses": 13,
+   "collections": [
+    "Resilience and backups"
+   ],
+   "source": "supabase-011",
+   "quote": "The project is inaccessible during this process, so plan for downtime beforehand."
+  },
+  {
+   "id": "AB-0053",
+   "library": "Product",
+   "question": "Which regions can we deploy to?",
+   "alternates": [],
+   "answer": "Each project is deployed to one primary region. You can choose a general region (Americas, Europe or APAC) or an exact AWS region, including US East and West, Canada, Ireland, London, Paris, Frankfurt, Zurich, Stockholm, Mumbai, Singapore, Tokyo, Seoul, Sydney and São Paulo.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions engineer",
+   "created": "2023-04-03",
+   "last_reviewed": "2026-10-19",
+   "status": "Current",
+   "tags": [
+    "regions",
+    "data residency"
+   ],
+   "uses": 133,
+   "collections": [
+    "Platform and hosting",
+    "Privacy and DPA"
+   ],
+   "source": "supabase-012",
+   "quote": "If you prefer, you can choose an exact AWS region for your project."
+  },
+  {
+   "id": "AB-0054",
+   "library": "Privacy",
+   "question": "If we pick the Europe region, does our data stay in the EU?",
+   "alternates": [],
+   "answer": "Yes. Choosing the Europe region keeps your primary database, Auth and Storage inside the EU.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions engineer",
+   "created": "2024-04-15",
+   "last_reviewed": "2026-08-03",
+   "status": "Current",
+   "tags": [
+    "data residency",
+    "EU"
+   ],
+   "uses": 44,
+   "collections": [
+    "Privacy and DPA"
+   ],
+   "source": "supabase-012",
+   "quote": "Supabase will deploy your project to an available AWS region within that area based on current infrastructure capacity."
+  },
+  {
+   "id": "AB-0055",
+   "library": "Privacy",
+   "question": "Does all of our data remain in the region we choose?",
+   "alternates": [],
+   "answer": "Yes. Each project is deployed into the region the customer specifies at creation time, and all data remains within the chosen region. Read replicas in other regions are the customer's choice.",
+   "owner": "Security & Compliance",
+   "sme": "Privacy program manager",
+   "created": "2023-08-14",
+   "last_reviewed": "2026-07-31",
+   "status": "Current",
+   "tags": [
+    "data residency"
+   ],
+   "uses": 87,
+   "collections": [
+    "Privacy and DPA"
+   ],
+   "source": "supabase-005",
+   "quote": "each Supabase project is deployed into the region the customer specifies at creation time. All data will remain within the chosen region."
+  },
+  {
+   "id": "AB-0056",
+   "library": "Privacy",
+   "question": "What exactly does region selection guarantee for data residency?",
+   "alternates": [],
+   "answer": "Region selection pins the project's primary Postgres database, Auth service and Storage objects to that region. It is a data-location control, not proof of compliance: backups, logs, data exported to external systems, Edge Function execution and sub-processors can affect residency and international transfers.",
+   "owner": "Security & Compliance",
+   "sme": "Privacy program manager",
+   "created": "2025-10-14",
+   "last_reviewed": "2026-08-03",
+   "status": "Current",
+   "tags": [
+    "data residency",
+    "GDPR"
+   ],
+   "uses": 29,
+   "collections": [
+    "Privacy and DPA"
+   ],
+   "source": "supabase-010",
+   "quote": "Backups, logs, data exported to external systems, Edge Function execution, and sub-processors can affect your data residency and international transfer analysis."
+  },
+  {
+   "id": "AB-0057",
+   "library": "Privacy",
+   "question": "Do you offer a Data Processing Agreement?",
+   "alternates": [],
+   "answer": "Yes. Supabase provides a DPA for customers who need a formal data processing contract under GDPR; it can be requested or viewed at supabase.com/legal/dpa.",
+   "owner": "Legal",
+   "sme": "Privacy counsel",
+   "created": "2023-06-19",
+   "last_reviewed": "2026-08-03",
+   "status": "Current",
+   "tags": [
+    "DPA",
+    "GDPR"
+   ],
+   "uses": 121,
+   "collections": [
+    "Privacy and DPA"
+   ],
+   "source": "supabase-010",
+   "quote": "If you need a formal data processing contract under GDPR, Supabase provides a Data Processing Agreement (DPA)."
+  },
+  {
+   "id": "AB-0064",
+   "library": "Legal and Commercial",
+   "question": "Which plans do you offer and how is billing structured?",
+   "alternates": [],
+   "answer": "Supabase offers Free, Pro, Team and Enterprise plans. Billing is per organization: each organization has its own plan, payment method, billing cycle and invoices, and monthly costs combine a fixed plan fee with usage fees. Compute is charged per project.",
+   "owner": "Sales Enablement",
+   "sme": "Billing operations lead",
+   "created": "2024-01-15",
+   "last_reviewed": "2026-09-17",
+   "status": "Current",
+   "tags": [
+    "plans",
+    "billing"
+   ],
+   "uses": 142,
+   "collections": [
+    "Commercial and support"
+   ],
+   "source": "supabase-013",
+   "quote": "Supabase offers different subscription plans—Free, Pro, Team, and Enterprise."
+  },
+  {
+   "id": "AB-0065",
+   "library": "Legal and Commercial",
+   "question": "Can we mix plans across projects in one organization?",
+   "alternates": [],
+   "answer": "No. Different plans cannot be mixed within one organization; projects on different plans need separate organizations.",
+   "owner": "Sales Enablement",
+   "sme": "Billing operations lead",
+   "created": "2024-01-15",
+   "last_reviewed": "2026-02-09",
+   "status": "Review due",
+   "tags": [
+    "plans"
+   ],
+   "uses": 22,
+   "collections": [
+    "Commercial and support"
+   ],
+   "source": "supabase-013",
+   "quote": "Different plans cannot be mixed within a single organization."
+  },
+  {
+   "id": "AB-0066",
+   "library": "Legal and Commercial",
+   "question": "What usage is included in the Pro and Team plans?",
+   "alternates": [],
+   "answer": "Pro and Team include, per organization, 250 GB egress, 8 GB disk per project, 100,000 monthly active users, 100 GB storage, 2 million Edge Function invocations, 5 million Realtime messages and 500 peak Realtime connections; usage above the quota is billed per unit. Quotas apply across the whole organization.",
+   "owner": "Sales Enablement",
+   "sme": "Billing operations lead",
+   "created": "2024-01-15",
+   "last_reviewed": "2026-09-17",
+   "status": "Current",
+   "tags": [
+    "quotas",
+    "pricing"
+   ],
+   "uses": 77,
+   "collections": [
+    "Commercial and support"
+   ],
+   "source": "supabase-013",
+   "quote": "The quota is applied to your entire organization, independent of how many projects you launch within that organization."
+  },
+  {
+   "id": "AB-0067",
+   "library": "Product",
+   "question": "How large can a database instance scale?",
+   "alternates": [],
+   "answer": "Each project has its own dedicated Postgres instance. Compute add-ons scale up to 64 vCPUs and 256 GB RAM (16XL), and larger instances are available on request. Sizes up to Medium use shared CPU; Large and above use dedicated vCPUs.",
+   "owner": "Solutions Engineering",
+   "sme": "Database solutions engineer",
+   "created": "2024-01-15",
+   "last_reviewed": "2026-11-03",
+   "status": "Current",
+   "tags": [
+    "compute",
+    "scaling"
+   ],
+   "uses": 64,
+   "collections": [
+    "Platform and hosting"
+   ],
+   "source": "supabase-013",
+   "quote": "to scale your database up to 64 vCPUs and 256 GB RAM"
+  },
+  {
+   "id": "AB-0068",
+   "library": "Product",
+   "question": "How much downtime does a compute upgrade cause?",
+   "alternates": [],
+   "answer": "Compute size changes are usually applied with less than 2 minutes of downtime, but can take longer depending on the underlying cloud provider. Sizes are not auto-upgraded because of that downtime.",
+   "owner": "Solutions Engineering",
+   "sme": "Database solutions engineer",
+   "created": "2024-01-15",
+   "last_reviewed": "2026-11-03",
+   "status": "Current",
+   "tags": [
+    "compute",
+    "downtime"
+   ],
+   "uses": 26,
+   "collections": [
+    "Platform and hosting",
+    "Resilience and backups"
+   ],
+   "source": "supabase-014",
+   "quote": "Compute instance changes are usually applied with less than 2 minutes of downtime, but can take longer depending on the underlying Cloud Provider."
+  },
+  {
+   "id": "AB-0069",
+   "library": "Product",
+   "question": "Do Postgres major version upgrades require downtime?",
+   "alternates": [],
+   "answer": "Yes. During an upgrade the project is taken offline while a new instance is created and data is upgraded with pg_upgrade; if the upgrade fails the original database comes back online. Plan a maintenance window based on database size.",
+   "owner": "Solutions Engineering",
+   "sme": "Database solutions engineer",
+   "created": "2024-03-11",
+   "last_reviewed": "2026-10-29",
+   "status": "Current",
+   "tags": [
+    "upgrades",
+    "downtime"
+   ],
+   "uses": 18,
+   "collections": [
+    "Platform and hosting"
+   ],
+   "source": "supabase-015",
+   "quote": "Your project is taken offline and the Dashboard shows the upgrade status."
+  },
+  {
+   "id": "AB-0070",
+   "library": "Product",
+   "question": "Will paid projects be paused for inactivity?",
+   "alternates": [],
+   "answer": "No. Projects on paid plans cannot be paused and are not paused for inactivity. Free Plan projects with low activity over 7 days are paused, and owners get a warning email first.",
+   "owner": "Sales Enablement",
+   "sme": "Billing operations lead",
+   "created": "2024-01-15",
+   "last_reviewed": "2026-10-29",
+   "status": "Current",
+   "tags": [
+    "pausing"
+   ],
+   "uses": 39,
+   "collections": [
+    "Commercial and support",
+    "Platform and hosting"
+   ],
+   "source": "supabase-015",
+   "quote": "Paid projects can't be paused."
+  },
+  {
+   "id": "AB-0071",
+   "library": "Product",
+   "question": "How long can a paused project be restored?",
+   "alternates": [],
+   "answer": "A paused project can be restored from Supabase Studio with one click for 1 year. After that window you can still download the backup file and Storage objects and restore them to a new project or locally.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions engineer",
+   "created": "2025-11-03",
+   "last_reviewed": "2026-10-29",
+   "status": "Current",
+   "tags": [
+    "pausing",
+    "restore"
+   ],
+   "uses": 12,
+   "collections": [
+    "Platform and hosting"
+   ],
+   "source": "supabase-015",
+   "quote": "When a project is paused, users have a 1-year window to restore the project on the platform from within Supabase Studio."
+  },
+  {
+   "id": "AB-0072",
+   "library": "Product",
+   "question": "What is the restore window for a paused Free project?",
+   "alternates": [],
+   "answer": "Paused Free projects can be restored from the dashboard for 90 days. After 90 days only a backup download is available.",
+   "owner": "Solutions Engineering",
+   "sme": "Solutions engineer",
+   "created": "2024-02-05",
+   "last_reviewed": "2026-05-04",
+   "status": "Review due",
+   "tags": [
+    "pausing",
+    "free plan"
+   ],
+   "uses": 21,
+   "collections": [
+    "Platform and hosting"
+   ],
+   "source": "supabase-015",
+   "quote": "![Project Paused: 90 Days Remaining](https://supabase.com/docs/img/guides/platform/paused-90-day.png)"
+  },
+  {
+   "id": "AB-0079",
+   "library": "Product",
+   "question": "Can Supabase be deployed into our own AWS account?",
+   "alternates": [],
+   "answer": "Yes. Enterprise customers can run Supabase in their own cloud account with Bring Your Own Cloud, so the database and services sit inside your AWS environment.",
+   "owner": "Solutions Engineering",
+   "sme": "Cloud solutions engineer",
+   "created": "2026-01-19",
+   "last_reviewed": "2026-06-22",
+   "status": "Current",
+   "tags": [
+    "BYOC",
+    "deployment"
+   ],
+   "uses": 16,
+   "collections": [
+    "Platform and hosting"
+   ],
+   "source": "supabase-016",
+   "quote": "Bring Your Own Cloud will be available to more customers beyond Supabase for Platforms."
+  },
+  {
+   "id": "AB-0080",
+   "library": "Product",
+   "question": "Can we create read replicas in other regions?",
+   "alternates": [],
+   "answer": "Yes. Read replicas can be created for multi-region availability; choosing replica regions that satisfy your regulatory requirements is your responsibility.",
+   "owner": "Solutions Engineering",
+   "sme": "Database solutions engineer",
+   "created": "2024-01-15",
+   "last_reviewed": "2026-07-31",
+   "status": "Current",
+   "tags": [
+    "read replicas"
+   ],
+   "uses": 21,
+   "collections": [
+    "Platform and hosting",
+    "Resilience and backups"
+   ],
+   "source": "supabase-005",
+   "quote": "[Read replicas](https://supabase.com/docs/guides/platform/read-replicas) can be created for multi-region availability"
+  },
+  {
+   "id": "AB-0081",
+   "library": "Product",
+   "question": "Which Postgres extensions are deprecated on Postgres 17?",
+   "alternates": [],
+   "answer": "On Postgres 17 projects, plcoffee, plls, plv8, timescaledb and pgjwt are deprecated and must be disabled before upgrading from Postgres 15. They stay supported on Postgres 15 projects until Postgres 15 reaches end of life on the platform.",
+   "owner": "Solutions Engineering",
+   "sme": "Database solutions engineer",
+   "created": "2025-06-16",
+   "last_reviewed": "2026-10-29",
+   "status": "Current",
+   "tags": [
+    "Postgres 17",
+    "deprecation"
+   ],
+   "uses": 11,
+   "collections": [
+    "Platform and hosting"
+   ],
+   "source": "supabase-015",
+   "quote": "In projects using Postgres 17, the following extensions are deprecated:"
+  }
+ ]
+}

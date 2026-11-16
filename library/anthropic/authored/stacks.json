@@ -1,0 +1,60 @@
+{
+ "name": "Anthropic Sales Library",
+ "items": [
+  {
+   "raw": "anthropic-035",
+   "title": "Claude Cookbooks: capabilities and agent patterns",
+   "filename": "claude-cookbooks capabilities and agents.tar.gz",
+   "folder": "Enablement",
+   "owner": "Developer Relations",
+   "description": "Runnable notebooks for classification, RAG, summarisation, agent patterns and tool evaluation. Good demo starting points.",
+   "version": "1.0",
+   "created": "2026-11-04",
+   "updated": "2026-11-04",
+   "expires": "2027-11-04",
+   "views": 52,
+   "props": {
+    "Content Type": [
+     "Demo"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "Claude Platform"
+    ],
+    "Solution": [
+     "Developer Platform"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Demos"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "notebooks",
+     "agents",
+     "RAG"
+    ],
+    "Do Not Allow in AI": [
+     "True"
+    ]
+   },
+   "legacy": null
+  }
+ ]
+}

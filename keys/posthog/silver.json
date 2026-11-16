@@ -1,0 +1,263 @@
+[
+ {
+  "id": "Q-posthog-001",
+  "question": "Are all PostHog employees required to use multi-factor authentication?",
+  "answer": "Yes",
+  "type": "yes-no",
+  "source": "posthog-014",
+  "quote": "All team members are required to enable multi-factor authentication (MFA) on their accounts.",
+  "holdout": false
+ },
+ {
+  "id": "Q-posthog-002",
+  "question": "When was PostHog's most recent penetration test?",
+  "answer": "May 2026",
+  "type": "date",
+  "source": "posthog-014",
+  "quote": "We conduct these annually, most recently in May 2026",
+  "holdout": true
+ },
+ {
+  "id": "Q-posthog-003",
+  "question": "How often does PostHog run penetration tests?",
+  "answer": "Annually",
+  "type": "policy",
+  "source": "posthog-014",
+  "quote": "We conduct these annually, most recently in May 2026",
+  "holdout": false
+ },
+ {
+  "id": "Q-posthog-004",
+  "question": "In which AWS regions can PostHog Cloud data be hosted?",
+  "answer": "EU: eu-central-1 (Germany); US: us-east-1 (Virginia)",
+  "type": "list",
+  "source": "posthog-014",
+  "quote": "Customers can choose whether to host data on our AWS servers in the EU (eu-central-1 in Germany) or the US (us-east-1 in Virginia).",
+  "holdout": false
+ },
+ {
+  "id": "Q-posthog-005",
+  "question": "Under what name is PostHog registered with the UK Information Commissioner's Office?",
+  "answer": "Hiberly Ltd.",
+  "type": "fact",
+  "source": "posthog-014",
+  "quote": "We are registered with the Information Commissioner's Office in the United Kingdom as Hiberly Ltd.",
+  "holdout": false
+ },
+ {
+  "id": "Q-posthog-006",
+  "question": "Who is PostHog's Data Protection Officer?",
+  "answer": "Charles Cook (VP Operations)",
+  "type": "fact",
+  "source": "posthog-014",
+  "quote": "Charles Cook (VP Operations) is our assigned Data Protection Officer",
+  "holdout": false
+ },
+ {
+  "id": "Q-posthog-007",
+  "question": "Does PostHog sell customer data to third parties?",
+  "answer": "No",
+  "type": "yes-no",
+  "source": "posthog-014",
+  "quote": "customer data is never sold to third parties.",
+  "holdout": false
+ },
+ {
+  "id": "Q-posthog-008",
+  "question": "Can customers on the free plan get a signed DPA?",
+  "answer": "Yes",
+  "type": "yes-no",
+  "source": "posthog-015",
+  "quote": "All PostHog Cloud customers can get a DPA, on any plan. This includes the free plan.",
+  "holdout": true
+ },
+ {
+  "id": "Q-posthog-009",
+  "question": "Is the managed reverse proxy covered by PostHog's BAA?",
+  "answer": "No",
+  "type": "yes-no",
+  "source": "posthog-017",
+  "quote": "covered by BAAs and should not be used to process Protected Health Information (PHI).",
+  "holdout": false
+ },
+ {
+  "id": "Q-posthog-010",
+  "question": "Are PostHog AI features covered by the BAA?",
+  "answer": "No",
+  "type": "yes-no",
+  "source": "posthog-017",
+  "quote": "and other AI features are **not** covered by BAAs and should not be enabled in organizations where any project processes Protected Health Information (PHI).",
+  "holdout": false
+ },
+ {
+  "id": "Q-posthog-028",
+  "question": "Is an uptime SLA available on regular monthly contracts?",
+  "answer": "No",
+  "type": "yes-no",
+  "source": "posthog-008",
+  "quote": "You should certainly not agree to an SLA for customers on regular monthly contracts",
+  "holdout": true
+ },
+ {
+  "id": "Q-posthog-029",
+  "question": "At what spend can an uptime SLA be agreed as a special contract term?",
+  "answer": "$100k+ ARR after discount (or with the Enterprise package)",
+  "type": "number",
+  "source": "posthog-008",
+  "quote": "if they are spending $100k+ ARR _post_ discount",
+  "holdout": true
+ },
+ {
+  "id": "Q-posthog-030",
+  "question": "What is PostHog's standard contract term, and the longest term available?",
+  "answer": "12 months; up to 36 months on request",
+  "type": "number",
+  "source": "posthog-008",
+  "quote": "Our standard contract term is 12 months. Terms of up to 36 months are available on request",
+  "holdout": true
+ },
+ {
+  "id": "Q-posthog-031",
+  "question": "Can credits bought via an order form be paid by credit card?",
+  "answer": "No",
+  "type": "yes-no",
+  "source": "posthog-008",
+  "quote": "We do not accept credit card payments for credits bought via an order form.",
+  "holdout": false
+ },
+ {
+  "id": "Q-posthog-032",
+  "question": "Does PostHog offer price guarantees?",
+  "answer": "No",
+  "type": "yes-no",
+  "source": "posthog-008",
+  "quote": "We do not offer price guarantees for the following reasons:",
+  "holdout": false
+ },
+ {
+  "id": "Q-posthog-035",
+  "question": "When were malicious versions of PostHog SDKs published to npm in the Shai-Hulud attack?",
+  "answer": "24 November 2025, 4:11 AM UTC",
+  "type": "date",
+  "source": "posthog-026",
+  "quote": "At 4:11 AM UTC on November 24th, a number of our SDKs and other packages were compromised",
+  "holdout": false
+ },
+ {
+  "id": "Q-posthog-036",
+  "question": "Which PostHog packages were affected by the Shai-Hulud attack?",
+  "answer": "Only the JavaScript SDKs published to npm",
+  "type": "fact",
+  "source": "posthog-026",
+  "quote": "The attack only affected our Javascript SDKs published in npm.",
+  "holdout": false
+ },
+ {
+  "id": "Q-posthog-037",
+  "question": "On what date did PostHog's Logs data loss incident occur?",
+  "answer": "19 February 2026",
+  "type": "date",
+  "source": "posthog-027",
+  "quote": "On February 19th, PostHog's Logs product experienced a major incident",
+  "holdout": false
+ },
+ {
+  "id": "Q-posthog-038",
+  "question": "Which data was lost in the February 2026 Logs incident?",
+  "answer": "Logs data collected more than 3 days earlier in the US region; no other product was affected",
+  "type": "fact",
+  "source": "posthog-027",
+  "quote": "caused the loss of data collected more than 3 days ago in our US region. This data loss only impacted the Logs product",
+  "holdout": false
+ },
+ {
+  "id": "Q-posthog-039",
+  "question": "How many days of Kafka retention allowed recent Logs data to be restored?",
+  "answer": "3 days",
+  "type": "number",
+  "source": "posthog-027",
+  "quote": "Configuring Kafka with 3 days of retention saved us from total data loss for recent activity.",
+  "holdout": true
+ },
+ {
+  "id": "Q-posthog-040",
+  "question": "Does raising a support ticket allow PostHog support to access the customer's account?",
+  "answer": "Yes, it is treated as consent unless the customer says otherwise in the ticket",
+  "type": "policy",
+  "source": "posthog-014",
+  "quote": "When a customer raises a support ticket, we take this as consent to be able to impersonate their account",
+  "holdout": false
+ },
+ {
+  "id": "Q-posthog-041",
+  "question": "Is IP data capture on or off by default for new projects on PostHog Cloud EU?",
+  "answer": "Off (disabled by default)",
+  "type": "fact",
+  "source": "posthog-016",
+  "quote": "For organizations using PostHog Cloud EU, IP data capture is automatically disabled by default for all new projects.",
+  "holdout": false
+ },
+ {
+  "id": "Q-posthog-042",
+  "question": "When is event data deleted after a deletion request on PostHog Cloud?",
+  "answer": "Asynchronously in non-peak hours (weekends on PostHog Cloud)",
+  "type": "policy",
+  "source": "posthog-018",
+  "quote": "event data is cleared asynchronously during non-peak usage times (weekends on PostHog Cloud).",
+  "holdout": false
+ },
+ {
+  "id": "Q-posthog-043",
+  "question": "How are a deleted person's session recordings destroyed?",
+  "answer": "Crypto-shredding: the encryption keys are irreversibly deleted",
+  "type": "fact",
+  "source": "posthog-018",
+  "quote": "all session recordings for the person are permanently destroyed using crypto-shredding",
+  "holdout": false
+ },
+ {
+  "id": "Q-posthog-044",
+  "question": "Does PostHog provide support for self-hosted instances?",
+  "answer": "No",
+  "type": "yes-no",
+  "source": "posthog-016",
+  "quote": "we do not provide support for self-hosted instances.",
+  "holdout": false
+ },
+ {
+  "id": "Q-posthog-045",
+  "question": "Where is PostHog Cloud EU hosted?",
+  "answer": "Frankfurt",
+  "type": "fact",
+  "source": "posthog-016",
+  "quote": "a managed version of PostHog that's hosted on servers based in Frankfurt.",
+  "holdout": true
+ },
+ {
+  "id": "Q-posthog-046",
+  "question": "What is the minimum annual contract value before PostHog will review redlines to its DPA, BAA or MSA?",
+  "answer": "$20k a year",
+  "type": "number",
+  "source": "posthog-008",
+  "quote": "At a minimum, we will only do this for contracts above $20k a year",
+  "holdout": true
+ },
+ {
+  "id": "Q-posthog-047",
+  "question": "Must every commit to a PostHog repository be cryptographically signed?",
+  "answer": "Yes",
+  "type": "yes-no",
+  "source": "posthog-014",
+  "quote": "Every commit pushed to a PostHog repository must be cryptographically signed.",
+  "holdout": false
+ },
+ {
+  "id": "Q-posthog-048",
+  "question": "Which tool does PostHog use to manage employee laptops?",
+  "answer": "Fleet",
+  "type": "fact",
+  "source": "posthog-014",
+  "quote": "to manage all of our laptops. It applies targeted policies that raise the security baseline of every device",
+  "holdout": false
+ }
+]

@@ -1,0 +1,12 @@
+{
+ "name": "Anthropic Answer Library",
+ "review_cycle_days": 180,
+ "collections": [
+  "Security questionnaire core",
+  "AI and data use",
+  "Healthcare and HIPAA",
+  "Procurement and contracting",
+  "Platform and integration"
+ ],
+ "entries": []
+}

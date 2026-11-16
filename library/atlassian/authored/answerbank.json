@@ -1,0 +1,14 @@
+{
+ "name": "Atlassian Answer Library",
+ "review_cycle_days": 180,
+ "collections": [
+  "Security questionnaire core (CAIQ)",
+  "Compliance and certifications",
+  "Privacy and data residency",
+  "AI and data use (Rovo)",
+  "Plans, pricing and SLA",
+  "Product lifecycle",
+  "Company"
+ ],
+ "entries": []
+}

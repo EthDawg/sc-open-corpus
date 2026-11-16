@@ -1,0 +1,74 @@
+[
+ {
+  "id": "C-gitlab-01",
+  "source": "gitlab-045",
+  "quote": "GitLab Secrets Manager is now generally available on GitLab.com and GitLab Self-Managed.",
+  "stop_saying": "GitLab Secrets Manager is in Limited Availability on GitLab.com (or in open beta and not ready for production).",
+  "say_instead": "GitLab Secrets Manager is generally available on GitLab.com and GitLab Self-Managed (GitLab 19.5), built on OpenBao, and consumes GitLab Credits.",
+  "old_source": "gitlab-043",
+  "old_quote": "GitLab Secrets Manager, now in Limited Availability on GitLab.com, makes credentials more secure and keeps them in the same platform that runs your pipelines."
+ },
+ {
+  "id": "C-gitlab-02",
+  "source": "gitlab-045",
+  "quote": "GitLab Orbit is generally available on GitLab.com.",
+  "stop_saying": "GitLab Orbit and the Knowledge Graph are in beta.",
+  "say_instead": "GitLab Orbit is generally available on GitLab.com (GitLab 19.5) for Premium and Ultimate; a 30-day trial is available through the account team.",
+  "old_source": "gitlab-042",
+  "old_quote": "Orbit and the Knowledge Graph are in Beta."
+ },
+ {
+  "id": "C-gitlab-03",
+  "source": "gitlab-045",
+  "quote": "In previous versions of GitLab, MCP clients could reach only a limited set of GitLab tools. Now the GitLab MCP server is generally available.",
+  "stop_saying": "The GitLab MCP server exposes only a limited set of GitLab tools.",
+  "say_instead": "The GitLab MCP server is generally available on all tiers (GitLab 19.5), with toolset selection and new rate limits.",
+  "old_source": null,
+  "old_quote": null
+ },
+ {
+  "id": "C-gitlab-04",
+  "source": "gitlab-045",
+  "quote": "GitLab 19.3, is now generally available and is the default layout.",
+  "stop_saying": "The redesigned Agentic Chat UI in VS Code and JetBrains is a beta you have to turn on.",
+  "say_instead": "The new Agentic Chat UI is generally available and the default layout in VS Code and JetBrains (GitLab 19.5); no beta setting is needed.",
+  "old_source": "gitlab-043",
+  "old_quote": "JetBrains IDEs has a redesigned UI, now available as a beta."
+ },
+ {
+  "id": "C-gitlab-05",
+  "source": "gitlab-045",
+  "quote": "Non-default branch tracking is now generally available.",
+  "stop_saying": "Tracking vulnerabilities on non-default branches is a beta feature.",
+  "say_instead": "Non-default branch vulnerability tracking is generally available in Ultimate (GitLab 19.5).",
+  "old_source": "gitlab-042",
+  "old_quote": "Non default branch tracking (beta)"
+ },
+ {
+  "id": "C-gitlab-06",
+  "source": "gitlab-045",
+  "quote": "In previous versions of GitLab, Observability was an experiment. Now it’s in beta on GitLab.com and GitLab Self-Managed.",
+  "stop_saying": "GitLab Observability is an experiment.",
+  "say_instead": "GitLab Observability (OpenTelemetry traces, metrics and logs) is in beta on GitLab.com and Self-Managed and free during the beta; do not sell it as GA.",
+  "old_source": null,
+  "old_quote": null
+ },
+ {
+  "id": "C-gitlab-07",
+  "source": "gitlab-046",
+  "quote": "Rapid Diffs, a ground-up rewrite of how GitLab renders diffs, is now generally available",
+  "stop_saying": "Rapid Diffs is a beta you can switch back from; the classic diff view is the default.",
+  "say_instead": "Rapid Diffs is listed as generally available and replacing the classic diff view in the upcoming GitLab 19.6; confirm on release day before committing to it.",
+  "old_source": "gitlab-047",
+  "old_quote": "Rapid Diffs is in beta. Some features from the classic diff experience aren’t yet available."
+ },
+ {
+  "id": "C-gitlab-08",
+  "source": "gitlab-046",
+  "quote": "Workspace subagents, previously released as an experiment, are now generally available.",
+  "stop_saying": "Workspace subagents are an experiment.",
+  "say_instead": "Workspace subagents are listed as generally available in the upcoming GitLab 19.6.",
+  "old_source": null,
+  "old_quote": null
+ }
+]

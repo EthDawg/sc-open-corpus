@@ -1,0 +1,38 @@
+{
+ "name": "OpenAI Answer Library",
+ "review_cycle_days": 180,
+ "collections": [
+  "Security questionnaire core",
+  "AI and data use",
+  "AI risk review",
+  "RFP product",
+  "RFP company",
+  "Procurement"
+ ],
+ "entries": [
+  {
+   "id": "AB-0071",
+   "library": "Integration",
+   "question": "Can ChatGPT connect to Workday and other enterprise systems?",
+   "alternates": [
+    "Do you integrate with our HRIS?"
+   ],
+   "answer": "Yes. Custom GPT Actions connect ChatGPT to systems such as Workday, Salesforce (with Gong), GitHub, Google Calendar, Canvas and SharePoint. For Workday, Custom Actions support HR processes, task automation and personalized employee support; the OpenAI Cookbook has reference implementations.",
+   "owner": "Solutions Engineering",
+   "sme": "Integration architect",
+   "created": "2025-01-27",
+   "last_reviewed": "2026-07-14",
+   "status": "Current",
+   "tags": [
+    "GPT Actions",
+    "Workday"
+   ],
+   "uses": 22,
+   "source": "openai-024",
+   "quote": "ChatGPT’s Custom Actions with Workday allow organizations to use AI to improve HR processes, automate tasks, and offer personalized employee support.",
+   "collections": [
+    "RFP product"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "name": "Stripe Answer Library",
+ "review_cycle_days": 180,
+ "collections": [
+  "Security questionnaire core",
+  "PCI and integration scope",
+  "Privacy and DPA",
+  "AI and data use",
+  "Product and platform",
+  "Developer and API",
+  "Commercial and pricing (AU)",
+  "Company and references"
+ ],
+ "entries": []
+}

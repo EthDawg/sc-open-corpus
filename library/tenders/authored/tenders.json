@@ -1,0 +1,1116 @@
+{
+ "as_of": "2026-11-16",
+ "opportunities": [
+  {
+   "id": "18f-head-start-tta",
+   "title": "Office of Head Start Training and Technical Assistance Data Platform - Request for Quote",
+   "buyer": "General Services Administration (GSA), Federal Acquisition Service, Technology Transformation Services (TTS), 18F and Office of Acquisitions, Assisted Acquisition on Behalf of the Office of Head Start (OHS), Administration for Children and Families, U.S. Department of Health and Human Services",
+   "buyer_type": "Federal agency",
+   "country": "US",
+   "ref": null,
+   "published": "2020-04-27",
+   "closes": "2020-05-26",
+   "status": "closed",
+   "value": "Budget of $1.5M for the base year, $1.5M for option 1 and $1.6M for option 2",
+   "summary": "GSA's 18F runs this assisted acquisition for the Office of Head Start to buy agile software development services that will build a TTA Data Platform, starting with an MVP for reporting on training and technical assistance activity that is currently spread across 27 disconnected systems. The vendor builds a database, backend API and frontend on cloud.gov with CI/CD, open-source code in a government GitHub repository, user research and human-centred design, while OHS owns hosting and the ATO. It is a total small business set-aside on GSA Schedule IT 70 (SIN 132 51), a time-and-materials order of a 12-month base plus two 12-month options, and staff need HSPD-12 clearance with PIV cards for key personnel. Evaluation is phased: written technical approach, staffing plan and up to five source code samples with full revision history, then a 60-minute oral interview with no slides, then price; any Low Confidence rating removes a quote, and non-price factors together outweigh price.",
+   "criteria": [
+    {
+     "name": "Phase 1 – Technical Evaluation: Factor 1: Technical Approach",
+     "weight": "Non-price evaluation factors, when combined, are significantly more important than price"
+    },
+    {
+     "name": "Phase 1 – Technical Evaluation: Factor 2: Staffing Plan",
+     "weight": "Non-price evaluation factors, when combined, are significantly more important than price"
+    },
+    {
+     "name": "Phase 1 – Technical Evaluation: Factor 3: Similar Experience",
+     "weight": "Non-price evaluation factors, when combined, are significantly more important than price"
+    },
+    {
+     "name": "Phase 2 - Oral interview",
+     "weight": "Non-price evaluation factors, when combined, are significantly more important than price"
+    },
+    {
+     "name": "Phase 3 - Price Evaluation",
+     "weight": "As non-price ratings become closer, price will become more important"
+    }
+   ],
+   "source_url": "https://github.com/18F/Head_Start_TTA_RFQ",
+   "licence": "US-PD",
+   "documents": [
+    {
+     "raw": "18f-001",
+     "name": "Head_Start_TTA_RFQ.tar.gz",
+     "added": "2020-04-27",
+     "addendum": false
+    }
+   ],
+   "qa": [
+    {
+     "n": 1,
+     "q": "Are there secondary data sets that need to be brought in, and if so, how many and to what extent will the contractor be expected to manage data migration?",
+     "a": "There are data sets residing in other systems that the contractor will be expected to integrate with. It is not expected at this time that historical data will need to be migrated into the new system's database.",
+     "date": "2020-05-14",
+     "source": "18f-001",
+     "quote": "There are data sets residing in other systems that the contractor will be expected to integrate with. It is not expected at this time that historical"
+    },
+    {
+     "n": 2,
+     "q": "Which of the previous systems, if any, will the contractor be ingesting data from? Is this in scope for this phase or in subsequent years?",
+     "a": "Head Start Enterprise System (HSES), Monitoring System (ITAMS), ECLKC, and regional systems.",
+     "date": "2020-05-14",
+     "source": "18f-001",
+     "quote": "Head Start Enterprise System (HSES), Monitoring System (ITAMS), ECLKC, and regional systems."
+    },
+    {
+     "n": 3,
+     "q": "When can an ATO be expected and how will it be structured?",
+     "a": "18F and OHS is committed to working with the vendor to obtain ATO from the CIO organization as soon as possible. The ATO process and structure is determined by the ACF OCIO, but we expect that vendors will work to move toward ATO from the first deliverable and not wait until the system is \"done\".",
+     "date": "2020-05-14",
+     "source": "18f-001",
+     "quote": "18F and OHS is committed to working with the vendor to obtain ATO from the CIO organization as soon as possible. The ATO process and structure"
+    },
+    {
+     "n": 4,
+     "q": "What are some of the ways that data is accessed today? Is there an expectation that the new system will have to interact with subsystems?",
+     "a": "TTA data is currently accessed in different systems by personnel independently. It is expected that the new system will allow people to access TTA data in a single environment with more consistency across regions and organizational levels. This will require building integration points between the new system and existing systems.",
+     "date": "2020-05-14",
+     "source": "18f-001",
+     "quote": "TTA data is currently accessed in different systems by personnel independently. It is expected that the new system will allow people to access TTA data in"
+    },
+    {
+     "n": 5,
+     "q": "What is OHS’s planned ATO strategy to enable the deployment of the new TTADP as soon as the software has been sufficiently developed to provide the minimal viable functionality required to support an acceptable level of OHS’s fundamental TTA operations?",
+     "a": "OHS plans to partner closely with the CIO organization and our CISO to try to gain ATO as soon as possible for the vendor. This will also require the vendors to bake good security practices and documentation into all code that is developed as part of the task order.",
+     "date": "2020-05-14",
+     "source": "18f-001",
+     "quote": "OHS plans to partner closely with the CIO organization and our CISO to try to gain ATO as soon as possible for the vendor. This will"
+    },
+    {
+     "n": 6,
+     "q": "Can you clarify what is meant by data files, and provide examples of the data files mentioned here?",
+     "a": "Data files here refer mostly to system configuration files. They could also refer to any static data that is packaged along with the system, though those files may or may not be a part of the final system's architecture.",
+     "date": "2020-05-14",
+     "source": "18f-001",
+     "quote": "Data files here refer mostly to system configuration files. They could also refer to any static data that is packaged along with the system, though those"
+    },
+    {
+     "n": 7,
+     "q": "Is the Office of Head Start (OHS) open to revising their reporting structures to minimize narrative data requirements?",
+     "a": "The intent of the new system is to identify and define pieces what is currently narrative data and create a shared structure across regions. This should reduce the total amount of narrative data and improve the quality of the remaining narrative. Making relevant narrative easier to find and distribute.",
+     "date": "2020-05-14",
+     "source": "18f-001",
+     "quote": "The intent of the new system is to identify and define pieces what is currently narrative data and create a shared structure across regions. This should"
+    },
+    {
+     "n": 8,
+     "q": "Who will be responsible for data validation rules? Can the contractor develop these with end-users during discovery?",
+     "a": "Data validation rules will, ideally, be developed as a collaboration between the vendor and OHS using ongoing user research as a way of ensuring that those rules work well for end users and stakeholders alike.",
+     "date": "2020-05-14",
+     "source": "18f-001",
+     "quote": "Data validation rules will, ideally, be developed as a collaboration between the vendor and OHS using ongoing user research as a way of ensuring that those"
+    },
+    {
+     "n": 9,
+     "q": "To continuously improve Head Start services, data from grantees will need to be regularly collected. Is there currently a standardized needs assessment that Head Start grantees complete? If so, how regularly is this assessment completed?",
+     "a": "There is no current standardized needs assessment or completion schedule.",
+     "date": "2020-05-14",
+     "source": "18f-001",
+     "quote": "There is no current standardized needs assessment or completion schedule."
+    },
+    {
+     "n": 10,
+     "q": "Can the oral interviews increase / decrease (update) the confidence given to a vendor in Phase 1?",
+     "a": "No, Phase 1 will be its own phase and will determine who will move to Phase 2. Phase 2 - Oral Interviews will receive their own rating and will not impact Phase 1 ratings.",
+     "date": "2020-05-14",
+     "source": "18f-001",
+     "quote": "No, Phase 1 will be its own phase and will determine who will move to Phase 2. Phase 2 - Oral Interviews will receive their own"
+    },
+    {
+     "n": 11,
+     "q": "Will the evaluation team look at pricing volume only after the Phase 1 and oral evaluations are done?",
+     "a": "Yes, again if any firm receives a low confidence rating they will be eliminated from the evaluation. If eliminated, no price will be evaluated.",
+     "date": "2020-05-14",
+     "source": "18f-001",
+     "quote": "Yes, again if any firm receives a low confidence rating they will be eliminated from the evaluation. If eliminated, no price will be evaluated."
+    },
+    {
+     "n": 12,
+     "q": "If there is a subcontractor involved, does the GSA MAS schedule of the subcontractor needed as well?",
+     "a": "No the sub doesn't need to hold a GSA schedule, but the rates can't exceed the rates under the schedule, or for supplies, if not covered under the schedule it's considered open market.",
+     "date": "2020-05-14",
+     "source": "18f-001",
+     "quote": "No the sub doesn't need to hold a GSA schedule, but the rates can't exceed the rates under the schedule, or for supplies, if not covered"
+    },
+    {
+     "n": 13,
+     "q": "The RFP states “If the Contractor plans to provide services through a joint venture, teaming partner, or subContractor, have they detailed those plans?” Can specifics be provided to know what the government is looking for in these plans?",
+     "a": "Per 9.2.2: A description of the Contractor’s plans, if any, to provide services through a joint venture, teaming partner, or subContractor",
+     "date": "2020-05-14",
+     "source": "18f-001",
+     "quote": "Per 9.2.2: A description of the Contractor’s plans, if any, to provide services through a joint venture, teaming partner, or subContractor"
+    },
+    {
+     "n": 14,
+     "q": "Presentation to OHS Core leadership team 11/6/2019 is a private document. Could this be released publicly?",
+     "a": "This will become available upon award of the contract. Most of the information in these slides is included in other materials that have been provided.",
+     "date": "2020-05-14",
+     "source": "18f-001",
+     "quote": "This will become available upon award of the contract. Most of the information in these slides is included in other materials that have been provided."
+    },
+    {
+     "n": 15,
+     "q": "Has access to the private documents in “Important Resources” in GitHub (https://github.com/18F/Head-Start-TTA#important-resources) been provided to any non-federal employee?",
+     "a": "Yes. It has been provided to non-federal who have obtained the required clearances. Much of it will also be granted to the vendor after selection. We haven't made these resources public out of concern for signal to noise ratio of the information and it's value to prospective vendors in understanding the context of the work. This has not been released to any prospective bidders.",
+     "date": "2020-05-14",
+     "source": "18f-001",
+     "quote": "Yes. It has been provided to non-federal who have obtained the required clearances. Much of it will also be granted to the vendor after selection. We"
+    },
+    {
+     "n": 16,
+     "q": "Has 18F explored NLP for comparing and tracking text-heavy data over time?",
+     "a": "NLP and/or AI approaches to working with existing narrative data has not been considered for the current MVP.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "NLP and/or AI approaches to working with existing narrative data has not been considered for the current MVP."
+    },
+    {
+     "n": 17,
+     "q": "Does the government anticipate this application to be built by a blended team consisting of government and vendor staff? If so, what will be the labor category titles the government will have its staff on and what is level of effort these labor categories will be supporting (1,920 hours to represent one year of full-time work, 960 hours for half time, etc.) for base, Option 1 and Option 2.",
+     "a": "The bulk of the design and development work will be done by the vendor team, with OHS and 18F helping with priorities and product management. Over time, it's anticipated that 18F will reduce its work as OHS and the vendor get used to each other's cadence. OHS' product owner will be close to full time, 18F's technical lead will be around 75%, and 18F's product, acquisition, and design leads will likely only be needed on an ad hoc basis. A goal of this project is to transfer the technical lead duties from 18F to OHS, but as of this RFQ this role is not available.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "The bulk of the design and development work will be done by the vendor team, with OHS and 18F helping with priorities and product management. Over"
+    },
+    {
+     "n": 18,
+     "q": "For the labor categories provided by government to fulfill certain roles, does the government expect the vendor to support those roles with the same labor categories for the period of time OR does the government expect the vendor to have some overlap as the government's labor category/staff transitions off the project and vendor is brought on?",
+     "a": "As discussed earlier, there may be some overlap between work the Government is doing and the vendor team. In the early sprints OHS, 18F, and the vendor will determine the right amount of support needed from 18F to ensure best practices and for code review and product management support.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "As discussed earlier, there may be some overlap between work the Government is doing and the vendor team. In the early sprints OHS, 18F, and the"
+    },
+    {
+     "n": 19,
+     "q": "What design system does the government plan on using? Will app be employing U.S. Web Design System (USDWS) standard?",
+     "a": "Yes. See section 5.0 of the RFQ. https://designsystem.digital.gov/website-standards/",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "Yes. See section 5.0 of the RFQ. https://designsystem.digital.gov/website-standards/"
+    },
+    {
+     "n": 20,
+     "q": "Section 9.2.2 Factor 1 - Technical Approach of RFP states 'proposed approach to providing the services required including the programming language(s) and frameworks,' however in Section 5.1, the RFP states the backend and frontend technologies. How will the evaluation for Factor 1 be done, if the programming languages are already stated?",
+     "a": "The RFQ does not explicitly state any requirement for specific languages, and we are open to the best fit for the needs of the product which would include long-term sustainability by OHS and/or other vendor teams. Section 5.1 states: > The backend API application should use technologies **such as**: (and) > The frontend web application should use technologies **such as**:",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "The RFQ does not explicitly state any requirement for specific languages, and we are open to the best fit for the needs of the product which"
+    },
+    {
+     "n": 21,
+     "q": "For the legacy integration work, does the government expect the vendor to migrate the legacy data into a central (new) repository to meet the federal IT standards? Is there anything else in addition to migrating the data, does the government anticipate the vendor to perform for legacy migration?",
+     "a": "Historical data is not expected to be migrated into the new system at this time",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "Historical data is not expected to be migrated into the new system at this time"
+    },
+    {
+     "n": 22,
+     "q": "Does the government anticipate this platform to support a high capacity of users and scale with user growth?",
+     "a": "The platform should scale with user growth, but initial user counts should be reasonable (estimated less than 1,000 users).",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "The platform should scale with user growth, but initial user counts should be reasonable (estimated less than 1,000 users)."
+    },
+    {
+     "n": 23,
+     "q": "Can the government share the architecture diagram of the current prototype being built?",
+     "a": "The experiments and prototypes are detailed in the [four experiment reports linked to in the RFQ repo.](https://github.com/18F/Head_Start_TTA_RFQ/tree/master/assets/reports) The prototype repository has Git tags corresponding to each experiment.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "The experiments and prototypes are detailed in the [four experiment reports linked to in the RFQ repo.](https://github.com/18F/Head_Start_TTA_RFQ/tree/master/assets/reports) The prototype repository has Git tags corresponding to each"
+    },
+    {
+     "n": 24,
+     "q": "How will the PR review from 18F be done and performed?",
+     "a": "18F and the vendor will collectively decide if PRs will be reviewed on a per-sprint or per-feature basis. It is expected that the vendor will internally review their code before submitting it to OHS.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "18F and the vendor will collectively decide if PRs will be reviewed on a per-sprint or per-feature basis. It is expected that the vendor will internally"
+    },
+    {
+     "n": 25,
+     "q": "Based on the information in the environment section (Section 5.1 Environment) can you please confirm the following: a. Will the contractor only be responsible for the development environment? I.e. Moving the code to staging and production will be done by government? b. Apart from writing secure code, will the contractor also have to work with GSA cyber security rules as they pertain to deploying HeadStart application on cloud.gov? I.e. Will the contractor have to resolve any low, med, high CVEs, help with ATO procedures, or Nist 800-53 related guidelines?",
+     "a": "a) Correct. b) Yes, the vendor will be responsible for completing security tasks as assigned by the PO, including those required to obtain or maintain ATO",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "a) Correct. b) Yes, the vendor will be responsible for completing security tasks as assigned by the PO, including those required to obtain or maintain ATO"
+    },
+    {
+     "n": 26,
+     "q": "Section 3.1 of the RFP states “The MVP and Epic Stories set forth below will be the starting point for the development of software to be provided under this task order:” a. Has discovery user research been completed or is the vendor expected to complete discovery user research? b. If discovery research has been completed, can it be shared so we can update our proposed approach?; c. How were these user stories created? d. Have core UX principles (design principles, user personas, content and style strategy) and journey maps been created?",
+     "a": "We consider discovery and research as an ongoing process. While we have conducted initial research, ongoing user research by the vendor team is expected. Full research artifacts will be delivered upon award, and user stories are expected to be driven, in large part by the user research findings. Specific core UX deliverables have not been created or finalized, but we expect to have them shortly after award.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "We consider discovery and research as an ongoing process. While we have conducted initial research, ongoing user research by the vendor team is expected. Full research"
+    },
+    {
+     "n": 27,
+     "q": "Do all key personnel need to be full-time for all three years?",
+     "a": "No, we have not specified whether key personnel must be full time or part time for any amount of time. However, there is an expectation that key personnel will remain on the project for at least the initial 12 months or project completion whichever is later. See Section 6.2 of the RFQ - Personnel Substitutions",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "No, we have not specified whether key personnel must be full time or part time for any amount of time. However, there is an expectation that"
+    },
+    {
+     "n": 28,
+     "q": "Will the source code for the TDRS application built as part of the awarded contract be an open source public code repository in accordance with the Federal Source Code Policy( https://sourcecode.cio.gov/ ) or will it be a private repository?",
+     "a": "TDRS is a separate project from the OHS TTA project (this RFQ). However, we anticipate that the work will be open sourced and public.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "TDRS is a separate project from the OHS TTA project (this RFQ). However, we anticipate that the work will be open sourced and public."
+    },
+    {
+     "n": 29,
+     "q": "Will vendors be evaluated differently based upon the type of programming language proposed?",
+     "a": "No preference is given to programming languages at this time.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "No preference is given to programming languages at this time."
+    },
+    {
+     "n": 30,
+     "q": "What are the font size restrictions for tables and infographics in the volumes?",
+     "a": "Please use your best judgement—and kindness—in terms of sizing, layout, and usability of your submissions.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "Please use your best judgement—and kindness—in terms of sizing, layout, and usability of your submissions."
+    },
+    {
+     "n": 31,
+     "q": "What is the page limit for the “Criteria 3: Similar Experience” section?",
+     "a": "The government is requesting access to Git repositories or equivalent version-controlled repositories. This access should not require the submission of any pages. However, if the code samples provided do not include user research plans, then the contractor must submit a separate user research plan. This separate user research plan should be no longer than 10 pages.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "The government is requesting access to Git repositories or equivalent version-controlled repositories. This access should not require the submission of any pages. However, if the code"
+    },
+    {
+     "n": 32,
+     "q": "Can an example of a TTA Activity Report be provided?",
+     "a": "Yes. See the [example report (PDF) in the RFQ assets folder.](https://github.com/18F/Head_Start_TTA_RFQ/blob/master/assets/reports/EXAMPLE_Activity_Report.pdf)",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "Yes. See the [example report (PDF) in the RFQ assets folder.](https://github.com/18F/Head_Start_TTA_RFQ/blob/master/assets/reports/EXAMPLE_Activity_Report.pdf)"
+    },
+    {
+     "n": 33,
+     "q": "You've provided quite a lot of flexibility in the choice of technologies and frameworks, so long as their open source. This creates some anxiety around making the \"right\" recommendation. Is the government looking to standardize on certain toolsets to ease long term maintainability and extensibility concerns? If so, what tools look most promising?",
+     "a": "The vendor should choose technologies widely-used in industry for web app development and avoid technologies that are extremely cutting-edge. Additionally, cloud.gov supports the following languages via buildpacks (in alphabetical order): dotnet core, go, java, nodejs, php, python, and ruby.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "The vendor should choose technologies widely-used in industry for web app development and avoid technologies that are extremely cutting-edge. Additionally, cloud.gov supports the following languages via"
+    },
+    {
+     "n": 34,
+     "q": "Can you provide more details on what you are looking for in the code samples? Is there a qualitative scoring system that you can share, or will it be a more subjective evaluation?",
+     "a": "We will be looking for well-structured, easy to read code, with an emphasis on automated testing that clearly demonstrates that the tests are exercising the business value of the code under test and not just looking to hit a code coverage metric.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "We will be looking for well-structured, easy to read code, with an emphasis on automated testing that clearly demonstrates that the tests are exercising the business"
+    },
+    {
+     "n": 35,
+     "q": "Why do you want to see revision history in the code sample? Will clean versions of final production code be scored less?",
+     "a": "The history gives us a better understanding of how your company works, as well as who was responsible for the code in question. Please provide in accordance with the RFQ.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "The history gives us a better understanding of how your company works, as well as who was responsible for the code in question. Please provide in"
+    },
+    {
+     "n": 36,
+     "q": "Linked Experiment Reports - Linked Experiment reports on GitHub link to information not publically available. Would the government make those files available?",
+     "a": "The experiment reports are public in the RFQ repository at: https://github.com/18F/Head_Start_TTA_RFQ/tree/master/assets/reports",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "The experiment reports are public in the RFQ repository at: https://github.com/18F/Head_Start_TTA_RFQ/tree/master/assets/reports"
+    },
+    {
+     "n": 37,
+     "q": "RFQ, Section 3.5, page 10 - The RFQ mentions 3 epics the MVP will focus on, as well as additional user groups the TTADP system could support. What is the scope of the contract Period of Performance?",
+     "a": "The vendor team will work with the product owner to prioritize the work performed during the period of performance.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "The vendor team will work with the product owner to prioritize the work performed during the period of performance."
+    },
+    {
+     "n": 38,
+     "q": "RFQ, Section 3.1, page 8 - Who will have responsibility for recruiting and maintaining cohorts of users for discovery, research, and testing activities?",
+     "a": "Members of the vendor team will work closely with the Product Owner and federal staff to recruit and maintain user cohorts.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "Members of the vendor team will work closely with the Product Owner and federal staff to recruit and maintain user cohorts."
+    },
+    {
+     "n": 39,
+     "q": "What will the 18F team’s role continue to be as it relates to TTADP. For example will 18F continue to be involved in user research?",
+     "a": "18F may continue to be involved in user research from an advisory capacity, but it is our expectation that the vendor's product team will include ongoing user research practices into their work to ensure the right features and functionality is built and adjusted according to real user needs over time.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "18F may continue to be involved in user research from an advisory capacity, but it is our expectation that the vendor's product team will include ongoing"
+    },
+    {
+     "n": 40,
+     "q": "Who will have responsibility for educating and driving adoption of the TTADP tool within the various TTA user groups?",
+     "a": "Members of the vendor team will work closely with the Product Owner and federal staff to educate and support adoption of the tool.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "Members of the vendor team will work closely with the Product Owner and federal staff to educate and support adoption of the tool."
+    },
+    {
+     "n": 41,
+     "q": "RFQ, Section 3.3, page 9 - In the MVP slide deck graphics, there’s an assumption that systems will consume the TTADP API. Who will define the data structure of the API for getting information out of TTADP? Who will have responsibility for integrating systems like Smart Sheets or other RO systems with the TTADP API? Will the contracting team have access to those integrating partners?",
+     "a": "The vendor team will be responsible for building a first-class API for getting information out of TTADP. It is expected that all external systems consuming that API will use the same API, with any changes required being prioritized in the backlog by the PO and vendor team. It is the PO's responsibility that the vendor team has access to any integration points that they will be required to utilize before those stories can begin.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "The vendor team will be responsible for building a first-class API for getting information out of TTADP. It is expected that all external systems consuming that"
+    },
+    {
+     "n": 42,
+     "q": "RFQ, Section 3.2, page 8 - What system or team will have responsibility for approving and providing access the the TTADP API?",
+     "a": "Approval of the API is expected to be part of the overall process of developing, shipping, and deploying the software being built. Access will be overseen by OHS and supported by 18F and vendor teams, as needed.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "Approval of the API is expected to be part of the overall process of developing, shipping, and deploying the software being built. Access will be overseen"
+    },
+    {
+     "n": 43,
+     "q": "RFQ, Section 3.6, page 12 - What system is the contractor required to use for documentation and collaboration purposes?",
+     "a": "There is no requirement at this time. We are open to suggestions on this.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "There is no requirement at this time. We are open to suggestions on this."
+    },
+    {
+     "n": 44,
+     "q": "RFQ, Section 4.0, page 13 - Should price quotes include travel costs?",
+     "a": "See RFQ Section 9.6.5: The government will not evaluate travel costs. A lump sum will be included as a separate contract line item number (CLIN) and will be used to reimburse actual travel expenses as needed.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "See RFQ Section 9.6.5: The government will not evaluate travel costs. A lump sum will be included as a separate contract line item number (CLIN) and"
+    },
+    {
+     "n": 45,
+     "q": "RFQ, Section 5.1, page 14 - What environments will the contracting team have access to for TTADP development?",
+     "a": "The team will have access to the cloud.gov sandbox and other systems on an as-needed basis.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "The team will have access to the cloud.gov sandbox and other systems on an as-needed basis."
+    },
+    {
+     "n": 46,
+     "q": "RFQ, Section 5.2, page 15 - The contract mentions needing PIV card for Legacy system maintenance. What portion of this contract will have responsibility for supporting legacy systems?",
+     "a": "No portion of this contract will involve maintaining or supporting legacy systems, though some portion will involve integrating data from legacy systems. The exact shape of that work is still being determined",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "No portion of this contract will involve maintaining or supporting legacy systems, though some portion will involve integrating data from legacy systems. The exact shape of"
+    },
+    {
+     "n": 47,
+     "q": "RFQ, Section 3.2 - From some of the linked 18F experiment reports, it became apparent that in order to measure progress and completion status it would be helpful to provide more specific definition for outcomes. Would that be supported/feasible?",
+     "a": "Yes, that would be expected as part of the product development process.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "Yes, that would be expected as part of the product development process."
+    },
+    {
+     "n": 48,
+     "q": "RFQ, Section 9.2.4, page 25: Please may the Government confirm that Contractors are only required to submit a separate User Research Plan if none (as opposed to some) of the repositories shared contain one? For instance, if a Contractor shares three repositories and only one contains a research plan, will they be required to add a research plan for at least one of the other projects?",
+     "a": "Per the RFQ: If the code samples provided do **not** include user research plans demonstrating how ongoing user research was incorporated into the project, then the **Contractor must submit a separate user research plan relating to at least one of the sample projects**",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "Per the RFQ: If the code samples provided do **not** include user research plans demonstrating how ongoing user research was incorporated into the project, then the"
+    },
+    {
+     "n": 49,
+     "q": "Will projects without research plans included in their repositories be viewed unfavorably? And if so, will the Government allow Vendors to submit research plans for any and all projects that do not include them in the repository, or only for one?",
+     "a": "No, they will not be viewed unfavorably. Please follow this per the RFQ: If the code samples provided do not include user research plans demonstrating how ongoing user research was incorporated into the project, then the Contractor must submit a separate user research plan relating to at least one of the sample projects",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "No, they will not be viewed unfavorably. Please follow this per the RFQ: If the code samples provided do not include user research plans demonstrating how"
+    },
+    {
+     "n": 50,
+     "q": "RFQ, Section 9.2.4, page 25: Would the Government accept links to knowledge stores like Confluence containing our user research plans in addition to the GitHub repository links for relevant experience, or must all user research documentation be linked to within GitHub?",
+     "a": "Yes, we are more interested in how research shaped work than where it is stored.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "Yes, we are more interested in how research shaped work than where it is stored."
+    },
+    {
+     "n": 51,
+     "q": "RFQ, Section 9.6.2, page 29: The Government states that it will consider whether members of the proposed team (Factor 2) were involved in developing the source code sample(s) provided for Factor 3. Will the Government view submissions unfavorably if proposed personnel were not directly involved in the development of source code sample(s)?",
+     "a": "Yes. Please comply with the RFQ as follows:The source code must have been developed by either the Contractor, a teaming partner that is proposed in response to this RFQ, or an individual that is being proposed as Key Personnel for this project.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "Yes. Please comply with the RFQ as follows:The source code must have been developed by either the Contractor, a teaming partner that is proposed in response"
+    },
+    {
+     "n": 52,
+     "q": "In the Deadlines and response formats table in the RFQ (spanning pages 1 and 2), the Government has linked to several Google forms. However, when I click on the “Google Doc (technical submission)” and “Google Sheet (price submission)” hyperlinks, I get a redirect notice saying “You need permission.” Should the technical submission and pricing sheet be submitted via these links (and if so, can the Government please update the permission settings?) or as part of the “Request for Quote (RFQ) - OHS Development Services” Google form?",
+     "a": "Please use the links and attachments provided in the email from Brian Burns requesting a quote.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "Please use the links and attachments provided in the email from Brian Burns requesting a quote."
+    },
+    {
+     "n": 53,
+     "q": "Regarding Appendix 2: RFQ Response Template, can the Government confirm that only text entered into the “Enter technical approach here” or “Enter staffing plan here” will be counted against the page limits for each of these sections? And would the Government prefer if Offerors entered a page break before entering each plan into the document to make this easier to assess?",
+     "a": "Yes, Appendix 2 is the template contractors must use for responding. Responses for each of the three factors must be directly pasted into the respective sections to replace the red text, and all current text in the “Appendix 2” template left unchanged.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "Yes, Appendix 2 is the template contractors must use for responding. Responses for each of the three factors must be directly pasted into the respective sections"
+    },
+    {
+     "n": 54,
+     "q": "Section 5.2 of the RFQ states, “All Contractor personnel working under the resulting contract will need to obtain a Homeland Security Presidential Directive 12 (HSPD-12) low risk security clearance (or moderate risk security clearance if handling PII).” Given the current pandemic, it may take longer than usual for personnel to perform the fingerprinting and testing this clearance requires. Does the Government have a plan in place for obtaining clearances under social distancing guidelines? Alternatively, will the Government consider allowing personnel to work on this contract before obtaining clearance, provided they are able to obtain clearance as soon as the means are available?",
+     "a": "Due to COVID 19, if contractors are unable to get fingerprints (digital or at police station), this requirement will be waived until restrictions have been lifted. Once lifted, fingerprints will need to be obtained.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "Due to COVID 19, if contractors are unable to get fingerprints (digital or at police station), this requirement will be waived until restrictions have been lifted."
+    },
+    {
+     "n": 55,
+     "q": "Can the Government provide information on how teams working on related OHS systems are managing their work, including any agile methodologies currently being used?",
+     "a": "Some OHS teams are transitioning to agile approaches, so this is an opportunity to showcase what is possible with this effort and potentially influence wider change within the agency.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "Some OHS teams are transitioning to agile approaches, so this is an opportunity to showcase what is possible with this effort and potentially influence wider change"
+    },
+    {
+     "n": 56,
+     "q": "Can the Government please clarify how “minimum viable product (MVP)” is being defined for this project? Is the expectation that the MVP will be fully, partially, or not at all deployed to users?",
+     "a": "The MVP should be deployed to the users across all 12 regions.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "The MVP should be deployed to the users across all 12 regions."
+    },
+    {
+     "n": 57,
+     "q": "The RFQ states, “The initial phases of the development process will focus on reporting on the TTA Activities that are being delivered by TTA Contractors and used by various groups within the Head Start system for management and ongoing decision making” (Section 2.1, pages 6-7). Are these TTA Contractors’ users, or are they other TTA Contractor teams involved in software development alongside the TTA Data Product MVP team?",
+     "a": "The TTA Contractors are users and will participate in ongoing research. The TTA contractors mentioned are the regional TTA contractors that deliver TTA and do on-site and virtual trainings.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "The TTA Contractors are users and will participate in ongoing research. The TTA contractors mentioned are the regional TTA contractors that deliver TTA and do on-site"
+    },
+    {
+     "n": 58,
+     "q": "Would a partial completion status of activities, e.g. “percentage completed” be useful in the reports?",
+     "a": "Our understanding is that this question relates to tracking completion of TTA Activities in reports. Some sort of progress tracking will be useful and/or needed. However, we expect that the usefulness of the approach will be validated through ongoing user research and usability testing.",
+     "date": "2020-05-15",
+     "source": "18f-001",
+     "quote": "understanding is that this question relates to tracking completion of TTA Activities in reports. Some sort of progress tracking will be useful and/or needed. However, we"
+    }
+   ],
+   "pairs_with": [
+    "atlassian",
+    "posthog"
+   ]
+  },
+  {
+   "id": "18f-datagov-support",
+   "title": "Data.gov Technical Support Services",
+   "buyer": "U.S. General Services Administration (GSA), Technology Transformation Services (TTS), Data.gov Program Management Office",
+   "buyer_type": "Federal agency",
+   "country": "US",
+   "ref": "RFQ1249990",
+   "published": null,
+   "closes": "2017-11-27",
+   "status": "closed",
+   "value": null,
+   "summary": "GSA's Technology Transformation Services wants a contractor to keep developing, operating and modernising Data.gov, the federal open data site. The stack is a WordPress homepage, two CKAN catalogues (the public catalog that harvests agency data.json inventories daily and a private inventory instance), a PHP dashboard and help desk and a Jekyll site, all on AWS with PostgreSQL and MySQL RDS behind a CIS-hardened Ubuntu image. The work spans general development, DevOps and infrastructure support, plus coordination with the federal geospatial community through geoplatform.gov. Quotes need separate technical and price documents in PDF, valid for 60 days, with the GSA Schedule number on the cover; the task order runs one base year plus two 12-month options. Award is a best-value tradeoff on technical approach, experience and staffing against price, with the non-price factors together significantly more important than price.",
+   "criteria": [
+    {
+     "name": "Technical Approach",
+     "weight": "Not individually weighted; technical and past performance, when combined, are significantly more important than price"
+    },
+    {
+     "name": "Experience",
+     "weight": "Not individually weighted; technical and past performance, when combined, are significantly more important than price"
+    },
+    {
+     "name": "Staffing",
+     "weight": "Not individually weighted; technical and past performance, when combined, are significantly more important than price"
+    },
+    {
+     "name": "Price",
+     "weight": "Best-value tradeoff; the Government will not make awards at a significantly higher overall price to achieve slightly superior technical value"
+    }
+   ],
+   "source_url": "https://github.com/18F/tts-buy-datagov-technical-support-services",
+   "licence": "US-PD",
+   "documents": [
+    {
+     "raw": "18f-002",
+     "name": "tts-buy-datagov-technical-support-services.tar.gz",
+     "added": null,
+     "addendum": false
+    }
+   ],
+   "qa": [
+    {
+     "n": 1,
+     "q": "Who is the incumbent contractor or employer of staff currently performing these duties? Under which contract number? Why is a change being considered?",
+     "a": "The incumbent is REI Systems. They are performing these services under contract GS35F0623N. The contract is expiring.",
+     "date": "2017-11-06",
+     "source": "18f-002",
+     "quote": "The incumbent is REI Systems. They are performing these services under contract GS35F0623N. The contract is expiring."
+    },
+    {
+     "n": 2,
+     "q": "Whilst we enjoy finding and identifying bugs in our code and do have several beekeepers on staff, we suspect this is more likely a bug in the RFP document. This sentence appears to come from an RFQ on biological pest control (http://www.ecowisecertified.org/toolkit/GSA%20%20RFP%20Eval.%20Criteria.pdf) - does this sentence/section need to be revised?",
+     "a": "Great catch. [RFQ](https://github.com/18F/tts-buy-datagov-technical-support-services/blob/master/solicitaton_documents/RFQ.pdf) has been updated to remove that line.",
+     "date": "2017-11-06",
+     "source": "18f-002",
+     "quote": "Great catch. [RFQ](https://github.com/18F/tts-buy-datagov-technical-support-services/blob/master/solicitaton_documents/RFQ.pdf) has been updated to remove that line."
+    },
+    {
+     "n": 3,
+     "q": "What is the contract cost per year for the last five years?",
+     "a": "This solicitation is not a direct replacement for any previous requirement and therefore prior year costs are not available.",
+     "date": "2017-11-06",
+     "source": "18f-002",
+     "quote": "This solicitation is not a direct replacement for any previous requirement and therefore prior year costs are not available."
+    },
+    {
+     "n": 4,
+     "q": "The submission instructions state to email the Contracting Officer by the proposal due date. Please confirm the CO is Al Munoz, and the proper email address is Alberto.Munoz@gsa.gov.",
+     "a": "Confirmed. The Contracting Officer is Al Muñoz and his email address is alberto.munoz@gsa.gov.",
+     "date": "2017-11-16",
+     "source": "18f-002",
+     "quote": "Confirmed. The Contracting Officer is Al Muñoz and his email address is alberto.munoz@gsa.gov."
+    },
+    {
+     "n": 5,
+     "q": "The submission instructions state to email the proposal to the contracting officer. Please confirm what if any information should be entered into the eBuy site.",
+     "a": "Vendors are required to send their technical and price responses via email, not through eBuy. The Contracting Officer will verify the proposals based on the initial standard set forth in the RFQ.",
+     "date": "2017-11-16",
+     "source": "18f-002",
+     "quote": "Vendors are required to send their technical and price responses via email, not through eBuy. The Contracting Officer will verify the proposals based on the initial"
+    },
+    {
+     "n": 6,
+     "q": "In proposing the labor categories, from our GSA schedule, will the Government allow us to propose more than one personnel for each labor category? Such as if the requirement is for 5 FTE's and we only have 3 labor categories on schedule, can we cross-walk the labor categories and provide resumes for support?",
+     "a": "Submissions should be consistent with the terms of the RFQ and your schedule contract.",
+     "date": "2017-11-16",
+     "source": "18f-002",
+     "quote": "Submissions should be consistent with the terms of the RFQ and your schedule contract."
+    },
+    {
+     "n": 7,
+     "q": "Are the contractors required to already possess a security clearance and if so which level of clearance is required? Does the 12-page limit of the Technical Volume include candidate resumes/staffing information?",
+     "a": "They don't need a clearance but they do need to be able to apply for and get the clearance to access GSA systems and get a gsa.gov email. Each contractor must obtain a National Agency Check (NACI) clearance as instructed in the RFQ, Section 5.1, Security Clearance and GSA Access Card. Resumes, staffing information are not part of the technical volume. These documents are restricted to two pages each. More information is provided in the `INSTRUCTIONS, CONDITIONS, AND NOTICES TO OFFERORS` section of the RFQ.",
+     "date": "2017-11-16",
+     "source": "18f-002",
+     "quote": "They don't need a clearance but they do need to be able to apply for and get the clearance to access GSA systems and get a"
+    },
+    {
+     "n": 8,
+     "q": "Is the prime contractor required to have a secret facility clearance?",
+     "a": "No. Contractors are not required to have this clearance level.",
+     "date": "2017-11-16",
+     "source": "18f-002",
+     "quote": "No. Contractors are not required to have this clearance level."
+    },
+    {
+     "n": 9,
+     "q": "Can the government clarify that Cover Page, Table of Contents are excluded from the page count.",
+     "a": "The cover page and the table of contents are excluded from the page count. If the vendor adds meaningful language to these sections, it will not be reviewed as part of the overall review. More information is provided in the `INSTRUCTIONS, CONDITIONS, AND NOTICES TO OFFERORS` section of the RFQ.",
+     "date": "2017-11-16",
+     "source": "18f-002",
+     "quote": "The cover page and the table of contents are excluded from the page count. If the vendor adds meaningful language to these sections, it will not"
+    },
+    {
+     "n": 10,
+     "q": "What is the composition of the incumbent's team compared to the composition of 5 FTEs (Architect, Programmers, PM, QA/Tester, and Deployment Specialist) provided in SOW 2.0?",
+     "a": "This is a new requirement and there is no method to compare any previous contract with the requirements of the RFQ.",
+     "date": "2017-11-16",
+     "source": "18f-002",
+     "quote": "This is a new requirement and there is no method to compare any previous contract with the requirements of the RFQ."
+    },
+    {
+     "n": 11,
+     "q": "What is the Government's policy for this RFQ regarding substitution of key personnel?",
+     "a": "There are no key personnel requirements in the RFQ.",
+     "date": "2017-11-16",
+     "source": "18f-002",
+     "quote": "There are no key personnel requirements in the RFQ."
+    },
+    {
+     "n": 12,
+     "q": "Can the Government please provide position descriptions and skill/experience requirements for the positions identified in the SOW (Architect, Programmer, etc.)?",
+     "a": "It is up to each vendor to identify the best team members and best management configuration to successfully meet the requirements of the RFQ.",
+     "date": "2017-11-16",
+     "source": "18f-002",
+     "quote": "It is up to each vendor to identify the best team members and best management configuration to successfully meet the requirements of the RFQ."
+    },
+    {
+     "n": 13,
+     "q": "What is the minimum font size expected for body text? What is the minimum size permissible for tables and figures?",
+     "a": "The font size of the text is 12 point for the write ups. This cannot exceed 12 pages. Within the 12 page restriction, the vendor can use graphs, figures and pictures. The fonts that are tied to those graphics must be legible. The use of graphic figures and pictures are included in the 12 page restriction. More information is provided in the `INSTRUCTIONS, CONDITIONS, AND NOTICES TO OFFERORS` section of the RFQ.",
+     "date": "2017-11-16",
+     "source": "18f-002",
+     "quote": "The font size of the text is 12 point for the write ups. This cannot exceed 12 pages. Within the 12 page restriction, the vendor can"
+    },
+    {
+     "n": 14,
+     "q": "Additionally, the vendor must be located within the Washington, DC metropolitan area since t his position requires ad-hoc meetings at GSA’s Central Office location as well as in-person representation at team meetings. \" - Should the prime contractor be located within the Washington, DC metropolitan area? if so, should there be a Security Clearance for the proposed facility? What will be the number of awards for this contract?",
+     "a": "The vendor doing the work should be in the Washington DC area. There is no requirement that the vendor have a secure facility.",
+     "date": "2017-11-16",
+     "source": "18f-002",
+     "quote": "The vendor doing the work should be in the Washington DC area. There is no requirement that the vendor have a secure facility."
+    },
+    {
+     "n": 15,
+     "q": "Please clarify what is meant by Application deployment, Database management, Website content management, and website administration as actual deliverables.",
+     "a": "As described in the RFQ, Data.gov works by putting all of its current tasks as issues on the GitHub repositories listed in the RFQ. In the acceptance criteria, it is stated that the program will evaluate the work of the vendor and \"close\" each issue in GitHub and accept that work. Looking at the open issues in the GitHub repositories will show the actual technical tasks that the vendor will work on.",
+     "date": "2017-11-16",
+     "source": "18f-002",
+     "quote": "As described in the RFQ, Data.gov works by putting all of its current tasks as issues on the GitHub repositories listed in the RFQ. In the"
+    },
+    {
+     "n": 16,
+     "q": "Are you facing any challenges in operating the platforms that the new vendor must be addressing immediately after the award?",
+     "a": "As stated in the RFQ, all the technical issues and current tasks are described in the GitHub repositories referenced in the RFQ.",
+     "date": "2017-11-16",
+     "source": "18f-002",
+     "quote": "As stated in the RFQ, all the technical issues and current tasks are described in the GitHub repositories referenced in the RFQ."
+    },
+    {
+     "n": 17,
+     "q": "The total proposed price (including all options) is required information on the cover page in the RFQ response, but instructions also say that technical proposals must be sanitized of any pricing information. Please clarify whether to include price information on the cover page or only in price quotation document.",
+     "a": "The cover page should be a separate file attachment from the technical proposal.",
+     "date": "2017-11-16",
+     "source": "18f-002",
+     "quote": "The cover page should be a separate file attachment from the technical proposal."
+    },
+    {
+     "n": 18,
+     "q": "Are you open to including easier methods for data access such as rest apis, database connections etc. within the data.gov website?",
+     "a": "The vendor is free to propose specific solutions it recommends.",
+     "date": "2017-11-16",
+     "source": "18f-002",
+     "quote": "The vendor is free to propose specific solutions it recommends."
+    },
+    {
+     "n": 19,
+     "q": "Who is the supplier currently maintaining and supporting the data.gov website?",
+     "a": "Maintenance and support of the website is the responsibility of the program office within GSA.",
+     "date": "2017-11-16",
+     "source": "18f-002",
+     "quote": "Maintenance and support of the website is the responsibility of the program office within GSA."
+    },
+    {
+     "n": 20,
+     "q": "Would real time monitoring of data updates be useful within data.gov?",
+     "a": "The vendor is free to propose additional capabilities it recommends.",
+     "date": "2017-11-16",
+     "source": "18f-002",
+     "quote": "The vendor is free to propose additional capabilities it recommends."
+    },
+    {
+     "n": 21,
+     "q": "Please specify the following page limitations for the following sections as it is unclear what is under the 12 page limitation as written. Technical Approach Experience Staffing Past Performance Also please confirm that Cover Page, Table of Contents, and Cover Letter (if provided) are not part of the page count.",
+     "a": "The 12-page limit covers the technical approach, experience, staffing, and past performance. The Cover Page, Table of Contents, and the Cover Letter (if provided) are not covered by that limitation.",
+     "date": "2017-11-17",
+     "source": "18f-002",
+     "quote": "The 12-page limit covers the technical approach, experience, staffing, and past performance. The Cover Page, Table of Contents, and the Cover Letter (if provided) are not"
+    },
+    {
+     "n": 22,
+     "q": "Can the government please clarify what tools are used currently for configuration management, system security support, and infrastructure support? Does the government anticipate the successful bidder taking over the existing tool sets or proposing and implementing their own solutions?",
+     "a": "All the tools used currently are described in sections 2.0, 3.0, and 4.0 of the RFQ and in the GitHub repositories referenced in the RFQ. The Government anticipates that a successful bidder would use existing tool sets at the onset.",
+     "date": "2017-11-17",
+     "source": "18f-002",
+     "quote": "All the tools used currently are described in sections 2.0, 3.0, and 4.0 of the RFQ and in the GitHub repositories referenced in the RFQ. The"
+    },
+    {
+     "n": 23,
+     "q": "Please confirm that the cover page, table of contents, attachments, Executive Summary, and tables/graphics are not counted towards the 12-page limit.",
+     "a": "The Cover Page and the Table of Contents are not counted toward the 12-page limit.",
+     "date": "2017-11-17",
+     "source": "18f-002",
+     "quote": "The Cover Page and the Table of Contents are not counted toward the 12-page limit."
+    },
+    {
+     "n": 24,
+     "q": "GSA states, “The Offeror should describe how it plans to use CKAN, WordPress, and the other technologies in the Data.gov stack as described in Section 1 to deliver the development support required by Data.gov….” Does this requirement refer to the tools listed in paragraph 2 on page 3 of the solicitation beginning with “The system involves a variety of open source applications”?",
+     "a": "Yes, as well as technologies described in the GitHub repositories referenced.",
+     "date": "2017-11-17",
+     "source": "18f-002",
+     "quote": "Yes, as well as technologies described in the GitHub repositories referenced."
+    },
+    {
+     "n": 25,
+     "q": "This section reads, “This factor also considers the education, experience, knowledge, and the necessary skills of the offeror’s staff entomologist and each service technician or other technical personnel assigned to the contract.” We believe this is a typo. Should the requirement be applicable to the roles described in Section 4.0 of the solicitation (Project Manager, Architect, Programmer, Deployment Specialist, QA / Testing)?",
+     "a": "It is a typo and a corrected version was posted.",
+     "date": "2017-11-17",
+     "source": "18f-002",
+     "quote": "It is a typo and a corrected version was posted."
+    },
+    {
+     "n": 26,
+     "q": "The solicitation specifies that the proposal shall be submitted to the Contracting Officer, but a CO is not named. Will the government release the name and email address of whom we should submit too?",
+     "a": "The CO's name (Al Muñoz) and email (alberto.munoz@gsa.gov) are in the eBuy posting.",
+     "date": "2017-11-17",
+     "source": "18f-002",
+     "quote": "The CO's name (Al Muñoz) and email (alberto.munoz@gsa.gov) are in the eBuy posting."
+    },
+    {
+     "n": 27,
+     "q": "The cover page of the RFQ is required to show the “total proposed price (including all options)” but the instructions also make clear that “The technical quotation must be included in a separate document from the price quotation…” If the price should be separate from technical, shall the offeror not include the price on the cover page for the technical proposal?",
+     "a": "Yes please include the price on the cover page. The cover page can be submitted as a separate document.",
+     "date": "2017-11-17",
+     "source": "18f-002",
+     "quote": "Yes please include the price on the cover page. The cover page can be submitted as a separate document."
+    },
+    {
+     "n": 28,
+     "q": "The government specified that font must be 12 point TNR. Does this include graphics and tables? Will the government allow 10-point font for graphics and tables?",
+     "a": "Yes the smaller font is acceptable for tables/graphics.",
+     "date": "2017-11-17",
+     "source": "18f-002",
+     "quote": "Yes the smaller font is acceptable for tables/graphics."
+    },
+    {
+     "n": 29,
+     "q": "NiyamIT, Inc. Staffing Page 15 This instruction references the Contractor and not the Contractor Staff. Suggest clarifying with the following revision which better aligns to the evaluation criteria: Provide a description of the experience, skills and capabilities of each (if multiple) proposed contractors. Descriptions shall include quality and depth of experience of the proposed contractor staff in working on similar projects in terms of background, education, work experience and accomplishments, with special emphasis in the technologies listed in the Experience section above",
+     "a": "Thank you, but no changes will be made at this time.",
+     "date": "2017-11-17",
+     "source": "18f-002",
+     "quote": "Thank you, but no changes will be made at this time."
+    }
+   ],
+   "pairs_with": []
+  },
+  {
+   "id": "18f-document-authentication",
+   "title": "Login.gov Document Authentication Services",
+   "buyer": "U.S. General Services Administration (GSA), Technology Transformation Services (TTS), for the Login.gov program",
+   "buyer_type": "Federal agency",
+   "country": "US",
+   "ref": "RFQ ID11170050",
+   "published": "2017-10-20",
+   "closes": "2017-12-08",
+   "status": "closed",
+   "value": null,
+   "summary": "GSA's Technology Transformation Services is buying a commercial service that authenticates identity documents for Login.gov, the federal sign-in platform. Login.gov collects the documentary evidence and passes the data to the vendor, which returns a real-time verification and comparison result that GSA uses to decide whether the evidence proves the person's identity. The vendor must answer attachments on requirements, template sources, SLA requirements (a revised version) and deployment options, plus a past performance questionnaire. Offerors submit a written technical quote and their proposed solution for evaluation, with quotes valid for at least 90 days, for one base year plus one option year. Quotes first pass a conformance check on the mandatory requirements, then are rated on technical approach and past performance (at least three similar contracts as prime in five years), with shortlisted vendors submitting their software for hands-on evaluation; technical and past performance together are significantly more important than price.",
+   "criteria": [
+    {
+     "name": "Factor 1 – Technical Approach",
+     "weight": "Technical and past performance, when combined, are significantly more important then price"
+    },
+    {
+     "name": "Factor 2 – Past Performance",
+     "weight": "Technical and past performance, when combined, are significantly more important then price"
+    },
+    {
+     "name": "Price",
+     "weight": "Less important than technical and past performance combined"
+    }
+   ],
+   "source_url": "https://github.com/18F/tts-buy-document-authentication-services",
+   "licence": "US-PD",
+   "documents": [
+    {
+     "raw": "18f-004",
+     "name": "tts-buy-document-authentication-services.tar.gz",
+     "added": "2017-10-20",
+     "addendum": false
+    }
+   ],
+   "qa": [
+    {
+     "n": 1,
+     "q": "I’m seeing Attachments D and E to be either corrupted or blank, but perhaps it’s my error.",
+     "a": "The attachments were updated to reflect the correct Attachment D. Ignore the blank Attachments D and E in the zip file called Docauth Attachments available at this link https://github.com/18F/tts-buy-document-authentication-services/blob/master/solicitation_documents/Attachment-D_Deployment_Options.pdf",
+     "date": "2017-10-24",
+     "source": "18f-004",
+     "quote": "The attachments were updated to reflect the correct Attachment D. Ignore the blank Attachments D and E in the zip file called Docauth Attachments available at"
+    },
+    {
+     "n": 2,
+     "q": "The RFQ requires submission of Past Performance Questionnaires (PPQs) but no PPQ template is provided. Please provide the PPQ template at your earliest opportunity, preferably in MS-Word format.",
+     "a": "The [Past Performance Questionnaire](https://www.fbo.gov/utils/view?id=20f8683c151695011561664cb82d82bb) has been uploaded to [this solicitation's posting](https://www.fbo.gov/index?s=opportunity&mode=form&tab=core&id=cc3364659b210fb7b24b3b6c94424d93) on FBO.gov.",
+     "date": "2017-11-02",
+     "source": "18f-004",
+     "quote": "The [Past Performance Questionnaire](https://www.fbo.gov/utils/view?id=20f8683c151695011561664cb82d82bb) has been uploaded to [this solicitation's posting](https://www.fbo.gov/index?s=opportunity&mode=form&tab=core&id=cc3364659b210fb7b24b3b6c94424d93) on FBO.gov."
+    },
+    {
+     "n": 3,
+     "q": "Can you confirm that this this is limited to a small business (under 150 people/$23M revenue)? Based on the cover page classification (NAICS 541519) we want to clarify eligibility.",
+     "a": "The solicitation is 100% set-aside for small business. Offers are solicited only from small business concerns.",
+     "date": "2017-11-08",
+     "source": "18f-004",
+     "quote": "The solicitation is 100% set-aside for small business. Offers are solicited only from small business concerns."
+    },
+    {
+     "n": 4,
+     "q": "The expected content of the technical response is unclear from the RFQ. We understand that a narrative is required that addresses the tasks delineated in the SOO (section 6). We also understand that Services and Pricing tables must be presented, and that several attachments must be completed. Please clarify whether the pricing information and the required attachments count towards the 20-page limitation for the technical response. Please also clarify whether the pricing is expected to be presented as a separate attachment to the technical response.",
+     "a": "The 20 page limit applies to the technical response only. Pricing and attachments do not contribute to the 20 page limit. Pricing should be a separate attachment to the technical response.",
+     "date": "2017-11-13",
+     "source": "18f-004",
+     "quote": "The 20 page limit applies to the technical response only. Pricing and attachments do not contribute to the 20 page limit. Pricing should be a separate"
+    },
+    {
+     "n": 5,
+     "q": "1. Many of the SLA requirements are specific for the vendor-hosted deployment option. Should these items be completed if software only is proposed? This includes MFA ID #1, 2, 3, 7, 8, 9, 10, 11, 12, and 13. 2. MFA ID #4 indicates a maximum API response time of 1000ms (1 second). Across the industry, it is recognized that each actual API call to process the document images can take upwards of 3-4 seconds. Please clarify how the government intends to measure this response time. 3. Cell B2 on Sheet3 is unreadable. Please modify the spreadsheet to clarify the contents of this cell. 4. On Sheet3, the meaning/intent of most of the items is unclear. It seems to imply that there is some application that includes KBA, behavioral algorithms, input velocity (?), etc. There is no description in the RFQ that describes the context for most/all of these items. Please clarify.",
+     "a": "Question 1: The requirements should only be completed if the vendor is hosting the solution. Question 2: An updated version of SLA requirements has been uploaded (link). The requirement has been changed to \"\"Work with the government to baseline average API response times\"\". In answering this question break out options available from vendor technical offering: * document authentication software review only * document authentication software review + human review * facial recognition software review only * facial recognition software review + human review * document authentication & facial recognition software review only * document authentication & facial recognition software review + human review Question 3: An [updated version of SLA requirements](https://github.com/18F/tts-buy-document-authentication-services/blob/master/solicitation_documents/Attachment-C_SLA_Requirements-Revised.xlsx) has been uploaded. Sheet 3 was included in error. Question 4: A corrected version of SLA requirements has been uploaded (link). Sheet 3 was included in error\".",
+     "date": "2017-11-13",
+     "source": "18f-004",
+     "quote": "Question 1: The requirements should only be completed if the vendor is hosting the solution. Question 2: An updated version of SLA requirements has been uploaded"
+    },
+    {
+     "n": 6,
+     "q": "How do the line items of “Sheet 3” align with the requirements outlined in the RFQ? Please clarify the relevance of Sheet 3 and how vendors should respond. Are the line items part of the RFQ evaluation? If so, how are they weighed?",
+     "a": "A [corrected version of SLA requirements](https://github.com/18F/tts-buy-document-authentication-services/blob/master/solicitation_documents/Attachment-C_SLA_Requirements-Revised.xlsx) has been uploaded. Sheet 3 was included in error.",
+     "date": "2017-11-13",
+     "source": "18f-004",
+     "quote": "A [corrected version of SLA requirements](https://github.com/18F/tts-buy-document-authentication-services/blob/master/solicitation_documents/Attachment-C_SLA_Requirements-Revised.xlsx) has been uploaded. Sheet 3 was included in error."
+    },
+    {
+     "n": 7,
+     "q": "Line item 10 states: Ability to provide Knowledge Based Verification Services‐Online using both FCRA or non-FCRA data (Mandatory). Our question: Knowledge based authentication has increasingly been shown vulnerable to social engineering – while hard/arcane questions are shown to generate usability problems. Please clarify this requirement as being mandatory.",
+     "a": "A [corrected version of SLA requirements](https://github.com/18F/tts-buy-document-authentication-services/blob/master/solicitation_documents/Attachment-C_SLA_Requirements-Revised.xlsx) has been uploaded. Sheet 3 was included in error.",
+     "date": "2017-11-13",
+     "source": "18f-004",
+     "quote": "A [corrected version of SLA requirements](https://github.com/18F/tts-buy-document-authentication-services/blob/master/solicitation_documents/Attachment-C_SLA_Requirements-Revised.xlsx) has been uploaded. Sheet 3 was included in error."
+    },
+    {
+     "n": 8,
+     "q": "Would GSA consider allowing Past Performance references and PPQs on behalf of subcontractors, with the Small Business as the prime contractor? Many of the specified/requested capabilities are highly specialized to vendors working in the document authentication space. Many instances of past performance GSA seeks may be provided by non-Small Business technology providers versus the Small Business prime contractor.",
+     "a": "Yes. PPQs are intended to be from all partners involved in the bid.",
+     "date": "2017-11-13",
+     "source": "18f-004",
+     "quote": "Yes. PPQs are intended to be from all partners involved in the bid."
+    },
+    {
+     "n": 9,
+     "q": "Given that GSA is allowing question submission up until November 10, 2017 and respondents will have limited time (with the Thanksgiving holiday) to react/respond to this feedback, would GSA consider extending the due date by three weeks?",
+     "a": "The Government will extend the due date until 12/8 and questions until 11/17.",
+     "date": "2017-11-13",
+     "source": "18f-004",
+     "quote": "The Government will extend the due date until 12/8 and questions until 11/17."
+    },
+    {
+     "n": 10,
+     "q": "Please provide the description for cell B, in row 2. Currently, the cell states \"#VALUE\".",
+     "a": "A [corrected version of SLA requirements](https://github.com/18F/tts-buy-document-authentication-services/blob/master/solicitation_documents/Attachment-C_SLA_Requirements-Revised.xlsx) has been uploaded. Sheet 3 was included in error.",
+     "date": "2017-11-13",
+     "source": "18f-004",
+     "quote": "A [corrected version of SLA requirements](https://github.com/18F/tts-buy-document-authentication-services/blob/master/solicitation_documents/Attachment-C_SLA_Requirements-Revised.xlsx) has been uploaded. Sheet 3 was included in error."
+    },
+    {
+     "n": 11,
+     "q": "Line Item 3 states: \"Cover 80% of U.S. population for resolution.\" Our question: What does this metric and resolution relate to? Please clarify.",
+     "a": "A [corrected version of SLA requirements](https://github.com/18F/tts-buy-document-authentication-services/blob/master/solicitation_documents/Attachment-C_SLA_Requirements-Revised.xlsx) has been uploaded. Sheet 3 was included in error.",
+     "date": "2017-11-13",
+     "source": "18f-004",
+     "quote": "A [corrected version of SLA requirements](https://github.com/18F/tts-buy-document-authentication-services/blob/master/solicitation_documents/Attachment-C_SLA_Requirements-Revised.xlsx) has been uploaded. Sheet 3 was included in error."
+    },
+    {
+     "n": 12,
+     "q": "Line Item 23 states: \"Ability to provide monthly status report as specified in 2.2.4\" Our question: Please clarify which attachment and section this refers statement references.",
+     "a": "A [corrected version of SLA requirements](https://github.com/18F/tts-buy-document-authentication-services/blob/master/solicitation_documents/Attachment-C_SLA_Requirements-Revised.xlsx) has been uploaded. Sheet 3 was included in error.",
+     "date": "2017-11-13",
+     "source": "18f-004",
+     "quote": "A [corrected version of SLA requirements](https://github.com/18F/tts-buy-document-authentication-services/blob/master/solicitation_documents/Attachment-C_SLA_Requirements-Revised.xlsx) has been uploaded. Sheet 3 was included in error."
+    },
+    {
+     "n": 13,
+     "q": "Line Item 37 states: \"Conforms to NIST LOA3 as defined in NIST 800-63-2.\" Our question: ID Verification can only achieve LOA1. Is GSA looking for a solution that does something more than ID Verification?",
+     "a": "A [corrected version of SLA requirements](https://github.com/18F/tts-buy-document-authentication-services/blob/master/solicitation_documents/Attachment-C_SLA_Requirements-Revised.xlsx) has been uploaded. Sheet 3 was included in error.",
+     "date": "2017-11-13",
+     "source": "18f-004",
+     "quote": "A [corrected version of SLA requirements](https://github.com/18F/tts-buy-document-authentication-services/blob/master/solicitation_documents/Attachment-C_SLA_Requirements-Revised.xlsx) has been uploaded. Sheet 3 was included in error."
+    },
+    {
+     "n": 14,
+     "q": "Peter Brason/LexisNexis/Proposal Manager Can past performance be provided by either the prime, subcontractor or teaming partner?",
+     "a": "Yes. PPQs must include all partners involved in the bid",
+     "date": "2017-11-13",
+     "source": "18f-004",
+     "quote": "Yes. PPQs must include all partners involved in the bid"
+    },
+    {
+     "n": 15,
+     "q": "We have a new channel Director that would like to speak with you regarding your RFP for ID verification. Can you spare 20 minutes next week to have a brief chat? Maybe Wed. after lunch?",
+     "a": "Questions may be posted as issues in the following github: https://github.com/18F/tts-buy-document-authentication-services The question and answer period starts immediately and closes on November 17, 2017 by 5pm EST.",
+     "date": "2017-11-20",
+     "source": "18f-004",
+     "quote": "Questions may be posted as issues in the following github: https://github.com/18F/tts-buy-document-authentication-services The question and answer period starts immediately and closes on November 17, 2017 by 5pm"
+    }
+   ],
+   "pairs_with": []
+  },
+  {
+   "id": "gsa-newpay",
+   "title": "New Pay SaaS Solution Procurement - Draft RFQ",
+   "buyer": "General Services Administration (GSA): Unified Shared Services Management (USSM), GSA Office of Governmentwide Policy (OGP), in partnership with the Information Technology Category (ITC), Federal Acquisition Service (FAS)",
+   "buyer_type": "Federal agency",
+   "country": "US",
+   "ref": "47QTCA-18-Q-0001",
+   "published": "2017-12-15",
+   "closes": "2018-01-22",
+   "status": "closed",
+   "value": null,
+   "summary": "This is a DRAFT RFQ that GSA posted for industry questions and comments before the final solicitation, not a live call for quotes. GSA plans a multiple-award BPA on IT Schedule 70 (SINs 132-40 cloud and 132-51 IT professional services) for SaaS Payroll, Work Schedule and Leave Management (WSLM), or both, with implementation support, in three pools and a five-year ordering period in the draft (GSA's published Q&A later says ten years: a five-year base plus five one-year options); Payroll and Both calls are limited to the federal payroll shared service providers, which together serve about 2.3 million employees. Vendors fill attachments on business capabilities and data standards, technical capabilities, a FedRAMP High readiness self-assessment, a RACI matrix, past performance, a VPAT, a subcontracting plan and a BPA pricing schedule, and the draft stresses standard APIs and data schemas into legacy HR and finance systems and staying true to SaaS without government customisation. Evaluation is phased: pass/fail solution conformance, rated written technical parts, then a solution demonstration and oral presentation, which is the most important factor, with price last; technical factors together are significantly more important than price.",
+   "criteria": [
+    {
+     "name": "Phase 3: Solution Capability Demonstration and Oral Presentation",
+     "weight": "Descending order of importance: 1"
+    },
+    {
+     "name": "Phase 2, Part A –Technical Approach (includes Attachment A - Business Capabilities and Data Standards, Attachment B - Technical Capabilities, Attachment C - FEDRamp Self-Assessment Moderate/High), and Attachment F - VPAT)",
+     "weight": "Descending order of importance: 2 (Phase 2: Technical Approach); of equal importance to Phase 2, Part B"
+    },
+    {
+     "name": "Phase 2, Part B – Program Management Approach",
+     "weight": "Descending order of importance: 2 (Phase 2: Technical Approach); with Part A, significantly more important than Parts C, D and E"
+    },
+    {
+     "name": "Phase 2, Part C – Software Maintenance",
+     "weight": "Descending order of importance: 2 (Phase 2: Technical Approach); of equal importance to Parts D and E"
+    },
+    {
+     "name": "Phase 2, Part D – Implementation Support",
+     "weight": "Descending order of importance: 2 (Phase 2: Technical Approach); of equal importance to Parts C and E"
+    },
+    {
+     "name": "Phase 2, Part E - Past Performance (Attachment E - Corporate Experience and Past Performance Reference Sheet)",
+     "weight": "Descending order of importance: 2 (Phase 2: Technical Approach); of equal importance to Parts C and D"
+    },
+    {
+     "name": "Phase 2, Part G - Small Business Subcontracting Plan (if applicable)",
+     "weight": "Pass/Fail"
+    },
+    {
+     "name": "Phase 1: Solution Conformance",
+     "weight": "Descending order of importance: 3; acceptable/unacceptable"
+    },
+    {
+     "name": "Phase 4: Price",
+     "weight": "Descending order of importance: 4; all evaluation factors other than price, when combined, are significantly more important than price"
+    }
+   ],
+   "source_url": "https://github.com/18F/GSA-SaaS-Payroll-RFQ-BPA",
+   "licence": "US-PD",
+   "documents": [
+    {
+     "raw": "18f-003",
+     "name": "GSA-SaaS-Payroll-RFQ-BPA.tar.gz",
+     "added": "2018-03-11",
+     "addendum": false
+    }
+   ],
+   "qa": [
+    {
+     "n": 1,
+     "q": "When does the Government plan to post the RFQ for the NewPay SaaS solution?",
+     "a": "The Government plans to post the RFQ on GSA eBuy during Quarter 3 of FY 2018.",
+     "date": null,
+     "source": "18f-003",
+     "quote": "The Government plans to post the RFQ on GSA eBuy during Quarter 3 of FY 2018."
+    },
+    {
+     "n": 2,
+     "q": "What is the Period of Performance (PoP) of tasks issued under the Blanket Purchase Agreement (BPA)? Will the period of performance go beyond the BPA ten-year Ordering Period.",
+     "a": "The PoP for NewPay has been updated to reflect a total of 10 years: 5 year base with 5 one-year option periods. BPA calls (task orders) issued prior to, but not completed before the BPA expires, shall be completed within the period specified in the BPA call (task order). The BPA calls (task orders) shall have their own ordering periods and shall only be placed against active BPAs with active Multiple Award Schedule (MAS) contracts. Task orders shall not extend more than two years beyond the expiration of the BPA.",
+     "date": null,
+     "source": "18f-003",
+     "quote": "The PoP for NewPay has been updated to reflect a total of 10 years: 5 year base with 5 one-year option periods. BPA calls (task orders)"
+    },
+    {
+     "n": 3,
+     "q": "Does the Government plan to make awards to multiple vendors to participate on the BPA?",
+     "a": "Yes, the Government anticipates that this will be a multiple-award BPA awarding BPAs to the most highly rated vendors.",
+     "date": null,
+     "source": "18f-003",
+     "quote": "Yes, the Government anticipates that this will be a multiple-award BPA awarding BPAs to the most highly rated vendors."
+    },
+    {
+     "n": 4,
+     "q": "Will the Government allow Contractor Team Arrangements (CTA) in this procurement?",
+     "a": "Yes. Quoters are permitted to establish any arrangements that provide a total solution that meets the Government's needs. In a CTA, the arrangement must consist of Schedule contract holders under the GSA Multiple Award Schedule (MAS) IT Schedule 70 Program. Given this procurement is technology driven, the IT Schedule 70 Program will be the only source for the RFQ announcement. Quoters participating in a CTA must complete a Small Business Utilization Chart and provide a one-page summary to explain their projected small business utilization. Quoters shall also provide a copy of the CTA signed by each participating contractor.",
+     "date": null,
+     "source": "18f-003",
+     "quote": "Yes. Quoters are permitted to establish any arrangements that provide a total solution that meets the Government's needs. In a CTA, the arrangement must consist of"
+    },
+    {
+     "n": 5,
+     "q": "At what Federal Risk and Authorization Management Program (FedRAMP) level should the SaaS solution be Authorized to Operate (ATO)?",
+     "a": "The SaaS solution must be FedRAMP-authorized at the high level, either at the time of the award of the BPA or no later than one-year after award. Quoters that are not FedRamp-authorized at the time of award must complete the FedRAMP Assessment included in the final solicitation. The final FedRAMP level will be specified in the RFQ.",
+     "date": null,
+     "source": "18f-003",
+     "quote": "The SaaS solution must be FedRAMP-authorized at the high level, either at the time of the award of the BPA or no later than one-year after"
+    },
+    {
+     "n": 6,
+     "q": "Will this procurement be conducted via Open Market?",
+     "a": "The acquisition strategy for this procurement is to utilize the GSA eBuy system. Use of the Multiple Award Schedules (MAS) IT 70 Program acquisition vehicle is considered a full and open competition.",
+     "date": null,
+     "source": "18f-003",
+     "quote": "The acquisition strategy for this procurement is to utilize the GSA eBuy system. Use of the Multiple Award Schedules (MAS) IT 70 Program acquisition vehicle is"
+    },
+    {
+     "n": 7,
+     "q": "What solution is the Government seeking to procure under the Human Capital Business Reference Model (HCBRM)?",
+     "a": "The scope of this multiple award BPA consists of two components of HCBRM A5, Compensation and Benefits. The specific components to be delivered are A5.1 Compensation Management and A5.2 Work Schedule Leave Management. Quoters are to submit their quotes under the following two pools: Payroll SaaS solutions and associated support and Integrated Payroll and WSLM SaaS solutions and associated support.",
+     "date": null,
+     "source": "18f-003",
+     "quote": "The scope of this multiple award BPA consists of two components of HCBRM A5, Compensation and Benefits. The specific components to be delivered are A5.1 Compensation"
+    },
+    {
+     "n": 8,
+     "q": "Will the Government commit to a minimum dollar amount for task orders awarded under the BPA?",
+     "a": "The Government will not include a minimum dollar amount for task orders for the awarded BPA.",
+     "date": null,
+     "source": "18f-003",
+     "quote": "The Government will not include a minimum dollar amount for task orders for the awarded BPA."
+    },
+    {
+     "n": 9,
+     "q": "What pricing model approach is the Government seeking for the procurement?",
+     "a": "The Government is looking for fixed price line items at the BPA level to support implementation task orders based on the required services and required labor categories. The subscription fees should be based on the total volume processed for the Federal Government and NOT based on agency specific numbers.",
+     "date": null,
+     "source": "18f-003",
+     "quote": "The Government is looking for fixed price line items at the BPA level to support implementation task orders based on the required services and required labor"
+    },
+    {
+     "n": 10,
+     "q": "Will current payroll service providers stagger the implementation for their customers or expect all customers to convert to the new system at the same time?",
+     "a": "The Government is looking at a phased approach to implementation. It is anticipated that the initial phase will include approximately 50,000 federal civilian employees with posts of duty within the Continental United States (CONUS). Additionally, it is anticipated these employees will be exclusively paid under the standard Title 5 rules for pay administration. A second phase will migrate a much larger portion of the employee base while still primarily being Title 5 employees. Third, and potentially subsequent migrations, would migrate the remaining population paid under other authorizing statutes for pay administration.",
+     "date": null,
+     "source": "18f-003",
+     "quote": "The Government is looking at a phased approach to implementation. It is anticipated that the initial phase will include approximately 50,000 federal civilian employees with posts"
+    },
+    {
+     "n": 11,
+     "q": "Does the Government envision all agencies leveraging a shared environment partitioned through configuration for each agency?",
+     "a": "The Government envisions shared solutions that fulfill the needs of the Federal Government, to include service quality, security, and cost effectiveness. Vendors should propose solutions that fulfill the requirements in a manner that accomplishes all the goals of the Government. However, it should be noted, the Government does desire one common baseline that is consistently updated, kept, and maintained within the standard, commercially available solutions of the vendor.",
+     "date": null,
+     "source": "18f-003",
+     "quote": "The Government envisions shared solutions that fulfill the needs of the Federal Government, to include service quality, security, and cost effectiveness. Vendors should propose solutions that"
+    },
+    {
+     "n": 12,
+     "q": "Will the Government include an optional CLIN for proposed work and costs that are not mentioned in the existing pricing spreadsheet?",
+     "a": "The Government does not believe it is in its best interest to provide for an optional CLIN at the BPA level. Vendors can identify additional tasks that may be required and align them to a CLIN in the existing pricing structure.",
+     "date": null,
+     "source": "18f-003",
+     "quote": "The Government does not believe it is in its best interest to provide for an optional CLIN at the BPA level. Vendors can identify additional tasks"
+    }
+   ],
+   "pairs_with": []
+  }
+ ]
+}

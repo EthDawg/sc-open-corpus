@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tenderline · public opportunities</title>
+<link rel="stylesheet" href="../shared.css">
+<style>
+:root{--bg:#f3f4f6;--card:#fff;--side:#f8f9fb;--ink:#14213d;--mute:#5a6478;--line:#dde1e8;--hl:#e8edf7;--accent:#1d4ed8;
+  --link:#1d4ed8;--bar:#14213d;--barink:#fff;--chip:#e8edf7;--chipink:#1e3a8a}
+.wrap{max-width:1100px;margin:0 auto;padding:20px}
+.opp{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:10px 0;cursor:pointer}
+.opp:hover{border-color:var(--accent)}
+.opp h3{margin:0 0 4px;font-size:16px;color:var(--link)}
+.meta{font-size:12.5px;color:var(--mute);display:flex;flex-wrap:wrap;gap:4px 16px}
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin:16px 0 0}
+.tabs a{padding:8px 14px;border:1px solid transparent;border-bottom:0;border-radius:6px 6px 0 0;color:var(--ink)}
+.tabs a.on{background:var(--card);border-color:var(--line);margin-bottom:-1px;font-weight:600}
+.panel{background:var(--card);border:1px solid var(--line);border-top:0;padding:16px}
+.qa{border-bottom:1px solid var(--line);padding:10px 0}.qa:last-child{border:0}
+.qa .q{font-weight:600}.qa .a{margin-top:4px;white-space:pre-wrap}
+.body{white-space:pre-wrap}
+</style></head>
+<body>
+<div class="fixture">Test dataset for the SC Open Corpus. Libraries are built from public material and contain deliberate faults for testing. Nothing here is an official statement by the companies named. <a href="../">About</a></div>
+<div class="top"><span class="logo"><i></i>Tenderline</span><input id="q" placeholder="Search opportunities"><span class="sp"></span></div>
+<div class="wrap" id="app"></div>
+<script src="../app.js"></script>
+<script>
+let D = null, tab = 'overview';
+const $ = s => document.querySelector(s);
+function route() {
+  const id = location.hash.slice(1);
+  if (!id) return list();
+  const o = D.opportunities.find(x => x.id === id); if (!o) return list(); detail(o);
+}
+function list() {
+  const q = $('#q').value.toLowerCase();
+  const os = D.opportunities.filter(o => !q || (o.title + o.buyer + o.summary).toLowerCase().includes(q));
+  $('#app').innerHTML = `<h1 style="font-size:22px;margin:4px 0">Opportunities</h1><div class="muted">${os.length} published opportunities · documents, addenda and clarification answers</div>` +
+    os.map(o => `<div class="opp" onclick="location.hash='${o.id}'"><h3>${esc(o.title)}</h3><div>${esc(o.buyer)}</div>
+     <div class="meta"><span>${esc(o.ref || '')}</span><span>${esc(o.country)}</span><span>Published ${o.published || 'n/a'}</span><span>Closes ${o.closes || 'n/a'}</span>
+     <span>${o.documents.length} documents</span><span>${o.qa_count ?? o.qa.length} clarification answers</span><span class="pill ${o.status === 'Open' ? 'ok' : 'mute'}">${esc(o.status)}</span></div>
+     <p style="margin:8px 0 0">${esc((o.summary || '').slice(0, 260))}${(o.summary || '').length > 260 ? '…' : ''}</p></div>`).join('');
+}
+function detail(o) {
+  const tabs = [['overview', 'Overview'], ['documents', `Documents (${o.documents.length})`], ['qa', `Clarifications (${o.qa_count ?? o.qa.length})`]];
+  let body = '';
+  if (tab === 'overview') body = `<div class="kv"><b>Buyer</b><span>${esc(o.buyer)}</span><b>Reference</b><span>${esc(o.ref || '')}</span><b>Published</b><span>${o.published || ''}</span><b>Closes</b><span>${o.closes || ''}</span>
+     ${o.value ? `<b>Value</b><span>${esc(o.value)}</span>` : ''}<b>Licence</b><span>${esc(o.licence)}</span><b>Original</b><span><a href="${esc(o.source_url)}" target="_blank" rel="noopener">${esc(host(o.source_url))} ↗</a></span></div>
+     ${o.criteria && o.criteria.length ? `<h3>How bids are scored</h3><table>${o.criteria.map(c => `<tr><td>${esc(c.name)}</td><td>${esc(c.weight)}</td></tr>`).join('')}</table>` : ''}
+     <h3>Summary</h3><div class="body">${esc(o.summary)}</div>`;
+  if (tab === 'documents') body = `<div class="bar2">${o.pack ? `<a class="btn primary" href="../data/tenders/${o.pack}" download>Download all documents</a>` : ''}</div>
+     <table><tr><th>Document</th><th>Type</th><th>Added</th><th>Size</th></tr>${o.documents.map(d => `<tr><td>${d.file ? `<a href="../data/tenders/${d.file}" download="${esc(d.name)}">${esc(d.name)}</a>` : `${esc(d.name)} <a class="muted" href="${esc(d.origin)}" target="_blank" rel="noopener">original ↗</a>`}${d.addendum ? ' <span class="pill warn">Addendum</span>' : ''}</td><td>${d.kind.toUpperCase()}</td><td>${d.added || ''}</td><td>${fmtBytes(d.bytes)}</td></tr>`).join('')}</table>`;
+  if (tab === 'qa') body = o.qa.length ? o.qa.map(x => `<div class="qa"><div class="q">${x.n ? x.n + '. ' : ''}${esc(x.q)}</div><div class="a">${esc(x.a)}</div>${x.date ? `<div class="muted" style="font-size:12px">${x.date}</div>` : ''}</div>`).join('') : (o.qa_count ? `<p class="muted">${o.qa_count} clarification answers are in the buyer's own addenda. Open them from Documents or the original listing; this public copy doesn't reproduce them.</p>` : '<p class="muted">No clarification questions were published.</p>');
+  $('#app').innerHTML = `<a href="#">← All opportunities</a><h1 style="font-size:22px;margin:8px 0 2px">${esc(o.title)}</h1><div class="muted">${esc(o.buyer)}</div>
+   <div class="tabs">${tabs.map(([k, l]) => `<a href="#${o.id}" data-t="${k}" class="${k === tab ? 'on' : ''}">${l}</a>`).join('')}</div><div class="panel">${body}</div>`;
+  document.querySelectorAll('.tabs a').forEach(a => a.onclick = e => { e.preventDefault(); tab = a.dataset.t; detail(o) });
+}
+(async () => { D = await getJSON('../data/tenders/tenders.json'); $('#q').oninput = () => { location.hash = ''; list() }; addEventListener('hashchange', () => { tab = 'overview'; route() }); route() })();
+</script></body></html>

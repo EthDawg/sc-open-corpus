@@ -1,0 +1,162 @@
+[
+ {
+  "id": "F-posthog-D1",
+  "kind": "duplicate-file",
+  "where": {
+   "stacks": [
+    "ST-0024",
+    "ST-0028"
+   ]
+  },
+  "statement": "'trust.posthog.com snapshot (1).html' is a byte-identical copy of 'trust.posthog.com snapshot.html'",
+  "evidence": [],
+  "expected": "Filed once (same sha256); the copy is skipped or recorded as the same source.",
+  "severity": "low"
+ },
+ {
+  "id": "F-posthog-D2",
+  "kind": "duplicate-file",
+  "where": {
+   "stacks": [
+    "ST-0008",
+    "ST-0029"
+   ]
+  },
+  "statement": "'Copy of Contract rules - discounts and terms.md' is a byte-identical copy of 'Contract rules - discounts and terms.md'",
+  "evidence": [],
+  "expected": "Filed once (same sha256); the copy is skipped or recorded as the same source.",
+  "severity": "low"
+ },
+ {
+  "id": "F-posthog-D3",
+  "kind": "duplicate-file",
+  "where": {
+   "stacks": [
+    "ST-0016",
+    "ST-0030"
+   ]
+  },
+  "statement": "'PostHog GDPR compliance guide_FINAL.md' is a byte-identical copy of 'PostHog GDPR compliance guide.md'",
+  "evidence": [],
+  "expected": "Filed once (same sha256); the copy is skipped or recorded as the same source.",
+  "severity": "low"
+ },
+ {
+  "id": "F-posthog-I1",
+  "kind": "internal",
+  "where": {
+   "stacks": [
+    "ST-0031"
+   ]
+  },
+  "statement": "An internal-only file sits in the library export.",
+  "evidence": [],
+  "expected": "Kept out of sources, docs and claims (the workspace contract: Internal stays out); recorded as skipped.",
+  "severity": "high"
+ },
+ {
+  "id": "F-posthog-W1",
+  "kind": "wrong-company",
+  "where": {
+   "stacks": [
+    "ST-0032"
+   ]
+  },
+  "statement": "'Cloud security overview.pdf' in the PostHog library is a Atlassian document (atlassian-009).",
+  "evidence": [],
+  "expected": "Recognised as another company's document: not learned as PostHog facts, reported as filed in error.",
+  "severity": "high"
+ },
+ {
+  "id": "F-posthog-S1",
+  "kind": "scanned",
+  "where": {
+   "stacks": [
+    "ST-0033",
+    "ST-0032"
+   ]
+  },
+  "statement": "A scanned copy (no text layer) of ST-0032.",
+  "evidence": [],
+  "expected": "Recognised as the same document as its text original (one source, or linked); never two sets of claims.",
+  "severity": "low"
+ },
+ {
+  "id": "F-posthog-N0006",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0006"
+   ]
+  },
+  "statement": "'Reverse demo calls - how to run.md' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-posthog-N0011",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0011"
+   ]
+  },
+  "statement": "'Onboarding success plan TEMPLATE.md' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-posthog-N0012",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0012"
+   ]
+  },
+  "statement": "'Common churn reasons.md' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-posthog-N0013",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0013"
+   ]
+  },
+  "statement": "'Shipping a pricing change.md' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-posthog-N0024",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0024"
+   ]
+  },
+  "statement": "'trust.posthog.com snapshot.html' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ },
+ {
+  "id": "F-posthog-N0028",
+  "kind": "not-for-ai",
+  "where": {
+   "stacks": [
+    "ST-0028"
+   ]
+  },
+  "statement": "'trust.posthog.com snapshot (1).html' is marked Do Not Allow in AI in the library export.",
+  "evidence": [],
+  "expected": "Not read into docs or claims (or filed with the flag and never quoted); listed as skipped with the reason.",
+  "severity": "medium"
+ }
+]

@@ -1,0 +1,914 @@
+{
+ "name": "Supabase Sales Library",
+ "items": [
+  {
+   "raw": "supabase-001",
+   "title": "Docs export: security, platform and deployment guides",
+   "filename": "supabase-docs-security-platform-2026-11-16.tar.gz",
+   "folder": "Product/Docs Export",
+   "owner": "Developer Relations",
+   "description": "All 93 security, platform and deployment MDX guides at one commit, for search and reference. Includes PrivateLink, SSO, audit logs and pen-test policy.",
+   "version": "2.0",
+   "created": "2025-06-02",
+   "updated": "2026-11-16",
+   "expires": "2027-05-16",
+   "views": 33,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "False"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "Supabase Platform"
+    ],
+    "Solution": [
+     "Platform"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Documentation"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "docs export",
+     "MDX",
+     "PrivateLink",
+     "SSO"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "supabase-002",
+   "title": "Security & Compliance Overview",
+   "filename": "Supabase Security overview.md",
+   "folder": "Security & Trust",
+   "owner": "Security & Compliance",
+   "description": "One-page summary: SOC 2 Type 2, HIPAA add-on, ISO 27001, GDPR support, DDoS protection, where the controls live.",
+   "version": "3.0",
+   "created": "2023-09-18",
+   "updated": "2026-11-02",
+   "expires": "2027-11-02",
+   "views": 311,
+   "props": {
+    "Content Type": [
+     "Overview"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "True"
+    ],
+    "Item Visibility": [
+     "Partner + Employee"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "Supabase Platform"
+    ],
+    "Solution": [
+     "Security Review"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Security",
+     "Compliance"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "SOC 2",
+     "ISO 27001",
+     "HIPAA",
+     "GDPR"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "supabase-003",
+   "title": "Platform Security Controls (MFA, SSO, SSL, network restrictions, PrivateLink)",
+   "filename": "Secure configuration - platform.md",
+   "folder": "Security & Trust/Configuration",
+   "owner": "Security & Compliance",
+   "description": "Organization-level controls a customer can switch on, with links to setup guides.",
+   "version": "2.1",
+   "created": "2024-02-26",
+   "updated": "2026-10-09",
+   "expires": "2027-10-09",
+   "views": 147,
+   "props": {
+    "Content Type": [
+     "Solution Brief"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Partner + Employee"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "Supabase Platform"
+    ],
+    "Solution": [
+     "Security Review"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Security",
+     "Network"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "MFA",
+     "SSO",
+     "SSL enforcement",
+     "PrivateLink",
+     "TLS"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "supabase-004",
+   "title": "Product Security Hardening Guides (index)",
+   "filename": "Secure configuration - products.md",
+   "folder": "Security & Trust/Configuration",
+   "owner": "Developer Relations",
+   "description": "Link index of hardening guides for Auth, Database, Storage and Realtime.",
+   "version": "1.3",
+   "created": "2024-02-26",
+   "updated": "2026-11-02",
+   "expires": "2027-11-02",
+   "views": 28,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "Auth",
+     "Database",
+     "Storage",
+     "Realtime"
+    ],
+    "Solution": [
+     "Security Review"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Security"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "RLS",
+     "hardening",
+     "link index"
+    ],
+    "Do Not Allow in AI": [
+     "True"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "supabase-005",
+   "title": "SOC 2 Compliance Guide",
+   "filename": "SOC 2 compliance and Supabase.md",
+   "folder": "Security & Trust/Compliance",
+   "owner": "Security & Compliance",
+   "description": "What Supabase's SOC 2 Type 2 covers, the compliance boundary, who can get the report and the audit period.",
+   "version": "2.0",
+   "created": "2023-08-11",
+   "updated": "2026-07-31",
+   "expires": "2027-07-31",
+   "views": 268,
+   "props": {
+    "Content Type": [
+     "Whitepaper"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Partner + Employee"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "Supabase Platform"
+    ],
+    "Solution": [
+     "Security Review"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Compliance"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "SOC 2 Type 2",
+     "audit period",
+     "shared responsibility"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": {
+    "Legacy Library ID": "SL-00412",
+    "Legacy Added Date": "2023-08-14",
+    "Legacy Content Type": "Compliance Whitepaper"
+   }
+  },
+  {
+   "raw": "supabase-006",
+   "title": "HIPAA Compliance Guide",
+   "filename": "HIPAA compliance and Supabase.md",
+   "folder": "Security & Trust/Compliance",
+   "owner": "Security & Compliance",
+   "description": "Supabase as business associate: customer and Supabase responsibilities, audits, connection logging FAQ.",
+   "version": "2.0",
+   "created": "2023-08-11",
+   "updated": "2026-07-31",
+   "expires": "2027-07-31",
+   "views": 174,
+   "props": {
+    "Content Type": [
+     "Whitepaper"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Partner + Employee"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "AMER"
+    ],
+    "Product": [
+     "Supabase Platform"
+    ],
+    "Solution": [
+     "Healthcare"
+    ],
+    "Industry": [
+     "Healthcare",
+     "Higher Education"
+    ],
+    "Content Theme": [
+     "Compliance"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "HIPAA",
+     "BAA",
+     "PHI"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "supabase-007",
+   "title": "HIPAA Projects: configuring High Compliance",
+   "filename": "HIPAA projects setup.md",
+   "folder": "Security & Trust/Compliance",
+   "owner": "Solutions Engineering",
+   "description": "How to request a BAA and configure projects as High Compliance; required settings checked by the Security Advisor.",
+   "version": "1.2",
+   "created": "2024-05-06",
+   "updated": "2026-10-30",
+   "expires": "2027-10-30",
+   "views": 88,
+   "props": {
+    "Content Type": [
+     "Solution Brief"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Partner + Employee"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "AMER"
+    ],
+    "Product": [
+     "Supabase Platform"
+    ],
+    "Solution": [
+     "Healthcare"
+    ],
+    "Industry": [
+     "Healthcare"
+    ],
+    "Content Theme": [
+     "Compliance",
+     "Configuration"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "HIPAA add-on",
+     "High Compliance",
+     "Security Advisor"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "supabase-008",
+   "title": "Shared Responsibility Model",
+   "filename": "Shared responsibility model.md",
+   "folder": "Security & Trust",
+   "owner": "Security & Compliance",
+   "description": "What Supabase runs and what the customer owns, including the healthcare-data checklist.",
+   "version": "2.2",
+   "created": "2023-05-22",
+   "updated": "2026-10-06",
+   "expires": "2027-10-06",
+   "views": 352,
+   "props": {
+    "Content Type": [
+     "Whitepaper"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "True"
+    ],
+    "Item Visibility": [
+     "Partner + Employee"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "Supabase Platform"
+    ],
+    "Solution": [
+     "Security Review"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Security",
+     "Compliance"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "shared responsibility",
+     "RLS",
+     "HIPAA checklist"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "supabase-009",
+   "title": "Production Security Checklist",
+   "filename": "Production security checklist.md",
+   "folder": "Security & Trust/Configuration",
+   "owner": "Solutions Engineering",
+   "description": "Settings to secure before launch (RLS, SSL, network restrictions, MFA, Auth). Contains a copy-paste agent prompt.",
+   "version": "1.0",
+   "created": "2026-11-02",
+   "updated": "2026-11-02",
+   "expires": "2027-11-02",
+   "views": 41,
+   "props": {
+    "Content Type": [
+     "Guide/Playbook"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "Database",
+     "Auth"
+    ],
+    "Solution": [
+     "Go-Live"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Security"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "checklist",
+     "agent prompt",
+     "RLS"
+    ],
+    "Do Not Allow in AI": [
+     "True"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "supabase-010",
+   "title": "GDPR Compliance Guide",
+   "filename": "GDPR compliance and Supabase.md",
+   "folder": "Security & Trust/Compliance",
+   "owner": "Security & Compliance",
+   "description": "Data residency scope (Europe grouping includes London and Zurich) and how to get the DPA.",
+   "version": "1.1",
+   "created": "2025-10-14",
+   "updated": "2026-08-03",
+   "expires": "2027-08-03",
+   "views": 119,
+   "props": {
+    "Content Type": [
+     "Whitepaper"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Partner + Employee"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "EMEA"
+    ],
+    "Product": [
+     "Supabase Platform"
+    ],
+    "Solution": [
+     "Privacy Review"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Privacy",
+     "Data Residency"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "GDPR",
+     "DPA",
+     "EU region"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "supabase-011",
+   "title": "Database Backups & Point-in-Time Recovery",
+   "filename": "Database backups and PITR.md",
+   "folder": "Product/Platform",
+   "owner": "Solutions Engineering",
+   "description": "Daily backup retention by plan, PITR (RPO two minutes), pricing, restore downtime and what backups exclude.",
+   "version": "3.4",
+   "created": "2023-04-03",
+   "updated": "2026-11-12",
+   "expires": "2027-11-12",
+   "views": 203,
+   "props": {
+    "Content Type": [
+     "Datasheet"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Partner + Employee"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "Database"
+    ],
+    "Solution": [
+     "Resilience"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Backup",
+     "Disaster Recovery"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "PITR",
+     "RPO",
+     "daily backups"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "supabase-012",
+   "title": "Available Regions",
+   "filename": "Supabase regions list.md",
+   "folder": "Product/Platform",
+   "owner": "Solutions Engineering",
+   "description": "General regions vs specific AWS regions, and why the Europe grouping is not EU-only.",
+   "version": "1.6",
+   "created": "2023-04-03",
+   "updated": "2026-10-19",
+   "expires": "2027-10-19",
+   "views": 136,
+   "props": {
+    "Content Type": [
+     "Datasheet"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "Supabase Platform"
+    ],
+    "Solution": [
+     "Data Residency"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Hosting"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "AWS regions",
+     "data residency"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": {
+    "Legacy Library ID": "SL-00198",
+    "Legacy Added Date": "2022-11-30",
+    "Legacy Content Type": "Infrastructure Sheet"
+   }
+  },
+  {
+   "raw": "supabase-013",
+   "title": "Billing on Supabase (plans, quotas, add-ons)",
+   "filename": "About billing on Supabase.md",
+   "folder": "Pricing & Packaging",
+   "owner": "Sales Enablement",
+   "description": "Free, Pro, Team and Enterprise; organization-based billing; usage quotas; project add-ons.",
+   "version": "2.0",
+   "created": "2024-01-15",
+   "updated": "2026-09-17",
+   "expires": "2027-03-17",
+   "views": 187,
+   "props": {
+    "Content Type": [
+     "Pricing"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "Supabase Platform"
+    ],
+    "Solution": [
+     "Commercial"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Pricing"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "quota",
+     "organization billing",
+     "add-ons"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "supabase-014",
+   "title": "Compute & Disk Sizing",
+   "filename": "Compute and disk sizes.md",
+   "folder": "Pricing & Packaging",
+   "owner": "Solutions Engineering",
+   "description": "Compute sizes and prices, shared vs dedicated CPU, disk IOPS and throughput, connection limits.",
+   "version": "2.3",
+   "created": "2024-01-15",
+   "updated": "2026-11-03",
+   "expires": "2027-05-03",
+   "views": 126,
+   "props": {
+    "Content Type": [
+     "Datasheet"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "Database"
+    ],
+    "Solution": [
+     "Sizing"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Pricing",
+     "Performance"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "compute",
+     "IOPS",
+     "gp3",
+     "io2"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "supabase-015",
+   "title": "Upgrading Projects (Postgres versions and deprecations)",
+   "filename": "Upgrading Supabase projects.md",
+   "folder": "Release Updates",
+   "owner": "Solutions Engineering",
+   "description": "How upgrades run, downtime, prerequisites, md5 deprecation, Postgres 17 extension removals, paused-project restore window.",
+   "version": "1.5",
+   "created": "2024-03-11",
+   "updated": "2026-10-29",
+   "expires": "2027-04-29",
+   "views": 57,
+   "props": {
+    "Content Type": [
+     "Release Notes"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "Database"
+    ],
+    "Solution": [
+     "Lifecycle"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Deprecation",
+     "Upgrades"
+    ],
+    "Release": [],
+    "Additional Keywords": [
+     "Postgres 17",
+     "pg_upgrade",
+     "deprecated extensions"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  },
+  {
+   "raw": "supabase-016",
+   "title": "Security Retro 2025 and plans for 2026",
+   "filename": "Supabase security retro 2025.md",
+   "folder": "Security & Trust",
+   "owner": "Security & Compliance",
+   "description": "What shipped in 2025 (new API keys, RLS defaults, Security Advisors, HackerOne VDP) and what was planned for 2026.",
+   "version": "1.0",
+   "created": "2026-01-07",
+   "updated": "2026-01-07",
+   "expires": "2026-07-07",
+   "views": 96,
+   "props": {
+    "Content Type": [
+     "Whitepaper"
+    ],
+    "Customer-Facing": [
+     "True"
+    ],
+    "Partner-Facing": [
+     "False"
+    ],
+    "Item Visibility": [
+     "Employee Only"
+    ],
+    "Language": [
+     "English"
+    ],
+    "Geo": [
+     "Global"
+    ],
+    "Product": [
+     "Supabase Platform"
+    ],
+    "Solution": [
+     "Security Review"
+    ],
+    "Industry": [
+     "Cross-Industry"
+    ],
+    "Content Theme": [
+     "Security",
+     "Roadmap"
+    ],
+    "Release": [
+     "2025 retro"
+    ],
+    "Additional Keywords": [
+     "HackerOne",
+     "API keys",
+     "RLS",
+     "2026 plans"
+    ],
+    "Do Not Allow in AI": [
+     "False"
+    ]
+   },
+   "legacy": null
+  }
+ ]
+}
