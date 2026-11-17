@@ -1,0 +1,286 @@
+{
+ "title": "Halden State University System Information Security and AI Review",
+ "buyer": "Halden State University System (a fictional multi-campus public university system)",
+ "reference": "HSUS-ISR-2026-117",
+ "issued": "2026-11-16",
+ "due": "2026-12-11",
+ "contact": "Procurement team",
+ "kind": "security",
+ "intro": "Halden State University System is selecting a DevSecOps platform for teaching, research computing and central IT, about 1,800 developer seats across four campuses. This review is read by our Information Security Office, our AI review board and Procurement together. Answers become part of the contract record.",
+ "instructions": [
+  "Answer every mandatory question. Give a direct answer in the response column before any explanation.",
+  "Answer for GitLab.com unless the question names GitLab Dedicated.",
+  "Anything in beta, limited availability or planned must be answered No, with its status and expected timing in the comments.",
+  "Any answer that commits to a date, notification window, price or contract term outside your standard terms must come from someone able to sign for the vendor."
+ ],
+ "codes": {
+  "type": "yesno",
+  "fee": false
+ },
+ "sections": [
+  {
+   "title": "Hosting, tenancy and data residency",
+   "intro": "Our research data governance office needs to know exactly where repository data lives and who holds the keys, for both the multi-tenant and the single-tenant offering.",
+   "questions": [
+    {
+     "ref": "HDR-02",
+     "text": "Do you offer a single-tenant hosted service deployed in a cloud region we choose?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "Yes",
+      "fee": null,
+      "detail": "Yes. GitLab Dedicated is a single-tenant SaaS solution, fully isolated, deployed in the customer's preferred AWS cloud region and hosted and maintained by GitLab (Ultimate tier).",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "gitlab-061",
+      "quote": "GitLab Dedicated is a single-tenant SaaS solution that is: - Fully isolated. - Deployed in your preferred AWS cloud region. - Hosted and maintained by GitLab."
+     }
+    },
+    {
+     "ref": "HDR-04",
+     "text": "Can a GitLab Dedicated instance authenticate our staff directly against our on-premises LDAP / Active Directory?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "No",
+      "fee": null,
+      "detail": "No. LDAP authentication is listed as unavailable on GitLab Dedicated (users must use GitLab-specific passwords or access tokens instead); Dedicated supports SAML and OpenID Connect providers for single sign-on.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "gitlab-061",
+      "quote": "LDAP authentication Authentication using corporate LDAP/Active Directory credentials. Must use GitLab-specific passwords or access tokens instead."
+     }
+    },
+    {
+     "ref": "HDR-05",
+     "text": "Will GitLab commit in the contract that our GitLab Dedicated tenant will be live in the AWS Sydney region (ap-southeast-2) no later than 1 February 2027?",
+     "mandatory": false,
+     "kind": "code",
+     "key": {
+      "answer": "",
+      "fee": null,
+      "detail": "GitLab Dedicated is deployed in the customer's preferred AWS region, but the sources give no region-by-date commitment; a dated go-live in a named region is a contract term only the account team can agree.",
+      "claims": [],
+      "route_to": "Account team and Deal Desk",
+      "to_confirm": "Whether ap-southeast-2 is a supported Dedicated region and whether a go-live date of 1 February 2027 can be written into the contract.",
+      "trap": "commitment",
+      "source": "gitlab-061",
+      "quote": "Deployed in your preferred AWS cloud region."
+     }
+    }
+   ]
+  },
+  {
+   "title": "Security assurance",
+   "intro": "Answer for GitLab.com unless the question names GitLab Dedicated.",
+   "questions": [
+    {
+     "ref": "SEC-03",
+     "text": "Will you permit our security team to run an authenticated penetration test against GitLab.com before contract award?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "No",
+      "fee": null,
+      "detail": "No. Customers are not authorized to conduct vulnerability scans or penetration tests on GitLab's SaaS application, because such testing could appear to GitLab as a real incident. GitLab's FY26 third-party Penetration Test Executive Summary is available in the Trust Center instead.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "gitlab-005",
+      "quote": "If our Customers or Prospects were to attempt their own penetration testing of our SaaS environment, it could appear as a real incident to GitLab."
+     }
+    },
+    {
+     "ref": "SEC-04",
+     "text": "State your remediation timeframes for critical and high severity vulnerabilities.",
+     "mandatory": true,
+     "kind": "text",
+     "key": {
+      "answer": "",
+      "fee": null,
+      "detail": "Critical (CVSS 9.0-10.0): mitigated within 24 hours and remediated within 30 days. High (CVSS 7.0-8.9): remediated within 30 days. Medium: 90 days; Low: 180 days.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "gitlab-005",
+      "quote": "| 9.0-10.0 (Critical) | `~severity::1` | `~priority::1` | Within 24 hours | 30 day SLA |"
+     }
+    }
+   ]
+  },
+  {
+   "title": "AI and data use",
+   "intro": "Our AI review board requires direct answers. Anything in beta must be identified as beta.",
+   "questions": [
+    {
+     "ref": "AI-04",
+     "text": "Is human-approval gating of individual agent tool calls, with an audit event for every approval decision, generally available today?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "No",
+      "fee": null,
+      "detail": "No, it is in beta. Tool approval guardrails for GitLab Duo agents were released as a beta in GitLab 19.1, covering Agentic Chat, the IDE and flows and emitting audit events for every approval decision.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": "roadmap",
+      "source": "gitlab-041",
+      "quote": "This beta release includes Agentic Chat, IDE, and flows, and emits audit events for every approval decision."
+     }
+    },
+    {
+     "ref": "AI-05",
+     "text": "Are Code Suggestions included in the Premium and Ultimate seat price with no usage charge?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "No",
+      "fee": null,
+      "detail": "No. Since GitLab 19.0, GitLab Duo Core moved to usage-based billing and Code Suggestions in the Web IDE and desktop IDEs consume GitLab Credits (50 executions per credit). Premium and Ultimate users currently receive included credits (12 and 24 per user per month) as a limited-time promotion.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": "stale",
+      "source": "gitlab-047",
+      "quote": "Starting in GitLab 19.0, GitLab Duo Core moves to usage-based billing. Code Suggestions in the Web IDE and desktop IDEs now consume GitLab Credits ."
+     }
+    }
+   ]
+  },
+  {
+   "title": "Commercial and licensing",
+   "intro": "Pricing answers are read with the commercial schedule. Do not quote discounts here.",
+   "questions": [
+    {
+     "ref": "COM-03",
+     "text": "State your price for 1,800 Ultimate seats on a three-year term, including any GitLab Credits commitment.",
+     "mandatory": true,
+     "kind": "text",
+     "key": {
+      "answer": "",
+      "fee": null,
+      "detail": "",
+      "claims": [],
+      "route_to": "Account team and Deal Desk",
+      "to_confirm": "A quote for 1,800 Ultimate seats on a three-year term and the credit commitment that goes with it.",
+      "trap": "person"
+     }
+    },
+    {
+     "ref": "COM-04",
+     "text": "Do unused GitLab Credits in a monthly commitment pool roll over to the next month?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "No",
+      "fee": null,
+      "detail": "No. Monthly commitment pool credits become available immediately after purchase and reset on the first of every month; unused credits do not roll over.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "gitlab-060",
+      "quote": "Credits become available immediately after purchase, and reset on the first of every month."
+     }
+    },
+    {
+     "ref": "COM-05",
+     "text": "Confirm that your total liability under the agreement will be capped at no less than three times the annual fees paid.",
+     "mandatory": false,
+     "kind": "code",
+     "key": {
+      "answer": "",
+      "fee": null,
+      "detail": "",
+      "claims": [],
+      "route_to": "Legal",
+      "to_confirm": "The liability cap GitLab will accept in this agreement.",
+      "trap": "absent"
+     }
+    }
+   ]
+  },
+  {
+   "title": "Platform lifecycle",
+   "intro": "We plan a three-year platform life. Tell us what is changing.",
+   "questions": [
+    {
+     "ref": "PLT-01",
+     "text": "Do you recommend compliance pipelines as the long-term mechanism for enforcing mandatory jobs in every project pipeline?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "No",
+      "fee": null,
+      "detail": "No. Compliance pipelines were deprecated in GitLab 17.3 and will be removed in GitLab 20.0 (a breaking change). Customers should migrate to pipeline execution policies (security policies).",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": "stale",
+      "source": "gitlab-048",
+      "quote": "we have deprecated compliance pipelines in GitLab 17.3 and will remove the feature in GitLab 20.0."
+     }
+    },
+    {
+     "ref": "PLT-03",
+     "text": "Does GitLab Dedicated offer a pre-production environment, and is it covered by the availability SLA?",
+     "mandatory": true,
+     "kind": "text",
+     "key": {
+      "answer": "",
+      "fee": null,
+      "detail": "Yes, as an add-on: pre-production environments must be purchased as an add-on (no additional licences) and run the same GitLab version as production, but they are single-region only with no SLA commitment.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "gitlab-061",
+      "quote": "Pre-production environments must be purchased as an add-on to your GitLab Dedicated subscription, with no additional licenses required."
+     }
+    },
+    {
+     "ref": "PLT-04",
+     "text": "What availability does GitLab Dedicated commit to each month?",
+     "mandatory": true,
+     "kind": "text",
+     "key": {
+      "answer": "",
+      "fee": null,
+      "detail": "GitLab Dedicated maintains a monthly service level objective of 99.9% availability, measured across the web interface and API, container registry and Git operations, excluding scheduled and emergency maintenance and events outside GitLab control.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "gitlab-061",
+      "quote": "GitLab Dedicated maintains a monthly service level objective of 99.9% availability."
+     }
+    },
+    {
+     "ref": "PLT-05",
+     "text": "What is the minimum PostgreSQL version required for a self-managed GitLab 19 installation?",
+     "mandatory": false,
+     "kind": "text",
+     "key": {
+      "answer": "",
+      "fee": null,
+      "detail": "PostgreSQL 17. In GitLab 19.0, PostgreSQL 17 became the minimum required version and support for PostgreSQL 16 was removed.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "gitlab-048",
+      "quote": "In GitLab 19.0, PostgreSQL 17 becomes the minimum required PostgreSQL version."
+     }
+    }
+   ]
+  }
+ ]
+}

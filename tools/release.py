@@ -17,6 +17,10 @@ import denylist as DENY
 CFG = os.path.expanduser('~/.config/sc-open-corpus/releases.json')
 PRIVATE = [re.compile(p, re.I) for p in (r'/Users/' + re.escape(os.path.basename(os.path.expanduser('~'))) + r'\b', r'[A-Za-z0-9._%+-]+@(gmail|icloud|outlook|hotmail)\.com',
                                           r'(sk-ant-|sk-proj-|ghp_|gho_|xox[bp]-)[A-Za-z0-9_-]{10,}', r'BEGIN (RSA |OPENSSH )?PRIVATE KEY')]
+GOOGLE_KEY = re.compile(r'AIza[0-9A-Za-z_-]{35}')
+# Google browser keys a third-party site serves to every visitor, kept because originals stay byte for byte.
+# Any other Google key stops the release. Add one here only after checking the live site serves it.
+PUBLIC_KEYS = {'AIzaSyCLdi3jHHjkmLji9D8uj_RNPMHcdrYoIW4'}   # docs.gitlab.com FS_IDENTIFIER (checked 17 Nov 2026)
 
 
 def text_of(name, b):
@@ -44,6 +48,7 @@ def scan(root, ts):
             if rel == 'tools/denylist.py': continue
             t = text_of(f, open(p, 'rb').read())
             why = [t2 for t2 in ts if t2 in t.lower()] + [r.pattern[:24] for r in PRIVATE if r.search(t)]
+            why += ['unlisted Google API key'] if set(GOOGLE_KEY.findall(t)) - PUBLIC_KEYS else []
             if why: hits.append((rel, sorted(set(why))))
     return hits
 

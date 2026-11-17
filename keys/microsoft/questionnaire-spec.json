@@ -1,0 +1,411 @@
+{
+ "title": "Pemberton State University System Microsoft 365 Copilot Privacy and Readiness Questionnaire",
+ "buyer": "Pemberton State University System (a fictional public university system)",
+ "reference": "PSUS-ITPQ-2026-31",
+ "issued": "2026-11-16",
+ "due": "2026-12-11",
+ "contact": "Procurement team",
+ "kind": "privacy",
+ "intro": "The System is planning a staged Microsoft 365 Copilot rollout to 12,000 faculty and staff across eight campuses. Our Privacy Office, CISO and Records Management team will rely on these answers when approving the rollout. Answers must reflect what is available today; anything announced for the future must be described as such.",
+ "instructions": [
+  "Answer Yes, No or N/A for each coded question and explain in the comment field.",
+  "Describe preview, rollout-in-progress and planned capabilities as No, with the expected timing.",
+  "Do not answer commercial or contractual questions from product documentation; name the person who will confirm them.",
+  "Where a commitment differs by region or model provider, say so explicitly."
+ ],
+ "codes": {
+  "type": "yesno",
+  "fee": false
+ },
+ "sections": [
+  {
+   "title": "Data use and model providers",
+   "intro": "How our prompts and files are used and by whom.",
+   "questions": [
+    {
+     "ref": "DUP-01",
+     "text": "Confirm that our prompts, responses and files accessed through Microsoft Graph are not used to train foundation models.",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "Yes",
+      "fee": null,
+      "detail": "Yes. Prompts, responses and Graph data aren't used to train foundation LLMs, and optional feedback is not used to train them either.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "microsoft-016",
+      "quote": "Prompts, responses, and data accessed through Microsoft Graph aren't used to train foundation LLMs, including those used by Microsoft 365 Copilot."
+     }
+    },
+    {
+     "ref": "DUP-02",
+     "text": "Confirm that Azure OpenAI is the only model provider that processes our Copilot prompts.",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "No",
+      "fee": null,
+      "detail": "No. Since January 7, 2026 Anthropic is also a subprocessor for Microsoft 365 Copilot, operating under Microsoft enterprise data protection; Anthropic models are out of scope for the EU Data Boundary and in-country processing commitments.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": "stale",
+      "source": "microsoft-016",
+      "quote": "Starting January 7, 2026, Anthropic is a subprocessor for Microsoft 365 Copilot."
+     }
+    },
+    {
+     "ref": "DUP-03",
+     "text": "Are Copilot prompts subject to abuse monitoring that includes human review by Microsoft staff?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "No",
+      "fee": null,
+      "detail": "No. Abuse monitoring with human review is available in Azure OpenAI, but Microsoft 365 Copilot services have opted out of it.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "microsoft-016",
+      "quote": "While abuse monitoring, which includes human review of content, is available in Azure OpenAI, Microsoft 365 Copilot services have opted out of it."
+     }
+    },
+    {
+     "ref": "DUP-04",
+     "text": "Under which terms is Copilot data processed, and in what capacity does Microsoft act?",
+     "mandatory": true,
+     "kind": "text",
+     "key": {
+      "answer": "",
+      "fee": null,
+      "detail": "Under the Microsoft Products and Services Data Protection Addendum and the Product Terms, with Microsoft acting as a data processor (enterprise data protection). For web search queries sent to Bing, Microsoft acts as an independent data controller.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "microsoft-016",
+      "quote": "with Microsoft acting as a data processor."
+     }
+    }
+   ]
+  },
+  {
+   "title": "Data location",
+   "intro": "Our Privacy Office must state where data is processed.",
+   "questions": [
+    {
+     "ref": "LOC-01",
+     "text": "Is Microsoft 365 Copilot a covered workload under your data residency commitments, including Advanced Data Residency?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "Yes",
+      "fee": null,
+      "detail": "Yes. Microsoft 365 Copilot was added as a covered workload in the Product Terms data residency commitments on March 1, 2024, and ADR and Multi-Geo include Copilot commitments.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "microsoft-016",
+      "quote": "Microsoft 365 Copilot was added as a covered workload in the data residency commitments in Microsoft Product Terms on March 1, 2024."
+     }
+    },
+    {
+     "ref": "LOC-02",
+     "text": "For users outside the EU, can LLM processing occur outside our home region?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "Yes",
+      "fee": null,
+      "detail": "Yes. Calls go to the closest data centers in the region but can go to other regions with capacity during high utilization; customers outside the EU may have queries processed in the US, EU or other regions.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "microsoft-016",
+      "quote": "Customers outside the EU may have their queries processed in the US, EU, or other regions."
+     }
+    },
+    {
+     "ref": "LOC-03",
+     "text": "Will Microsoft contractually commit that all Copilot prompts from our users are processed only in the United States, including during peak load, from go-live?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "",
+      "fee": null,
+      "detail": "",
+      "claims": [],
+      "route_to": "Legal",
+      "to_confirm": "Whether an in-country processing commitment for all Copilot LLM calls can be offered; published routing allows other regions at peak.",
+      "trap": "commitment",
+      "source": "microsoft-016",
+      "quote": "but also can call into other regions where capacity is available during high utilization periods."
+     }
+    },
+    {
+     "ref": "LOC-04",
+     "text": "Do web search queries made by Copilot fall under the EU Data Boundary and your BAA?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "No",
+      "fee": null,
+      "detail": "No. The EU Data Boundary doesn't apply to web search queries, and HIPAA/BAA coverage doesn't apply to them because they aren't covered by the DPA and BAA.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "microsoft-016",
+      "quote": "The EU Data Boundary doesn’t apply to web search queries."
+     }
+    }
+   ]
+  },
+  {
+   "title": "Access, oversharing and records",
+   "intro": "Our CISO and Records Management team need these controls before go-live.",
+   "questions": [
+    {
+     "ref": "ACC-01",
+     "text": "Can Copilot surface content a user does not have permission to open?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "No",
+      "fee": null,
+      "detail": "No. Copilot only accesses data the individual user is authorized to access, and Semantic Index honors the user's access boundary.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "microsoft-016",
+      "quote": "Copilot doesn't access data that the user doesn't have permission to access."
+     }
+    },
+    {
+     "ref": "ACC-02",
+     "text": "Is SharePoint Advanced Management, used for oversharing remediation, an additional purchase on top of Copilot?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "No",
+      "fee": null,
+      "detail": "No. As of early 2025, SharePoint Advanced Management is included with Microsoft 365 Copilot licenses.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": "stale",
+      "source": "microsoft-016",
+      "quote": "As of early 2025, SharePoint Advanced Management is included with your Microsoft 365 Copilot license."
+     }
+    },
+    {
+     "ref": "ACC-03",
+     "text": "Can we apply retention, legal hold and eDiscovery to Copilot prompts and responses?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "Yes",
+      "fee": null,
+      "detail": "Yes. Purview retention policies apply to Copilot interactions, audit records capture prompts, responses and referenced content, and Purview eDiscovery can search, preserve and produce Copilot content.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "microsoft-016",
+      "quote": "Admins can also use Microsoft Purview to set retention policies for the data related to chat interactions with Copilot."
+     }
+    },
+    {
+     "ref": "ACC-04",
+     "text": "Can we stop Copilot responding to prompts that contain student identifiers or other sensitive data types?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "Yes",
+      "fee": null,
+      "detail": "Yes. A Purview DLP for Copilot prompts policy can restrict Copilot from responding to prompts containing specified sensitive information.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "microsoft-016",
+      "quote": "policy to restrict Copilot from responding to prompts containing specified sensitive information"
+     }
+    },
+    {
+     "ref": "ACC-05",
+     "text": "Will Copilot work on our shared departmental mailboxes?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "No",
+      "fee": null,
+      "detail": "No. Copilot is supported only on primary mailboxes hosted on Exchange Online, not archive, group, shared or delegate mailboxes.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "microsoft-016",
+      "quote": "It isn't available on a user's archive mailbox, group mailboxes, or shared and delegate mailboxes that they have access to."
+     }
+    }
+   ]
+  },
+  {
+   "title": "Prerequisites and network",
+   "intro": "Our infrastructure team will plan against these answers.",
+   "questions": [
+    {
+     "ref": "PRE-01",
+     "text": "Will Copilot work for staff on shared lab PCs that use device-based licensing for Microsoft 365 Apps?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "No",
+      "fee": null,
+      "detail": "No. Copilot isn't available with device-based licensing for Microsoft 365 Apps for enterprise.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "microsoft-016",
+      "quote": "Copilot isn't available when using device-based licensing for Microsoft 365 Apps for enterprise."
+     }
+    },
+    {
+     "ref": "PRE-02",
+     "text": "Is it enough for our proxy to allow only *.cloud.microsoft for Copilot traffic?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "No",
+      "fee": null,
+      "detail": "No. Consolidation under *.cloud.microsoft is planned; today WSS must reach both *.cloud.microsoft and *.office.com and the worldwide Microsoft 365 URLs and IP ranges must be allowed.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": "roadmap",
+      "source": "microsoft-016",
+      "quote": "Microsoft plans to consolidate Copilot experiences for Microsoft 365 under the `*.cloud.microsoft` domain."
+     }
+    },
+    {
+     "ref": "PRE-03",
+     "text": "Does Copilot honor our Conditional Access and MFA policies?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "Yes",
+      "fee": null,
+      "detail": "Yes. Copilot honors Conditional Access policies and multifactor authentication and uses the MFA configured for the tenant.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "microsoft-016",
+      "quote": "Copilot honors Conditional Access policies and multifactor authentication (MFA)."
+     }
+    }
+   ]
+  },
+  {
+   "title": "Agents and extensibility",
+   "intro": "We expect departments to request agents within months of launch.",
+   "questions": [
+    {
+     "ref": "AGT-01",
+     "text": "Can central IT decide which agents are available to staff?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "Yes",
+      "fee": null,
+      "detail": "Yes. Admins have full control over which agents are allowed, can review agent permissions and data access in Integrated apps, and can disable tenant-wide publishing.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "microsoft-016",
+      "quote": "Admins have full control to select which agents are allowed in their organization."
+     }
+    },
+    {
+     "ref": "AGT-04",
+     "text": "Is Security Copilot included in our existing Microsoft 365 E5 licenses?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "No",
+      "fee": null,
+      "detail": "No. Inclusion of Security Copilot with Microsoft 365 E5 is announced for the coming months, not available today.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": "roadmap",
+      "source": "microsoft-016",
+      "quote": "In the coming months, Security Copilot will be included with your Microsoft 365 E5 licenses."
+     }
+    }
+   ]
+  },
+  {
+   "title": "Commercial and service levels",
+   "intro": "Commercial answers will be incorporated into the contract.",
+   "questions": [
+    {
+     "ref": "COM-01",
+     "text": "State the per-user annual price for 12,000 Microsoft 365 Copilot licenses under our existing agreement, including any education discount.",
+     "mandatory": true,
+     "kind": "text",
+     "key": {
+      "answer": "",
+      "fee": null,
+      "detail": "",
+      "claims": [],
+      "route_to": "Microsoft account team (licensing)",
+      "to_confirm": "Price for 12,000 Copilot seats under the System agreement.",
+      "trap": "person"
+     }
+    },
+    {
+     "ref": "COM-02",
+     "text": "State the financially backed monthly uptime percentage for Microsoft 365 Copilot.",
+     "mandatory": true,
+     "kind": "text",
+     "key": {
+      "answer": "",
+      "fee": null,
+      "detail": "",
+      "claims": [],
+      "route_to": "Legal",
+      "to_confirm": "The Copilot service level and service credit terms (not in the provided materials).",
+      "trap": "absent"
+     }
+    },
+    {
+     "ref": "COM-03",
+     "text": "Do staff who only need Copilot Chat require an additional paid license?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "No",
+      "fee": null,
+      "detail": "No. Microsoft 365 Copilot Chat doesn't require an additional license; the Microsoft 365 Copilot add-on is for Graph-grounded Copilot.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "microsoft-016",
+      "quote": "Microsoft 365 Copilot Chat uses the web and users can provide organizational data. It doesn't require an additional license."
+     }
+    }
+   ]
+  }
+ ]
+}

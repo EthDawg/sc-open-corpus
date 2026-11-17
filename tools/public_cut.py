@@ -69,12 +69,19 @@ for p in sorted(glob.glob(J('keys', '**', '*.json'), recursive=True) + glob.glob
                                       for o in d['opportunities'] if not DENY.hit(json.dumps({k: o.get(k) for k in ('title', 'summary', 'buyer')}), TS)
                                       and all(open_ok(x['raw']) for x in o['documents'])]}
     elif isinstance(d, dict) and isinstance(d.get('sections'), list):
-        out = d if keep(d) else None
+        # a written questionnaire: keep each question whose sources are all open (or that names none: a question for a person)
+        secs = [{**sec, 'questions': [q for q in sec['questions'] if keep(q)]} for sec in d['sections']]
+        secs = [sec for sec in secs if sec['questions']]
+        out = {**d, 'sections': secs} if sum(len(x['questions']) for x in secs) >= 8 and keep({k: v for k, v in d.items() if k != 'sections'}) else None
     else: out = d if keep(d) else None
     n = len(out) if isinstance(out, list) else len(next((v for k, v in (out or {}).items() if isinstance(v, list)), []) or [])
     if out and n:
         dst = os.path.join(OUT, rel); os.makedirs(os.path.dirname(dst), exist_ok=True)
         json.dump(out, open(dst, 'w'), indent=1, ensure_ascii=False); kept[rel] = n
+
+# 4b. the thin skills, and packs: finished workspaces made only from the open deliveries a public cut can build itself
+if os.path.isdir(J('thin')): cp('thin')
+if os.path.isdir(J('packs')): cp('packs')
 
 # 5. runs on openly licensed orgs only (a run's workspace paraphrases its inputs)
 open_orgs = {o for o in {r['org'] for r in cat['sources']} if all(r['redistributable'] for r in cat['sources'] if r['org'] == o)}

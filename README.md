@@ -21,12 +21,23 @@ Read `VISION.md` (what this project accepts and refuses), `DESIGN.md` (why it is
 
 Want more material to test with? `docs/SOURCES.md` points to where good public SC material lives, by kind, without ranking it.
 
+## Open a finished company
+
+`packs/` holds ready-made Green Room workspaces for GitLab, PostHog and Supabase, made only from the openly licensed files:
+sources filed, a buyer's questionnaire answered in the buyer's own file, and the fact behind each answer saved with the
+sentence it rests on. `packs/index.json` lists each pack's size and sha256. Import one in Green Room (workspace switcher,
+Import a workspace file) and the work is already done: no paid job, a few megabytes.
+
+They were made in about four minutes and about a dollar each by Green Room's own jobs with the two short skills in
+`thin/skills`: `tools/run.py <org> --arm thin`, then `tools/packs.py <run folder>`. Results: `runs/RESULTS.md`.
+
 ## Do a run
 
 ```
 python3 tools/catalog.py && python3 tools/extract.py          # catalog and text cache
 <green-room>/.venv/bin/python tools/build_library.py   # libraries, exports, deliveries
 python3 tools/run.py <org> --arm greenroom --model opus       # fresh GREENROOM_HOME, d1, intake, respond
+<green-room>/.venv/bin/python tools/run.py <org> --arm thin --model sonnet   # the same jobs with the thin skills in thin/skills
 python3 tools/score.py runs/<run>/home/workspaces/<org> <org> --judge
 python3 portals/build.py --local && portals/serve.sh           # browse at 127.0.0.1:8781 what the run started from
 ```

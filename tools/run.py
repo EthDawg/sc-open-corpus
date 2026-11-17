@@ -1,7 +1,7 @@
 """One run of the AI step, by PROTOCOL.md: a fresh Green Room home, delivery d1 in the inbox, intake, then respond on the
 org's questionnaire(s). Later deliveries load with a fresh agent and nothing but the workspace.
 
-  <green-room>/.venv/bin/python tools/run.py <org> [--arm greenroom|bare] [--model opus] [--deliveries d1,d2]
+  <green-room>/.venv/bin/python tools/run.py <org> [--arm greenroom|thin|bare] [--model opus] [--deliveries d1,d2]
       [--skip-respond] [--run <existing run folder, to add a delivery>]
 
 Writes runs/<date>-<org>-<arm>-<model>/ : home/ (GREENROOM_HOME), log-*.jsonl, run.json (time, cost, results per step).
@@ -31,7 +31,10 @@ name = orgs[org]['name']
 state = json.load(open(os.path.join(run, 'run.json'))) if os.path.exists(os.path.join(run, 'run.json')) else \
     {'org': org, 'arm': arm, 'model': model, 'started': datetime.datetime.now().isoformat(timespec='seconds'), 'steps': []}
 save = lambda: json.dump(state, open(os.path.join(run, 'run.json'), 'w'), indent=1, default=str)
-FORBID = [J('keys'), J('library'), J('catalog'), J('text'), J('raw'), J('runs')]
+# every other run is forbidden one by one: this run's own workspace lives under runs/, and a deny on runs/ itself
+# would stop the harness reading its own workspace (it did, on the first thin run)
+FORBID = [J('keys'), J('library'), J('catalog'), J('text'), J('raw')] + \
+    [J('runs', d) for d in sorted(os.listdir(J('runs'))) if os.path.isdir(J('runs', d)) and os.path.abspath(J('runs', d)) != os.path.abspath(run)]
 
 
 def ev_logger(path):
@@ -46,12 +49,16 @@ def ev_logger(path):
     return show
 
 
-if arm == 'greenroom':
+GR = arm in ('greenroom', 'thin')     # thin: Green Room's own jobs, run with this corpus's thin skills (thin/skills) in the workspace
+if GR:
     if W.slugify(name) not in W.all_workspaces():          # the same before-AI workspace build_workspaces makes, minus the key
         sys.path.insert(0, os.path.join(ROOT, 'tools')); import build_workspaces as BW
         BW.build(org, write=False, pack=False)
         for f in os.listdir(os.path.join(W.get(W.slugify(name)).root, 'inbox')): os.remove(os.path.join(W.get(W.slugify(name)).root, 'inbox', f))
     ws = W.get(W.slugify(name)); root = ws.root
+    if arm == 'thin':
+        for sk in sorted(os.listdir(J('thin', 'skills'))):
+            shutil.copytree(J('thin', 'skills', sk), os.path.join(root, 'skills', sk), dirs_exist_ok=True)
 else:
     root = os.path.join(home, 'workspaces', W.slugify(name)); os.makedirs(os.path.join(root, 'inbox'), exist_ok=True)
 
@@ -60,7 +67,7 @@ for d in dels:
     src = J('deliveries', org, d)
     for f in os.listdir(src): shutil.copy2(os.path.join(src, f), os.path.join(root, 'inbox', f))
     t0 = time.time(); log = os.path.join(run, f'log-intake-{d}.jsonl')
-    if arm == 'greenroom':
+    if GR:
         r = intake.intake(ws, on_event=ev_logger(log), model=model, timeout=5400, log_path=log + '.raw', forbid_paths=FORBID)
         step = {'step': f'intake-{d}', 'seconds': round(time.time() - t0), 'cost_usd': r.get('cost_usd'), 'landed': r.get('landed'),
                 'uncertain': r.get('uncertain'), 'needs_person': r.get('needs_person'), 'ok': r.get('ok'),
@@ -75,7 +82,7 @@ for d in dels:
         except Exception: step = {'step': f'intake-{d}', 'seconds': round(time.time() - t0), 'error': (p.stdout + p.stderr)[-1200:]}
     state['steps'].append(step); save(); print(json.dumps(step, indent=1, default=str))
 
-if '--skip-respond' not in args and arm == 'greenroom':
+if '--skip-respond' not in args and GR:
     qdir = J('deliveries', org, 'questionnaire')
     for qf in sorted(glob.glob(os.path.join(qdir, '*'))):
         stepname = 'respond-' + os.path.basename(qf)

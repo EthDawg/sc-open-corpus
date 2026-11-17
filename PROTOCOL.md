@@ -27,6 +27,7 @@ answers that are right, current and safe to send, starting from the mess an SC a
 | Arm | Workspace at start | Prompt |
 |---|---|---|
 | `greenroom` | Green Room template (`gr ws new`), its skills and checks | The app's own Knowledge and Respond jobs |
+| `thin` | Green Room template plus the two workspace skills in `thin/skills` (added 17 Nov 2026) | The app's own Knowledge and Respond jobs; the thin skills file sources, answer from the documents and save the fact behind each answer |
 | `bare` | An empty folder | "This folder's inbox has everything our sales team has on <Org>. Load it so we can answer security questionnaires and build decks from it, then answer the questionnaire in questionnaire/." |
 
 Models: Opus 5.5 is the reference. Sonnet 5.5 and Haiku 5.5 give the cost curve. Same delivery, same scorer.

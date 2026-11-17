@@ -1,0 +1,324 @@
+{
+ "title": "Harbourline Health Product Analytics Vendor Security and Privacy Questionnaire",
+ "buyer": "Harbourline Health (a fictional US regional health-tech provider)",
+ "reference": "HH-VSQ-2026-14",
+ "issued": "2026-11-16",
+ "due": "2026-12-11",
+ "contact": "Procurement team",
+ "kind": "security",
+ "intro": "Harbourline Health is selecting a product analytics and session replay platform for its patient portal and mobile app. Some projects will handle protected health information. This questionnaire is read by our Information Security, Privacy and Procurement teams together. Answers that commit to something beyond your published terms will be treated as contract terms.",
+ "instructions": [
+  "Answer every mandatory question. A code answer must be supported by the detail in the comments column.",
+  "Answer Yes only for what is generally available today. Anything in beta, preview or on a roadmap is No, with the status in the comments.",
+  "Where a question asks for a commitment beyond your standard terms, name the person who can make it rather than answering from documentation.",
+  "Pricing answers must state the assumptions they rely on."
+ ],
+ "codes": {
+  "type": "yesno",
+  "fee": false
+ },
+ "sections": [
+  {
+   "title": "Assurance, certifications and incidents",
+   "intro": "We rely on independent assurance rather than self-assessment where we can.",
+   "questions": [
+    {
+     "ref": "SEC-02",
+     "text": "Is your organisation certified to ISO/IEC 27001? If so, provide the certificate and its scope.",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "",
+      "fee": null,
+      "detail": "",
+      "claims": [],
+      "route_to": "Security & Compliance",
+      "to_confirm": "Whether PostHog holds an ISO/IEC 27001 certificate; the Trust Center and handbook list SOC 2, GDPR, CCPA and HIPAA only.",
+      "trap": "absent",
+      "source": null,
+      "quote": null
+     }
+    },
+    {
+     "ref": "SEC-03",
+     "text": "When was your most recent independent penetration test, and how often are they performed?",
+     "mandatory": true,
+     "kind": "text",
+     "key": {
+      "answer": "",
+      "fee": null,
+      "detail": "Penetration tests are run annually; the most recent was in May 2026 and the report is in the PostHog Trust Center.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "posthog-014",
+      "quote": "We conduct these annually, most recently in May 2026 - you can find the report in"
+     }
+    },
+    {
+     "ref": "SEC-04",
+     "text": "Describe any security incident in the last 18 months that affected customers or your software supply chain, and what you changed as a result.",
+     "mandatory": true,
+     "kind": "text",
+     "key": {
+      "answer": "",
+      "fee": null,
+      "detail": "On 24 November 2025 (Shai-Hulud 2.0) an attacker used a stolen npm token to publish malicious versions of PostHog JavaScript SDKs; only the npm JavaScript SDKs were affected, and the packages were removed and tokens revoked by 9:30 AM UTC. PostHog moved to the trusted publisher model, requires security review of workflow-file changes, switched to pnpm 10 and reworked GitHub secrets management.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "posthog-026",
+      "quote": "By 9:30 AM UTC, we had identified the malicious packages, deleted them, and revoked the tokens used to publish them."
+     }
+    },
+    {
+     "ref": "SEC-05",
+     "text": "Have you lost any customer data in the last 12 months?",
+     "mandatory": false,
+     "kind": "code",
+     "key": {
+      "answer": "Yes",
+      "fee": null,
+      "detail": "Yes. On 19 February 2026 a ClickHouse bug deleted US-region Logs data older than 3 days; only the Logs product was affected and recent data was restored from Kafka.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "posthog-027",
+      "quote": "This data loss only impacted the Logs product, all other PostHog data is intact."
+     }
+    }
+   ]
+  },
+  {
+   "title": "Hosting, data protection and privacy",
+   "intro": "Our patients are mostly in the US, but our app also serves EU residents.",
+   "questions": [
+    {
+     "ref": "PRV-01",
+     "text": "Can our analytics data be stored in a region of our choosing, specifically the US or the EU?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "Yes",
+      "fee": null,
+      "detail": "Yes. Customers choose PostHog Cloud US (AWS us-east-1, Virginia) or PostHog Cloud EU (AWS eu-central-1, Frankfurt).",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "posthog-014",
+      "quote": "Customers can choose whether to host data on our AWS servers in the EU (eu-central-1 in Germany) or the US (us-east-1 in Virginia)."
+     }
+    },
+    {
+     "ref": "PRV-03",
+     "text": "Will you enter into a data processing agreement with us?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "Yes",
+      "fee": null,
+      "detail": "Yes. Every PostHog Cloud customer can get the standard DPA on any plan, self-serve at app.posthog.com/legal and already countersigned.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "posthog-015",
+      "quote": "All PostHog Cloud customers can get a DPA, on any plan. This includes the free plan."
+     }
+    }
+   ]
+  },
+  {
+   "title": "Protected health information",
+   "intro": "Some of our projects will capture PHI.",
+   "questions": [
+    {
+     "ref": "HIP-01",
+     "text": "Will you sign a Business Associate Agreement with us, and what are the conditions?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "Yes",
+      "fee": null,
+      "detail": "Yes, for PostHog Cloud customers subscribed to the Boost, Scale or Enterprise package; the countersigned BAA is generated on the organization's legal page in the app.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "posthog-017",
+      "quote": "PostHog only offers Business Associate Agreements (BAAs) for PostHog Cloud to users with the"
+     }
+    },
+    {
+     "ref": "HIP-02",
+     "text": "Will every feature we enable, including AI features, be covered by the BAA?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "No",
+      "fee": null,
+      "detail": "No. PostHog AI and other AI features are not covered by BAAs and must not be enabled where any project processes PHI; the managed reverse proxy is also not covered.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "posthog-017",
+      "quote": "and other AI features are **not** covered by BAAs and should not be enabled in organizations where any project processes Protected Health Information (PHI)."
+     }
+    },
+    {
+     "ref": "HIP-03",
+     "text": "Can PHI be sent from browsers through your managed reverse proxy?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "No",
+      "fee": null,
+      "detail": "No. The managed reverse proxy is not covered by BAAs; HIPAA deployments should run a self-hosted proxy on infrastructure the customer controls.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "posthog-017",
+      "quote": "covered by BAAs and should not be used to process Protected Health Information (PHI)."
+     }
+    }
+   ]
+  },
+  {
+   "title": "Access, identity and product capability",
+   "intro": "Answer for what is generally available today.",
+   "questions": [
+    {
+     "ref": "ACC-02",
+     "text": "Do you require multi-factor authentication for all of your staff?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "Yes",
+      "fee": null,
+      "detail": "Yes. All team members must enable MFA, with passkeys preferred.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "posthog-014",
+      "quote": "All team members are required to enable multi-factor authentication (MFA) on their accounts."
+     }
+    },
+    {
+     "ref": "ACC-04",
+     "text": "Can our analytics engineers manage data models in Git with automated tests today?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "No",
+      "fee": null,
+      "detail": "No. Tests and a Git workflow for data models are not available yet; Git is on the roadmap.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": "roadmap",
+      "source": "posthog-009",
+      "quote": "| Tests and Git workflow | Not yet - Git is on the roadmap |"
+     }
+    },
+    {
+     "ref": "ACC-05",
+     "text": "Is your managed data warehouse generally available for production workloads?",
+     "mandatory": false,
+     "kind": "code",
+     "key": {
+      "answer": "No",
+      "fee": null,
+      "detail": "No. The managed warehouse is labelled beta.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": "roadmap",
+      "source": "posthog-009",
+      "quote": "| Storage | Snowflake, BigQuery, Databricks | Managed warehouse (beta) | Product data is already there. Nothing to move. |"
+     }
+    }
+   ]
+  },
+  {
+   "title": "Commercial and contractual",
+   "intro": "We expect roughly $150,000 of annual usage.",
+   "questions": [
+    {
+     "ref": "COM-02",
+     "text": "Will you provide a 99.9% uptime SLA with service credits in our agreement?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "",
+      "fee": null,
+      "detail": "An uptime SLA is available only with the Enterprise package or as a negotiated special term for customers spending $100k+ ARR after discount, and even then is not a given.",
+      "claims": [],
+      "route_to": "Sales (deal desk)",
+      "to_confirm": "Whether Harbourline Health will be on the Enterprise package or qualify for an SLA special term, and the SLA level PostHog will agree.",
+      "trap": "commitment",
+      "source": "posthog-008",
+      "quote": "An uptime SLA are not available to customers outside of these cases."
+     }
+    },
+    {
+     "ref": "COM-03",
+     "text": "Will you hold our per-unit prices fixed for a three-year term?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "No",
+      "fee": null,
+      "detail": "No. PostHog does not offer price guarantees; it sometimes lowers prices and restructures products, and prepaid credits provide budget control.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "posthog-008",
+      "quote": "We do not offer price guarantees for the following reasons:"
+     }
+    },
+    {
+     "ref": "COM-04",
+     "text": "State the total discount you would apply to a two-year agreement of about $150,000 of credit per year, invoiced annually.",
+     "mandatory": true,
+     "kind": "text",
+     "key": {
+      "answer": "",
+      "fee": null,
+      "detail": "",
+      "claims": [],
+      "route_to": "Sales (deal desk)",
+      "to_confirm": "The discount for this volume and payment schedule; the public pricing page and the deal-desk contract rules disagree on whether a 2-year term alone earns extra discount.",
+      "trap": "person",
+      "source": null,
+      "quote": null
+     }
+    },
+    {
+     "ref": "COM-05",
+     "text": "Can we pay an annual agreement in quarterly instalments?",
+     "mandatory": true,
+     "kind": "code",
+     "key": {
+      "answer": "No",
+      "fee": null,
+      "detail": "No. Discounted contracts are paid upfront; quarterly or split payment terms are not available. Fewer credits can be bought upfront and topped up later.",
+      "claims": [],
+      "route_to": null,
+      "to_confirm": null,
+      "trap": null,
+      "source": "posthog-008",
+      "quote": "Quarterly or split payment terms are not available as they impact our cash flow and add administrative overhead."
+     }
+    }
+   ]
+  }
+ ]
+}

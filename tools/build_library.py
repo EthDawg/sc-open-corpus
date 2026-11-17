@@ -165,7 +165,8 @@ def build(org):
         return iid
     sec_folder = next((i['folder'] for i in items if i['folder'].lower().startswith('security')), items[0]['folder'])
     others = [r for r in cat.values() if r['org'] != org and r['org'] in orgs and r['kind'] == 'pdf'
-              and r['genre'] in ('security-whitepaper', 'trust-faq', 'policy-legal') and (r.get('pages') or 0) >= 4]
+              and r['genre'] in ('security-whitepaper', 'trust-faq', 'policy-legal') and (r.get('pages') or 0) >= 4
+              and os.path.exists(J(r['file']))]      # in a public cut only openly licensed originals are on disk
     if others:
         w = rnd.choice(sorted(others, key=lambda r: r['id']))
         fn = rnd.choice(['Cloud security overview.pdf', 'Security whitepaper (customer copy).pdf', 'Trust and security overview 2026.pdf'])
@@ -177,7 +178,7 @@ def build(org):
         faults.append({'id': f'F-{org}-W1', 'kind': 'wrong-company', 'where': {'stacks': [iid], 'loose_in_inbox': loose},
                        'statement': f"'{fn}' in the {name} library is a {orgs[w['org']]['name']} document ({w['id']}).", 'evidence': [],
                        'expected': f"Recognised as another company's document: not learned as {name} facts, reported as filed in error.", 'severity': 'high'})
-    scans = [r for r in cat.values() if r['org'] == org and r.get('stress') == 'scanned' and r['id'] not in {i['raw'] for i in items}]
+    scans = [r for r in cat.values() if r['org'] == org and r.get('stress') == 'scanned' and r['id'] not in {i['raw'] for i in items} and os.path.exists(J(r['file']))]
     for r in scans:
         iid = add_item(os.path.basename(r['file']).split('-', 2)[-1], J(r['file']), 'pdf', 'Company/Investor', r['title'].replace(' (image-only PDF)', ''),
                        'Investor Relations', {'Content Type': ['Investor'], 'Customer-Facing': ['True'], 'Item Visibility': ['Partner + Employee'],
