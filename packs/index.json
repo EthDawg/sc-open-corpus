@@ -11,7 +11,7 @@
    "sha256": "a2ffa6af73deff9e2ea55569a12bd929ade9a0d3750fd613da8b117482a82680",
    "shape": 3,
    "summary": "34 sources filed, a 14-question buyer questionnaire answered, 20 facts saved with the sentence each rests on.",
-   "licence": "Originals under their own open licences (see catalog/sources.json); everything written for the corpus is CC BY 4.0.",
+   "licence": "Originals under their own open licences; everything written for the corpus is CC BY 4.0.",
    "made_with": "Green Room's own jobs with the thin skills in thin/skills, model sonnet, 4 min, $1.41 at API list prices.",
    "run": "2026-11-17-gitlab-thin-sonnet"
   },
@@ -24,7 +24,7 @@
    "sha256": "faaf8b80467888327acab22e31631a4fec74701bd7a2b95598d5da9646c012c0",
    "shape": 3,
    "summary": "16 sources filed, a 16-question buyer questionnaire answered, 21 facts saved with the sentence each rests on.",
-   "licence": "Originals under their own open licences (see catalog/sources.json); everything written for the corpus is CC BY 4.0.",
+   "licence": "Originals under their own open licences; everything written for the corpus is CC BY 4.0.",
    "made_with": "Green Room's own jobs with the thin skills in thin/skills, model sonnet, 4 min, $1.1 at API list prices.",
    "run": "2026-11-17-posthog-thin-sonnet"
   },
@@ -37,7 +37,7 @@
    "sha256": "8183ffbd9c0b01137bae7f884ac446baadc5ef7a3d275fabd54729b0a9a9e3c8",
    "shape": 3,
    "summary": "15 sources filed, a 19-question buyer questionnaire answered, 23 facts saved with the sentence each rests on.",
-   "licence": "Originals under their own open licences (see catalog/sources.json); everything written for the corpus is CC BY 4.0.",
+   "licence": "Originals under their own open licences; everything written for the corpus is CC BY 4.0.",
    "made_with": "Green Room's own jobs with the thin skills in thin/skills, model sonnet, 4 min, $1.14 at API list prices.",
    "run": "2026-11-17-supabase-thin-sonnet"
   }

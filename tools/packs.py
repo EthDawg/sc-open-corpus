@@ -52,7 +52,7 @@ def build(run):
     return {'slug': org, 'name': name, 'file': f'{org}.greenroom', 'url': BASE + f'{org}.greenroom', 'bytes': len(b),
             'sha256': hashlib.sha256(b).hexdigest(), 'shape': man.get('shape') or 3,      # 3: Green Room's workspace shape on 17 Nov 2026
             'summary': f"{len(idx)} sources filed, a {nq}-question buyer questionnaire answered, {len(claims)} facts saved with the sentence each rests on.",
-            'licence': 'Originals under their own open licences (see catalog/sources.json); everything written for the corpus is CC BY 4.0.',
+            'licence': 'Originals under their own open licences; everything written for the corpus is CC BY 4.0.',      # shown on screen in Green Room: plain words, no file names
             'made_with': f"Green Room's own jobs with the thin skills in thin/skills, model {rj.get('model')}, {round((rj.get('seconds') or 0) / 60)} min, ${rj.get('cost_usd')} at API list prices.",
             'run': os.path.basename(run)}
 
